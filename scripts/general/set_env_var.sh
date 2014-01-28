@@ -1,11 +1,17 @@
 #!/bin/bash
 
 export HOME_GLOB=/glob/jessada/
+export CMM_PROJECTS_ROOT_DIR=$HOME_GLOB/private/projects/CMM
 
 
 ##********************************************* set library *****************************************************
 export LIB_SCRIPT_DIR=$HOME_GLOB/lib/CMM-Lib/scripts
 export SCRIPT_GEN_OAF=$LIB_SCRIPT_DIR/script_gen_oaf.sh
+export SCRIPT_GEN_SA=$LIB_SCRIPT_DIR/script_gen_sa.sh
+export SCRIPT_GEN_GT=$LIB_SCRIPT_DIR/script_gen_gt.sh
+export SCRIPT_GEN_XLS=$LIB_SCRIPT_DIR/script_gen_xls.sh
+export CSV2XLS=$LIB_SCRIPT_DIR/csv2xls.py
+export SORT_N_AWK_CSV=$LIB_SCRIPT_DIR/sort_n_awk_csv.sh
 
 ##********************************************* data location *****************************************************
 #set global master data location
@@ -26,7 +32,8 @@ export CMM_OAF_SCILIFE_ILLUMINA_ALL_FAM=$OAF_ROOT_DIR/scilife_illumina_all_fam.o
 export CMM_OAF_AXEQ_CHR9_ALL_FAM=$OAF_ROOT_DIR/axeq_chr9_all_fam.oaf
 #Genotype data
 export GT_ROOT_DIR=$CMM_MASTER_DATA_ROOT_DIR/gt/
-export CMM_GT_UPPSALA_REALIGNED_50FAM=$OAF_ROOT_DIR/uppsala_realigned_50fam.gt
+export CMM_GT_BFILE_PREFIX_WITHOUT_RELATIVES=$GT_ROOT_DIR/without_relatives/AL5cnc_common
+#export CMM_GT_UPPSALA_REALIGNED_50FAM=$OAF_ROOT_DIR/uppsala_realigned_50fam.gt
 #VCF
 export CMM_UPPSALA_SEQUENCE_ROOT_DIR=$CMM_MASTER_DATA_ROOT_DIR/CMM_Uppsala_b2011117
 export CMM_UPPSALA_ALL_PATIENTS_BWA_GATK_GZ=$CMM_UPPSALA_SEQUENCE_ROOT_DIR/systematic/Uppsala_bwa_GATK/bwa_GATK.vcf.gz
@@ -43,19 +50,29 @@ export CMM_AXEQ_CHR9_ALL_PATIENTS_HEADER=$CMM_AXEQ_SEQUENCE_ROOT_DIR/systematic/
 export CMM_AXEQ_CHR9_FOLDER=$CMM_AXEQ_SEQUENCE_ROOT_DIR/systematic/chr9/vcf/
 export CMM_AXEQ_CHR5_19_FOLDER=$CMM_AXEQ_SEQUENCE_ROOT_DIR/systematic/chr5_19/vcf/
 export CMM_AXEQ_CHR3_6_14_18_FOLDER=$CMM_AXEQ_SEQUENCE_ROOT_DIR/systematic/chr3_6_14_18/vcf/
+export CMM_SCILIFE_CAPTURE_ROOT_DIR=$CMM_MASTER_DATA_ROOT_DIR/CMM_Scilife_b2011097/
+export CMM_SCILIFE_CAPTURE_FAM24_PATIENTS_GZ=$CMM_SCILIFE_CAPTURE_ROOT_DIR/systematic/capture/merged/Scilife_capture_Co166_213.vcf.gz
+#summarize_annovar
+export SUMMARIZE_ANNOVAR_OUT_DIR=$CMM_MASTER_DATA_ROOT_DIR/summarize_annovar/
+export CMM_SCILIFE_ILLUMINA_MANS_SA_DB=$SUMMARIZE_ANNOVAR_OUT_DIR/scilife_illumina_mans.tab.csv
+export CMM_SCILIFE_ILLUMINA_UPPSALA_SA_DB=$SUMMARIZE_ANNOVAR_OUT_DIR/scilife_illumina_uppsala.tab.csv
+export CMM_UPPSALA_SA_DB=$SUMMARIZE_ANNOVAR_OUT_DIR/uppsala.tab.csv
+export CMM_UPPSALA_REALIGNED_50FAM_SA_DB=$SUMMARIZE_ANNOVAR_OUT_DIR/uppsala_realigned_50fam.tab.csv
+export CMM_AXEQ_CHR9_SA_DB=$SUMMARIZE_ANNOVAR_OUT_DIR/axeq_chr9.tab.csv
+export CMM_SCILIFE_CAPTURE_FAM24_SA_DB=$SUMMARIZE_ANNOVAR_OUT_DIR/scilife_capture_Co166_213.tab.csv
+
 
 
 ##********************************************* tools/scripts location *****************************************************
+#set third-party tools location
+export TOOLS_ROOT_DIR=$HOME_GLOB/tools/
 #set active hbvdb location
-export HBVDB_TOOLS_ROOT_DIR=$HOME_GLOB/tools/hbvdb
+export HBVDB_TOOLS_ROOT_DIR=$TOOLS_ROOT_DIR/hbvdb
 export HBVDB_BVD_GET=$HBVDB_TOOLS_ROOT_DIR/bin/bvd-get.pl
 export HBVDB_BVD_ADD=$HBVDB_TOOLS_ROOT_DIR/bin/bvd-add.pl
 
-#set third-party tools location
-export TOOLS_ROOT_DIR=$HOME/development/third_party_tools
 #ANNOVAR
 export ANNOVAR_ROOT_DIR=$TOOLS_ROOT_DIR/annovar
 export ANNOVAR_HUMAN_DB_DIR=$ANNOVAR_ROOT_DIR/humandb
 export CONVERT2ANNOVAR=$ANNOVAR_ROOT_DIR/convert2annovar.pl
 export SUMMARIZE_ANNOVAR=$ANNOVAR_ROOT_DIR/summarize_annovar.pl
-##********************************************* tools/scripts location *****************************************************
