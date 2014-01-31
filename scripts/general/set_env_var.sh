@@ -3,6 +3,8 @@
 export HOME_GLOB=/glob/jessada/
 export CMM_PROJECTS_ROOT_DIR=$HOME_GLOB/private/projects/CMM
 
+export CMM_PROJECTS_OUTPUT_DIR=$HOME_GLOB/private/projects/CMM/out
+
 
 ##********************************************* set library *****************************************************
 export LIB_SCRIPT_DIR=$HOME_GLOB/lib/CMM-Lib/scripts
