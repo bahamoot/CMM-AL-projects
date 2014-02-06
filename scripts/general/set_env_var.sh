@@ -10,6 +10,7 @@ export CMM_PROJECTS_OUTPUT_DIR=$HOME_GLOB/private/projects/CMM/out
 export LIB_SCRIPT_DIR=$HOME_GLOB/lib/CMM-Lib/scripts
 export SCRIPT_GEN_OAF=$LIB_SCRIPT_DIR/script_gen_oaf.sh
 export SCRIPT_GEN_SA=$LIB_SCRIPT_DIR/script_gen_sa.sh
+export SCRIPT_GEN_VCF_GT=$LIB_SCRIPT_DIR/script_gen_vcf_gt.sh
 export SCRIPT_GEN_GT=$LIB_SCRIPT_DIR/script_gen_gt.sh
 export SCRIPT_GEN_XLS=$LIB_SCRIPT_DIR/script_gen_xls.sh
 export CSV2XLS=$LIB_SCRIPT_DIR/csv2xls.py
@@ -54,6 +55,10 @@ export CMM_AXEQ_CHR5_19_FOLDER=$CMM_AXEQ_SEQUENCE_ROOT_DIR/systematic/chr5_19/vc
 export CMM_AXEQ_CHR3_6_14_18_FOLDER=$CMM_AXEQ_SEQUENCE_ROOT_DIR/systematic/chr3_6_14_18/vcf/
 export CMM_SCILIFE_CAPTURE_ROOT_DIR=$CMM_MASTER_DATA_ROOT_DIR/CMM_Scilife_b2011097/
 export CMM_SCILIFE_CAPTURE_FAM24_PATIENTS_GZ=$CMM_SCILIFE_CAPTURE_ROOT_DIR/systematic/capture/merged/Scilife_capture_Co166_213.vcf.gz
+#VCF Genotyping data
+export VCF_GT_OUT_DIR=$CMM_MASTER_DATA_ROOT_DIR/vcf_gt/
+export CMM_AXEQ_CHR9_MUTATED_VCF_GT=$VCF_GT_OUT_DIR/axeq_chr9_mutated_gt.vgt
+export CMM_AXEQ_CHR9_GENOTYPED_VCF_GT=$VCF_GT_OUT_DIR/axeq_chr9_genotyped_gt.vgt
 #summarize_annovar
 export SUMMARIZE_ANNOVAR_OUT_DIR=$CMM_MASTER_DATA_ROOT_DIR/summarize_annovar/
 export CMM_SCILIFE_ILLUMINA_MANS_SA_DB=$SUMMARIZE_ANNOVAR_OUT_DIR/scilife_illumina_mans.tab.csv

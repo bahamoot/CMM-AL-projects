@@ -15,12 +15,9 @@ annotation_file=$CMM_AXEQ_CHR9_SA_DB
 vcf_gz_file=$CMM_AXEQ_CHR9_ALL_PATIENTS_GZ
 region="9:98478118-98504905"
 
-$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "161" -m "Co809"
-
-#$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "161" -m "Co809"  -R $region
-#$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "275" -m "Co618"  -R $region
-#$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "869" -m "Co1685"  -R $region
-#$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "1025" -m "Co1529"  -R $region
-#$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "1085" -m "Co1518"  -R $region
-#$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "1252" -m "Co1719"  -R $region
-
+$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "161" -m "Co809"  -R $region
+$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "275" -m "Co618"  -R $region
+$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "869" -m "Co1685"  -R $region
+$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "1025" -m "Co1529"  -R $region
+$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "1085" -m "Co1518"  -R $region
+$SCRIPT_GEN_XLS -p $project_name -s $sub_project_name -a $annotation_file -v $vcf_gz_file -f "1252" -m "Co1719"  -R $region
