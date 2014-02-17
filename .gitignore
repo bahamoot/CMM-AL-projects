@@ -38,3 +38,5 @@ slurm*
 
 # mine
 out
+log
+tmp
