@@ -5,15 +5,15 @@ script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source ~/.bashrc
 
 project_code="b2012247"
-dataset_name="chr9_linkage_axeq"
-tabix_file=$CMM_AXEQ_CHR9_ALL_PATIENTS_GZ
+dataset_name="chr9_linkage_uppsala"
+tabix_file=$CMM_UPPSALA_50FAM_ALL_PATIENTS_GZ
 working_dir=$CMM_PROJECTS_WORKING_DIR
 
 project_name="chr9_linkage"
-sub_project_name="axeq"
+sub_project_name="uppsala"
 
 vcf_region="9:92298000-105323000"
-col_names="24-Co166,24-Co213,24-Co648,8-Co37,275-Co618,478-Co1274,296-Co876"
+col_names="8-Co35,8-Co37,275-Co1262,275-Co618,478-Co1274,478-Co1207,740-1373,740-602-05o,740-1383,350-1104-03D,350-Co866,918-134-06,918-354-06,13-Co95,296-Co793,296-Co876"
 
 if [ ! -d "$CMM_PROJECTS_OUTPUT_DIR/$project_name" ]; then
     mkdir "$CMM_PROJECTS_OUTPUT_DIR/$project_name"

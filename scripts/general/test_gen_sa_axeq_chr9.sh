@@ -8,4 +8,4 @@ script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 source ~/.bashrc
 
-$SCRIPT_GEN_SA "" "" "" $CMM_AXEQ_CHR9_ALL_PATIENTS_GZ $CMM_OAF_AXEQ_CHR9_ALL_FAM "axeq_chr9" $CMM_AXEQ_CHR9_SA_DB
+$SCRIPT_GEN_SA -k "axeq_chr9_sa" -t $CMM_AXEQ_CHR9_ALL_PATIENTS_GZ -o $CMM_AXEQ_CHR9_SA_DB -w $CMM_PROJECTS_WORKING_DIR
