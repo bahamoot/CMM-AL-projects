@@ -11,6 +11,7 @@ export CMM_PROJECTS_WORKING_DIR=$CMM_PROJECTS_ROOT_DIR/tmp
 export LIB_SCRIPT_DIR=$HOME_GLOB/lib/CMM-Lib/scripts
 export EXEC_SCRIPT_GEN_DEFAULT_DATA=$LIB_SCRIPT_DIR/exec_script_gen_default_data.sh
 export EXEC_SCRIPT_GEN_CONSENSUS_XLS=$LIB_SCRIPT_DIR/exec_script_gen_consensus_xls.sh
+export EXEC_SCRIPT_GEN_FAMILY_XLS=$LIB_SCRIPT_DIR/exec_script_gen_family_xls.sh
 
 ##********************************************* data location *****************************************************
 ##set global master data location
