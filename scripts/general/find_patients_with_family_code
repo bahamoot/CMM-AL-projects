@@ -1,0 +1,69 @@
+#!/bin/bash
+
+script_name=$(basename $0)
+
+family_code=$1
+
+#script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+#
+#script_gen_dafault_data=$script_dir/script_gen_default_data.sh
+#
+#source ~/.bashrc
+#
+#project_code="b2012247"
+#dataset_name="axeq_chr9"
+#tabix_file=$CMM_AXEQ_CHR9_ALL_PATIENTS_GZ
+#working_dir=$CMM_PROJECTS_WORKING_DIR
+#
+#oaf_out_file=$CMM_OAF_AXEQ_CHR9_ALL_FAM
+#genotyped_vcf_gt_out_file=$CMM_AXEQ_CHR9_GENOTYPED_VCF_GT
+#mutated_vcf_gt_out_file=$CMM_AXEQ_CHR9_MUTATED_VCF_GT
+#summarize_annovar_out_file=$CMM_AXEQ_CHR9_SA_DB
+#
+#$script_gen_dafault_data -p $project_code -N $dataset_name -t $tabix_file -O $oaf_out_file -G $genotyped_vcf_gt_out_file -M $mutated_vcf_gt_out_file -S $summarize_annovar_out_file -w $working_dir
+
+function display_param {
+    PARAM_PRINT_FORMAT="##   %-40s%s\n"
+    param_name=$1
+    param_val=$2
+
+    printf "$PARAM_PRINT_FORMAT" "$param_name"":" "$param_val" 1>&2
+}
+
+function find_patients_using_family_code {
+    tabix_file=$1
+    family_code=$2
+
+    echo "##" 1>&2
+    echo "## >>>>> in $tabix_file" 1>&2
+    IFS=$'\t' read -ra tabix_header_col_names <<< "$( zcat $tabix_file | grep "^#C" )"
+    for (( j=1; j<=$((${#tabix_header_col_names[@]})); j++ ))
+    do
+	IFS=$'-' read -ra family_patient_code <<< "${tabix_header_col_names[$j]}"
+	if [ $((${#family_patient_code[@]})) -ge 2 ]; then
+	    if [ ${family_patient_code[0]} == $family_code ]; then
+		echo "## !!! found patient code      ${tabix_header_col_names[$j]}" 1>&2
+	    fi
+	fi
+    done
+}
+
+## ****************************************  display configuration  ****************************************
+## display required configuration
+echo "##" 1>&2
+echo "## ************************************************** S T A R T <$script_name> **************************************************" 1>&2
+echo "##" 1>&2
+echo "## parameters" 1>&2
+echo "##   $@" 1>&2
+echo "##" 1>&2
+echo "## description" 1>&2
+echo "##   A script to locate all patiens in the tabix database with the given family code" 1>&2
+echo "##" 1>&2
+echo "## overall configuration" 1>&2
+display_param "family code:" "$family_code"
+
+## ****************************************  executing  ****************************************
+
+find_patients_using_family_code $CMM_AXEQ_CHR9_ALL_PATIENTS_GZ $family_code
+find_patients_using_family_code $CMM_UPPSALA_58FAM_ALL_PATIENTS_GZ $family_code
+find_patients_using_family_code $CMM_SCILIFE_ILLUMINA_ALL_PATIENTS_MANS_GZ $family_code
