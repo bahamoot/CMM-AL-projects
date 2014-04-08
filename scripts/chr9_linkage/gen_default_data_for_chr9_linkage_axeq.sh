@@ -35,7 +35,7 @@ export DEFAULT_DATA_SA_OUT_FILE=$out_dir/$dataset_name.sa
 #export DEFAULT_DATA_SUB_PROJECT_NAME="uppsala"
 
 export DEFAULT_DATA_VCF_REGION="9:92298000-105323000"
-export DEFAULT_DATA_COL_NAMES="24-Co166,24-Co213,24-Co648,8-Co37,275-Co618,478-Co1274,296-Co876"
+export DEFAULT_DATA_COL_NAMES="24-Co166,24-Co213,24-Co648,8-Co37,275-Co618,478-Co1274,296-Co876,70-Co200,231-Co555,425-Co1458"
 ##********************************************* set parameters here *****************************************************
 
 $EXEC_SCRIPT_GEN_DEFAULT_DATA

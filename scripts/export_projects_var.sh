@@ -10,7 +10,7 @@ export CMM_PROJECTS_WORKING_DIR=$CMM_PROJECTS_ROOT_DIR/tmp
 ##********************************************* libray scripts *****************************************************
 export LIB_SCRIPT_DIR=$HOME_GLOB/lib/CMM-Lib/scripts
 export EXEC_SCRIPT_GEN_DEFAULT_DATA=$LIB_SCRIPT_DIR/exec_script_gen_default_data.sh
-export EXEC_SCRIPT_GEN_CONSENSUS_XLS=$LIB_SCRIPT_DIR/exec_script_gen_consensus_xls.sh
+export EXEC_SCRIPT_GEN_SUMMARY_XLS=$LIB_SCRIPT_DIR/exec_script_gen_summary_xls.sh
 export EXEC_SCRIPT_GEN_FAMILY_XLS=$LIB_SCRIPT_DIR/exec_script_gen_family_xls.sh
 
 ##********************************************* data location *****************************************************
@@ -34,8 +34,8 @@ export CMM_UPPSALA_SEQUENCE_ROOT_DIR=$CMM_MASTER_DATA_ROOT_DIR/CMM_Uppsala_b2011
 #export CMM_UPPSALA_ALL_PATIENTS_BWA_GATK_HEADER=$CMM_UPPSALA_SEQUENCE_ROOT_DIR/systematic/Uppsala_bwa_GATK/bwa_GATK_header.vcf
 export CMM_UPPSALA_58FAM_ALL_PATIENTS_GZ=$CMM_UPPSALA_SEQUENCE_ROOT_DIR/systematic/Uppsala_realigned_58_families/vcf/merged/Uppsala_realigned_58_families.vcf.gz
 #export CMM_UPPSALA_58FAM_ALL_PATIENTS_HEADER=$CMM_UPPSALA_SEQUENCE_ROOT_DIR/systematic/Uppsala_realigned_58_families/vcf/merged/Uppsala_realigned_58_families_header.vcf
-#export CMM_SCILIFE_ILLUMINA_SEQUENCE_ROOT_DIR=$CMM_MASTER_DATA_ROOT_DIR/CMM_Scilife_b2011158/
-#export CMM_SCILIFE_ILLUMINA_ALL_PATIENTS_MANS_GZ=$CMM_SCILIFE_ILLUMINA_SEQUENCE_ROOT_DIR/systematic/mans/merged/scilife_illumina_mans.vcf.gz
+export CMM_SCILIFE_ILLUMINA_SEQUENCE_ROOT_DIR=$CMM_MASTER_DATA_ROOT_DIR/CMM_Scilife_b2011158/
+export CMM_SCILIFE_ILLUMINA_ALL_PATIENTS_MANS_GZ=$CMM_SCILIFE_ILLUMINA_SEQUENCE_ROOT_DIR/systematic/mans/merged/scilife_illumina_mans.vcf.gz
 #export CMM_SCILIFE_ILLUMINA_ALL_PATIENTS_MANS_HEADER=$CMM_SCILIFE_ILLUMINA_SEQUENCE_ROOT_DIR/systematic/mans/merged/scilife_illumina_mans_header.vcf
 #export CMM_SCILIFE_ILLUMINA_ALL_PATIENTS_UPPSALA_GZ=$CMM_SCILIFE_ILLUMINA_SEQUENCE_ROOT_DIR/systematic/uppsala/merged/scilife_illumina_uppsala.vcf.gz
 export CMM_AXEQ_SEQUENCE_ROOT_DIR=$CMM_MASTER_DATA_ROOT_DIR/CMM_Axeq_b2012247/
