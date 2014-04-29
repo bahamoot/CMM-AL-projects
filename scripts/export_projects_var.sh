@@ -12,6 +12,8 @@ export LIB_SCRIPT_DIR=$HOME_GLOB/lib/CMM-Lib/scripts
 export EXEC_SCRIPT_GEN_DEFAULT_DATA=$LIB_SCRIPT_DIR/exec_script_gen_default_data.sh
 export EXEC_SCRIPT_GEN_SUMMARY_XLS=$LIB_SCRIPT_DIR/exec_script_gen_summary_xls.sh
 export EXEC_SCRIPT_GEN_FAMILY_XLS=$LIB_SCRIPT_DIR/exec_script_gen_family_xls.sh
+export EXEC_SCRIPT_CAL_MUTATIONS_STAT=$LIB_SCRIPT_DIR/exec_script_cal_mutations_stat.sh
+export GET_PATIENT_CODES=$LIB_SCRIPT_DIR/get_patient_codes
 
 ##********************************************* data location *****************************************************
 ##set global master data location
@@ -47,6 +49,8 @@ export CMM_AXEQ_CHR9_ALL_PATIENTS_GZ=$CMM_AXEQ_SEQUENCE_ROOT_DIR/systematic/chr9
 #export CMM_SCILIFE_CAPTURE_ROOT_DIR=$CMM_MASTER_DATA_ROOT_DIR/CMM_Scilife_b2011097/
 #export CMM_SCILIFE_CAPTURE_FAM24_PATIENTS_GZ=$CMM_SCILIFE_CAPTURE_ROOT_DIR/systematic/capture/merged/Scilife_capture_Co166_213.vcf.gz
 ##VCF Genotyping data
+export CMM_FAMILY_DATA_DIR=$CMM_MASTER_DATA_ROOT_DIR/family/
+export CMM_FAM_SAMPLES_CSV=$CMM_FAMILY_DATA_DIR/FAMS_SAMPLES.csv
 #export VCF_GT_OUT_DIR=$CMM_MASTER_DATA_ROOT_DIR/vcf_gt/
 #export CMM_UPPSALA_58FAM_GENOTYPED_VCF_GT=$VCF_GT_OUT_DIR/uppsala_58fam_genotyped_gt.vgt
 #export CMM_UPPSALA_58FAM_MUTATED_VCF_GT=$VCF_GT_OUT_DIR/uppsala_58fam_mutated_gt.vgt
