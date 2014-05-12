@@ -55,7 +55,7 @@ export CMM_FAM_SAMPLES_CSV="$CMM_FAMILY_DATA_DIR/FAMS_SAMPLES.csv"
 #PLINK
 export CMM_GENOTYPING_UPPSALA_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/CMM_genotyping_Uppsala"
 export CMM_GENOTYPING_UPPSALA_PROCESSED_PLINK_BIN_FILE_PREFIX="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/processed/Uppsala_genotyping"
-export CMM_GENOTYPING_UPPSALA_PHENOTYPE="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/pheno/Uppsala_plink_pheno.txt"
+export CMM_GENOTYPING_UPPSALA_COLON_300CTRLS_WO_RELATIVES_PHENO="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/pheno/colon_300ctrls_wo_relatives_pheno.txt"
 
 
 ###********************************************* tools/scripts location *****************************************************

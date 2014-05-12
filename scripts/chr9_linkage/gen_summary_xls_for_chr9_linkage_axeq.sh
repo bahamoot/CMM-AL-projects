@@ -12,9 +12,11 @@ fi
 
 
 ##********************************************* set parameters here *****************************************************
+export SUMMARY_XLS_PROJECT_CODE="b2012247"
 export SUMMARY_XLS_RUNNING_KEY=$dataset_name
 export SUMMARY_XLS_WORKING_DIR=$CMM_PROJECTS_WORKING_DIR
 export SUMMARY_XLS_OUT_DIR=$in_dir
+export SUMMARY_XLS_LOG_DIR=$CMM_PROJECTS_LOG_DIR
 
 export SUMMARY_XLS_OAF_IN_FILE=$in_dir/$dataset_name.oaf
 #export SUMMARY_XLS_GT_VCF_GT_IN_FILE=$in_dir/$dataset_name.gt.vgt
