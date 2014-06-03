@@ -19,20 +19,28 @@ else
     dataset_name="$project_name"
 fi
 
+/glob/jessada//lib/CMM-Lib/scripts/plink_dummy.sh --noweb --bfile $CMM_HAPLOTYPE_FAM24_PLINK_BIN_FILE_PREFIX --make-bed --keep <( echo -e "24\tnew_fam24_shared_only" ) --out "$script_dir/haplotype_fam24"
+#/glob/jessada//lib/CMM-Lib/scripts/plink_dummy.sh --noweb --bfile $CMM_HAPLOTYPE_FAM24_PLINK_BIN_FILE_PREFIX --make-bed --keep <( echo -e "24\tCo-166\n24\tnew_fam24_shared_only\n24\told_fam24_shared_only" ) --out "$script_dir/haplotype_fam24"
 
 ##********************************************* set parameters here *****************************************************
-export PLINK_XLS_PROJECT_CODE="b2011117"
-export PLINK_XLS_RUNNING_KEY=$dataset_name
-export PLINK_XLS_PLINK_BIN_FILE_PREFIX=$CMM_GENOTYPING_UPPSALA_PROCESSED_PLINK_BIN_FILE_PREFIX
-export PLINK_XLS_PLINK_PHENO_FILE="$script_dir/RnD_pheno.txt"
-export PLINK_XLS_WORKING_DIR=$CMM_PROJECTS_WORKING_DIR
-export PLINK_XLS_OUT_DIR=$out_dir
-export PLINK_XLS_LOG_DIR=$CMM_PROJECTS_LOG_DIR
+export PLINK_REPORTS_RUNNING_KEY="$dataset_name"
+export PLINK_REPORTS_PLINK_BIN_FILE_PREFIX="$CMM_GENOTYPING_UPPSALA_PROCESSED_PLINK_BIN_FILE_PREFIX"
+export PLINK_REPORTS_PLINK_PHENO_FILE="$CMM_GENOTYPING_UPPSALA_COLON_300CTRLS_WO_RELATIVES_PHENO"
+export PLINK_REPORTS_FAMILIES_HAPLOTYPES_PLINK_BIN_FILE_PREFIX="$script_dir/haplotype_fam24"
+#export PLINK_REPORTS_PLINK_HAP_WINDOW_SIZES="1,3"
+export PLINK_REPORTS_PLINK_HAP_WINDOW_SIZES="1,3,5,10,20,50,100"
+export PLINK_REPORTS_PVALUE_SIGNIFICANCE_RATIO="2e-04"
+export PLINK_REPORTS_USE_CACHED_PLINK_HAP_ASSOC="Off"
+export PLINK_REPORTS_USE_CACHED_PLINK_EXTRA_INFO="Off"
+export PLINK_REPORTS_WORKING_DIR=$CMM_PROJECTS_WORKING_DIR
+export PLINK_REPORTS_OUT_DIR=$out_dir
+export PLINK_REPORTS_LOG_DIR=$CMM_PROJECTS_LOG_DIR
 
 ## vcf region from rs10124153 to rs7040414
-export PLINK_XLS_PLINK_REGION="9:104030000-104060000"
-#export PLINK_XLS_PHENOTYPE_FILE="9:104030000-104060000"
-
+export PLINK_REPORTS_PLINK_REGION="9:98318926-105545483"
+#export PLINK_REPORTS_PLINK_REGION="9:92290000-105770000"
+#export PLINK_REPORTS_PLINK_REGION="9:103900000-104200000"
+#export PLINK_REPORTS_PLINK_REGION="9:97136378-105767702"
 ##********************************************* set parameters here *****************************************************
 
-$EXEC_SCRIPT_GEN_PLINK_XLS
+$EXEC_SCRIPT_GEN_PLINK_REPORTS

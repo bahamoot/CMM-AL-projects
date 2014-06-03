@@ -57,6 +57,9 @@ export CMM_GENOTYPING_UPPSALA_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/CMM_genotyping
 export CMM_GENOTYPING_UPPSALA_PROCESSED_PLINK_BIN_FILE_PREFIX="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/processed/Uppsala_genotyping"
 export CMM_GENOTYPING_UPPSALA_COLON_300CTRLS_WO_RELATIVES_PHENO="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/pheno/colon_300ctrls_wo_relatives_pheno.txt"
 
+#Haplotype data
+export CMM_HAPLOTYPE_DIR="$CMM_MASTER_DATA_ROOT_DIR/haplotype/"
+export CMM_HAPLOTYPE_FAM24_PLINK_BIN_FILE_PREFIX="$CMM_HAPLOTYPE_DIR/fam24/Haplotype_fam24"
 
 ###********************************************* tools/scripts location *****************************************************
 #set third-party tools location

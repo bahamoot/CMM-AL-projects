@@ -40,3 +40,8 @@ slurm*
 out
 log
 tmp
+*.log
+*.bed
+*.bim
+*.nof
+*.fam
