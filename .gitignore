@@ -40,6 +40,7 @@ slurm*
 out
 log
 tmp
+cache
 *.log
 *.bed
 *.bim
