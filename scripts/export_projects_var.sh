@@ -59,7 +59,8 @@ export CMM_GENOTYPING_UPPSALA_COLON_300CTRLS_WO_RELATIVES_PHENO="$CMM_GENOTYPING
 
 #Haplotype data
 export CMM_HAPLOTYPE_DIR="$CMM_MASTER_DATA_ROOT_DIR/haplotype/"
-export CMM_HAPLOTYPE_FAM24_PLINK_BIN_FILE_PREFIX="$CMM_HAPLOTYPE_DIR/fam24/Haplotype_fam24"
+export CMM_HAPLOTYPE_FAM24_PLINK_FILE_PREFIX="$CMM_HAPLOTYPE_DIR/fam24/Haplotype_fam24"
+export CMM_HAPLOTYPE_CHR9_LKG_PLINK_FILE_PREFIX="$CMM_HAPLOTYPE_DIR/chr9_lkg/chr9_lkg_haplotypes"
 
 ###********************************************* tools/scripts location *****************************************************
 #set third-party tools location

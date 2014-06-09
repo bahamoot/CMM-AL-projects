@@ -19,25 +19,30 @@ else
     dataset_name="$project_name"
 fi
 
-
 ##********************************************* set parameters here *****************************************************
 export PLINK_REPORTS_RUNNING_KEY="$dataset_name"
 export PLINK_REPORTS_PLINK_BIN_FILE_PREFIX="$CMM_GENOTYPING_UPPSALA_PROCESSED_PLINK_BIN_FILE_PREFIX"
 export PLINK_REPORTS_PLINK_PHENO_FILE="$CMM_GENOTYPING_UPPSALA_COLON_300CTRLS_WO_RELATIVES_PHENO"
+export PLINK_REPORTS_FAMILIES_HAPLOTYPES_PLINK_TFILE_PREFIX="$CMM_HAPLOTYPE_CHR9_LKG_PLINK_FILE_PREFIX"
+export PLINK_REPORTS_TFAM_INDIVIDUAL_IDS="fam_8,fam_275,fam_478,fam_740,fam_350,fam_918,new_fam24_shared_only"
 export PLINK_REPORTS_PLINK_HAP_WINDOW_SIZES="1,3,5,10,20,50,100"
 export PLINK_REPORTS_PVALUE_SIGNIFICANCE_RATIO="2e-04"
-export PLINK_REPORTS_USE_CACHED_PLINK_HAP_ASSOC="On"
-export PLINK_REPORTS_USE_CACHED_PLINK_EXTRA_INFO="On"
 export PLINK_REPORTS_WORKING_DIR="$CMM_PROJECTS_WORKING_DIR"
 export PLINK_REPORTS_OUT_DIR="$out_dir"
 export PLINK_REPORTS_LOG_DIR="$CMM_PROJECTS_LOG_DIR"
 
+cache_dir="$script_dir/cache/9_98318926_105545483"
+export PLINK_REPORTS_CACHE_DIR="$cache_dir"
+export PLINK_REPORTS_USE_CACHED_PLINK_HAP_ASSOC="On"
+export PLINK_REPORTS_USE_CACHED_PLINK_EXTRA_INFO="On"
+
+export PLINK_REPORTS_PLINK_REGION="9:98318926-105545483"
 # PLINK region from chr9 linkage study is from rs4077800 to rs2000182
 # rs4077800 = 9:92298167
 # rs2000182 = 9:104792809
 # PLINK region from chr9 fam24 study is from 9:97136378-105767702
 # so combine two study
-export PLINK_REPORTS_PLINK_REGION="9:92290000-105770000"
+#export PLINK_REPORTS_PLINK_REGION="9:92290000-105770000"
 #export PLINK_REPORTS_PLINK_REGION="9:104030000-104060000"
 
 ##********************************************* set parameters here *****************************************************
