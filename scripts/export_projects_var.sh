@@ -13,6 +13,7 @@ export EXEC_SCRIPT_GEN_DEFAULT_DATA="$LIB_SCRIPT_DIR/exec_script_gen_default_dat
 export EXEC_SCRIPT_GEN_SUMMARY_XLS="$LIB_SCRIPT_DIR/exec_script_gen_summary_xls.sh"
 export EXEC_SCRIPT_GEN_PLINK_REPORTS="$LIB_SCRIPT_DIR/exec_script_gen_plink_reports.sh"
 export EXEC_SCRIPT_GEN_FAMILY_XLS="$LIB_SCRIPT_DIR/exec_script_gen_family_xls.sh"
+export EXEC_SCRIPT_GEN_MUTATIONS_REPORTS="$LIB_SCRIPT_DIR/exec_script_gen_mutations_reports.sh"
 export EXEC_SCRIPT_CAL_MUTATIONS_STAT="$LIB_SCRIPT_DIR/exec_script_cal_mutations_stat.sh"
 export GET_PATIENT_CODES="$LIB_SCRIPT_DIR/get_patient_codes"
 
@@ -54,8 +55,8 @@ export CMM_FAM_SAMPLES_CSV="$CMM_FAMILY_DATA_DIR/FAMS_SAMPLES.csv"
 
 #PLINK
 export CMM_GENOTYPING_UPPSALA_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/CMM_genotyping_Uppsala"
-export CMM_GENOTYPING_UPPSALA_PROCESSED_PLINK_BIN_FILE_PREFIX="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/processed/Uppsala_genotyping"
-export CMM_GENOTYPING_UPPSALA_COLON_300CTRLS_WO_RELATIVES_PHENO="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/pheno/colon_300ctrls_wo_relatives_pheno.txt"
+export CMM_GENOTYPING_UPPSALA_PROCESSED_PLINK_BIN_FILE_PREFIX="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/processed/GT_Merged_QC_Cases_n_Cntrls"
+export CMM_GENOTYPING_UPPSALA_COLON_300CTRLS_WO_RELATIVES_PHENO="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/pheno/colon_301ctrls_wo_relatives_pheno.txt"
 
 #Haplotype data
 export CMM_HAPLOTYPE_DIR="$CMM_MASTER_DATA_ROOT_DIR/haplotype/"
