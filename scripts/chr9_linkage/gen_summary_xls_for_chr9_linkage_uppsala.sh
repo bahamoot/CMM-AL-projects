@@ -1,8 +1,8 @@
 #!/bin/bash
 
-project_name="chr9_linkage"
+project_name="chr9_lkg"
 sub_project_name="uppsala"
-dataset_name="chr9_linkage_uppsala"
+dataset_name="chr9_lkg_uppsala"
 
 if [ ! -z "$sub_project_name" ]; then
     in_dir="$CMM_PROJECTS_OUTPUT_DIR/$project_name/$sub_project_name"
@@ -25,7 +25,7 @@ export SUMMARY_XLS_SA_IN_FILE=$in_dir/$dataset_name.sa
 export SUMMARY_XLS_VCF_REGION="9:104030000-104060000"
 
 export SUMMARY_XLS_EXONIC_FILTERING="Off"
-export SUMMARY_XLS_MISSENSE_FILTERING="On"
+export SUMMARY_XLS_MISSENSE_FILTERING="Off"
 export SUMMARY_XLS_DELETERIOUS_FILTERING="Off"
 export SUMMARY_XLS_RARE_FILTERING="Off"
 
