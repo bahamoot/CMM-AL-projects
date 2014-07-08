@@ -33,13 +33,8 @@ export PLINK_REPORTS_PVALUE_SIGNIFICANCE_RATIO="1"
 export PLINK_REPORTS_PROJECT_OUT_DIR=$project_out_dir
 export PLINK_REPORTS_SLURM_LOG_DIR=$CMM_PROJECTS_SLURM_LOG_DIR
 
-<<<<<<< HEAD
-cache_dir="$project_dir/cache/9_103600000_104200000"
-#cache_dir="$project_dir/cache/9_100000000_105000000"
-=======
 cache_dir="$project_out_dir/cache/9_103600000_104200000"
 #cache_dir="$project_out_dir/cache/9_100000000_105000000"
->>>>>>> RnD
 export PLINK_REPORTS_CACHE_DIR="$cache_dir"
 export PLINK_REPORTS_USE_CACHED_PLINK_EXTRA_INFO="On"
 
