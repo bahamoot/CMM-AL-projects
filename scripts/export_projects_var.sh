@@ -4,7 +4,7 @@ export HOME_GLOB="/glob/jessada/"
 export CMM_PROJECTS_ROOT_DIR="$HOME_GLOB/private/projects/CMM"
 
 export CMM_PROJECTS_OUTPUT_DIR="$CMM_PROJECTS_ROOT_DIR/out"
-export CMM_PROJECTS_LOG_DIR="$CMM_PROJECTS_ROOT_DIR/slurm_log"
+export CMM_PROJECTS_SLURM_LOG_DIR="$CMM_PROJECTS_ROOT_DIR/slurm_log"
 export CMM_PROJECTS_WORKING_DIR="$CMM_PROJECTS_ROOT_DIR/tmp"
 
 ##********************************************* libray scripts *****************************************************
@@ -28,10 +28,6 @@ export CMM_MASTER_DATA_ROOT_DIR="$HOME_GLOB/private/master_data/CMM"
 #export CMM_OAF_UPPSALA_REALIGNED_ALL_58FAM="$OAF_ROOT_DIR/uppsala_realigned_all_58fam.oaf"
 #export CMM_OAF_SCILIFE_ILLUMINA_ALL_FAM="$OAF_ROOT_DIR/scilife_illumina_all_fam.oaf"
 #export CMM_OAF_AXEQ_CHR9_ALL_FAM="$OAF_ROOT_DIR/axeq_chr9_all_fam.oaf"
-##Genotype data
-#export GT_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/gt/"
-#export CMM_GT_BFILE_PREFIX_WITHOUT_RELATIVES="$GT_ROOT_DIR/without_relatives/AL5cnc_common"
-##export CMM_GT_UPPSALA_REALIGNED_58FAM="$OAF_ROOT_DIR/uppsala_realigned_58fam.gt"
 
 ##VCF
 export CMM_UPPSALA_SEQUENCE_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/CMM_Uppsala_b2011117"
