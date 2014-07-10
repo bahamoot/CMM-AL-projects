@@ -4,7 +4,7 @@ export HOME_GLOB="/glob/jessada/"
 export CMM_PROJECTS_ROOT_DIR="$HOME_GLOB/private/projects/CMM"
 
 export CMM_PROJECTS_OUTPUT_DIR="$CMM_PROJECTS_ROOT_DIR/out"
-export CMM_PROJECTS_LOG_DIR="$CMM_PROJECTS_ROOT_DIR/slurm_log"
+export CMM_PROJECTS_SLURM_LOG_DIR="$CMM_PROJECTS_ROOT_DIR/slurm_log"
 export CMM_PROJECTS_WORKING_DIR="$CMM_PROJECTS_ROOT_DIR/tmp"
 
 ##********************************************* libray scripts *****************************************************
