@@ -27,8 +27,8 @@ export MUTATIONS_REPORTS_PROJECT_OUT_DIR=$project_out_dir
 export MUTATIONS_REPORTS_SLURM_LOG_DIR=$CMM_PROJECTS_SLURM_LOG_DIR
 
 #cache_dir="$project_out_dir/cache/sanna"
-#cache_dir="$project_out_dir/cache/9_98318926_105545483_2members"
-cache_dir="$project_out_dir/cache/9_104030000_104060000"
+cache_dir="$project_out_dir/cache/9_98318926_105545483_2members"
+#cache_dir="$project_out_dir/cache/9_104030000_104060000"
 export MUTATIONS_REPORTS_CACHE_DIR="$cache_dir"
 
 ## vcf region from rs10124153 to rs7040414
@@ -61,7 +61,7 @@ MUTATIONS_REPORTS_COLOR_REGION+=",24:ROSY_BROWN:9:104870000-104890000"
 MUTATIONS_REPORTS_COLOR_REGION+=",24:LIME:9:105108100-105203000"
 export MUTATIONS_REPORTS_COLOR_REGION
 
-#export MUTATIONS_REPORTS_DEVELOPER_MODE="On"
+export MUTATIONS_REPORTS_DEVELOPER_MODE="On"
 ##********************************************* set parameters here *****************************************************
 
 $EXEC_SCRIPT_GEN_MUTATIONS_REPORTS
