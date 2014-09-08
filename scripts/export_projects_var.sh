@@ -44,7 +44,10 @@ export CMM_AXEQ_CHR9_ALL_PATIENTS_GZ="$CMM_AXEQ_SEQUENCE_ROOT_DIR/systematic/chr
 #export CMM_SCILIFE_CAPTURE_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/CMM_Scilife_b2011097/"
 #export CMM_SCILIFE_CAPTURE_FAM24_PATIENTS_GZ="$CMM_SCILIFE_CAPTURE_ROOT_DIR/systematic/capture/merged/Scilife_capture_Co166_213.vcf.gz"
 
-#VCF Genotyping data
+# stat data
+export SWEDES_STAT="$HOME_GLOB/private/master_data/249swedes/stat/swedes.stat"
+
+# group of patients by syndromes
 export CMM_FAMILY_DATA_DIR="$CMM_MASTER_DATA_ROOT_DIR/family/processed"
 export CMM_FAMILY_DATA_UPPSALA_DIR="$CMM_FAMILY_DATA_DIR/uppsala/"
 export CMM_PATIENT_LIST_UPPSALA_ALL_MEMBERS_CAFAM="$CMM_FAMILY_DATA_UPPSALA_DIR/uppsala_pats_all_members.lst.CAFAM"
