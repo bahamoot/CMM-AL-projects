@@ -22,12 +22,6 @@ export GET_PATIENT_CODES="$LIB_SCRIPT_DIR/get_patient_codes"
 export CMM_MASTER_DATA_ROOT_DIR="$HOME_GLOB/private/master_data/CMM"
 #
 ##set CMM shared data location
-##OAF
-#export OAF_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/oaf/"
-#export CMM_OAF_UPPSALA_ALL_FAM="$OAF_ROOT_DIR/uppsala_all_fam.oaf"
-#export CMM_OAF_UPPSALA_REALIGNED_ALL_58FAM="$OAF_ROOT_DIR/uppsala_realigned_all_58fam.oaf"
-#export CMM_OAF_SCILIFE_ILLUMINA_ALL_FAM="$OAF_ROOT_DIR/scilife_illumina_all_fam.oaf"
-#export CMM_OAF_AXEQ_CHR9_ALL_FAM="$OAF_ROOT_DIR/axeq_chr9_all_fam.oaf"
 
 ##VCF
 export CMM_UPPSALA_SEQUENCE_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/CMM_Uppsala_b2011117"
