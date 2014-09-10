@@ -22,12 +22,6 @@ export GET_PATIENT_CODES="$LIB_SCRIPT_DIR/get_patient_codes"
 export CMM_MASTER_DATA_ROOT_DIR="$HOME_GLOB/private/master_data/CMM"
 #
 ##set CMM shared data location
-##OAF
-#export OAF_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/oaf/"
-#export CMM_OAF_UPPSALA_ALL_FAM="$OAF_ROOT_DIR/uppsala_all_fam.oaf"
-#export CMM_OAF_UPPSALA_REALIGNED_ALL_58FAM="$OAF_ROOT_DIR/uppsala_realigned_all_58fam.oaf"
-#export CMM_OAF_SCILIFE_ILLUMINA_ALL_FAM="$OAF_ROOT_DIR/scilife_illumina_all_fam.oaf"
-#export CMM_OAF_AXEQ_CHR9_ALL_FAM="$OAF_ROOT_DIR/axeq_chr9_all_fam.oaf"
 
 ##VCF
 export CMM_UPPSALA_SEQUENCE_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/CMM_Uppsala_b2011117"
@@ -44,7 +38,10 @@ export CMM_AXEQ_CHR9_ALL_PATIENTS_GZ="$CMM_AXEQ_SEQUENCE_ROOT_DIR/systematic/chr
 #export CMM_SCILIFE_CAPTURE_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/CMM_Scilife_b2011097/"
 #export CMM_SCILIFE_CAPTURE_FAM24_PATIENTS_GZ="$CMM_SCILIFE_CAPTURE_ROOT_DIR/systematic/capture/merged/Scilife_capture_Co166_213.vcf.gz"
 
-#VCF Genotyping data
+# stat data
+export SWEDES_STAT="$HOME_GLOB/private/master_data/249swedes/stat/swedes.stat"
+
+# group of patients by syndromes
 export CMM_FAMILY_DATA_DIR="$CMM_MASTER_DATA_ROOT_DIR/family/processed"
 export CMM_FAMILY_DATA_UPPSALA_DIR="$CMM_FAMILY_DATA_DIR/uppsala/"
 export CMM_PATIENT_LIST_UPPSALA_ALL_MEMBERS_CAFAM="$CMM_FAMILY_DATA_UPPSALA_DIR/uppsala_pats_all_members.lst.CAFAM"
