@@ -22,7 +22,6 @@ export GET_PATIENT_CODES="$LIB_SCRIPT_DIR/get_patient_codes"
 export CMM_MASTER_DATA_ROOT_DIR="$HOME_GLOB/private/master_data/CMM"
 #
 ##set CMM shared data location
-
 ##VCF
 export CMM_UPPSALA_SEQUENCE_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/CMM_Uppsala_b2011117"
 #export CMM_UPPSALA_ALL_PATIENTS_BWA_GATK_GZ="$CMM_UPPSALA_SEQUENCE_ROOT_DIR/systematic/Uppsala_bwa_GATK/bwa_GATK.vcf.gz"

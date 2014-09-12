@@ -1,7 +1,7 @@
 #!/bin/bash
 
 project_name="fam242"
-sub_project_name="exm_org"
+sub_project_name="exm_rare_org"
 
 if [ ! -d "$CMM_PROJECTS_OUTPUT_DIR/$project_name" ]; then
     mkdir "$CMM_PROJECTS_OUTPUT_DIR/$project_name"
@@ -37,6 +37,7 @@ export MUTATIONS_REPORTS_COL_NAMES="242-Co441,242-Co666,242-Co771"
 
 export MUTATIONS_REPORTS_FREQUENCY_RATIOS="MAF:0.2"
 #export MUTATIONS_REPORTS_EXTRA_ATTRIBUTES="has_shared,rare,study"
+export MUTATIONS_REPORTS_EXCLUSION_CRITERIAS="I,C,S"
 
 export MUTATIONS_REPORTS_MODIFY_HEADER="ALL_PF:OAF,Uppsala-CAFAM:CAFAM,Uppsala-CRC:CRC,Uppsala-COLON:COLON,Uppsala-RECTAL:RECTAL,SWEDES_PF:Daniel_DB"
 export MUTATIONS_REPORTS_DEVELOPER_MODE="On"
