@@ -19,7 +19,7 @@ fi
 
 
 ##********************************************* set parameters here *****************************************************
-#export MUTATIONS_REPORTS_PROJECT_CODE="b2012247"
+export MUTATIONS_REPORTS_PROJECT_CODE="b2012247"
 export MUTATIONS_REPORTS_TOTAL_RUN_TIME="2-00:00:00"
 export MUTATIONS_REPORTS_RUNNING_KEY=$running_key
 export MUTATIONS_REPORTS_TABIX_FILE=$CMM_VINAY_AXEQ_GZ
