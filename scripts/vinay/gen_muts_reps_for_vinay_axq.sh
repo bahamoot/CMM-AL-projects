@@ -1,0 +1,52 @@
+#!/bin/bash
+
+project_name="vinay"
+sub_project_name="axq"
+
+if [ ! -d "$CMM_PROJECTS_OUTPUT_DIR/$project_name" ]; then
+    mkdir "$CMM_PROJECTS_OUTPUT_DIR/$project_name"
+fi
+if [ ! -z "$sub_project_name" ]; then
+    project_out_dir="$CMM_PROJECTS_OUTPUT_DIR/$project_name/$sub_project_name"
+    running_key="$project_name"_"$sub_project_name"
+    if [ ! -d "$project_out_dir" ]; then
+        mkdir "$project_out_dir"
+    fi
+else
+    project_out_dir="$CMM_PROJECTS_OUTPUT_DIR/$project_name"
+    running_key="$project_name"
+fi
+
+
+##********************************************* set parameters here *****************************************************
+export MUTATIONS_REPORTS_PROJECT_CODE="b2012247"
+export MUTATIONS_REPORTS_TOTAL_RUN_TIME="2-00:00:00"
+export MUTATIONS_REPORTS_RUNNING_KEY=$running_key
+export MUTATIONS_REPORTS_TABIX_FILE=$CMM_VINAY_AXEQ_GZ
+export MUTATIONS_REPORTS_ANNOVAR_ROOT_DIR=$ANNOVAR_ROOT_DIR
+export MUTATIONS_REPORTS_PROJECT_OUT_DIR=$project_out_dir
+export MUTATIONS_REPORTS_SLURM_LOG_DIR=$CMM_PROJECTS_SLURM_LOG_DIR
+
+#cache_dir="$project_dir/cache"
+#export MUTATIONS_REPORTS_CACHE_DIR="$cache_dir"
+
+MUTATIONS_REPORTS_STAT_CONFIG="ALL,$CMM_VINAY_AXEQ_GZ,,PF#6"
+#MUTATIONS_REPORTS_STAT_CONFIG+=":Uppsala-CAFAM,$CMM_UPPSALA_58FAM_ALL_PATIENTS_GZ,$CMM_PATIENT_LIST_UPPSALA_ALL_MEMBERS_CAFAM,PF-GF"
+#MUTATIONS_REPORTS_STAT_CONFIG+=":Uppsala-CRC,$CMM_UPPSALA_58FAM_ALL_PATIENTS_GZ,$CMM_PATIENT_LIST_UPPSALA_ALL_MEMBERS_CRC,PF-GF"
+#MUTATIONS_REPORTS_STAT_CONFIG+=":Uppsala-COLON,$CMM_UPPSALA_58FAM_ALL_PATIENTS_GZ,$CMM_PATIENT_LIST_UPPSALA_ALL_MEMBERS_COLON,PF-GF"
+#MUTATIONS_REPORTS_STAT_CONFIG+=":Uppsala-RECTAL,$CMM_UPPSALA_58FAM_ALL_PATIENTS_GZ,$CMM_PATIENT_LIST_UPPSALA_ALL_MEMBERS_RECTAL,PF-GF"
+MUTATIONS_REPORTS_STAT_CONFIG+=":SWEDES,$SWEDES_STAT,,PF"
+export MUTATIONS_REPORTS_STAT_CONFIG
+
+export MUTATIONS_REPORTS_FREQUENCY_RATIOS="1000G:0.2"
+export MUTATIONS_REPORTS_MODIFY_HEADER="ALL_PF:OAF,Uppsala-CAFAM:CAFAM,Uppsala-CRC:CRC,Uppsala-COLON:COLON,Uppsala-RECTAL:RECTAL,SWEDES_PF:Daniel_DB"
+
+export MUTATIONS_REPORTS_DEVELOPER_MODE="On"
+## vcf region from rs10124153 to rs7040414
+#export MUTATIONS_REPORTS_VCF_REGION="19:52240000-58900000"
+#export MUTATIONS_REPORTS_COL_NAMES="185-Co603,185-Co669,312-Co1116,350-1104-03D,350-Co866,650-398-05o,650-729-05o,1290-Co1723"
+#export MUTATIONS_REPORTS_FAMILIES_INFO="185:185-Co603:185-Co669,312:312-Co1116,350:350-1104-03D:350-Co866,650:650-398-05o:650-729-05o,1290:1290-Co1723"
+
+##********************************************* set parameters here *****************************************************
+
+$EXEC_SCRIPT_GEN_MUTATIONS_REPORTS
