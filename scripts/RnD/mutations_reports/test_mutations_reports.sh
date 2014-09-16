@@ -38,8 +38,8 @@ export MUTATIONS_REPORTS_STAT_CONFIG
 
 #cache_dir="$project_out_dir/cache/sanna"
 #cache_dir="$project_out_dir/cache/9_98318926_105545483_2members"
-#cache_dir="$project_out_dir/cache/9_104000000_104200000"
-cache_dir="$project_out_dir/cache/9_139360000_139410000"
+cache_dir="$project_out_dir/cache/9_104030000_104060000"
+#cache_dir="$project_out_dir/cache/9_139360000_139410000"
 #cache_dir="$project_out_dir/cache/fam242_big"
 export MUTATIONS_REPORTS_CACHE_DIR="$cache_dir"
 
@@ -61,7 +61,7 @@ export MUTATIONS_REPORTS_COL_NAMES="242-Co441,242-Co666,242-Co771"
 
 #export MUTATIONS_REPORTS_FREQUENCY_RATIOS="1000G:0.2"
 export MUTATIONS_REPORTS_FREQUENCY_RATIOS="1000G:0.2,Daniel_DB:0.2"
-export MUTATIONS_REPORTS_EXTRA_ATTRIBUTES="has_shared,rare,study,cases_ge_ctrls"
+export MUTATIONS_REPORTS_EXTRA_ATTRIBUTES="has_shared,rare,study,cases_ge_ctrls,has_mutation"
 #export MUTATIONS_REPORTS_EXCLUSION_CRITERIAS="C,S"
 
 MUTATIONS_REPORTS_COLOR_REGION="24:8:LIME:9:98410000-98440000"
