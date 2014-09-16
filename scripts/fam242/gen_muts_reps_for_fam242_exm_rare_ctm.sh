@@ -19,7 +19,7 @@ fi
 
 
 ##********************************************* set parameters here *****************************************************
-export MUTATIONS_REPORTS_PROJECT_CODE="b2011158"
+export MUTATIONS_REPORTS_PROJECT_CODE="b2011117"
 export MUTATIONS_REPORTS_TOTAL_RUN_TIME="7-00:00:00"
 export MUTATIONS_REPORTS_RUNNING_KEY=$running_key
 export MUTATIONS_REPORTS_TABIX_FILE=$CMM_SCILIFE_ILLUMINA_ALL_PATIENTS_MANS_GZ
