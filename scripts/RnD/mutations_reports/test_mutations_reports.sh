@@ -38,8 +38,9 @@ export MUTATIONS_REPORTS_STAT_CONFIG
 
 #cache_dir="$project_out_dir/cache/sanna"
 #cache_dir="$project_out_dir/cache/9_98318926_105545483_2members"
-cache_dir="$project_out_dir/cache/9_104030000_104060000"
-#cache_dir="$project_out_dir/cache/9_139360000_139410000"
+#cache_dir="$project_out_dir/cache/9_104030000_104060000"
+#cache_dir="$project_out_dir/cache/9_98318926_105545483_all"
+cache_dir="$project_out_dir/cache/9_139360000_139410000"
 #cache_dir="$project_out_dir/cache/fam242_big"
 export MUTATIONS_REPORTS_CACHE_DIR="$cache_dir"
 
