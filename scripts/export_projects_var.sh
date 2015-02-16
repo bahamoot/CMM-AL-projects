@@ -8,14 +8,15 @@ export CMM_PROJECTS_SLURM_LOG_DIR="$CMM_PROJECTS_ROOT_DIR/slurm_log"
 export CMM_PROJECTS_WORKING_DIR="$CMM_PROJECTS_ROOT_DIR/tmp"
 
 ##********************************************* libray scripts *****************************************************
-export LIB_SCRIPT_DIR="$HOME_GLOB/lib/CMM-Lib/scripts"
-export EXEC_SCRIPT_GEN_DEFAULT_DATA="$LIB_SCRIPT_DIR/exec_script_gen_default_data.sh"
-export EXEC_SCRIPT_GEN_SUMMARY_XLS="$LIB_SCRIPT_DIR/exec_script_gen_summary_xls.sh"
-export EXEC_SCRIPT_GEN_PLINK_REPORTS="$LIB_SCRIPT_DIR/exec_script_gen_plink_reports.sh"
-export EXEC_SCRIPT_GEN_FAMILY_XLS="$LIB_SCRIPT_DIR/exec_script_gen_family_xls.sh"
-export EXEC_SCRIPT_GEN_MUTATIONS_REPORTS="$LIB_SCRIPT_DIR/exec_script_gen_mutations_reports.sh"
-export EXEC_SCRIPT_CAL_MUTATIONS_STAT="$LIB_SCRIPT_DIR/exec_script_cal_mutations_stat.sh"
-export GET_PATIENT_CODES="$LIB_SCRIPT_DIR/get_patient_codes"
+export CMM_LIB_ROOT_DIR="$HOME_GLOB/lib/CMM-Lib/"
+#export CMM_LIB_ROOT_DIR="$HOME_GLOB/lib/CMM-Lib/dev/scripts"
+#export EXEC_SCRIPT_GEN_DEFAULT_DATA="$CMM_LIB_DIR/exec_script_gen_default_data.sh"
+#export EXEC_SCRIPT_GEN_SUMMARY_XLS="$CMM_LIB_DIR/exec_script_gen_summary_xls.sh"
+#export EXEC_SCRIPT_GEN_PLINK_REPORTS="$CMM_LIB_DIR/exec_script_gen_plink_reports.sh"
+#export EXEC_SCRIPT_GEN_FAMILY_XLS="$CMM_LIB_DIR/exec_script_gen_family_xls.sh"
+#export EXEC_SCRIPT_GEN_MUTATIONS_REPORTS="$CMM_LIB_DIR/exec_script_gen_mutations_reports.sh"
+#export EXEC_SCRIPT_CAL_MUTATIONS_STAT="$CMM_LIB_DIR/exec_script_cal_mutations_stat.sh"
+#export GET_PATIENT_CODES="$CMM_LIB_DIR/get_patient_codes"
 
 ##********************************************* data location *****************************************************
 ##set global master data location
@@ -55,11 +56,18 @@ export CMM_PATIENT_LIST_UPPSALA_ALL_MEMBERS_RECTAL="$CMM_FAMILY_DATA_UPPSALA_DIR
 export CMM_PATIENT_LIST_UPPSALA_ALL_MEMBERS_NON_RECTAL="$CMM_FAMILY_DATA_UPPSALA_DIR/uppsala_pats_all_members.lst.NON_RECTAL"
 export CMM_FAM_SAMPLES_CSV="$CMM_FAMILY_DATA_DIR/FAMS_SAMPLES.csv"
 
+# phenotype files
+export CMM_FAMILY_PHENOTYPE_UPPSALA="$CMM_FAMILY_DATA_UPPSALA_DIR/uppsala_fam_phenotype.txt"
+export CMM_PATIENT_PHENOTYPE_UPPSALA="$CMM_FAMILY_DATA_UPPSALA_DIR/uppsala_pat_phenotype.txt"
+
 #PLINK
 export CMM_GENOTYPING_UPPSALA_ROOT_DIR="$CMM_MASTER_DATA_ROOT_DIR/CMM_genotyping_Uppsala"
 export CMM_GENOTYPING_UPPSALA_PROCESSED_PLINK_BIN_FILE_PREFIX="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/processed/GT_Merged_QC_Cases_n_Cntrls"
 export CMM_GENOTYPING_UPPSALA_COLON_301CTRLS_WO_RELATIVES_PHENO="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/pheno/colon_301ctrls_wo_relatives_pheno.txt"
-export CMM_GENOTYPING_UPPSALA_BREAST_301CTRLS_WO_RELATIVES_PHENO="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/pheno/237BrC_301Ctrl_pheno0930.txt"
+export CMM_GENOTYPING_UPPSALA_BREAST_301CTRLS_WO_RELATIVES_PHENO="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/pheno/breast_301ctrls_wo_relatives_pheno.txt"
+export CMM_GENOTYPING_UPPSALA_CRC_LKG_W_RELATIVES_PHENO="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/pheno/CRC_linkage_w_relatives_pheno.txt"
+export CMM_GENOTYPING_UPPSALA_ICF_TOP_STAT="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/res/LC-0028_130215_ResultReport_GenotypingStatistics_ICF_TOP.tab.txt"
+export CMM_GENOTYPING_UPPSALA_PCF_TOP_STAT="$CMM_GENOTYPING_UPPSALA_ROOT_DIR/res/LC-0028_130215_ResultReport_GenotypingStatistics_PCF_TOP.tab.txt"
 
 #Haplotype data
 export CMM_HAPLOTYPE_DIR="$CMM_MASTER_DATA_ROOT_DIR/haplotype/"

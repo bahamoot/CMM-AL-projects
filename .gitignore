@@ -37,6 +37,7 @@ nosetests.xml
 slurm*
 
 # mine
+obsolete
 out
 log
 tmp
