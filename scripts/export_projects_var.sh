@@ -8,7 +8,8 @@ export CMM_PROJECTS_SLURM_LOG_DIR="$CMM_PROJECTS_ROOT_DIR/slurm_log"
 export CMM_PROJECTS_WORKING_DIR="$CMM_PROJECTS_ROOT_DIR/tmp"
 
 ##********************************************* libray scripts *****************************************************
-export CMM_LIB_ROOT_DIR="$HOME_GLOB/lib/CMM-Lib/"
+export CMM_LIB_ROOT_DIR="/home/jessada/CMM-Lib/"
+#export CMM_LIB_ROOT_DIR="$HOME_GLOB/lib/CMM-Lib/"
 #export CMM_LIB_ROOT_DIR="$HOME_GLOB/lib/CMM-Lib/dev/scripts"
 #export EXEC_SCRIPT_GEN_DEFAULT_DATA="$CMM_LIB_DIR/exec_script_gen_default_data.sh"
 #export EXEC_SCRIPT_GEN_SUMMARY_XLS="$CMM_LIB_DIR/exec_script_gen_summary_xls.sh"
