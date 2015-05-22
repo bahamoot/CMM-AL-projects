@@ -1,7 +1,7 @@
 #!/bin/bash
 
 project_name="fam242"
-sub_project_name="exm_rare_ctm"
+sub_project_name="chr18"
 
 if [ ! -d "$CMM_PROJECTS_OUTPUT_DIR/$project_name" ]; then
     mkdir "$CMM_PROJECTS_OUTPUT_DIR/$project_name"
@@ -19,7 +19,7 @@ fi
 
 
 ##********************************************* set parameters here *****************************************************
-#export MUTATIONS_REPORTS_PROJECT_CODE="b2011097"
+export MUTATIONS_REPORTS_PROJECT_CODE="b2011097"
 export MUTATIONS_REPORTS_TOTAL_RUN_TIME="7-00:00:00"
 export MUTATIONS_REPORTS_RUNNING_KEY=$running_key
 export MUTATIONS_REPORTS_TABIX_FILE=$CMM_SCILIFE_ILLUMINA_ALL_PATIENTS_MANS_GZ
@@ -36,13 +36,14 @@ MUTATIONS_REPORTS_STAT_CONFIG+=":Uppsala-RECTAL,$CMM_UPPSALA_58FAM_ALL_PATIENTS_
 MUTATIONS_REPORTS_STAT_CONFIG+=":SWEDES,$SWEDES_STAT,,PF"
 export MUTATIONS_REPORTS_STAT_CONFIG
 
-cache_dir="$project_out_dir/cache/"
-export MUTATIONS_REPORTS_CACHE_DIR="$cache_dir"
+#cache_dir="$project_out_dir/cache/"
+#export MUTATIONS_REPORTS_CACHE_DIR="$cache_dir"
 export MUTATIONS_REPORTS_COL_NAMES="242-Co441,242-Co666,242-Co771"
 export MUTATIONS_REPORTS_FAMILIES_INFO="242:242-Co441:242-Co666:242-Co771"
 
+export MUTATIONS_REPORTS_TABIX_VCF_REGION="18:57721492-82343156"
 export MUTATIONS_REPORTS_FREQUENCY_RATIOS="1000G:0.2"
-export MUTATIONS_REPORTS_EXTRA_ATTRIBUTES="has_shared,rare"
+export MUTATIONS_REPORTS_EXTRA_ATTRIBUTES="has_shared,rare,has_mutation"
 export MUTATIONS_REPORTS_EXCLUSION_CRITERIAS="I,C,S"
 
 export MUTATIONS_REPORTS_MODIFY_HEADER="Scilife-ALL_PF:OAF,Uppsala-ALL_PF:Uppsala_OAF,Uppsala-CAFAM:CAFAM,Uppsala-CRC:CRC,Uppsala-COLON:COLON,Uppsala-RECTAL:RECTAL,SWEDES_PF:Daniel_DB"
@@ -54,5 +55,4 @@ if [ ! -z "$MUTATIONS_REPORTS_PROJECT_CODE" ]; then
 else
     export CMM_LIB_DIR="$CMM_LIB_ROOT_DIR/dev_adhoc/scripts"
 fi
-export CMM_LIB_DIR="$CMM_LIB_ROOT_DIR/dev_serv/scripts"
 $CMM_LIB_DIR/exec_script_gen_mutations_reports.sh
