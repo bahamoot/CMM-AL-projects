@@ -1,0 +1,12 @@
+##DATASET_NAME=axeq_chr3_6_14_18
+##PROJECT_CODE=b2011097
+##REFERENCE=/glob/jessada/private/master_data/reference/Homo_sapiens.GRCh37.57.dna.concat.fa
+##KNOWN_INDELS=/glob/jessada/private/master_data/GATK_BestPractice_test_data/known_indels_SNPs/1000G_phase1.indels.b37.vcf,/glob/jessada/private/master_data/GATK_BestPractice_test_data/known_indels_SNPs/Mills_and_1000G_gold_standard.indels.b37.vcf
+##DBSNP=/glob/jessada/private/master_data/GATK_BestPractice_test_data/known_indels_SNPs/dbsnp_138.b37.vcf
+##OUTPUT_DIR=/proj/b2011117/nobackup/private/gatkbp/axeq_chr3_6_14_18
+##VARIANTS_CALLING=YES
+##JOBS_REPORT_FILE=/proj/b2011117/nobackup/private/gatkbp/axeq_chr3_6_14_18/jobs_rpt.txt
+##TARGETS_INTERVAL_LIST=/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr3_6_14_18.targets.interval_list
+##USAGE_MAIL=NO
+#SAMPLE	FASTQ1	FASTQ2	SAMPLE_GROUP	PLATFORM	LIBRARY	UNIT	USAGE_MAIL	PREPROCESS_SAMPLE
+*	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr3_6_14_18/resources/*_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr3_6_14_18/resources/*_2.fastq.gz	1302AHS-0022	Illumina	lib1	unit1	NO	YES

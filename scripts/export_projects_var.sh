@@ -80,6 +80,11 @@ export CMM_HAPLOTYPE_DIR="$CMM_MASTER_DATA_ROOT_DIR/haplotype/"
 export CMM_HAPLOTYPE_FAM24_PLINK_FILE_PREFIX="$CMM_HAPLOTYPE_DIR/fam24/Haplotype_fam24"
 export CMM_HAPLOTYPE_CHR9_LKG_PLINK_FILE_PREFIX="$CMM_HAPLOTYPE_DIR/chr9_lkg/chr9_lkg_haplotypes"
 
+#GATK
+#export KNOWN_INDELS_1000G_PHASE1="$HOME_GLOB/private/master_data/known_indels_SNPs/1000G_phase1.indels.b37.vcf"
+#export KNOWN_INDELS_MILLS_AND_1000G_GOLD_STANDARD="$HOME_GLOB/private/master_data/known_indels_SNPs/Mills_and_1000G_gold_standard.indels.b37.vcf"
+#export REFERENCE="$HOME_GLOB/private/master_data/reference/Homo_sapiens.GRCh37.57.dna.concat.fa"
+
 ###********************************************* tools/scripts location *****************************************************
 #set third-party tools location
 export TOOLS_ROOT_DIR="$HOME_GLOB/tools/"
