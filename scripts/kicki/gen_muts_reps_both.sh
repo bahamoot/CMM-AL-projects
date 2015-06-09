@@ -1,7 +1,7 @@
 #!/bin/bash
 
-project_name="others"
-sub_project_name="prostate"
+project_name="kicki"
+sub_project_name="both"
 
 if [ ! -d "$CMM_PROJECTS_OUTPUT_DIR/$project_name" ]; then
     mkdir "$CMM_PROJECTS_OUTPUT_DIR/$project_name"
@@ -37,9 +37,10 @@ export MUTATIONS_REPORTS_STAT_CONFIG
 
 #cache_dir="$project_out_dir/cache/"
 #export MUTATIONS_REPORTS_CACHE_DIR="$cache_dir"
-export MUTATIONS_REPORTS_COL_NAMES="prostate-P001,prostate-P002,prostate-P003"
-export MUTATIONS_REPORTS_FAMILIES_INFO="prostate:prostate-P001:prostate-P002:prostate-P003"
+export MUTATIONS_REPORTS_COL_NAMES="prostate-P001,prostate-P002,prostate-P003,695-Co1354,695-Co1359,695-Co1368"
+export MUTATIONS_REPORTS_FAMILIES_INFO="prostate:prostate-P001:prostate-P002:prostate-P003,695:695-Co1354:695-Co1359:695-Co1368"
 
+export MUTATIONS_REPORTS_TABIX_VCF_REGION="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,X,MT,Y"
 export MUTATIONS_REPORTS_FREQUENCY_RATIOS="1000G:0.2"
 export MUTATIONS_REPORTS_EXTRA_ATTRIBUTES="has_shared,rare,has_mutation"
 export MUTATIONS_REPORTS_EXCLUSION_CRITERIAS="C,S"
@@ -53,4 +54,5 @@ if [ ! -z "$MUTATIONS_REPORTS_PROJECT_CODE" ]; then
 else
     export CMM_LIB_DIR="$CMM_LIB_ROOT_DIR/dev_adhoc/scripts"
 fi
+export CMM_LIB_DIR="$CMM_LIB_ROOT_DIR/dev_serv/scripts"
 $CMM_LIB_DIR/exec_script_gen_mutations_reports.sh
