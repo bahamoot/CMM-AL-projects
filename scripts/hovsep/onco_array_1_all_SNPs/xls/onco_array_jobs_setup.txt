@@ -1,0 +1,48 @@
+ANNOVAR:
+  buildver: hg19
+  db_folder: /glob/jessada/tools/annovar/humandb
+  db_names: refGene,cytoBand,genomicSuperDups,esp6500siv2_all,1000g2014oct_eur,1000g2014oct_all,snp138,exac03,cg69,cosmic70,nci60,clinvar_20150330,CMM_Ill_Br,CMM_CRC_all,CMM_CRC_CAFAM,CMM_CRC_COLON,CMM_CRC_CRC,CMM_CRC_RECTAL,CMM_PMS2_sporadic_fam24,CMM_Axeq_chr3_6_14_18,CMM_Axeq_chr5_19,CMM_Axeq_chr9,200_Danes,249_Swedes,ljb26_all
+  db_ops: g,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f
+  nastring: .
+DATASET_NAME: onco_array
+DB_ALLOC_TIME: "1-00:00:00"
+JOBS_REPORT_FILE: /proj/b2011117/private/projects/out/standard/onco_array/onco_array_rpt.txt
+OUTPUT_DIR: /proj/b2011117/private/projects/out/standard/onco_array/
+PROJECT_CODE: b2011158
+REPORT_LAYOUT:
+  ANNOTATED_VCF_TABIX: /glob/jessada/private/master_data/CMM/table_annovar/onco_array/onco_array_annotated.vcf.gz
+  ANNOTATION_EXCLUSION_TAGS:
+    - Mutstat_details
+  COLUMNS:
+    - snp138
+    - 1000g2014oct_eur
+    - 1000g2014oct_all
+    - Func.refGene
+    - ExonicFunc.refGene
+    - Gene.refGene
+    - GeneDetail.refGene
+    - ILL_BR_PF
+    - ILL_BR_GF
+    - CRC_ALL_PF
+    - CRC_ALL_GF
+    - PMS2_SPORADIC_FAM24_PF
+    - PMS2_SPORADIC_FAM24_GF
+    - AXEQ_CHR3_6_14_18_PF
+    - AXEQ_CHR3_6_14_18_GF
+    - AXEQ_CHR5_19_PF
+    - AXEQ_CHR5_19_GF
+    - AXEQ_CHR9_PF
+    - AXEQ_CHR9_GF
+    - 249_SWEDES
+    - 200_DANES
+    - ExAC_ALL
+    - ExAC_NFE
+  FREQUENCY_RATIOS:
+    - COLUMN: 1000g2014oct_all
+      FREQUENCY: 0.2
+  ONLY_FAMILIES: false
+  ONLY_SUMMARY: false
+  SPLIT_CHROM: true
+  SUMMARY_FAMILIES: false
+RPT_ALLOC_TIME: "1-00:00:00"
+VCF_TABIX_FILE: /glob/jessada/private/master_data/CMM/CMM_Uppsala_b2011117/NK64_PMS2_sporadic_fam24.vcf.gz
