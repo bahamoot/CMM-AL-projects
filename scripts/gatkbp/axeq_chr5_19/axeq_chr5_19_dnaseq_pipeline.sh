@@ -11,5 +11,5 @@ project_output_dir=""
 
 cmd="pyCMM-dnaseq-pipeline "
 cmd+=" -j /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/axeq_chr5_19_jobs_setup.txt"
-cmd+=" -l /proj/b2011117/nobackup/private/gatkbp/axeq_chr5_19/axeq_chr5_19"
+#cmd+=" -l /proj/b2011117/private/gatkbp/axeq_chr5_19/axeq_chr5_19"
 eval "$cmd"

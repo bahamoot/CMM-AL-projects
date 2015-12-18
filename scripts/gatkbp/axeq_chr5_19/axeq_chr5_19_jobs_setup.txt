@@ -1,59 +1,397 @@
-##DATASET_NAME=axeq_chr5_19
-##PROJECT_CODE=b2011097
-##REFERENCE=/glob/jessada/private/master_data/reference/Homo_sapiens.GRCh37.57.dna.concat.fa
-##KNOWN_INDELS=/glob/jessada/private/master_data/GATK_BestPractice_test_data/known_indels_SNPs/1000G_phase1.indels.b37.vcf,/glob/jessada/private/master_data/GATK_BestPractice_test_data/known_indels_SNPs/Mills_and_1000G_gold_standard.indels.b37.vcf
-##DBSNP=/glob/jessada/private/master_data/GATK_BestPractice_test_data/known_indels_SNPs/dbsnp_138.b37.vcf
-##OUTPUT_DIR=/proj/b2011117/nobackup/private/gatkbp/axeq_chr5_19
-##VARIANTS_CALLING=YES
-##JOBS_REPORT_FILE=/proj/b2011117/nobackup/private/gatkbp/axeq_chr5_19/jobs_rpt.txt
-##TARGETS_INTERVAL_LIST=/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/axeq_chr5_19.targets.interval_list
-##USAGE_MAIL=NO
-#SAMPLE	FASTQ1	FASTQ2	SAMPLE_GROUP	PLATFORM	LIBRARY	UNIT	USAGE_MAIL	PREPROCESS_SAMPLE
-1015_05	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1015_05_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1015_05_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-1126_01D	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1126_01D_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1126_01D_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-1526_02D	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1526_02D_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1526_02D_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-1740_11D	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1740_11D_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1740_11D_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-2323_11D	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/2323_11D_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/2323_11D_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-2826_07D	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/2826_07D_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/2826_07D_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-3014_11D	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/3014_11D_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/3014_11D_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-531_04	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/531_04_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/531_04_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-602_05	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/602_05_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/602_05_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-729_04	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/729_04_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/729_04_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1031	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1031_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1031_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1110	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1110_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1110_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1116	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1116_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1116_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1178	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1178_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1178_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1194	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1194_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1194_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1215	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1215_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1215_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1225	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1225_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1225_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1274	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1274_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1274_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1305	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1305_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1305_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-135	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-135_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-135_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1448	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1448_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1448_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-154	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-154_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-154_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1616	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1616_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1616_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1666	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1666_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1666_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1674	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1674_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1674_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1685	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1685_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1685_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1719	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1719_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1719_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1723	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1723_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1723_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1747	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1747_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1747_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-1780	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1780_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1780_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-201	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-201_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-201_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-282	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-282_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-282_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-305	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-305_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-305_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-452	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-452_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-452_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-555	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-555_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-555_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-603	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-603_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-603_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-616	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-616_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-616_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-618	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-618_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-618_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-666	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-666_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-666_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-700	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-700_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-700_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-704	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-704_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-704_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-803	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-803_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-803_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-809	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-809_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-809_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-840	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-840_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-840_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-866	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-866_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-866_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-876	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-876_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-876_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-90	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-90_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-90_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
-Co-95	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-95_1.fastq.gz	/home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-95_2.fastq.gz	1303AHS-0016	Illumina	lib1	unit1	NO	YES
+DATASET_NAME: axeq_chr5_19
+DBSNP: /glob/jessada/private/master_data/GATK_BestPractice_test_data/known_indels_SNPs/dbsnp_138.b37.vcf
+JOBS_REPORT_FILE: /proj/b2011117/private/gatkbp/axeq_chr5_19/axeq_chr5_19_rpt.txt
+KNOWN_INDELS:
+  - /glob/jessada/private/master_data/GATK_BestPractice_test_data/known_indels_SNPs/1000G_phase1.indels.b37.vcf
+  - /glob/jessada/private/master_data/GATK_BestPractice_test_data/known_indels_SNPs/Mills_and_1000G_gold_standard.indels.b37.vcf
+OUTPUT_DIR: /proj/b2011117/private/gatkbp/axeq_chr5_19
+PROJECT_CODE: b2011097
+REFERENCE: /glob/jessada/private/master_data/reference/Homo_sapiens.GRCh37.57.dna.concat.fa
+SAMPLES:
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1015_05/1015_05_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1015_05/1015_05_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "1015_05"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1526_02D/1526_02D_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1526_02D/1526_02D_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "1526_02D"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1126_01D/1126_01D_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1126_01D/1126_01D_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "1126_01D"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/2323_11D/2323_11D_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/2323_11D/2323_11D_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "2323_11D"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1740_11D/1740_11D_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/1740_11D/1740_11D_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "1740_11D"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/3014_11D/3014_11D_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/3014_11D/3014_11D_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "3014_11D"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/2826_07D/2826_07D_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/2826_07D/2826_07D_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "2826_07D"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/602_05/602_05_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/602_05/602_05_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "602_05"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/531_04/531_04_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/531_04/531_04_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "531_04"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1031/Co-1031_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1031/Co-1031_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1031"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/729_04/729_04_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/729_04/729_04_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "729_04"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1116/Co-1116_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1116/Co-1116_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1116"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1110/Co-1110_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1110/Co-1110_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1110"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1194/Co-1194_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1194/Co-1194_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1194"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1178/Co-1178_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1178/Co-1178_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1178"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1225/Co-1225_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1225/Co-1225_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1225"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1215/Co-1215_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1215/Co-1215_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1215"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1305/Co-1305_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1305/Co-1305_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1305"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1274/Co-1274_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1274/Co-1274_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1274"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1448/Co-1448_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1448/Co-1448_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1448"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-135/Co-135_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-135/Co-135_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-135"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1616/Co-1616_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1616/Co-1616_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1616"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-154/Co-154_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-154/Co-154_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-154"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1674/Co-1674_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1674/Co-1674_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1674"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1666/Co-1666_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1666/Co-1666_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1666"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1719/Co-1719_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1719/Co-1719_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1719"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1685/Co-1685_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1685/Co-1685_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1685"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1747/Co-1747_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1747/Co-1747_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1747"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1723/Co-1723_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1723/Co-1723_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1723"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-201/Co-201_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-201/Co-201_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-201"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1780/Co-1780_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-1780/Co-1780_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-1780"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-305/Co-305_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-305/Co-305_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-305"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-282/Co-282_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-282/Co-282_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-282"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-555/Co-555_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-555/Co-555_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-555"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-452/Co-452_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-452/Co-452_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-452"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-616/Co-616_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-616/Co-616_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-616"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-603/Co-603_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-603/Co-603_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-603"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-666/Co-666_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-666/Co-666_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-666"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-618/Co-618_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-618/Co-618_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-618"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-704/Co-704_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-704/Co-704_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-704"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-700/Co-700_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-700/Co-700_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-700"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-803/Co-803_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-803/Co-803_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-803"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-840/Co-840_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-840/Co-840_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-840"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-809/Co-809_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-809/Co-809_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-809"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-866/Co-866_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-866/Co-866_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-866"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-876/Co-876_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-876/Co-876_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-876"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-95/Co-95_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-95/Co-95_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-95"
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-90/Co-90_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/resources/Co-90/Co-90_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: YES
+    sample_group: 1303AHS-0016
+    sample_name: "Co-90"
+    usage_mail: NO
+TARGETS_INTERVAL_LIST: /home/jessada/private/projects/CMM/scripts/gatkbp/axeq_chr5_19/axeq_chr5_19.targets.interval_list
+USAGE_MAIL: NO
+VARIANTS_CALLING: YES

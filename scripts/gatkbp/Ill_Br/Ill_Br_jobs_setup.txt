@@ -1,0 +1,276 @@
+DATASET_NAME: Ill_Br
+DBSNP: /glob/jessada/private/master_data/GATK_BestPractice_test_data/known_indels_SNPs/dbsnp_138.b37.vcf
+JOBS_REPORT_FILE: /proj/b2011117/private/gatkbp/Ill_Br/Ill_Br_rpt.txt
+KNOWN_INDELS:
+  - /glob/jessada/private/master_data/GATK_BestPractice_test_data/known_indels_SNPs/1000G_phase1.indels.b37.vcf
+  - /glob/jessada/private/master_data/GATK_BestPractice_test_data/known_indels_SNPs/Mills_and_1000G_gold_standard.indels.b37.vcf
+OUTPUT_DIR: /proj/b2011117/private/gatkbp/Ill_Br
+PROJECT_CODE: b2014170
+REFERENCE: /glob/jessada/private/master_data/reference/Homo_sapiens.GRCh37.57.dna.concat.fa
+SAMPLES:
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Co-771/Co-771_GATCAG_L002_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Co-771/Co-771_GATCAG_L002_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Co-771
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Co-441/Co-441_ACAGTG_L001_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Co-441/Co-441_ACAGTG_L001_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Co-441
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Co-666/Co-666_GATCAG_L005_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Co-666/Co-666_GATCAG_L005_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Co-666
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-724/5_110901_BD036TACXX_Br-724_ind_5_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-724/5_110901_BD036TACXX_Br-724_ind_5_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-724
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-732/5_110901_BD036TACXX_Br-732_ind_7_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-732/5_110901_BD036TACXX_Br-732_ind_7_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-732
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-720/Br-720_CGATGT_L004_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-720/Br-720_CGATGT_L004_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-720
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-721/Br-721_ACTTGA_L002_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-721/Br-721_ACTTGA_L002_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-721
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-710/Br-710_TGACCA_L005_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-710/Br-710_TGACCA_L005_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-710
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-716/Br-716_ACTTGA_L004_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-716/Br-716_ACTTGA_L004_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-716
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-702/Br-702_TTAGGC_L001_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-702/Br-702_TTAGGC_L001_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-702
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-706/Br-706_ATCACG_L004_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-706/Br-706_ATCACG_L004_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-706
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-694/Br-694_ATCACG_L001_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-694/Br-694_ATCACG_L001_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-694
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-697/Br-697_CGATGT_L003_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-697/Br-697_CGATGT_L003_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-697
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-690/Br-690_TTAGGC_L005_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-690/Br-690_TTAGGC_L005_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-690
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-693/Br-693_ATCACG_L002_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-693/Br-693_ATCACG_L002_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-693
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-588/Br-588_CGATGT_L005_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-588/Br-588_CGATGT_L005_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-588
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-652/5_110901_BD036TACXX_Br-652_ind_8_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-652/5_110901_BD036TACXX_Br-652_ind_8_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-652
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-528/Br-528_GCCAAT_L004_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-528/Br-528_GCCAAT_L004_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-528
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-585/Br-585_TGACCA_L001_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-585/Br-585_TGACCA_L001_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-585
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-510/Br-510_GGCTAC_L002_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-510/Br-510_GGCTAC_L002_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-510
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-526/Br-526_TGACCA_L004_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-526/Br-526_TGACCA_L004_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-526
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-477/Br-477_ACAGTG_L003_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-477/Br-477_ACAGTG_L003_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-477
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-484/Br-484_TGACCA_L003_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-484/Br-484_TGACCA_L003_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-484
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-473/Br-473_CAGATC_L003_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-473/Br-473_CAGATC_L003_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-473
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-475/Br-475_ATCACG_L005_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-475/Br-475_ATCACG_L005_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-475
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-465/Br-465_CGATGT_L001_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-465/Br-465_CGATGT_L001_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-465
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-466/Br-466_TTAGGC_L003_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-466/Br-466_TTAGGC_L003_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-466
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/AL-44/AL-44_CTTGTA_L002_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/AL-44/AL-44_CTTGTA_L002_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: AL-44
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-397/Br-397_GCCAAT_L001_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-397/Br-397_GCCAAT_L001_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-397
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/884-99D/884-99D_TAGCTT_L002_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/884-99D/884-99D_TAGCTT_L002_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: 884-99D
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/AL-36/AL-36_GCCAAT_L003_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/AL-36/AL-36_GCCAAT_L003_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: AL-36
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-442/Br-442_ACTTGA_L005_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-442/Br-442_ACTTGA_L005_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-442
+    usage_mail: NO
+  - fastq_files:
+      - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-451/Br-451_TTAGGC_L004_R1.fastq.gz
+        R2: /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/resources/Br-451/Br-451_TTAGGC_L004_R2.fastq.gz
+    platform: Illumina
+    preprocess_sample: NO
+    sample_group: Ill_Br
+    sample_name: Br-451
+    usage_mail: NO
+USAGE_MAIL: NO
+VARIANTS_CALLING: YES
