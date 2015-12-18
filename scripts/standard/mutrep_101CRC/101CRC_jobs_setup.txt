@@ -1,0 +1,436 @@
+ANNOVAR:
+  buildver: hg19
+  db_folder: /glob/jessada/tools/annovar/humandb
+  db_names: refGene,cytoBand,genomicSuperDups,esp6500siv2_all,1000g2014oct_eur,1000g2014oct_all,snp138,exac03,cg69,cosmic70,nci60,clinvar_20150330,mitimpact2,CMM_Ill_Br,CMM_101CRC_all,CMM_101CRC_CAFAM,CMM_101CRC_COLON,CMM_101CRC_CRC,CMM_101CRC_RECTAL,CMM_Axeq_chr3_6_14_18,CMM_Axeq_chr5_19,CMM_Axeq_chr9,200_Danes,249_Swedes,ljb26_all
+  db_ops: g,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f
+  nastring: .
+DATASET_NAME: 101CRC
+JOBS_REPORT_FILE: /proj/b2011117/private/projects/out/standard/101CRC/101CRC_rpt.txt
+OUTPUT_DIR: /proj/b2011117/private/projects/out/standard/101CRC/
+PROJECT_CODE: b2011158
+REPORT_LAYOUT:
+  ANNOTATED_VCF_TABIX: /glob/jessada/private/master_data/CMM/table_annovar/101CRC/101CRC_annotated.vcf.gz
+  COLUMNS:
+    - Func.refGene
+    - ExonicFunc.refGene
+    - Gene.refGene
+    - GeneDetail.refGene
+    - snp138
+    - 1000g2014oct_eur
+    - 1000g2014oct_all
+    - ILL_BR_AF
+    - ILL_BR_GF
+    - 101CRC_ALL_AF
+    - 101CRC_ALL_GF
+    - AXEQ_CHR3_6_14_18_AF
+    - AXEQ_CHR3_6_14_18_GF
+    - AXEQ_CHR5_19_AF
+    - AXEQ_CHR5_19_GF
+    - AXEQ_CHR9_AF
+    - AXEQ_CHR9_GF
+    - 249_SWEDES
+    - 200_DANES
+    - ExAC_ALL
+    - ExAC_AFR
+    - ExAC_AMR
+    - ExAC_EAS
+    - ExAC_FIN
+    - ExAC_NFE
+    - ExAC_OTH
+    - ExAC_SAS
+    - AAChange.refGene
+    - cytoBand
+    - genomicSuperDups
+    - esp6500siv2_all
+    - cg69
+    - cosmic70
+    - nci60
+    - clinvar_20150330
+    - Gene_symbol
+    - OXPHOS_Complex
+    - Ensembl_Gene_ID
+    - Ensembl_Protein_ID
+    - Uniprot_Name
+    - Uniprot_ID
+    - NCBI_Gene_ID
+    - NCBI_Protein_ID
+    - Gene_pos
+    - AA_pos
+    - AA_sub
+    - Codon_sub
+    - dbSNP_ID
+    - PhyloP_46V
+    - PhastCons_46V
+    - PhyloP_100V
+    - PhastCons_100V
+    - SiteVar
+    - PolyPhen2_prediction
+    - PolyPhen2_score
+    - SIFT_prediction
+    - SIFT_score
+    - FatHmm_prediction
+    - FatHmm_score
+    - PROVEAN_prediction
+    - PROVEAN_score
+    - MutAss_prediction
+    - MutAss_score
+    - EFIN_Swiss_Prot_Score
+    - EFIN_Swiss_Prot_Prediction
+    - EFIN_HumDiv_Score
+    - EFIN_HumDiv_Prediction
+    - CADD_score
+    - CADD_Phred_score
+    - CADD_prediction
+    - Carol_prediction
+    - Carol_score
+    - Condel_score
+    - Condel_pred
+    - COVEC_WMV
+    - COVEC_WMV_prediction
+    - PolyPhen2_score_transf
+    - PolyPhen2_pred_transf
+    - SIFT_score_transf
+    - SIFT_pred_transf
+    - MutAss_score_transf
+    - MutAss_pred_transf
+    - Perc_coevo_Sites
+    - Mean_MI_score
+    - COSMIC_ID
+    - Tumor_site
+    - Examined_samples
+    - Mutation_frequency
+    - US
+    - Status
+    - Associated_disease
+    - Presence_in_TD
+    - Class_predicted
+    - Prob_N
+    - Prob_P
+    - ILL_BR_WT
+    - ILL_BR_HET
+    - ILL_BR_HOM
+    - ILL_BR_OTH
+    - ILL_BR_NA
+    - ILL_BR_GT
+    - ILL_BR_PF
+    - 101CRC_ALL_WT
+    - 101CRC_ALL_HET
+    - 101CRC_ALL_HOM
+    - 101CRC_ALL_OTH
+    - 101CRC_ALL_NA
+    - 101CRC_ALL_GT
+    - 101CRC_ALL_PF
+    - 101CRC_CAFAM_WT
+    - 101CRC_CAFAM_HET
+    - 101CRC_CAFAM_HOM
+    - 101CRC_CAFAM_OTH
+    - 101CRC_CAFAM_NA
+    - 101CRC_CAFAM_GT
+    - 101CRC_CAFAM_PF
+    - 101CRC_CAFAM_AF
+    - 101CRC_CAFAM_GF
+    - 101CRC_COLON_WT
+    - 101CRC_COLON_HET
+    - 101CRC_COLON_HOM
+    - 101CRC_COLON_OTH
+    - 101CRC_COLON_NA
+    - 101CRC_COLON_GT
+    - 101CRC_COLON_PF
+    - 101CRC_COLON_AF
+    - 101CRC_COLON_GF
+    - 101CRC_CRC_WT
+    - 101CRC_CRC_HET
+    - 101CRC_CRC_HOM
+    - 101CRC_CRC_OTH
+    - 101CRC_CRC_NA
+    - 101CRC_CRC_GT
+    - 101CRC_CRC_PF
+    - 101CRC_CRC_AF
+    - 101CRC_CRC_GF
+    - 101CRC_RECTAL_WT
+    - 101CRC_RECTAL_HET
+    - 101CRC_RECTAL_HOM
+    - 101CRC_RECTAL_OTH
+    - 101CRC_RECTAL_NA
+    - 101CRC_RECTAL_GT
+    - 101CRC_RECTAL_PF
+    - 101CRC_RECTAL_AF
+    - 101CRC_RECTAL_GF
+    - AXEQ_CHR3_6_14_18_WT
+    - AXEQ_CHR3_6_14_18_HET
+    - AXEQ_CHR3_6_14_18_HOM
+    - AXEQ_CHR3_6_14_18_OTH
+    - AXEQ_CHR3_6_14_18_NA
+    - AXEQ_CHR3_6_14_18_GT
+    - AXEQ_CHR3_6_14_18_PF
+    - AXEQ_CHR5_19_WT
+    - AXEQ_CHR5_19_HET
+    - AXEQ_CHR5_19_HOM
+    - AXEQ_CHR5_19_OTH
+    - AXEQ_CHR5_19_NA
+    - AXEQ_CHR5_19_GT
+    - AXEQ_CHR5_19_PF
+    - AXEQ_CHR9_WT
+    - AXEQ_CHR9_HET
+    - AXEQ_CHR9_HOM
+    - AXEQ_CHR9_OTH
+    - AXEQ_CHR9_NA
+    - AXEQ_CHR9_GT
+    - AXEQ_CHR9_PF
+    - SIFT_score
+    - SIFT_pred
+    - Polyphen2_HDIV_score
+    - Polyphen2_HDIV_pred
+    - Polyphen2_HVAR_score
+    - Polyphen2_HVAR_pred
+    - LRT_score
+    - LRT_pred
+    - MutationTaster_score
+    - MutationTaster_pred
+    - MutationAssessor_score
+    - MutationAssessor_pred
+    - FATHMM_score
+    - FATHMM_pred
+    - RadialSVM_score
+    - RadialSVM_pred
+    - LR_score
+    - LR_pred
+    - VEST3_score
+    - CADD_raw
+    - CADD_phred
+    - GERP++_RS
+    - phyloP46way_placental
+    - phyloP100way_vertebrate
+    - SiPhy_29way_logOdds
+  EXTRA_ANNOTATION_COLUMNS:
+    - Calling_detail
+  FREQUENCY_RATIOS:
+    - COLUMN: 1000g2014oct_all
+      FREQUENCY: 0.2
+  ONLY_FAMILIES: false
+  ONLY_SUMMARY: true
+  ROWEXCLUSION_CRITERIA:
+    - Common
+    - Intergenic
+    - Intronic
+  SPLIT_CHROM: true
+  SUMMARY_FAMILIES: false
+SAMPLE_INFOS:
+  - FAMILY_ID: 8
+    MEMBERS:
+      - SAMPLE_ID: Co-35
+      - SAMPLE_ID: Co-37
+  - FAMILY_ID: 12
+    MEMBERS:
+      - SAMPLE_ID: Co-89
+      - SAMPLE_ID: Co-90
+  - FAMILY_ID: 13
+    MEMBERS:
+      - SAMPLE_ID: Co-95
+  - FAMILY_ID: 26
+    MEMBERS:
+      - SAMPLE_ID: Co-131
+      - SAMPLE_ID: Co-135
+  - FAMILY_ID: 31
+    MEMBERS:
+      - SAMPLE_ID: 1793-11D
+      - SAMPLE_ID: 1322-11D
+  - FAMILY_ID: 87
+    MEMBERS:
+      - SAMPLE_ID: Co-218
+      - SAMPLE_ID: Co-258
+  - FAMILY_ID: 91
+    MEMBERS:
+      - SAMPLE_ID: Co-454
+      - SAMPLE_ID: Co-700
+  - FAMILY_ID: 94
+    MEMBERS:
+      - SAMPLE_ID: Co-238
+  - FAMILY_ID: 110
+    MEMBERS:
+      - SAMPLE_ID: 1526-02D
+      - SAMPLE_ID: Co-1301
+  - FAMILY_ID: 134
+    MEMBERS:
+      - SAMPLE_ID: Co-460
+      - SAMPLE_ID: Co-553
+  - FAMILY_ID: 141
+    MEMBERS:
+      - SAMPLE_ID: Co-305
+      - SAMPLE_ID: Co-785
+  - FAMILY_ID: 185
+    MEMBERS:
+      - SAMPLE_ID: Co-603
+      - SAMPLE_ID: Co-669
+  - FAMILY_ID: 191
+    MEMBERS:
+      - SAMPLE_ID: Co-384
+  - FAMILY_ID: 214
+    MEMBERS:
+      - SAMPLE_ID: Co-484
+  - FAMILY_ID: 216
+    MEMBERS:
+      - SAMPLE_ID: Co-367
+      - SAMPLE_ID: Co-446
+  - FAMILY_ID: 221
+    MEMBERS:
+      - SAMPLE_ID: Co-358
+  - FAMILY_ID: 227
+    MEMBERS:
+      - SAMPLE_ID: Co-364
+  - FAMILY_ID: 231
+    MEMBERS:
+      - SAMPLE_ID: Co-555
+      - SAMPLE_ID: Co-572
+  - FAMILY_ID: 254
+    MEMBERS:
+      - SAMPLE_ID: Co-616
+      - SAMPLE_ID: Co-1156
+  - FAMILY_ID: 275
+    MEMBERS:
+      - SAMPLE_ID: Co-618
+      - SAMPLE_ID: Co-1262
+  - FAMILY_ID: 288
+    MEMBERS:
+      - SAMPLE_ID: Co-1141
+  - FAMILY_ID: 296
+    MEMBERS:
+      - SAMPLE_ID: Co-793
+      - SAMPLE_ID: Co-876
+  - FAMILY_ID: 301
+    MEMBERS:
+      - SAMPLE_ID: Co-837
+      - SAMPLE_ID: Co-840
+      - SAMPLE_ID: Co-1053
+  - FAMILY_ID: 306
+    MEMBERS:
+      - SAMPLE_ID: Co-779
+  - FAMILY_ID: 309
+    MEMBERS:
+      - SAMPLE_ID: Co-783
+  - FAMILY_ID: 312
+    MEMBERS:
+      - SAMPLE_ID: Co-1116
+  - FAMILY_ID: 315
+    MEMBERS:
+      - SAMPLE_ID: 1462-01D
+  - FAMILY_ID: 325
+    MEMBERS:
+      - SAMPLE_ID: Co-851
+      - SAMPLE_ID: Co-859
+  - FAMILY_ID: 348
+    MEMBERS:
+      - SAMPLE_ID: Co-846
+      - SAMPLE_ID: Co-857
+  - FAMILY_ID: 350
+    MEMBERS:
+      - SAMPLE_ID: 1104-03D
+      - SAMPLE_ID: Co-866
+  - FAMILY_ID: 409
+    MEMBERS:
+      - SAMPLE_ID: Co-1254
+  - FAMILY_ID: 415
+    MEMBERS:
+      - SAMPLE_ID: Co-1031
+      - SAMPLE_ID: Co-1037
+  - FAMILY_ID: 425
+    MEMBERS:
+      - SAMPLE_ID: Co-1458
+      - SAMPLE_ID: Co-1595
+  - FAMILY_ID: 434
+    MEMBERS:
+      - SAMPLE_ID: Co-1051
+      - SAMPLE_ID: Co-1534
+  - FAMILY_ID: 445
+    MEMBERS:
+      - SAMPLE_ID: Co-1157
+      - SAMPLE_ID: Co-1158
+  - FAMILY_ID: 478
+    MEMBERS:
+      - SAMPLE_ID: Co-1207
+      - SAMPLE_ID: Co-1274
+  - FAMILY_ID: 485
+    MEMBERS:
+      - SAMPLE_ID: Co-1302
+      - SAMPLE_ID: Co-1322
+  - FAMILY_ID: 532
+    MEMBERS:
+      - SAMPLE_ID: Co-1583
+      - SAMPLE_ID: Co-1584
+  - FAMILY_ID: 574
+    MEMBERS:
+      - SAMPLE_ID: 468-04
+      - SAMPLE_ID: 474-05
+  - FAMILY_ID: 578
+    MEMBERS:
+      - SAMPLE_ID: 531-04o
+      - SAMPLE_ID: Co-1349
+  - FAMILY_ID: 650
+    MEMBERS:
+      - SAMPLE_ID: 398-05o
+      - SAMPLE_ID: 729-05o
+  - FAMILY_ID: 695
+    MEMBERS:
+      - SAMPLE_ID: Co-1354
+      - SAMPLE_ID: Co-1359
+      - SAMPLE_ID: Co-1368
+  - FAMILY_ID: 739
+    MEMBERS:
+      - SAMPLE_ID: 529-05
+      - SAMPLE_ID: Co-1467
+  - FAMILY_ID: 740
+    MEMBERS:
+      - SAMPLE_ID: 602-05o
+      - SAMPLE_ID: Co-1373
+      - SAMPLE_ID: Co-1383
+  - FAMILY_ID: 849
+    MEMBERS:
+      - SAMPLE_ID: Co-1764
+      - SAMPLE_ID: Co-1765
+  - FAMILY_ID: 869
+    MEMBERS:
+      - SAMPLE_ID: Co-1685
+  - FAMILY_ID: 871
+    MEMBERS:
+      - SAMPLE_ID: Co-1618
+      - SAMPLE_ID: Co-1661
+  - FAMILY_ID: 918
+    MEMBERS:
+      - SAMPLE_ID: 134-06
+      - SAMPLE_ID: 354-06
+  - FAMILY_ID: 975
+    MEMBERS:
+      - SAMPLE_ID: Co-1591
+      - SAMPLE_ID: Co-1600
+  - FAMILY_ID: 1025
+    MEMBERS:
+      - SAMPLE_ID: Co-1529
+  - FAMILY_ID: 1085
+    MEMBERS:
+      - SAMPLE_ID: Co-1518
+  - FAMILY_ID: 1113
+    MEMBERS:
+      - SAMPLE_ID: 642-06
+      - SAMPLE_ID: Co-1538
+  - FAMILY_ID: 1206
+    MEMBERS:
+      - SAMPLE_ID: 1052-05D
+      - SAMPLE_ID: Co-1552
+  - FAMILY_ID: 1207
+    MEMBERS:
+      - SAMPLE_ID: 2818-07D
+  - FAMILY_ID: 1213
+    MEMBERS:
+      - SAMPLE_ID: Co-1666
+  - FAMILY_ID: 1252
+    MEMBERS:
+      - SAMPLE_ID: Co-1719
+  - FAMILY_ID: 1290
+    MEMBERS:
+      - SAMPLE_ID: Co-1723
+  - FAMILY_ID: prostate
+    MEMBERS:
+      - SAMPLE_ID: P001
+      - SAMPLE_ID: P002
+      - SAMPLE_ID: P003
+VCF_TABIX_FILE: /glob/jessada/private/master_data/CMM/CMM_Uppsala_b2011117/Uppsala_realigned_58_families.vcf.gz
