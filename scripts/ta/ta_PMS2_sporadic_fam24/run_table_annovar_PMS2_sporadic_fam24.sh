@@ -1,0 +1,5 @@
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cmd="pyCMM-cmmdb-table-annovar "
+cmd+=" -j $script_dir/ta_NK64_jobs_setup.txt"
+#cmd+=" -l /proj/b2011117/private/projects/out/db/ta_Ill_Br_Fam242"
+eval "$cmd"
