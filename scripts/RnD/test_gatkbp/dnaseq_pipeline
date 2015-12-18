@@ -1,0 +1,16 @@
+## [INFO]  2015-11-02 14:53:43,219 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2015-11-02 14:53:43,219 - MainProcess  - pycmm.app.gatkbp - ************************************************** S T A R T <app_pycmm_dnaseq_pipeline> ***************************************************
+## [INFO]  2015-11-02 14:53:43,219 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2015-11-02 14:53:43,219 - MainProcess  - pycmm.app.gatkbp - Description
+## [INFO]  2015-11-02 14:53:43,219 - MainProcess  - pycmm.app.gatkbp -   A flow to control a pipeline to process DNA sequencing data
+## [INFO]  2015-11-02 14:53:43,219 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2015-11-02 14:53:43,219 - MainProcess  - pycmm.app.gatkbp - Version and environment configuration
+## [INFO]  2015-11-02 14:53:43,220 - MainProcess  - pycmm.app.gatkbp -   pyCMM version:                                    0.0.1
+## [INFO]  2015-11-02 14:53:43,220 - MainProcess  - pycmm.app.gatkbp -   parameters:                                       -j /home/jessada/private/projects/CMM/scripts/RnD/test_gatkbp/test_gatkbp_jobs_setup.txt
+## [DEBUG]  2015-11-02 14:53:43,220 - MainProcess  - pycmm.app.gatkbp -   debug mode:                                       ON
+## [INFO]  2015-11-02 14:53:43,220 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2015-11-02 14:53:43,220 - MainProcess  - pycmm.app.gatkbp - Required parameters
+## [INFO]  2015-11-02 14:53:43,220 - MainProcess  - pycmm.app.gatkbp -   jobs setup file (-j):                             /home/jessada/private/projects/CMM/scripts/RnD/test_gatkbp/test_gatkbp_jobs_setup.txt
+## [INFO]  2015-11-02 14:53:43,220 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2015-11-02 14:53:43,220 - MainProcess  - pycmm.app.gatkbp - Optional parameters
+## [INFO]  2015-11-02 14:53:43,220 - MainProcess  - pycmm.app.gatkbp -   log file (-l):                                    dnaseq_pipeline_20151102145343.log
