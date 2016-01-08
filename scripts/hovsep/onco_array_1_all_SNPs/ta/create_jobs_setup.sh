@@ -3,7 +3,7 @@
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 dataset_name="onco_array"
 project_out_dir="/proj/b2011117/private/projects/out/db/ta_$dataset_name"
-vcf_tabix_file="/glob/jessada/private/master_data/CMM/CMM_Oncoarray/onco_array.vcf.gz"
+vcf_tabix_file="/glob/jessada/private/master_data/CMM/CMM_Oncoarray/vcf/all/oncoarray_gw.vcf.gz"
 #vcf_region=6
 project_code="b2011097"
 jobs_setup_file="ta_$dataset_name"_jobs_setup.txt

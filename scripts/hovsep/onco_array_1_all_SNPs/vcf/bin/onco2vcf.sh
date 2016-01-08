@@ -28,6 +28,10 @@ tmp_dir="$script_dir/../tmp/"
 cache_dir="$script_dir/../cache"
 cache_1000g_ALL_sort_rs="$cache_dir/cache_1000g_ALL_sort_rs.txt"
 cache_1000g_EUR_sort_rs="$cache_dir/cache_1000g_EUR_sort_rs.txt"
+cache_1000g_sort_rs_with_fq="$cache_dir/cache_1000g_sort_rs_with_fq.txt"
+
+rpts_dir="$script_dir/../out/rpts"
+comparison_rpt="$rpts_dir/oncochip_comparison.txt"
 # ************************************************** defining raw data position **************************************************
 
 msg_to_out ()
@@ -59,6 +63,8 @@ debug_msg ()
     fi
 }
 
+N_JOIN_FILES=8
+
 ref_chroms_1000g_list="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 X Y"
 ref_chroms_mt_list="MT"
 ref_chroms_list="$ref_chrom_1000g_list $ref_chrom_mt_list"
@@ -70,6 +76,14 @@ function get_cache_1000g_ALL_sort_rs_by_chr {
 function get_cache_1000g_EUR_sort_rs_by_chr {
     chrom=$1
     echo ${cache_1000g_EUR_sort_rs%.*}_chr$chrom.txt
+}
+function get_cache_1000g_sort_rs_with_fq_chr {
+    chrom=$1
+    echo ${cache_1000g_sort_rs_with_fq%.*}_chr$chrom.txt
+}
+function get_comparison_rpt_by_chr {
+    chrom=$1
+    echo ${comparison_rpt%.*}_chr$chrom.txt
 }
 # ************************************************** cache data preparation **************************************************
 ## prepare sorted ANNOVAR 1000Genomes (whole genomes)
@@ -99,6 +113,24 @@ function get_cache_1000g_EUR_sort_rs_by_chr {
 #    grep_cmd=" grep -P \"^$ref_chrom\t\" $tmp_ref_1000g_with_snp_id | sort -k6,6 > $cache_ref_1000g_chrom_file "
 #    info_msg "$grep_cmd"
 #    eval $grep_cmd
+#done
+#
+## prepare sorted ANNOVAR 1000Genomes with allele frequencies from ALL and EUR population (for each chromosome)
+#tmp_ref_1000g_with_snp_id=`mktemp`
+#for ref_chrom in $ref_chroms_1000g_list
+#do
+#    cache_ref_1000g_ALL=`get_cache_1000g_ALL_sort_rs_by_chr $ref_chrom`
+#    cache_ref_1000g_EUR=`get_cache_1000g_EUR_sort_rs_by_chr $ref_chrom`
+#    cache_ref_1000g_with_fq=`get_cache_1000g_sort_rs_with_fq_chr $ref_chrom`
+#    join_cmd="join -t $'\t'"
+#    join_cmd+=" -1 6 -2 6"
+#    join_cmd+=" -o 1.1,1.2,1.3,1.4,1.6,1.5,2.5"
+#    join_cmd+=" -a 1 -a 2 -e . "
+#    join_cmd+=" $cache_ref_1000g_ALL"
+#    join_cmd+=" $cache_ref_1000g_EUR"
+#    join_cmd+=" > $cache_ref_1000g_with_fq"
+#    info_msg "$join_cmd"
+#    eval $join_cmd
 #done
 # ************************************************** cache data preparation **************************************************
 
@@ -136,7 +168,6 @@ function get_cache_1000g_EUR_sort_rs_by_chr {
 #plink_cmd+=" --noweb"
 #plink_cmd+=" --bfile $genotype_bfile_prefix"
 #plink_cmd+=" --recode"
-#plink_cmd+=" --chr Y"
 #plink_cmd+=" --extract $tmp_extract_snps_input"
 #plink_cmd+=" --out $tmp_extracted_snps_prefix"
 #eval "$plink_cmd"
@@ -149,8 +180,9 @@ function get_cache_1000g_EUR_sort_rs_by_chr {
 #    # 2 POS
 #    # 3 REF
 #    # 4 ALT
-#    # 5 
-#    # 6 SNP ID
+#    # 5 SNP ID
+#    # 6 frequency in ALL population
+#    # 7 frequency in EUR population
 #    # and it should be sorted
 #    ref_file="$3"
 #    ref_chrom="$4"
@@ -161,26 +193,27 @@ function get_cache_1000g_EUR_sort_rs_by_chr {
 #    tmp_coordinates=`mktemp`
 #    tmp_snps_not_in_ref=`mktemp`
 #
-#    # Sort and re-format SNPs by adding mock-up info 
-#    sort_cmd="grep -P \"^$assoc_chrom\t\" $map_file | sed 's/^23/X/g' | sed 's/^24/Y/g' | sed 's/^26/MT/g' | awk '{ printf \"%s\t%s\tNA\tA\t%s\t.\t.\n\", \$1, \$4, \$2 }' | sort -k5,5 > $tmp_sorted_snps"
+#    # Sort and re-format SNPs and add mock-up REF,ALT
+#    sort_cmd="grep -P \"^$assoc_chrom\t\" $map_file | sed 's/^23/X/g' | sed 's/^24/Y/g' | sed 's/^26/MT/g' | awk '{ printf \"%s\t%s\tNA\tA\t%s\n\", \$1, \$4, \$2 }' | sort -k5,5 > $tmp_sorted_snps"
 #    info_msg "$sort_cmd"
 #    eval "$sort_cmd"
 #
-#    # append corrected snp ID
+#    # append corrected snp ID and add mock-up frequency
 #    join_cmd="join -t $'\t'"
 #    join_cmd+=" -1 5 -2 1"
 #    join_cmd+=" -o 1.1,1.2,1.3,1.4,1.5,2.2"
 #    join_cmd+=" $tmp_sorted_snps"
 #    join_cmd+=" $significant_snps_with_correction"
 #    join_cmd+=" | sort -k6,6"
+#    join_cmd+=" | awk -F'\t' '{ printf \"%s\t.\t.\n\", \$0}'"
 #    join_cmd+=" > $tmp_sorted_snps_with_correct_id"
 #    info_msg "$join_cmd"
 #    eval "$join_cmd"
 #
 #    # create correct coordinate using snp ID to look in the reference file
 #    join_cmd="join -t $'\t'"
-#    join_cmd+=" -1 6 -2 6"
-#    join_cmd+=" -o 2.1,2.2,2.3,2.4,1.5,2.6"
+#    join_cmd+=" -1 6 -2 5"
+#    join_cmd+=" -o 2.1,2.2,2.3,2.4,1.5,1.6,2.6,2.7"
 #    join_cmd+=" $tmp_sorted_snps_with_correct_id"
 #    join_cmd+=" $ref_file"
 #    join_cmd+=" > $tmp_coordinates"
@@ -198,14 +231,14 @@ function get_cache_1000g_EUR_sort_rs_by_chr {
 #    # generate mock up coordinate from the SNPs that are not in the reference using pre-generated mock-up position
 #    join_cmd="join -t $'\t'"
 #    join_cmd+=" -1 1 -2 5"
-#    join_cmd+=" -o 2.1,2.2,2.3,2.4,2.5,2.6"
+#    join_cmd+=" -o 2.1,2.2,2.3,2.4,2.5,2.6,2.7,2.8"
 #    join_cmd+=" $tmp_snps_not_in_ref"
 #    join_cmd+=" <( sort -k5,5 $tmp_sorted_snps_with_correct_id )"
 #    join_cmd+=" >> $tmp_coordinates"
 #    info_msg "$join_cmd"
 #    eval "$join_cmd"
 #
-#    sort -k2,2n "$tmp_coordinates"
+#    sort -k2,2n "$tmp_coordinates" | uniq
 #}
 #
 #:>$coor_file
@@ -226,7 +259,7 @@ function get_cache_1000g_EUR_sort_rs_by_chr {
 #        ref_chrom=$assoc_chrom
 #    fi
 #
-#    cache_ref_1000g_chrom_file=`get_cache_1000g_ALL_sort_rs_by_chr $ref_chrom`
+#    cache_ref_1000g_chrom_file=`get_cache_1000g_sort_rs_with_fq_chr $ref_chrom`
 #    info_msg $cache_ref_1000g_chrom_file
 #
 #    generate_coordinate "$tmp_extracted_snps" "$significant_snps_file" "$cache_ref_1000g_chrom_file" "$ref_chrom" "$assoc_chrom" >> $coor_file
@@ -234,10 +267,10 @@ function get_cache_1000g_EUR_sort_rs_by_chr {
 #
 #tmp_reformat_mt_ref_file=`mktemp`
 #reformat_cmd="cut"
-#reformat_cmd+=" -f1,2,4-6,18"
+#reformat_cmd+=" -f1,2,4,5,18"
 #reformat_cmd+=" $ref_MT_file"
-#reformat_cmd+=" | awk -F'\t' '{ if (\$6 != \"-\") printf \"%s\t.\t.\n\", \$0 }'"
-#reformat_cmd+=" | sort -k6,6"
+#reformat_cmd+=" | awk -F'\t' '{ if (\$5 != \"-\") printf \"%s\t.\t.\n\", \$0 }'"
+#reformat_cmd+=" | sort -k5,5"
 #reformat_cmd+=" > $tmp_reformat_mt_ref_file"
 #info_msg "$reformat_cmd"
 #eval "$reformat_cmd"
@@ -260,7 +293,7 @@ function get_cache_1000g_EUR_sort_rs_by_chr {
 ##join_cmd+=" > $raw_1000g_coor"
 ##info_msg "$join_cmd"
 ##eval $join_cmd
-#
+##
 # ************************************************** extract snps & coordinate **************************************************
 
 # ************************************************** create output vcf file **************************************************
@@ -280,8 +313,6 @@ function get_cache_1000g_EUR_sort_rs_by_chr {
 # ************************************************** create output vcf file **************************************************
 
 # ************************************************** create outpuf generic db file **************************************************
-#N_JOIN_FILES=8
-#
 #function join_hap {
 #    # the assumption for using this function is that there is only haplotype association study file for one study
 #    # it must not be split into chromosomes
@@ -358,7 +389,7 @@ function get_cache_1000g_EUR_sort_rs_by_chr {
 #    fi
 #done
 #
-#header="#Chr\tStart\tEnd\tRef\tAlt\tAssoc_SNPs\tCorrection_SNPs"
+#header="#Chr\tStart\tEnd\tRef\tAlt\tAssoc_SNPs\tCorrection_SNPs\t1000g_ALL\t1000g_EUR"
 #for (( i=1; i<=$N_JOIN_FILES; i++ ))
 #do
 #    header+="\thaplotype_$i"
@@ -372,5 +403,34 @@ function get_cache_1000g_EUR_sort_rs_by_chr {
 ##grep -v '^[0-9]' $out_raw_join_assoc_hap | sort -k1,1 -k2,2n | awk -F'\t' '{ if ((length($3) == 1) && (length($4) == 1)) print $0 }' | awk -F'\t' '{$3=$2 FS $3;}1' OFS='\t' >> $out_db
 #grep '^[0-9]' $out_raw_join_assoc_hap | sort -n -k1,1 -k2,2 | awk -F'\t' '{$3=$2 FS $3;}1' OFS='\t' >> $out_db
 #grep -v '^[0-9]' $out_raw_join_assoc_hap | sort -k1,1 -k2,2n | awk -F'\t' '{$3=$2 FS $3;}1' OFS='\t' >> $out_db
-
 # ************************************************** create outpuf generic db file **************************************************
+
+# ************************************************** generate text report from generic db file **************************************************
+#for ref_chrom in $ref_chroms_1000g_list
+#do
+#    rpt_file=`get_comparison_rpt_by_chr $ref_chrom`
+#    header="\t\t\t\t\tAssoc\tCorrection\t1000G\t1000G"
+#    header+="\tAll cases vs all controls\t\t\t\t"
+#    header+="\tUppsals removed\t\t\t\t"
+#    header+="\tUppsals as cases\t\t\t\t"
+#    header+="\tPilot\t\t\t\t"
+#    header+="\tUppsalas controls\t\t\t\t"
+#    header+="\tSuper controls\t\t\t\t"
+#    header+="\tStockholm controls\t\t\t\t"
+#    header+="\tTwin controls\t\t\t\t"
+#    echo -e "$header" > $rpt_file
+#    header="Chr\tStart\tEnd\tRef\tAlt\tSNPs\tSNPs\tALL\tEUR"
+#    for (( i=1; i<=$N_JOIN_FILES; i++ ))
+#    do
+#        header+="\tHaplotype_$i"
+#        header+="\tF_A_$i"
+#        header+="\tF_U_$i"
+#        header+="\tP-value_$i"
+#        header+="\tOR_$i"
+#    done
+#    echo -e "$header" >> $rpt_file
+#
+#    grep -P "^$ref_chrom\t" $out_db >> $rpt_file
+#done
+# ************************************************** generate text report from generic db file **************************************************
+
