@@ -67,7 +67,7 @@ N_JOIN_FILES=8
 
 ref_chroms_1000g_list="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 X Y"
 ref_chroms_mt_list="MT"
-ref_chroms_list="$ref_chrom_1000g_list $ref_chrom_mt_list"
+ref_chroms_list="$ref_chroms_1000g_list $ref_chroms_mt_list"
 
 function get_cache_1000g_ALL_sort_rs_by_chr {
     chrom=$1
@@ -406,31 +406,42 @@ function get_comparison_rpt_by_chr {
 # ************************************************** create outpuf generic db file **************************************************
 
 # ************************************************** generate text report from generic db file **************************************************
-#for ref_chrom in $ref_chroms_1000g_list
-#do
-#    rpt_file=`get_comparison_rpt_by_chr $ref_chrom`
-#    header="\t\t\t\t\tAssoc\tCorrection\t1000G\t1000G"
-#    header+="\tAll cases vs all controls\t\t\t\t"
-#    header+="\tUppsals removed\t\t\t\t"
-#    header+="\tUppsals as cases\t\t\t\t"
-#    header+="\tPilot\t\t\t\t"
-#    header+="\tUppsalas controls\t\t\t\t"
-#    header+="\tSuper controls\t\t\t\t"
-#    header+="\tStockholm controls\t\t\t\t"
-#    header+="\tTwin controls\t\t\t\t"
-#    echo -e "$header" > $rpt_file
-#    header="Chr\tStart\tEnd\tRef\tAlt\tSNPs\tSNPs\tALL\tEUR"
-#    for (( i=1; i<=$N_JOIN_FILES; i++ ))
-#    do
-#        header+="\tHaplotype_$i"
-#        header+="\tF_A_$i"
-#        header+="\tF_U_$i"
-#        header+="\tP-value_$i"
-#        header+="\tOR_$i"
-#    done
-#    echo -e "$header" >> $rpt_file
-#
-#    grep -P "^$ref_chrom\t" $out_db >> $rpt_file
-#done
+NF=`head -1 $out_db | awk '{ print NF }'`
+sort_col=$(( NF-1 ))
+for ref_chrom in $ref_chroms_list
+do
+    rpt_file=`get_comparison_rpt_by_chr $ref_chrom`
+    info_msg "writing report to: $rpt_file"
+    header="\t\t\t\t\tAssoc\tCorrection\t1000G\t1000G"
+    header+="\tAll cases vs all controls\t\t\t\t"
+    header+="\tUppsals removed\t\t\t\t"
+    header+="\tUppsals as cases\t\t\t\t"
+    header+="\tPilot\t\t\t\t"
+    header+="\tUppsalas controls\t\t\t\t"
+    header+="\tSuper controls\t\t\t\t"
+    header+="\tStockholm controls\t\t\t\t"
+    header+="\tTwin controls\t\t\t\t"
+    echo -e "$header" > $rpt_file
+    header="Chr\tStart\tEnd\tRef\tAlt\tSNPs\tSNPs\tALL\tEUR"
+    for (( i=1; i<=$N_JOIN_FILES; i++ ))
+    do
+        header+="\tHaplotype_$i"
+        header+="\tF_A_$i"
+        header+="\tF_U_$i"
+        header+="\tP-value_$i"
+        header+="\tOR_$i"
+    done
+    echo -e "$header" >> $rpt_file
+
+    rpt_cmd="grep -P \"^$ref_chrom\\t\" $out_db"
+    rpt_cmd+=" | awk '{ if (\$$sort_col != \".\") print \$0 }'"g
+    rpt_cmd+=" | sort -k$sort_col,$sort_col"g
+    rpt_cmd+=" >> $rpt_file"
+    eval $rpt_cmd
+    rpt_cmd="grep -P \"^$ref_chrom\\t\" $out_db"
+    rpt_cmd+=" | awk '{ if (\$$sort_col == \".\") print \$0 }'"g
+    rpt_cmd+=" >> $rpt_file"
+    eval $rpt_cmd
+done
 # ************************************************** generate text report from generic db file **************************************************
 
