@@ -1,0 +1,12 @@
+ANNOVAR:
+  buildver: hg19
+  db_folder: /glob/jessada/tools/annovar/humandb
+  db_name: refGene,cytoBand,genomicSuperDups,esp6500si_all,1000g2014oct_eur,1000g2014oct_all,exac03,cg69,custom
+  db_op: g,r,r,f,f,f,f,f,f
+  nastring: .
+DATASET_NAME: Ill_Br
+JOBS_REPORT_FILE: /proj/b2011117/private/projects/out/db/cal_stat_Ill_Br/Ill_Br_rpt.txt
+OUTPUT_DIR: /proj/b2011117/private/projects/out/db/cal_stat_Ill_Br
+PATIENTS_LIST: /glob/jessada/private/master_data/CMM/family/processed/Ill_Br/Ill_Br.lst
+PROJECT_CODE: b2011158
+VCF_TABIX_FILE: /glob/jessada/private/master_data/CMM/CMM_Scilife_b2011158/vcf/Ill_Br_Fam242.vcf.gz
