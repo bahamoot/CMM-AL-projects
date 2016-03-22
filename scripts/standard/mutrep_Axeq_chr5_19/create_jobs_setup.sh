@@ -2,11 +2,11 @@
 
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 dataset_name="Axeq_chr5_19"
-project_out_dir="/proj/b2011117/private/projects/out/standard/$dataset_name/"
+project_out_dir="$MUTATIONS_REPORTS_OUTPUT_DIR/standard/$dataset_name/"
 vcf_tabix_file="/glob/jessada/private/master_data/CMM/CMM_Axeq_b2012247/Axeq_chr5_19.vcf.gz"
 vcf_region="5,19"
-project_code="b2011158"
-annotated_vcf_tabix="/glob/jessada/private/master_data/CMM/table_annovar/Axeq_chr5_19/Axeq_chr5_19_annotated.vcf.gz"
+project_code="b2011097"
+annotated_vcf_tabix="$ANNOTATED_AXEQ_CHR5_19"
 report_regions="5,19"
 call_detail="True"
 split_chrom=True
@@ -19,14 +19,29 @@ cmd="pyCMM-cmmdb-create-job-setup-file"
 cmd+=" -d $dataset_name"
 cmd+=" -O $project_out_dir"
 cmd+=" -i $vcf_tabix_file"
-cmd+=" -r $vcf_region"
+if [ ! -z $vcf_region ]
+then
+    cmd+=" -r $vcf_region"
+fi
 if [ ! -z $project_code ]
 then
     cmd+=" -p $project_code"
 fi
+if [ ! -z $anno_excl_tags ]
+then
+    cmd+=" -E $anno_excl_tags"
+fi
+if [ ! -z "$filter_actions" ]
+then
+    cmd+=" --filter_actions $filter_actions"
+fi
 if [ ! -z $annotated_vcf_tabix ]
 then
     cmd+=" -A $annotated_vcf_tabix"
+fi
+if [ ! -z $sample_infos ]
+then
+    cmd+=" -s $sample_infos"
 fi
 if [ ! -z $report_regions ]
 then
@@ -44,9 +59,17 @@ if [ "$split_chrom" == "True" ]
 then
     cmd+=" --split_chrom"
 fi
-if [ "$exclude_common" = "True" ]
+if [ "$summary_families" = "True" ]
 then
-    cmd+=" --exclude_common"
+    cmd+=" --summary_families"
+fi
+if [ "$only_families" = "True" ]
+then
+    cmd+=" --only_families"
+fi
+if [ "$only_summary" = "True" ]
+then
+    cmd+=" --only_summary"
 fi
 cmd+=" -o $jobs_setup_file"
 

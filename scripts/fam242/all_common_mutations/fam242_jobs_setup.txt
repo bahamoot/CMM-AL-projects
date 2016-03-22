@@ -6,11 +6,11 @@ ANNOVAR:
   nastring: .
 DATASET_NAME: fam242
 DB_ALLOC_TIME: "1-00:00:00"
-JOBS_REPORT_FILE: /proj/b2011117/private/projects/out/fam242/all_common_mutations/fam242_rpt.txt
-OUTPUT_DIR: /proj/b2011117/private/projects/out/fam242/all_common_mutations/
+JOBS_REPORT_FILE: /proj/b2011117/private/projects_output/mutations_reports/fam242/all_common_mutations/fam242_rpt.txt
+OUTPUT_DIR: /proj/b2011117/private/projects_output/mutations_reports/fam242/all_common_mutations/
 PROJECT_CODE: b2011097
 REPORT_LAYOUT:
-  ANNOTATED_VCF_TABIX: /glob/jessada/private/master_data/CMM/table_annovar/Ill_Br_Fam242/Ill_Br_Fam242_annotated.vcf.gz
+  ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/Ill_Br_Fam242/Ill_Br_Fam242_annotated.vcf.gz
   ANNOTATION_EXCLUSION_TAGS:
     - Axeq_chr3_6_14_18
     - Axeq_chr5_19

@@ -4,13 +4,14 @@ ANNOVAR:
   db_names: refGene,cytoBand,genomicSuperDups,esp6500siv2_all,1000g2014oct_eur,1000g2014oct_all,snp138,exac03,cg69,cosmic70,nci60,clinvar_20150330,CMM_Ill_Br,CMM_CRC_all,CMM_CRC_CAFAM,CMM_CRC_COLON,CMM_CRC_CRC,CMM_CRC_RECTAL,CMM_PMS2_sporadic_fam24,CMM_Axeq_chr3_6_14_18,CMM_Axeq_chr5_19,CMM_Axeq_chr9,CMM_oncoarray_gw,200_Danes,249_Swedes,ljb26_all
   db_ops: g,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f
   nastring: .
-DATASET_NAME: Illumina
+DATASET_NAME: xj
 DB_ALLOC_TIME: "1-00:00:00"
-JOBS_REPORT_FILE: /proj/b2011117/private/projects_output/mutations_reports/standard/Illumina/Illumina_rpt.txt
-OUTPUT_DIR: /proj/b2011117/private/projects_output/mutations_reports/standard/Illumina/
+DB_REGION: 6
+JOBS_REPORT_FILE: /proj/b2011117/private/projects_output/mutations_reports/xj/xj_rpt.txt
+OUTPUT_DIR: /proj/b2011117/private/projects_output/mutations_reports/xj/
 PROJECT_CODE: b2011097
 REPORT_LAYOUT:
-  ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/Ill_Br_Fam242/Ill_Br_Fam242_annotated.vcf.gz
+  ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/Axeq_chr3_6_14_18/Axeq_chr3_6_14_18_annotated.vcf.gz
   COLUMNS:
     - Func.refGene
     - ExonicFunc.refGene
@@ -200,73 +201,10 @@ REPORT_LAYOUT:
       FREQUENCY: 0.2
   ONLY_FAMILIES: false
   ONLY_SUMMARY: false
-  ROWS_FILTER_ACTIONS_CRITERIA:
-    - Rare
+  REGIONS:
+    - 6
+    - 18
   SPLIT_CHROM: true
   SUMMARY_FAMILIES: false
 RPT_ALLOC_TIME: "1-00:00:00"
-SAMPLE_INFOS:
-  - FAMILY_ID: 242
-    MEMBERS:
-      - SAMPLE_ID: "Co-441"
-      - SAMPLE_ID: "Co-666"
-      - SAMPLE_ID: "Co-771"
-  - FAMILY_ID: 2060
-    MEMBERS:
-      - SAMPLE_ID: "Br-690"
-      - SAMPLE_ID: "Br-693"
-  - FAMILY_ID: 3028
-    MEMBERS:
-      - SAMPLE_ID: "AL-36"
-      - SAMPLE_ID: "AL-44"
-      - SAMPLE_ID: "Br-732"
-  - FAMILY_ID: 5701
-    MEMBERS:
-      - SAMPLE_ID: "Br-585"
-      - SAMPLE_ID: "Br-588"
-  - FAMILY_ID: 6067
-    MEMBERS:
-      - SAMPLE_ID: "Br-397"
-      - SAMPLE_ID: "884-99D"
-  - FAMILY_ID: 6094
-    MEMBERS:
-      - SAMPLE_ID: "Br-442"
-      - SAMPLE_ID: "Br-451"
-  - FAMILY_ID: 6100
-    MEMBERS:
-      - SAMPLE_ID: "Br-465"
-      - SAMPLE_ID: "Br-466"
-  - FAMILY_ID: 6101
-    MEMBERS:
-      - SAMPLE_ID: "Br-473"
-  - FAMILY_ID: 6104
-    MEMBERS:
-      - SAMPLE_ID: "Br-475"
-      - SAMPLE_ID: "Br-477"
-  - FAMILY_ID: 6106
-    MEMBERS:
-      - SAMPLE_ID: "Br-484"
-      - SAMPLE_ID: "Br-510"
-  - FAMILY_ID: 6123
-    MEMBERS:
-      - SAMPLE_ID: "Br-526"
-      - SAMPLE_ID: "Br-528"
-  - FAMILY_ID: 6127
-    MEMBERS:
-      - SAMPLE_ID: "Br-694"
-      - SAMPLE_ID: "Br-697"
-      - SAMPLE_ID: "Br-702"
-  - FAMILY_ID: L1056
-    MEMBERS:
-      - SAMPLE_ID: "Br-720"
-      - SAMPLE_ID: "Br-721"
-      - SAMPLE_ID: "Br-724"
-  - FAMILY_ID: L1141
-    MEMBERS:
-      - SAMPLE_ID: "Br-652"
-  - FAMILY_ID: L862
-    MEMBERS:
-      - SAMPLE_ID: "Br-706"
-      - SAMPLE_ID: "Br-710"
-      - SAMPLE_ID: "Br-716"
-VCF_TABIX_FILE: /glob/jessada/private/master_data/CMM/CMM_Scilife_b2011158/Ill_Br_Fam242.vcf.gz
+VCF_TABIX_FILE: /glob/jessada/private/master_data/CMM/CMM_Axeq_b2012247/Axeq_chr3_6_14_18.vcf.gz

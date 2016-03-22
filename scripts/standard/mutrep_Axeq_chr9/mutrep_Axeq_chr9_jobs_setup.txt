@@ -1,32 +1,36 @@
 ANNOVAR:
   buildver: hg19
   db_folder: /glob/jessada/tools/annovar/humandb
-  db_names: refGene,cytoBand,genomicSuperDups,esp6500siv2_all,1000g2014oct_eur,1000g2014oct_all,snp138,exac03,cg69,cosmic70,nci60,clinvar_20150330,mitimpact2,CMM_Ill_Br,CMM_101CRC_all,CMM_101CRC_CAFAM,CMM_101CRC_COLON,CMM_101CRC_CRC,CMM_101CRC_RECTAL,CMM_Axeq_chr3_6_14_18,CMM_Axeq_chr5_19,CMM_Axeq_chr9,200_Danes,249_Swedes,ljb26_all
-  db_ops: g,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f
+  db_names: refGene,cytoBand,genomicSuperDups,esp6500siv2_all,1000g2014oct_eur,1000g2014oct_all,snp138,exac03,cg69,cosmic70,nci60,clinvar_20150330,CMM_Ill_Br,CMM_CRC_all,CMM_CRC_CAFAM,CMM_CRC_COLON,CMM_CRC_CRC,CMM_CRC_RECTAL,CMM_PMS2_sporadic_fam24,CMM_Axeq_chr3_6_14_18,CMM_Axeq_chr5_19,CMM_Axeq_chr9,CMM_oncoarray_gw,200_Danes,249_Swedes,ljb26_all
+  db_ops: g,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f
   nastring: .
 DATASET_NAME: Axeq_chr9
-JOBS_REPORT_FILE: /proj/b2011117/private/projects/out/standard/Axeq_chr9/Axeq_chr9_rpt.txt
-OUTPUT_DIR: /proj/b2011117/private/projects/out/standard/Axeq_chr9/
-PROJECT_CODE: b2011158
+DB_ALLOC_TIME: "1-00:00:00"
+DB_REGION: 9
+JOBS_REPORT_FILE: /proj/b2011117/private/projects_output/mutations_reports/standard/Axeq_chr9/Axeq_chr9_rpt.txt
+OUTPUT_DIR: /proj/b2011117/private/projects_output/mutations_reports/standard/Axeq_chr9/
+PROJECT_CODE: b2011097
 REPORT_LAYOUT:
-  ANNOTATED_VCF_TABIX: /glob/jessada/private/master_data/CMM/table_annovar/Axeq_chr9/Axeq_chr9_annotated.vcf.gz
-  CALL_INFO: true
+  ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/Axeq_chr9/Axeq_chr9_annotated.vcf.gz
   COLUMNS:
     - Func.refGene
     - ExonicFunc.refGene
     - Gene.refGene
     - GeneDetail.refGene
+    - snp138
     - 1000g2014oct_eur
     - 1000g2014oct_all
-    - ILL_BR_AF
+    - ILL_BR_PF
     - ILL_BR_GF
-    - 101CRC_ALL_AF
-    - 101CRC_ALL_GF
-    - AXEQ_CHR3_6_14_18_AF
+    - CRC_ALL_PF
+    - CRC_ALL_GF
+    - PMS2_SPORADIC_FAM24_PF
+    - PMS2_SPORADIC_FAM24_GF
+    - AXEQ_CHR3_6_14_18_PF
     - AXEQ_CHR3_6_14_18_GF
-    - AXEQ_CHR5_19_AF
+    - AXEQ_CHR5_19_PF
     - AXEQ_CHR5_19_GF
-    - AXEQ_CHR9_AF
+    - AXEQ_CHR9_PF
     - AXEQ_CHR9_GF
     - 249_SWEDES
     - 200_DANES
@@ -42,142 +46,132 @@ REPORT_LAYOUT:
     - cytoBand
     - genomicSuperDups
     - esp6500siv2_all
-    - snp138
     - cg69
     - cosmic70
     - nci60
     - clinvar_20150330
-    - Gene_symbol
-    - OXPHOS_Complex
-    - Ensembl_Gene_ID
-    - Ensembl_Protein_ID
-    - Uniprot_Name
-    - Uniprot_ID
-    - NCBI_Gene_ID
-    - NCBI_Protein_ID
-    - Gene_pos
-    - AA_pos
-    - AA_sub
-    - Codon_sub
-    - dbSNP_ID
-    - PhyloP_46V
-    - PhastCons_46V
-    - PhyloP_100V
-    - PhastCons_100V
-    - SiteVar
-    - PolyPhen2_prediction
-    - PolyPhen2_score
-    - SIFT_prediction
-    - SIFT_score
-    - FatHmm_prediction
-    - FatHmm_score
-    - PROVEAN_prediction
-    - PROVEAN_score
-    - MutAss_prediction
-    - MutAss_score
-    - EFIN_Swiss_Prot_Score
-    - EFIN_Swiss_Prot_Prediction
-    - EFIN_HumDiv_Score
-    - EFIN_HumDiv_Prediction
-    - CADD_score
-    - CADD_Phred_score
-    - CADD_prediction
-    - Carol_prediction
-    - Carol_score
-    - Condel_score
-    - Condel_pred
-    - COVEC_WMV
-    - COVEC_WMV_prediction
-    - PolyPhen2_score_transf
-    - PolyPhen2_pred_transf
-    - SIFT_score_transf
-    - SIFT_pred_transf
-    - MutAss_score_transf
-    - MutAss_pred_transf
-    - Perc_coevo_Sites
-    - Mean_MI_score
-    - COSMIC_ID
-    - Tumor_site
-    - Examined_samples
-    - Mutation_frequency
-    - US
-    - Status
-    - Associated_disease
-    - Presence_in_TD
-    - Class_predicted
-    - Prob_N
-    - Prob_P
     - ILL_BR_WT
     - ILL_BR_HET
     - ILL_BR_HOM
     - ILL_BR_OTH
     - ILL_BR_NA
     - ILL_BR_GT
-    - ILL_BR_PF
-    - 101CRC_ALL_WT
-    - 101CRC_ALL_HET
-    - 101CRC_ALL_HOM
-    - 101CRC_ALL_OTH
-    - 101CRC_ALL_NA
-    - 101CRC_ALL_GT
-    - 101CRC_ALL_PF
-    - 101CRC_CAFAM_WT
-    - 101CRC_CAFAM_HET
-    - 101CRC_CAFAM_HOM
-    - 101CRC_CAFAM_OTH
-    - 101CRC_CAFAM_NA
-    - 101CRC_CAFAM_GT
-    - 101CRC_CAFAM_PF
-    - 101CRC_CAFAM_AF
-    - 101CRC_CAFAM_GF
-    - 101CRC_COLON_WT
-    - 101CRC_COLON_HET
-    - 101CRC_COLON_HOM
-    - 101CRC_COLON_OTH
-    - 101CRC_COLON_NA
-    - 101CRC_COLON_GT
-    - 101CRC_COLON_PF
-    - 101CRC_COLON_AF
-    - 101CRC_COLON_GF
-    - 101CRC_CRC_WT
-    - 101CRC_CRC_HET
-    - 101CRC_CRC_HOM
-    - 101CRC_CRC_OTH
-    - 101CRC_CRC_NA
-    - 101CRC_CRC_GT
-    - 101CRC_CRC_PF
-    - 101CRC_CRC_AF
-    - 101CRC_CRC_GF
-    - 101CRC_RECTAL_WT
-    - 101CRC_RECTAL_HET
-    - 101CRC_RECTAL_HOM
-    - 101CRC_RECTAL_OTH
-    - 101CRC_RECTAL_NA
-    - 101CRC_RECTAL_GT
-    - 101CRC_RECTAL_PF
-    - 101CRC_RECTAL_AF
-    - 101CRC_RECTAL_GF
+    - ILL_BR_AF
+    - CRC_ALL_WT
+    - CRC_ALL_HET
+    - CRC_ALL_HOM
+    - CRC_ALL_OTH
+    - CRC_ALL_NA
+    - CRC_ALL_GT
+    - CRC_ALL_AF
+    - CRC_CAFAM_WT
+    - CRC_CAFAM_HET
+    - CRC_CAFAM_HOM
+    - CRC_CAFAM_OTH
+    - CRC_CAFAM_NA
+    - CRC_CAFAM_GT
+    - CRC_CAFAM_PF
+    - CRC_CAFAM_AF
+    - CRC_CAFAM_GF
+    - CRC_COLON_WT
+    - CRC_COLON_HET
+    - CRC_COLON_HOM
+    - CRC_COLON_OTH
+    - CRC_COLON_NA
+    - CRC_COLON_GT
+    - CRC_COLON_PF
+    - CRC_COLON_AF
+    - CRC_COLON_GF
+    - CRC_CRC_WT
+    - CRC_CRC_HET
+    - CRC_CRC_HOM
+    - CRC_CRC_OTH
+    - CRC_CRC_NA
+    - CRC_CRC_GT
+    - CRC_CRC_PF
+    - CRC_CRC_AF
+    - CRC_CRC_GF
+    - CRC_RECTAL_WT
+    - CRC_RECTAL_HET
+    - CRC_RECTAL_HOM
+    - CRC_RECTAL_OTH
+    - CRC_RECTAL_NA
+    - CRC_RECTAL_GT
+    - CRC_RECTAL_PF
+    - CRC_RECTAL_AF
+    - CRC_RECTAL_GF
+    - PMS2_SPORADIC_FAM24_WT
+    - PMS2_SPORADIC_FAM24_HET
+    - PMS2_SPORADIC_FAM24_HOM
+    - PMS2_SPORADIC_FAM24_OTH
+    - PMS2_SPORADIC_FAM24_NA
+    - PMS2_SPORADIC_FAM24_GT
+    - PMS2_SPORADIC_FAM24_AF
     - AXEQ_CHR3_6_14_18_WT
     - AXEQ_CHR3_6_14_18_HET
     - AXEQ_CHR3_6_14_18_HOM
     - AXEQ_CHR3_6_14_18_OTH
     - AXEQ_CHR3_6_14_18_NA
     - AXEQ_CHR3_6_14_18_GT
-    - AXEQ_CHR3_6_14_18_PF
+    - AXEQ_CHR3_6_14_18_AF
     - AXEQ_CHR5_19_WT
     - AXEQ_CHR5_19_HET
     - AXEQ_CHR5_19_HOM
     - AXEQ_CHR5_19_OTH
     - AXEQ_CHR5_19_NA
     - AXEQ_CHR5_19_GT
-    - AXEQ_CHR5_19_PF
+    - AXEQ_CHR5_19_AF
     - AXEQ_CHR9_WT
     - AXEQ_CHR9_HET
     - AXEQ_CHR9_HOM
     - AXEQ_CHR9_OTH
     - AXEQ_CHR9_NA
     - AXEQ_CHR9_GT
-    - AXEQ_CHR9_PF
+    - AXEQ_CHR9_AF
+    - Assoc_SNPs
+    - Correction_SNPs
+    - 1000g_ALL
+    - 1000g_EUR
+    - haplotype_1
+    - F_A_1
+    - F_U_1
+    - P-value_1
+    - OR_1
+    - haplotype_2
+    - F_A_2
+    - F_U_2
+    - P-value_2
+    - OR_2
+    - haplotype_3
+    - F_A_3
+    - F_U_3
+    - P-value_3
+    - OR_3
+    - haplotype_4
+    - F_A_4
+    - F_U_4
+    - P-value_4
+    - OR_4
+    - haplotype_5
+    - F_A_5
+    - F_U_5
+    - P-value_5
+    - OR_5
+    - haplotype_6
+    - F_A_6
+    - F_U_6
+    - P-value_6
+    - OR_6
+    - haplotype_7
+    - F_A_7
+    - F_U_7
+    - P-value_7
+    - OR_7
+    - haplotype_8
+    - F_A_8
+    - F_U_8
+    - P-value_8
+    - OR_8
     - SIFT_score
     - SIFT_pred
     - Polyphen2_HDIV_score
@@ -202,13 +196,14 @@ REPORT_LAYOUT:
     - GERP++_RS
     - phyloP46way_placental
     - phyloP100way_vertebrate
-    - SiPhy_29way_logOdds
   FREQUENCY_RATIOS:
     - COLUMN: 1000g2014oct_all
       FREQUENCY: 0.2
+  ONLY_FAMILIES: false
+  ONLY_SUMMARY: false
   REGIONS:
     - 9
   SPLIT_CHROM: false
   SUMMARY_FAMILIES: false
-VCF_REGION: 9
+RPT_ALLOC_TIME: "1-00:00:00"
 VCF_TABIX_FILE: /glob/jessada/private/master_data/CMM/CMM_Axeq_b2012247/Axeq_chr9.vcf.gz
