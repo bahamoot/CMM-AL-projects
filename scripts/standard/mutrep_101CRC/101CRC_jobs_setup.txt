@@ -6,7 +6,6 @@ ANNOVAR:
   nastring: .
 DATASET_NAME: 101CRC
 DB_ALLOC_TIME: "1-00:00:00"
-DB_REGION: 5,19
 JOBS_REPORT_FILE: /proj/b2011117/private/projects_output/mutations_reports/standard/101CRC/101CRC_rpt.txt
 OUTPUT_DIR: /proj/b2011117/private/projects_output/mutations_reports/standard/101CRC/
 PROJECT_CODE: b2011097
@@ -202,11 +201,9 @@ REPORT_LAYOUT:
     - COLUMN: 1000g2014oct_all
       FREQUENCY: 0.2
   ONLY_FAMILIES: false
-  ONLY_SUMMARY: true
+  ONLY_SUMMARY: false
   ROWS_FILTER_ACTIONS_CRITERIA:
     - Rare
-    - Non-Intergenic
-    - Non-Intronic
   SPLIT_CHROM: true
   SUMMARY_FAMILIES: false
 RPT_ALLOC_TIME: "1-00:00:00"
