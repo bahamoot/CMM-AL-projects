@@ -1,0 +1,16 @@
+FLOW_ALLOC_TIME: "4-00:00:00"
+JOBS_REPORT_FILE: /proj/b2011117/private/projects_output/mutations_reports/RnD/plink_hap_assocs/plink_hap_assocs_rpt.txt
+PLINK_PARAMS:
+  CUTOFF_PVALUE: 0.05
+  HAP_WINDOW_SIZES:
+    - 1
+    - 3
+  INPUT_BINARY: true
+  INPUT_DNA_REGIONS:
+    - 9:100911000-100946000
+  INPUT_FILE_PREFIX: /proj/b2011117/private/databases/genotyping/oncochip_n_twingene/chr9_linkage
+  PHENOTYPE_FILE: /proj/b2011117/private/databases/genotyping/oncochip_n_twingene/chr9_linkage_phenotype.txt
+PROJECT_CODE: b2011097
+PROJECT_NAME: plink_hap_assocs
+PROJECT_OUT_DIR: /proj/b2011117/private/projects_output/mutations_reports/RnD/plink_hap_assocs
+RPT_ALLOC_TIME: "1-00:00:00"
