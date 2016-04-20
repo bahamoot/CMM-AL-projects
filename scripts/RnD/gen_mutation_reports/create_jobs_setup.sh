@@ -2,11 +2,11 @@
 
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 dataset_name="gen_mutation_reports"
-project_out_dir="/proj/b2011117/private/projects/out/RnD/$dataset_name"
+project_out_dir="$MUTATIONS_REPORTS_OUTPUT_DIR/RnD/$dataset_name"
 vcf_tabix_file="/glob/jessada/private/master_data/CMM/CMM_Axeq_b2012247/Axeq_chr3_6_14_18.vcf.gz"
 vcf_region="6"
 #project_code="b2012247"
-annotated_vcf_tabix="/glob/jessada/private/master_data/CMM/table_annovar/Axeq_chr3_6_14_18/Axeq_chr3_6_14_18_annotated.vcf.gz"
+annotated_vcf_tabix="$ANNOTATED_AXEQ_CHR3_6_14_18"
 call_detail="True"
 sample_infos="$CMM_CLIENT/scripts/RnD/gen_mutation_reports/gen_mutation_reports.sample_infos"
 report_regions="6:78171941-78172992,18:28610988-28611790"

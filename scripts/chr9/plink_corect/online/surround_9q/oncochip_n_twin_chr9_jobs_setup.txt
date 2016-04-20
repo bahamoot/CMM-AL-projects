@@ -1,0 +1,22 @@
+FLOW_ALLOC_TIME: "4-00:00:00"
+JOBS_REPORT_FILE: /proj/b2011117/private/projects_output/plink/chr9/slurm/surround_9q/oncochip_n_twin_chr9_rpt.txt
+PLINK_PARAMS:
+  CUTOFF_PVALUE: 0.05
+  FILTERING_CRITERIA:
+    - PVALUE005
+    - DISEASE_SNP
+  HAP_WINDOW_SIZES:
+    - 1
+    - 3
+    - 5
+    - 10
+    - 25
+  INPUT_BINARY: true
+  INPUT_DNA_REGIONS:
+    - 9
+  INPUT_FILE_PREFIX: /proj/b2011117/private/databases/genotyping/oncochip_n_twingene/chr9_linkage
+  PHENOTYPE_FILE: /proj/b2011117/private/databases/genotyping/oncochip_n_twingene/chr9_linkage_phenotype.txt
+PROJECT_CODE: b2011097
+PROJECT_NAME: oncochip_n_twin_chr9
+PROJECT_OUT_DIR: /proj/b2011117/private/projects_output/plink/chr9/slurm/surround_9q
+RPT_ALLOC_TIME: "1-00:00:00"

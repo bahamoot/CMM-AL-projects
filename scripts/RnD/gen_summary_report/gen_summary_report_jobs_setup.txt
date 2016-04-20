@@ -1,17 +1,17 @@
 ANNOVAR:
   buildver: hg19
   db_folder: /glob/jessada/tools/annovar/humandb
-  db_names: refGene,cytoBand,genomicSuperDups,esp6500siv2_all,1000g2014oct_eur,1000g2014oct_all,snp138,exac03,cg69,cosmic70,nci60,clinvar_20150330,CMM_Ill_Br,CMM_CRC_all,CMM_CRC_CAFAM,CMM_CRC_COLON,CMM_CRC_CRC,CMM_CRC_RECTAL,CMM_PMS2_sporadic_fam24,CMM_Axeq_chr3_6_14_18,CMM_Axeq_chr5_19,CMM_Axeq_chr9,200_Danes,249_Swedes,ljb26_all
-  db_ops: g,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f
+  db_names: refGene,cytoBand,genomicSuperDups,esp6500siv2_all,1000g2014oct_eur,1000g2014oct_all,snp138,exac03,cg69,cosmic70,nci60,clinvar_20150330,CMM_Ill_Br,CMM_CRC_all,CMM_CRC_CAFAM,CMM_CRC_COLON,CMM_CRC_CRC,CMM_CRC_RECTAL,CMM_PMS2_sporadic_fam24,CMM_Axeq_chr3_6_14_18,CMM_Axeq_chr5_19,CMM_Axeq_chr9,CMM_oncoarray_gw,200_Danes,249_Swedes,ljb26_all
+  db_ops: g,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f
   nastring: .
 DATASET_NAME: gen_summary_report
 DB_ALLOC_TIME: "120:00:00"
 DB_REGION: 6
-JOBS_REPORT_FILE: /proj/b2011117/private/projects/out/RnD/gen_summary_report/gen_summary_report_rpt.txt
-OUTPUT_DIR: /proj/b2011117/private/projects/out/RnD/gen_summary_report
+JOBS_REPORT_FILE: /proj/b2011117/private/projects_output/mutations_reports/RnD/gen_summary_report/gen_summary_report_rpt.txt
+OUTPUT_DIR: /proj/b2011117/private/projects_output/mutations_reports/RnD/gen_summary_report
 PROJECT_CODE: b2012247
 REPORT_LAYOUT:
-  ANNOTATED_VCF_TABIX: /glob/jessada/private/master_data/CMM/table_annovar/NK64_PMS2_sporadic_fam24/NK64_PMS2_sporadic_fam24_annotated.vcf.gz
+  ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/NK64_PMS2_earlyonset_fam24/NK64_PMS2_earlyonset_fam24_annotated.vcf.gz
   ANNOTATION_EXCLUSION_TAGS:
     - Axeq_chr5_19
     - Axeq_chr9
@@ -135,6 +135,50 @@ REPORT_LAYOUT:
     - AXEQ_CHR9_NA
     - AXEQ_CHR9_GT
     - AXEQ_CHR9_AF
+    - Assoc_SNPs
+    - Correction_SNPs
+    - 1000g_ALL
+    - 1000g_EUR
+    - haplotype_1
+    - F_A_1
+    - F_U_1
+    - P-value_1
+    - OR_1
+    - haplotype_2
+    - F_A_2
+    - F_U_2
+    - P-value_2
+    - OR_2
+    - haplotype_3
+    - F_A_3
+    - F_U_3
+    - P-value_3
+    - OR_3
+    - haplotype_4
+    - F_A_4
+    - F_U_4
+    - P-value_4
+    - OR_4
+    - haplotype_5
+    - F_A_5
+    - F_U_5
+    - P-value_5
+    - OR_5
+    - haplotype_6
+    - F_A_6
+    - F_U_6
+    - P-value_6
+    - OR_6
+    - haplotype_7
+    - F_A_7
+    - F_U_7
+    - P-value_7
+    - OR_7
+    - haplotype_8
+    - F_A_8
+    - F_U_8
+    - P-value_8
+    - OR_8
     - SIFT_score
     - SIFT_pred
     - Polyphen2_HDIV_score
