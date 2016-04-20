@@ -10,11 +10,12 @@ export CMM_PROJECTS_WORKING_DIR="$CMM_PROJECTS_ROOT_DIR/tmp"
 
 ##********************************************* libray scripts *****************************************************
 export CMM_LIB_ROOT_DIR="/home/jessada/CMM-Lib/"
-#export CMM_LIB_ROOT_DIR="$HOME_GLOB/lib/CMM-Lib/"
+#export CMM_LIB_ROOT_DIR="$HOME/CMM-Lib/"
+export CMM_LIB_DIR="$HOME/CMM-Lib/dev_adhoc/scripts/"
 #export CMM_LIB_ROOT_DIR="$HOME_GLOB/lib/CMM-Lib/dev/scripts"
 #export EXEC_SCRIPT_GEN_DEFAULT_DATA="$CMM_LIB_DIR/exec_script_gen_default_data.sh"
 #export EXEC_SCRIPT_GEN_SUMMARY_XLS="$CMM_LIB_DIR/exec_script_gen_summary_xls.sh"
-#export EXEC_SCRIPT_GEN_PLINK_REPORTS="$CMM_LIB_DIR/exec_script_gen_plink_reports.sh"
+export EXEC_SCRIPT_GEN_PLINK_REPORTS="$CMM_LIB_DIR/exec_script_gen_plink_reports.sh"
 #export EXEC_SCRIPT_GEN_FAMILY_XLS="$CMM_LIB_DIR/exec_script_gen_family_xls.sh"
 #export EXEC_SCRIPT_GEN_MUTATIONS_REPORTS="$CMM_LIB_DIR/exec_script_gen_mutations_reports.sh"
 #export EXEC_SCRIPT_CAL_MUTATIONS_STAT="$CMM_LIB_DIR/exec_script_cal_mutations_stat.sh"
@@ -22,7 +23,7 @@ export CMM_LIB_ROOT_DIR="/home/jessada/CMM-Lib/"
 
 ##********************************************* data location *****************************************************
 ##set global master data location
-export CMM_MASTER_DATA_ROOT_DIR="$HOME_GLOB/private/master_data/CMM"
+export CMM_MASTER_DATA_ROOT_DIR="$HOME_GLOB/private/master_data/CMM_"
 #
 ##set CMM shared data location
 ##VCF
