@@ -10,6 +10,6 @@ dataset_name="chr9_axeq"
 
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cmd="pyCMM-mutrep-mutation-reports"
-cmd+=" -j $CMM_CLIENT/scripts/chr9/Axeq_chr9/$dataset_name"_jobs_setup.txt
+cmd+=" -j $CMM_CLIENT/scripts/chr9/Axeq/all/$dataset_name"_jobs_setup.txt
 #cmd+=" -l /proj/b2011117/private/projects/slurm_log/$dataset_name"
 eval "$cmd"

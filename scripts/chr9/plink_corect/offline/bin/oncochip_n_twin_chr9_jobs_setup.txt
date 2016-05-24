@@ -1,0 +1,41 @@
+JOBS_REPORT_FILE: /proj/b2011117/private/projects_output/plink/chr9/offline/oncochip_n_twin_chr9/oncochip_n_twin_chr9_rpt.txt
+PLINK_PARAMS:
+  FILTERING_CRITERIA:
+    - PVALUE005
+    - DISEASE_SNP
+  HAP_WINDOW_SIZES:
+    - 1
+    - 3
+    - 5
+    - 10
+    - 25
+  INPUT_BINARY: true
+  INPUT_DNA_REGIONS:
+    - 9
+  INPUT_FILE_PREFIX: /proj/b2011117/private/databases/genotyping/oncochip_n_twingene/chr9_linkage
+  PHENOTYPE_FILE: /proj/b2011117/private/databases/genotyping/oncochip_n_twingene/chr9_linkage_phenotype.txt
+PROJECT_NAME: oncochip_n_twin_chr9
+PROJECT_OUT_DIR: /proj/b2011117/private/projects_output/plink/chr9/offline/oncochip_n_twin_chr9
+REPORT_PARAMS:
+  CUTOFF_ORS: 1.5
+  CUTOFF_PVALUE: 0.001
+  FAMILY_HAPLOTYPE_PREFIX: /proj/b2011117/private/databases/haplotype/chr9_linkage/chr9_lkg_haplotypes
+SAMPLE_INFOS:
+  - FAMILY_ID: "24"
+    MEMBERS:
+      - SAMPLE_ID: "new_fam24_shared_only"
+  - FAMILY_ID: "8"
+    MEMBERS:
+      - SAMPLE_ID: "fam_8"
+  - FAMILY_ID: "275"
+    MEMBERS:
+      - SAMPLE_ID: "fam_275"
+  - FAMILY_ID: "350"
+    MEMBERS:
+      - SAMPLE_ID: "fam_350"
+  - FAMILY_ID: "478"
+    MEMBERS:
+      - SAMPLE_ID: "fam_478"
+  - FAMILY_ID: "918"
+    MEMBERS:
+      - SAMPLE_ID: "fam_918"
