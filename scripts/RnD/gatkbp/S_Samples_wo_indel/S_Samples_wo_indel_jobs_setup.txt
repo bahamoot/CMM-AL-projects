@@ -1,0 +1,39 @@
+FLOW_ALLOC_TIME: "4-00:00:00"
+GATK_PARAMS:
+  DBSNP: /proj/b2011117/private/databases/reference/dbsnp_138.b37.vcf
+  INDEL_RECAL: true
+  REFERENCE: /proj/b2011117/private/databases/reference/Homo_sapiens.GRCh37.57.dna.concat.fa
+  TARGETS_INTERVAL_LIST: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/S_Samples_wo_indel/targets.interval_list
+  VARIANTS_CALLING: true
+JOBS_REPORT_FILE: /proj/b2011117/nobackup/private/projects_output/gatkbp/RnD/S_Samples_wo_indel/S_Samples_wo_indel_rpt.txt
+PROJECT_CODE: b2011097
+PROJECT_NAME: S_Samples_wo_indel
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/gatkbp/RnD/S_Samples_wo_indel
+RPT_ALLOC_TIME: "1-00:00:00"
+SAMPLES_INFOS:
+  - FAMILY_ID: "NO_FAMILY"
+    MEMBERS:
+      - SAMPLE_ID: "S_Sample_wo_indel_1"
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/S_Samples_wo_indel/resources/group1/S_Sample_wo_indel_1/DNASeq_S1_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/S_Samples_wo_indel/resources/group1/S_Sample_wo_indel_1/DNASeq_S1_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: YES
+        sample_group: group1
+        usage_mail: NO
+      - SAMPLE_ID: "S_Sample_wo_indel_3"
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/S_Samples_wo_indel/resources/group1/S_Sample_wo_indel_3/DNASeq_S3_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/S_Samples_wo_indel/resources/group1/S_Sample_wo_indel_3/DNASeq_S3_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: YES
+        sample_group: group1
+        usage_mail: NO
+      - SAMPLE_ID: "S_Sample_wo_indel_2"
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/S_Samples_wo_indel/resources/group2/S_Sample_wo_indel_2/DNASeq_S2_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/S_Samples_wo_indel/resources/group2/S_Sample_wo_indel_2/DNASeq_S2_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: YES
+        sample_group: group2
+        usage_mail: NO
