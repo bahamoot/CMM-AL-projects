@@ -1,0 +1,34 @@
+FLOW_ALLOC_TIME: "4-00:00:00"
+GATK_PARAMS:
+  DBSNP: /proj/b2011117/private/databases/reference/dbsnp_138.b37.vcf
+  KNOWN_INDELS:
+    - /proj/b2011117/private/databases/reference/1000G_phase1.indels.b37.vcf
+    - /proj/b2011117/private/databases/reference/Mills_and_1000G_gold_standard.indels.b37.vcf
+  REFERENCE: /proj/b2011117/private/databases/reference/Homo_sapiens.GRCh37.57.dna.concat.fa
+  VARIANTS_CALLING: false
+JOBS_REPORT_FILE: /proj/b2011117/nobackup/private/projects_output/gatkbp/WES/WES_round3/WES_round3_rpt.txt
+PROJECT_CODE: b2012247
+PROJECT_NAME: WES_round3
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/gatkbp/WES/WES_round3
+RPT_ALLOC_TIME: "1-00:00:00"
+SAMPLES_INFOS:
+  - FAMILY_ID: "NO_FAMILY"
+    MEMBERS:
+      - SAMPLE_ID: "AB-5"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /pica/h1/jessada/private/projects/CMM/scripts/gatkbp/WES_round3/resources/CHEK2_BRCA_CRC/AB-5/AB-5_S17_L005_R1_001.fastq.gz
+            R2: /pica/h1/jessada/private/projects/CMM/scripts/gatkbp/WES_round3/resources/CHEK2_BRCA_CRC/AB-5/AB-5_S17_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: YES
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "531-04o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /pica/h1/jessada/private/projects/CMM/scripts/gatkbp/WES_round3/resources/CRC_Prostrate/531-04o/531-04o_concated_R1.fastq.gz
+            R2: /pica/h1/jessada/private/projects/CMM/scripts/gatkbp/WES_round3/resources/CRC_Prostrate/531-04o/531-04o_concated_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: YES
+        sample_group: CRC_Prostrate
+        usage_mail: NO
