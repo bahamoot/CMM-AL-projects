@@ -1,0 +1,64 @@
+## [INFO]  2016-05-22 01:22:50,573 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:22:50,574 - MainProcess  - pycmm.app.gatkbp - ************************************************** S T A R T <app_pycmm_dnaseq_pipeline> ***************************************************
+## [INFO]  2016-05-22 01:22:50,574 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:22:50,575 - MainProcess  - pycmm.app.gatkbp - Description
+## [INFO]  2016-05-22 01:22:50,575 - MainProcess  - pycmm.app.gatkbp -   A flow to control a pipeline to process DNA sequencing data
+## [INFO]  2016-05-22 01:22:50,575 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:22:50,575 - MainProcess  - pycmm.app.gatkbp - Version and environment configuration
+## [INFO]  2016-05-22 01:22:50,575 - MainProcess  - pycmm.app.gatkbp -   pyCMM version:                                    0.0.1
+## [INFO]  2016-05-22 01:22:50,575 - MainProcess  - pycmm.app.gatkbp -   parameters:                                       -j /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/Ill_Br_jobs_setup.txt
+## [DEBUG]  2016-05-22 01:22:50,575 - MainProcess  - pycmm.app.gatkbp -   debug mode:                                       ON
+## [INFO]  2016-05-22 01:22:50,575 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:22:50,575 - MainProcess  - pycmm.app.gatkbp - Required parameters
+## [INFO]  2016-05-22 01:22:50,575 - MainProcess  - pycmm.app.gatkbp -   jobs setup file (-j):                             /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/Ill_Br_jobs_setup.txt
+## [INFO]  2016-05-22 01:22:50,576 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:22:50,576 - MainProcess  - pycmm.app.gatkbp - Optional parameters
+## [INFO]  2016-05-22 01:22:50,576 - MainProcess  - pycmm.app.gatkbp -   log file (-l):                                    dnaseq_pipeline_20160522012250.log
+## [INFO]  2016-05-22 01:24:27,692 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:24:27,692 - MainProcess  - pycmm.app.gatkbp - ************************************************** S T A R T <app_pycmm_dnaseq_pipeline> ***************************************************
+## [INFO]  2016-05-22 01:24:27,693 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:24:27,693 - MainProcess  - pycmm.app.gatkbp - Description
+## [INFO]  2016-05-22 01:24:27,693 - MainProcess  - pycmm.app.gatkbp -   A flow to control a pipeline to process DNA sequencing data
+## [INFO]  2016-05-22 01:24:27,693 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:24:27,693 - MainProcess  - pycmm.app.gatkbp - Version and environment configuration
+## [INFO]  2016-05-22 01:24:27,693 - MainProcess  - pycmm.app.gatkbp -   pyCMM version:                                    0.0.1
+## [INFO]  2016-05-22 01:24:27,693 - MainProcess  - pycmm.app.gatkbp -   parameters:                                       -j /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/Ill_Br_jobs_setup.txt
+## [DEBUG]  2016-05-22 01:24:27,693 - MainProcess  - pycmm.app.gatkbp -   debug mode:                                       ON
+## [INFO]  2016-05-22 01:24:27,693 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:24:27,694 - MainProcess  - pycmm.app.gatkbp - Required parameters
+## [INFO]  2016-05-22 01:24:27,694 - MainProcess  - pycmm.app.gatkbp -   jobs setup file (-j):                             /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/Ill_Br_jobs_setup.txt
+## [INFO]  2016-05-22 01:24:27,694 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:24:27,694 - MainProcess  - pycmm.app.gatkbp - Optional parameters
+## [INFO]  2016-05-22 01:24:27,694 - MainProcess  - pycmm.app.gatkbp -   log file (-l):                                    dnaseq_pipeline_20160522012427.log
+## [INFO]  2016-05-22 01:25:34,848 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:25:34,848 - MainProcess  - pycmm.app.gatkbp - ************************************************** S T A R T <app_pycmm_dnaseq_pipeline> ***************************************************
+## [INFO]  2016-05-22 01:25:34,848 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:25:34,849 - MainProcess  - pycmm.app.gatkbp - Description
+## [INFO]  2016-05-22 01:25:34,849 - MainProcess  - pycmm.app.gatkbp -   A flow to control a pipeline to process DNA sequencing data
+## [INFO]  2016-05-22 01:25:34,849 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:25:34,849 - MainProcess  - pycmm.app.gatkbp - Version and environment configuration
+## [INFO]  2016-05-22 01:25:34,849 - MainProcess  - pycmm.app.gatkbp -   pyCMM version:                                    0.0.1
+## [INFO]  2016-05-22 01:25:34,849 - MainProcess  - pycmm.app.gatkbp -   parameters:                                       -j /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/Ill_Br_jobs_setup.txt
+## [DEBUG]  2016-05-22 01:25:34,849 - MainProcess  - pycmm.app.gatkbp -   debug mode:                                       ON
+## [INFO]  2016-05-22 01:25:34,849 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:25:34,849 - MainProcess  - pycmm.app.gatkbp - Required parameters
+## [INFO]  2016-05-22 01:25:34,849 - MainProcess  - pycmm.app.gatkbp -   jobs setup file (-j):                             /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/Ill_Br_jobs_setup.txt
+## [INFO]  2016-05-22 01:25:34,850 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:25:34,850 - MainProcess  - pycmm.app.gatkbp - Optional parameters
+## [INFO]  2016-05-22 01:25:34,850 - MainProcess  - pycmm.app.gatkbp -   log file (-l):                                    dnaseq_pipeline_20160522012534.log
+## [INFO]  2016-05-22 01:26:25,412 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:26:25,413 - MainProcess  - pycmm.app.gatkbp - ************************************************** S T A R T <app_pycmm_dnaseq_pipeline> ***************************************************
+## [INFO]  2016-05-22 01:26:25,413 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:26:25,413 - MainProcess  - pycmm.app.gatkbp - Description
+## [INFO]  2016-05-22 01:26:25,413 - MainProcess  - pycmm.app.gatkbp -   A flow to control a pipeline to process DNA sequencing data
+## [INFO]  2016-05-22 01:26:25,413 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:26:25,413 - MainProcess  - pycmm.app.gatkbp - Version and environment configuration
+## [INFO]  2016-05-22 01:26:25,413 - MainProcess  - pycmm.app.gatkbp -   pyCMM version:                                    0.0.1
+## [INFO]  2016-05-22 01:26:25,413 - MainProcess  - pycmm.app.gatkbp -   parameters:                                       -j /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/Ill_Br_jobs_setup.txt
+## [DEBUG]  2016-05-22 01:26:25,413 - MainProcess  - pycmm.app.gatkbp -   debug mode:                                       ON
+## [INFO]  2016-05-22 01:26:25,414 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:26:25,414 - MainProcess  - pycmm.app.gatkbp - Required parameters
+## [INFO]  2016-05-22 01:26:25,414 - MainProcess  - pycmm.app.gatkbp -   jobs setup file (-j):                             /home/jessada/private/projects/CMM/scripts/gatkbp/Ill_Br/Ill_Br_jobs_setup.txt
+## [INFO]  2016-05-22 01:26:25,414 - MainProcess  - pycmm.app.gatkbp - 
+## [INFO]  2016-05-22 01:26:25,414 - MainProcess  - pycmm.app.gatkbp - Optional parameters
+## [INFO]  2016-05-22 01:26:25,414 - MainProcess  - pycmm.app.gatkbp -   log file (-l):                                    dnaseq_pipeline_20160522012625.log

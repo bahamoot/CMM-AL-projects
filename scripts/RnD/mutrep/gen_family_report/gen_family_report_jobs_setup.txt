@@ -1,0 +1,112 @@
+JOBS_REPORT_FILE:
+JOB_ALLOC_TIME: "4-00:00:00"
+PROJECT_CODE: b2011097
+PROJECT_NAME: gen_family_report
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/RnD/gen_family_report
+REPORT_LAYOUT:
+  ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/Axeq_chr3_6_14_18/Axeq_chr3_6_14_18_annotated.vcf.gz
+  COLUMNS:
+    - Func.refGene
+    - ExonicFunc.refGene
+    - Gene.refGene
+    - GeneDetail.refGene
+    - snp138
+    - 1000g2014oct_eur
+    - 1000g2014oct_all
+    - ILL_BR_PF
+    - ILL_BR_GF
+    - CRC_ALL_PF
+    - CRC_ALL_GF
+    - PMS2_SPORADIC_FAM24_PF
+    - PMS2_SPORADIC_FAM24_GF
+    - AXEQ_CHR3_6_14_18_PF
+    - AXEQ_CHR3_6_14_18_GF
+    - AXEQ_CHR5_19_PF
+    - AXEQ_CHR5_19_GF
+    - AXEQ_CHR9_PF
+    - AXEQ_CHR9_GF
+    - 249_SWEDES
+    - 200_DANES
+    - ExAC_ALL
+    - ExAC_AFR
+    - ExAC_AMR
+    - ExAC_EAS
+    - ExAC_FIN
+    - ExAC_NFE
+    - ExAC_OTH
+    - ExAC_SAS
+    - AAChange.refGene
+    - cytoBand
+    - genomicSuperDups
+    - esp6500siv2_all
+    - cg69
+    - cosmic70
+    - nci60
+    - clinvar_20150330
+    - AXEQ_CHR3_6_14_18_WT
+    - AXEQ_CHR3_6_14_18_HET
+    - AXEQ_CHR3_6_14_18_HOM
+    - AXEQ_CHR3_6_14_18_OTH
+    - AXEQ_CHR3_6_14_18_NA
+    - AXEQ_CHR3_6_14_18_GT
+    - AXEQ_CHR3_6_14_18_AF
+    - AXEQ_CHR5_19_WT
+    - AXEQ_CHR5_19_HET
+    - AXEQ_CHR5_19_HOM
+    - AXEQ_CHR5_19_OTH
+    - AXEQ_CHR5_19_NA
+    - AXEQ_CHR5_19_GT
+    - AXEQ_CHR5_19_AF
+    - AXEQ_CHR9_WT
+    - AXEQ_CHR9_HET
+    - AXEQ_CHR9_HOM
+    - AXEQ_CHR9_OTH
+    - AXEQ_CHR9_NA
+    - AXEQ_CHR9_GT
+    - AXEQ_CHR9_AF
+    - SIFT_score
+    - SIFT_pred
+    - Polyphen2_HDIV_score
+    - Polyphen2_HDIV_pred
+    - Polyphen2_HVAR_score
+    - Polyphen2_HVAR_pred
+    - LRT_score
+    - LRT_pred
+    - MutationTaster_score
+    - MutationTaster_pred
+    - MutationAssessor_score
+    - MutationAssessor_pred
+    - FATHMM_score
+    - FATHMM_pred
+    - RadialSVM_score
+    - RadialSVM_pred
+    - LR_score
+    - LR_pred
+    - VEST3_score
+    - CADD_raw
+    - CADD_phred
+    - GERP++_RS
+    - phyloP46way_placental
+    - phyloP100way_vertebrate
+  EXTRA_ANNOTATION_COLUMNS:
+    - Calling_detail
+  FREQUENCY_RATIOS:
+    - COLUMN: 1000g2014oct_all
+      FREQUENCY: 0.2
+  ONLY_FAMILIES: false
+  ONLY_SUMMARY: false
+  SPLIT_CHROM: false
+  SUMMARY_FAMILIES: false
+SAMPLES_INFOS:
+  - FAMILY_ID: "1234"
+    MEMBERS:
+      - SAMPLE_ID: "Alb-31"
+      - SAMPLE_ID: "Br-466"
+  - FAMILY_ID: "6067"
+    MEMBERS:
+      - SAMPLE_ID: "Br-432"
+      - SAMPLE_ID: "Al-161"
+      - SAMPLE_ID: "Br-504"
+  - FAMILY_ID: "6789"
+    MEMBERS:
+      - SAMPLE_ID: "Al-65"

@@ -1,0 +1,57 @@
+GATK_PARAMS:
+  DBSNP: /proj/b2011117/private/databases/reference/dbsnp_138.b37.vcf
+  KNOWN_INDELS:
+    - /proj/b2011117/private/databases/reference/1000G_phase1.indels.b37.vcf
+    - /proj/b2011117/private/databases/reference/Mills_and_1000G_gold_standard.indels.b37.vcf
+  REFERENCE: /proj/b2011117/private/databases/reference/Homo_sapiens.GRCh37.57.dna.concat.fa
+  SPLIT_REGIONS_FILE: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/split.regions_file
+  TARGETS_INTERVAL_LIST: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/targets.interval_list
+  VARIANTS_CALLING: true
+JOBS_REPORT_FILE:
+JOB_ALLOC_TIME: "4-00:00:00"
+PROJECT_CODE: b2012247
+PROJECT_NAME: S_Reg
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/gatkbp/RnD/S_Reg
+SAMPLES_INFOS:
+  - FAMILY_ID: "NO_FAMILY"
+    MEMBERS:
+      - SAMPLE_ID: "SReg_Sample_3"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/resources/group1/SReg_Sample_3/DNASeq_SReg_S3_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/resources/group1/SReg_Sample_3/DNASeq_SReg_S3_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: group1
+        usage_mail: NO
+      - SAMPLE_ID: "SReg_Sample_1"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/resources/group1/SReg_Sample_1/DNASeq_SReg_S1_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/resources/group1/SReg_Sample_1/DNASeq_SReg_S1_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: group1
+        usage_mail: NO
+      - SAMPLE_ID: "SReg_Sample_4"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/resources/group7/SReg_Sample_4/DNASeq_w_indel_S4_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/resources/group7/SReg_Sample_4/DNASeq_w_indel_S4_R2.fastq.gz
+          - R1: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/resources/group7/SReg_Sample_4/DNASeq_SReg_S4_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/resources/group7/SReg_Sample_4/DNASeq_SReg_S4_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: group7
+        usage_mail: NO
+      - SAMPLE_ID: "SReg_Sample_2"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/resources/group7/SReg_Sample_2/DNASeq_w_indel_S2_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/resources/group7/SReg_Sample_2/DNASeq_w_indel_S2_R2.fastq.gz
+          - R1: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/resources/group7/SReg_Sample_2/DNASeq_SReg_S2_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/RnD/gatkbp/split_reg/resources/group7/SReg_Sample_2/DNASeq_SReg_S2_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: group7
+        usage_mail: NO
