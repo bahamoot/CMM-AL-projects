@@ -1,0 +1,129 @@
+ANNOVAR_PARAMS:
+  buildver: hg19
+  db_dir: /glob/jessada/tools/annovar/humandb
+  db_names: refGene,cytoBand,genomicSuperDups,esp6500siv2_all,1000g2014oct_eur,1000g2014oct_all,snp138,exac03,cg69,cosmic70,nci60,clinvar_20150330,CMM_Ill_Br,CMM_CRC_all,CMM_CRC_CAFAM,CMM_CRC_COLON,CMM_CRC_CRC,CMM_CRC_RECTAL,CMM_PMS2_sporadic_fam24,CMM_Axeq_chr3_6_14_18,CMM_Axeq_chr5_19,CMM_Axeq_chr9,CMM_oncoarray_gw,200_Danes,249_Swedes,ljb26_all
+  db_ops: g,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f
+  input_file: /proj/b2011117/private/databases/vcf/WES294/WES294.vcf.gz
+  nastring: .
+JOBS_REPORT_FILE:
+JOB_ALLOC_TIME: "4-00:00:00"
+MUTSTAT_PARAMS:
+  VCF_TABIX_FILE: /proj/b2011117/private/databases/vcf/WES294/WES294.vcf.gz
+PROJECT_CODE: b2011097
+PROJECT_NAME: WES294_OAF_BrCs
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/cmmdb/mutstat/WES/cal_stat_WES294_OAF_BrCs
+SAMPLES_INFOS:
+  - FAMILY_ID: "179"
+    MEMBERS:
+      - SAMPLE_ID: "Co-323"
+  - FAMILY_ID: "1100"
+    MEMBERS:
+      - SAMPLE_ID: "341-89D"
+  - FAMILY_ID: "1891"
+    MEMBERS:
+      - SAMPLE_ID: "Al-148"
+  - FAMILY_ID: "2060"
+    MEMBERS:
+      - SAMPLE_ID: "Br-690"
+  - FAMILY_ID: "2590"
+    MEMBERS:
+      - SAMPLE_ID: "Al-133"
+  - FAMILY_ID: "3028"
+    MEMBERS:
+      - SAMPLE_ID: "AL-36"
+  - FAMILY_ID: "4040"
+    MEMBERS:
+      - SAMPLE_ID: "Br-55"
+  - FAMILY_ID: "4041"
+    MEMBERS:
+      - SAMPLE_ID: "Br-27"
+  - FAMILY_ID: "4046"
+    MEMBERS:
+      - SAMPLE_ID: "Br-100"
+  - FAMILY_ID: "4093"
+    MEMBERS:
+      - SAMPLE_ID: "Br-175"
+  - FAMILY_ID: "4127"
+    MEMBERS:
+      - SAMPLE_ID: "Br-246"
+  - FAMILY_ID: "5701"
+    MEMBERS:
+      - SAMPLE_ID: "Br-585"
+  - FAMILY_ID: "6005"
+    MEMBERS:
+      - SAMPLE_ID: "Br-271"
+  - FAMILY_ID: "6006"
+    MEMBERS:
+      - SAMPLE_ID: "Br-418"
+  - FAMILY_ID: "6037"
+    MEMBERS:
+      - SAMPLE_ID: "Br-310"
+  - FAMILY_ID: "6041"
+    MEMBERS:
+      - SAMPLE_ID: "Br-317"
+  - FAMILY_ID: "6067"
+    MEMBERS:
+      - SAMPLE_ID: "884-99D"
+  - FAMILY_ID: "6072"
+    MEMBERS:
+      - SAMPLE_ID: "Br-682"
+  - FAMILY_ID: "6094"
+    MEMBERS:
+      - SAMPLE_ID: "Br-442"
+  - FAMILY_ID: "6100"
+    MEMBERS:
+      - SAMPLE_ID: "Br-465"
+  - FAMILY_ID: "6101"
+    MEMBERS:
+      - SAMPLE_ID: "Br-473"
+  - FAMILY_ID: "6104"
+    MEMBERS:
+      - SAMPLE_ID: "Br-475"
+  - FAMILY_ID: "6106"
+    MEMBERS:
+      - SAMPLE_ID: "Br-484"
+  - FAMILY_ID: "6123"
+    MEMBERS:
+      - SAMPLE_ID: "Br-526"
+  - FAMILY_ID: "6127"
+    MEMBERS:
+      - SAMPLE_ID: "Br-694"
+  - FAMILY_ID: "L1056"
+    MEMBERS:
+      - SAMPLE_ID: "Br-720"
+  - FAMILY_ID: "L1141"
+    MEMBERS:
+      - SAMPLE_ID: "Br-652"
+  - FAMILY_ID: "L862"
+    MEMBERS:
+      - SAMPLE_ID: "Br-706"
+  - FAMILY_ID: "NO_FAMILY"
+    MEMBERS:
+      - SAMPLE_ID: "AB-1"
+      - SAMPLE_ID: "AB-2"
+      - SAMPLE_ID: "AB-3"
+      - SAMPLE_ID: "AB-4"
+      - SAMPLE_ID: "AB-5"
+      - SAMPLE_ID: "AB-6"
+      - SAMPLE_ID: "AB-7"
+      - SAMPLE_ID: "AB-8"
+      - SAMPLE_ID: "AB-9"
+      - SAMPLE_ID: "AB-10"
+      - SAMPLE_ID: "AB-11"
+      - SAMPLE_ID: "AB-12"
+      - SAMPLE_ID: "AB-13"
+      - SAMPLE_ID: "AB-14"
+      - SAMPLE_ID: "AB-15"
+      - SAMPLE_ID: "AB-16"
+      - SAMPLE_ID: "AB-17"
+      - SAMPLE_ID: "AB-18"
+      - SAMPLE_ID: "AB-19"
+      - SAMPLE_ID: "AB-20"
+      - SAMPLE_ID: "AB-21"
+      - SAMPLE_ID: "AB-22"
+      - SAMPLE_ID: "AB-23"
+      - SAMPLE_ID: "AB-24"
+      - SAMPLE_ID: "AB-25"
+      - SAMPLE_ID: "AB-26"
+      - SAMPLE_ID: "AB-27"
+      - SAMPLE_ID: "AB-28"
