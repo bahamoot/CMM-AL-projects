@@ -1,14 +1,14 @@
 #!/bin/bash
 
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-dataset_name="oncochip_n_twin_chr9"
-project_out_dir="$PLINK_OUTPUT_DIR/chr9/online/linkage_9q"
-project_code="b2011097"
+dataset_name="corect_n_twin_chr9"
+project_out_dir="$PLINK_OUTPUT_DIR/chr9/online/linkage_9q_corect_n_twin_sporadic"
+project_code="b2012247"
 jobs_setup_file="$dataset_name"_jobs_setup.txt
-input_dna_regions="9:98382949-98550265"
-hap_window_sizes="10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25"
-input_bfile_prefix="$GENOTYPING_ONCOCHIP_N_TWINGENE"
-phenotype_file="$GENOTYPING_ONCOCHIP_N_TWINGENE_PHENOTYPE_FILE"
+input_dna_regions="9:98307129-105545039"
+hap_window_sizes="1,3,5,10,25"
+input_bfile_prefix="$GENOTYPING_ONCOCHIP_N_TWINGENE_9Q_LINKAGE"
+phenotype_file="$GENOTYPING_ONCOCHIP_N_TWINGENE_9Q_LINKAGE_SPORADIC_PHENOTYPE_FILE"
 filter_criteria="PVALUE005"
 filter_criteria+=",DISEASE_SNP"
 cutoff_pvalue="0.001"

@@ -1,38 +1,27 @@
 #!/bin/bash
 
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-dataset_name="chr9_axeq"
-project_out_dir="/proj/b2011117/private/projects/out/chr9/$dataset_name/"
-vcf_tabix_file="/glob/jessada/private/master_data/CMM/CMM_Axeq_b2012247/Axeq_chr9.vcf.gz"
-#vcf_region="5,19"
-project_code="b2011158"
-anno_excl_tags="Axeq_chr5_19,Axeq_chr3_6_14_18,CRC_101,Mutstat_details,LJB_score"
-rows_filter="Rare"
-rows_filter+=",Non-Intergenic"
-rows_filter+=",Non-Intronic"
-rows_filter+=",Has-Mutation"
-rows_filter+=",Has-Shared"
-annotated_vcf_tabix="/glob/jessada/private/master_data/CMM/table_annovar/Axeq_chr9/Axeq_chr9_annotated.vcf.gz"
-sample_infos="24:Co-166:Co-213:Co-648,8:Co-37,275:Co-618,478:Co-1274"
-#sample_infos="Co-166,Co-213,Co-648,Co-37,Co-618,Co-1274"
+dataset_name="chr9_WES294_lkg"
+project_out_dir="$MUTATIONS_REPORTS_OUTPUT_DIR/chr9/WES294/"
+project_code="b2012247"
+annotated_vcf_tabix="$ANNOTATED_WES294"
+sample_infos="$script_dir/chr9.sample_infos"
+anno_excl_tags="Mutstat_details"
+anno_excl_tags+=",ExAC_Other"
+anno_excl_tags+=",Unknown"
 report_regions="9:98307129-105545039"
-call_detail="True"
-#split_chrom=True
-summary_families=True
-#only_families=True
-#only_summary=True
+#call_info="True"
+split_chrom=True
+filter_actions="Rare"
+filter_actions+=",Has-Mutation"
+filter_actions+=",Has-Shared"
 #freq_ratios="ExAC_ALL:0.1"
 jobs_setup_file="$dataset_name"_jobs_setup.txt
 
 
-cmd="pyCMM-cmmdb-create-job-setup-file"
+cmd="pyCMM-mutrep-create-job-setup-file"
 cmd+=" -d $dataset_name"
 cmd+=" -O $project_out_dir"
-cmd+=" -i $vcf_tabix_file"
-if [ ! -z $vcf_region ]
-then
-    cmd+=" -r $vcf_region"
-fi
 if [ ! -z $project_code ]
 then
     cmd+=" -p $project_code"
@@ -41,9 +30,9 @@ if [ ! -z $anno_excl_tags ]
 then
     cmd+=" -E $anno_excl_tags"
 fi
-if [ ! -z "$rows_filter" ]
+if [ ! -z "$filter_actions" ]
 then
-    cmd+=" -F $rows_filter"
+    cmd+=" --filter_actions $filter_actions"
 fi
 if [ ! -z $annotated_vcf_tabix ]
 then

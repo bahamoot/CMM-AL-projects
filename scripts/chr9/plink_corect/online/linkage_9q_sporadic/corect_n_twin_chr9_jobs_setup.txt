@@ -1,40 +1,28 @@
-FLOW_ALLOC_TIME: "4-00:00:00"
-JOBS_REPORT_FILE: /proj/b2011117/private/projects_output/plink/chr9/slurm/linkage_9q/oncochip_n_twin_chr9_rpt.txt
+JOBS_REPORT_FILE:
+JOB_ALLOC_TIME: "4-00:00:00"
 PLINK_PARAMS:
   FILTERING_CRITERIA:
     - PVALUE005
     - DISEASE_SNP
   HAP_WINDOW_SIZES:
+    - 1
+    - 3
+    - 5
     - 10
-    - 11
-    - 12
-    - 13
-    - 14
-    - 15
-    - 16
-    - 17
-    - 18
-    - 19
-    - 20
-    - 21
-    - 22
-    - 23
-    - 24
     - 25
   INPUT_BINARY: true
   INPUT_DNA_REGIONS:
-    - 9:98382949-98550265
+    - 9:98307129-105545039
   INPUT_FILE_PREFIX: /proj/b2011117/private/databases/genotyping/oncochip_n_twingene/chr9_linkage
-  PHENOTYPE_FILE: /proj/b2011117/private/databases/genotyping/oncochip_n_twingene/chr9_linkage_phenotype.txt
-PROJECT_CODE: b2011097
-PROJECT_NAME: oncochip_n_twin_chr9
-PROJECT_OUT_DIR: /proj/b2011117/private/projects_output/plink/chr9/slurm/linkage_9q
+  PHENOTYPE_FILE: /proj/b2011117/private/databases/genotyping/oncochip_n_twingene/corect_n_twin_sporadic_phenotype.txt
+PROJECT_CODE: b2012247
+PROJECT_NAME: corect_n_twin_chr9
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/plink/chr9/online/linkage_9q_corect_n_twin_sporadic
 REPORT_PARAMS:
   CUTOFF_ORS: 1.5
   CUTOFF_PVALUE: 0.001
   FAMILY_HAPLOTYPE_PREFIX: /proj/b2011117/private/databases/haplotype/chr9_linkage/chr9_lkg_haplotypes
-RPT_ALLOC_TIME: "1-00:00:00"
-SAMPLE_INFOS:
+SAMPLES_INFOS:
   - FAMILY_ID: "24"
     MEMBERS:
       - SAMPLE_ID: "new_fam24_shared_only"
