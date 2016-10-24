@@ -1,0 +1,46 @@
+JOBS_REPORT_FILE:
+JOB_ALLOC_TIME: "4-00:00:00"
+PLINK_PARAMS:
+  FILTERING_CRITERIA:
+    - PVALUE005
+    - DISEASE_SNP
+  HAP_WINDOW_SIZES:
+    - 1
+    - 3
+    - 5
+    - 10
+    - 25
+  INPUT_BINARY: true
+  INPUT_DNA_REGIONS:
+    - 9:98307129-105545039
+  INPUT_FILE_PREFIX: /proj/b2011117/private/databases/genotyping/oncochip_n_twingene/chr9_linkage
+  PHENOTYPE_FILE: /proj/b2011117/private/databases/genotyping/oncochip_n_twingene/corect_n_twin_sporadic_phenotype.txt
+PROJECT_CODE: b2012247
+PROJECT_NAME: corect_n_twin_chr9
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/plink/chr9/online/linkage_9q_corect_n_twin_sporadic
+REPORT_PARAMS:
+  CUTOFF_ORS: 1.5
+  CUTOFF_PVALUE: 0.001
+  FAMILY_HAPLOTYPE_PREFIX: /proj/b2011117/private/databases/haplotype/chr9_linkage/chr9_lkg_haplotypes
+SAMPLES_INFOS:
+  - FAMILY_ID: "24"
+    MEMBERS:
+      - SAMPLE_ID: "new_fam24_shared_only"
+  - FAMILY_ID: "8"
+    MEMBERS:
+      - SAMPLE_ID: "fam_8"
+  - FAMILY_ID: "275"
+    MEMBERS:
+      - SAMPLE_ID: "fam_275"
+  - FAMILY_ID: "350"
+    MEMBERS:
+      - SAMPLE_ID: "fam_350"
+  - FAMILY_ID: "478"
+    MEMBERS:
+      - SAMPLE_ID: "fam_478"
+  - FAMILY_ID: "740"
+    MEMBERS:
+      - SAMPLE_ID: "fam_740"
+  - FAMILY_ID: "918"
+    MEMBERS:
+      - SAMPLE_ID: "fam_918"
