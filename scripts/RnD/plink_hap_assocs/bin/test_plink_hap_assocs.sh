@@ -1,7 +1,7 @@
 #!/bin/bash 
  
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cmd="pyCMM-plink-hap-assocs"
+cmd="pyCMM-plink-pipeline"
 cmd+=" -j $CMM_CLIENT/scripts/RnD/plink_hap_assocs/bin/plink_hap_assocs_jobs_setup.txt"
 #cmd+=" -r 18"
 #cmd+=" -r 6:78171941-78172992,18:28610988-28611790"

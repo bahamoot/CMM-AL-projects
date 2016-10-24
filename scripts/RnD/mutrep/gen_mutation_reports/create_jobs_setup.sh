@@ -3,7 +3,8 @@
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 dataset_name="gen_mutation_reports"
 project_out_dir="$MUTATIONS_REPORTS_OUTPUT_DIR/RnD/$dataset_name"
-#project_code="b2012247"
+job_alloc_time="2-10:00:00"
+project_code="b2012247"
 annotated_vcf_tabix="$ANNOTATED_WES294"
 #annotated_vcf_tabix="$ANNOTATED_AXEQ_CHR3_6_14_18"
 call_detail="True"
@@ -21,6 +22,10 @@ cmd+=" -O $project_out_dir"
 if [ ! -z $project_code ]
 then
     cmd+=" -p $project_code"
+fi
+if [ ! -z $job_alloc_time ]
+then
+    cmd+=" --job_alloc_time $job_alloc_time"
 fi
 if [ ! -z $annotated_vcf_tabix ]
 then
