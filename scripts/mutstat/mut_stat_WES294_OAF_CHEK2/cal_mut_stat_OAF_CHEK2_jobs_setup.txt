@@ -1,0 +1,45 @@
+ANNOVAR_PARAMS:
+  buildver: hg19
+  db_dir: /proj/b2011117/private/databases/third_party/annovar/humandb
+  db_names: refGene,cytoBand,genomicSuperDups,esp6500siv2_all,1000g2014oct_eur,1000g2014oct_all,snp138,exac03,cg69,cosmic70,nci60,clinvar_20150330,CMM_WES294_OAF_BrC_CRC_prostate,CMM_WES294_OAF_BrCs,CMM_WES294_OAF_CRCs,CMM_WES294_OAF_CHEK2,CMM_WES294_OAF_EARLYONSET,CMM_Axeq_chr3_6_14_18,CMM_Axeq_chr5_19,CMM_Axeq_chr9,200_Danes,249_Swedes,ljb26_all
+  db_ops: g,r,r,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f,f
+  input_file: /proj/b2011117/private/databases/vcf/WES294/WES294.vcf.gz
+  nastring: .
+JOBS_REPORT_FILE:
+JOB_ALLOC_TIME: "4-00:00:00"
+MUTSTAT_PARAMS:
+  VCF_TABIX_FILE: /proj/b2011117/private/databases/vcf/WES294/WES294.vcf.gz
+PROJECT_CODE: b2011097
+PROJECT_NAME: OAF_CHEK2
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/cmmdb/mutstat/WES/cal_stat_OAF_CHEK2
+SAMPLES_INFOS:
+  - FAMILY_ID: "NO_FAMILY"
+    MEMBERS:
+      - SAMPLE_ID: "AB-1"
+      - SAMPLE_ID: "AB-2"
+      - SAMPLE_ID: "AB-3"
+      - SAMPLE_ID: "AB-4"
+      - SAMPLE_ID: "AB-5"
+      - SAMPLE_ID: "AB-6"
+      - SAMPLE_ID: "AB-7"
+      - SAMPLE_ID: "AB-8"
+      - SAMPLE_ID: "AB-9"
+      - SAMPLE_ID: "AB-10"
+      - SAMPLE_ID: "AB-11"
+      - SAMPLE_ID: "AB-12"
+      - SAMPLE_ID: "AB-13"
+      - SAMPLE_ID: "AB-14"
+      - SAMPLE_ID: "AB-15"
+      - SAMPLE_ID: "AB-16"
+      - SAMPLE_ID: "AB-17"
+      - SAMPLE_ID: "AB-18"
+      - SAMPLE_ID: "AB-19"
+      - SAMPLE_ID: "AB-20"
+      - SAMPLE_ID: "AB-21"
+      - SAMPLE_ID: "AB-22"
+      - SAMPLE_ID: "AB-23"
+      - SAMPLE_ID: "AB-24"
+      - SAMPLE_ID: "AB-25"
+      - SAMPLE_ID: "AB-26"
+      - SAMPLE_ID: "AB-27"
+      - SAMPLE_ID: "AB-28"

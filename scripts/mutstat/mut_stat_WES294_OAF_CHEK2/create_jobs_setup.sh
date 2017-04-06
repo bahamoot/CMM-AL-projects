@@ -1,7 +1,7 @@
 #!/bin/bash
 
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-dataset_name="WES294_OAF_CHEK2"
+dataset_name="OAF_CHEK2"
 project_out_dir="$MUTSTAT_OUTPUT_DIR/WES/cal_stat_$dataset_name"
 vcf_tabix_file="$VCF_WES294"
 sample_info="$SAMPLES_LIST_DIR/Exome_OAF_CHEK2.list"

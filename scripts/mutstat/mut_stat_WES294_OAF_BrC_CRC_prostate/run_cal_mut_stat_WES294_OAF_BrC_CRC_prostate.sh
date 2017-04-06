@@ -1,5 +1,5 @@
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cmd="pyCMM-cmmdb-cal-mut-stat "
-cmd+=" -j $script_dir/cal_mut_stat_WES294_OAF_BrC_CRC_prostate_jobs_setup.txt"
+cmd+=" -j $script_dir/cal_mut_stat_OAF_BrC_CRC_prostate_jobs_setup.txt"
 #cmd+=" -l /proj/b2011117/private/projects/out/db/cal_stat_101CRC_all/101CRC_all"
 eval "$cmd"
