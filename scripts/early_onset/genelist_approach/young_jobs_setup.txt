@@ -1,0 +1,2111 @@
+JOBS_REPORT_FILE:
+PROJECT_NAME: young
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/early_onset/gene_list_approach
+REPORT_LAYOUT:
+  ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/WES294/WES294_annotated.vcf.gz
+  COLORING_SAMPLES:
+    - Zygosity
+  COLUMNS:
+    - Func.refGene
+    - ExonicFunc.refGene
+    - snp138
+    - Gene.refGene
+    - GeneDetail.refGene
+    - AAChange.refGene
+    - cytoBand
+    - SWEGEN_AF
+    - ExAC_ALL
+    - ExAC_NFE
+    - ExAC_AFR
+    - ExAC_AMR
+    - ExAC_EAS
+    - ExAC_FIN
+    - ExAC_SAS
+    - ExAC_OTH
+    - 249_SWEDES
+    - 200_DANES
+    - 1000g2014oct_all
+    - 1000g2014oct_eur
+    - InterVar:InterVarAndEvidence
+    - OAF_EARLYONSET_AF
+    - OAF_EARLYONSET_GF
+    - OAF_BRCS_AF
+    - OAF_BRCS_GF
+    - OAF_FAMILIAL_CRCS_AF
+    - OAF_FAMILIAL_CRCS_GF
+    - OAF_BRC_CRC_PROSTATE_AF
+    - OAF_BRC_CRC_PROSTATE_GF
+    - OAF_CHEK2_AF
+    - OAF_CHEK2_GF
+    - SWEGEN_HET
+    - SWEGEN_HOM
+    - SWEGEN_HEMI
+    - SWEGEN_AC
+    - SWEGEN_GT
+    - SWEGEN_GF
+    - SWEGEN_PF
+    - EXAC03_CONSTRAINT_EXP_SYN
+    - EXAC03_CONSTRAINT_N_SYN
+    - EXAC03_CONSTRAINT_SYN_Z
+    - EXAC03_CONSTRAINT_EXP_MIS
+    - EXAC03_CONSTRAINT_N_MIS
+    - EXAC03_CONSTRAINT_MIS_Z
+    - EXAC03_CONSTRAINT_EXP_LOF
+    - EXAC03_CONSTRAINT_N_LOF
+    - EXAC03_CONSTRAINT_PLI
+    - cosmic70
+    - clinvar_20150330
+    - dpsi_zscore
+    - SIFT_pred
+    - Polyphen2_HDIV_pred
+    - Polyphen2_HVAR_pred
+    - LRT_pred
+    - MutationTaster_pred
+    - MutationAssessor_pred
+    - FATHMM_pred
+    - RadialSVM_pred
+    - LR_pred
+    - CADD_phred
+  EXPRESSIONS:
+    - NAME: EARLYONSET_0
+      PATTERN: '("OAF_EARLYONSET_AF"==''0.0000'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: EARLYONSET_1
+      PATTERN: '("OAF_EARLYONSET_AF"==''1.0000'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: EARLYONSET_NA
+      PATTERN: '("OAF_EARLYONSET_AF"==''NA'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: EARLYONSET_dot
+      PATTERN: '("OAF_EARLYONSET_AF"==''.'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: EARLYONSET_empty
+      PATTERN: '("OAF_EARLYONSET_AF"=='''')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: Func_ncRNA_exonic
+      PATTERN: '("Func.refGene"==''ncRNA_exonic'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: Func_ncRNA_splicing
+      PATTERN: '("Func.refGene"==''ncRNA_splicing'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: ExonicFunc_unknown
+      PATTERN: '("ExonicFunc.refGene"==''unknown'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: SWEGEN_AF_03
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_YELLOW
+    - NAME: SWEGEN_AF_97
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_YELLOW
+    - NAME: SWEGEN_AF_01
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_ORANGE
+    - NAME: SWEGEN_AF_99
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_ORANGE
+    - NAME: SWEGEN_AF_001
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_GREEN
+    - NAME: SWEGEN_AF_999
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_GREEN
+    - NAME: SWEGEN_AF_empty
+      PATTERN: '("SWEGEN_AF"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_GREEN
+    - NAME: ExAC_ALL_03
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_YELLOW
+    - NAME: ExAC_ALL_97
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_YELLOW
+    - NAME: ExAC_ALL_01
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_ORANGE
+    - NAME: ExAC_ALL_99
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_ORANGE
+    - NAME: ExAC_ALL_001
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_GREEN
+    - NAME: ExAC_ALL_999
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_GREEN
+    - NAME: ExAC_ALL_empty
+      PATTERN: '("ExAC_ALL"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_GREEN
+    - NAME: ExAC_NFE_03
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_YELLOW
+    - NAME: ExAC_NFE_97
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_YELLOW
+    - NAME: ExAC_NFE_01
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_ORANGE
+    - NAME: ExAC_NFE_99
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_ORANGE
+    - NAME: ExAC_NFE_001
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_GREEN
+    - NAME: ExAC_NFE_999
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_GREEN
+    - NAME: ExAC_NFE_empty
+      PATTERN: '("ExAC_NFE"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_GREEN
+    - NAME: ExAC_AFR_03
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_YELLOW
+    - NAME: ExAC_AFR_97
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_YELLOW
+    - NAME: ExAC_AFR_01
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_ORANGE
+    - NAME: ExAC_AFR_99
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_ORANGE
+    - NAME: ExAC_AFR_001
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_GREEN
+    - NAME: ExAC_AFR_999
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_GREEN
+    - NAME: ExAC_AFR_empty
+      PATTERN: '("ExAC_AFR"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_GREEN
+    - NAME: ExAC_AMR_03
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_YELLOW
+    - NAME: ExAC_AMR_97
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_YELLOW
+    - NAME: ExAC_AMR_01
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_ORANGE
+    - NAME: ExAC_AMR_99
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_ORANGE
+    - NAME: ExAC_AMR_001
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_GREEN
+    - NAME: ExAC_AMR_999
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_GREEN
+    - NAME: ExAC_AMR_empty
+      PATTERN: '("ExAC_AMR"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_GREEN
+    - NAME: ExAC_EAS_03
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_YELLOW
+    - NAME: ExAC_EAS_97
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_YELLOW
+    - NAME: ExAC_EAS_01
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_ORANGE
+    - NAME: ExAC_EAS_99
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_ORANGE
+    - NAME: ExAC_EAS_001
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_GREEN
+    - NAME: ExAC_EAS_999
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_GREEN
+    - NAME: ExAC_EAS_empty
+      PATTERN: '("ExAC_EAS"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_GREEN
+    - NAME: ExAC_FIN_03
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_YELLOW
+    - NAME: ExAC_FIN_97
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_YELLOW
+    - NAME: ExAC_FIN_01
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_ORANGE
+    - NAME: ExAC_FIN_99
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_ORANGE
+    - NAME: ExAC_FIN_001
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_GREEN
+    - NAME: ExAC_FIN_999
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_GREEN
+    - NAME: ExAC_FIN_empty
+      PATTERN: '("ExAC_FIN"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_GREEN
+    - NAME: ExAC_SAS_03
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_YELLOW
+    - NAME: ExAC_SAS_97
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_YELLOW
+    - NAME: ExAC_SAS_01
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_ORANGE
+    - NAME: ExAC_SAS_99
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_ORANGE
+    - NAME: ExAC_SAS_001
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_GREEN
+    - NAME: ExAC_SAS_999
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_GREEN
+    - NAME: ExAC_SAS_empty
+      PATTERN: '("ExAC_SAS"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_GREEN
+    - NAME: ExAC_OTH_03
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_YELLOW
+    - NAME: ExAC_OTH_97
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_YELLOW
+    - NAME: ExAC_OTH_01
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_ORANGE
+    - NAME: ExAC_OTH_99
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_ORANGE
+    - NAME: ExAC_OTH_001
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_GREEN
+    - NAME: ExAC_OTH_999
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_GREEN
+    - NAME: ExAC_OTH_empty
+      PATTERN: '("ExAC_OTH"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_GREEN
+    - NAME: 249_SWEDES_03
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_YELLOW
+    - NAME: 249_SWEDES_97
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_YELLOW
+    - NAME: 249_SWEDES_01
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_ORANGE
+    - NAME: 249_SWEDES_99
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_ORANGE
+    - NAME: 249_SWEDES_001
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_GREEN
+    - NAME: 249_SWEDES_999
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_GREEN
+    - NAME: 249_SWEDES_empty
+      PATTERN: '("249_SWEDES"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_GREEN
+    - NAME: 200_DANES_03
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_YELLOW
+    - NAME: 200_DANES_97
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_YELLOW
+    - NAME: 200_DANES_01
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_ORANGE
+    - NAME: 200_DANES_99
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_ORANGE
+    - NAME: 200_DANES_001
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_GREEN
+    - NAME: 200_DANES_999
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_GREEN
+    - NAME: 200_DANES_empty
+      PATTERN: '("200_DANES"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_GREEN
+    - NAME: 1000g2014oct_all_03
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_YELLOW
+    - NAME: 1000g2014oct_all_97
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_YELLOW
+    - NAME: 1000g2014oct_all_01
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_ORANGE
+    - NAME: 1000g2014oct_all_99
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_ORANGE
+    - NAME: 1000g2014oct_all_001
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_GREEN
+    - NAME: 1000g2014oct_all_999
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_GREEN
+    - NAME: 1000g2014oct_all_empty
+      PATTERN: '("1000g2014oct_all"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_GREEN
+    - NAME: 1000g2014oct_eur_03
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_YELLOW
+    - NAME: 1000g2014oct_eur_97
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_YELLOW
+    - NAME: 1000g2014oct_eur_01
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_ORANGE
+    - NAME: 1000g2014oct_eur_99
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_ORANGE
+    - NAME: 1000g2014oct_eur_001
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_GREEN
+    - NAME: 1000g2014oct_eur_999
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_GREEN
+    - NAME: 1000g2014oct_eur_empty
+      PATTERN: '("1000g2014oct_eur"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_GREEN
+    - NAME: EXAC03_CONSTRAINT_MIS_Z_significance
+      PATTERN: '("EXAC03_CONSTRAINT_MIS_Z"!='''')and(float("EXAC03_CONSTRAINT_MIS_Z")>3)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: EXAC03_CONSTRAINT_MIS_Z:XLS_YELLOW
+    - NAME: EXAC03_CONSTRAINT_PLI_significance
+      PATTERN: '("EXAC03_CONSTRAINT_PLI"!='''')and(float("EXAC03_CONSTRAINT_PLI")>0.9)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: EXAC03_CONSTRAINT_PLI:XLS_YELLOW
+    - NAME: CADD_phred_significance
+      PATTERN: '("CADD_phred"!='''')and(float("CADD_phred")>20)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: CADD_phred:XLS_YELLOW
+    - NAME: dpsi_zscore_significance1
+      PATTERN: '("dpsi_zscore"!='''')and(float("dpsi_zscore")<-2)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: dpsi_zscore:XLS_YELLOW
+    - NAME: dpsi_zscore_significance2
+      PATTERN: '("dpsi_zscore"!='''')and(float("dpsi_zscore")>2)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: dpsi_zscore:XLS_YELLOW
+  FILTER_GENES:
+    - ACD
+    - ADM
+    - AIP
+    - AKT1
+    - ALK
+    - AP3B1
+    - APC
+    - AR
+    - ARMC5
+    - ATM
+    - ATR
+    - AXIN2
+    - BABAM1
+    - BAP1
+    - BARD1
+    - BCCIP
+    - BLM
+    - BLOC1S3
+    - BLOC1S6
+    - BMPR1A
+    - BRAF
+    - BRAP
+    - BRCA1
+    - BRCA2
+    - BRCC3
+    - BRE
+    - BRIP1
+    - BUB1B
+    - C17orf70
+    - C19orf40
+    - CASP10
+    - CASR
+    - CBL
+    - CD40LG
+    - CDC73
+    - CDH1
+    - CDK4
+    - CDKN1B
+    - CDKN1C
+    - CDKN2A
+    - CDKN2B
+    - CEBPA
+    - CEP57
+    - CHEK1
+    - CHEK2
+    - CREBBP
+    - CSF3R
+    - CTC1
+    - CYLD
+    - DDB2
+    - DICER1
+    - DIS3L2
+    - DKC1
+    - DTNBP1
+    - EGFR
+    - ELANE
+    - ENG
+    - EP300
+    - EPCAM
+    - ERCC2
+    - ERCC3
+    - ERCC4
+    - ERCC5
+    - ESR1
+    - EXO1
+    - EXT1
+    - EXT2
+    - EZH2
+    - FAM175A
+    - FAN1
+    - FANCA
+    - FANCB
+    - FANCC
+    - FANCD2
+    - FANCE
+    - FANCF
+    - FANCG
+    - FANCI
+    - FANCL
+    - FANCM
+    - FAS
+    - FASLG
+    - FH
+    - FLCN
+    - FOXO1
+    - G6PC3
+    - GATA1
+    - GATA2
+    - GDNF
+    - GFI1
+    - GNAS
+    - GPC3
+    - GPC4
+    - GPR101
+    - GREM1
+    - GREM1
+    - HAX1
+    - HNF1A
+    - HOXB13
+    - HPS1
+    - HPS3
+    - HPS4
+    - HPS5
+    - HPS6
+    - HRAS
+    - HUS1
+    - JAGN1
+    - KIF1B
+    - KIT
+    - KLLN
+    - KRAS
+    - LZTR1
+    - MAP2K1
+    - MAP2K2
+    - MAX
+    - MDC1
+    - MDH2
+    - MEN1
+    - MET
+    - MITF
+    - MLH1
+    - MLH3
+    - MPL
+    - MRE11A
+    - MSH2
+    - MSH3
+    - MSH6
+    - MUTYH
+    - NBN
+    - NF1
+    - NF2
+    - NHP2
+    - NKX2-1
+    - NOP10
+    - NRAS
+    - NSD1
+    - NTHL1
+    - NTRK1
+    - OCA2
+    - PALB2
+    - PALLD
+    - PAX3
+    - PAX7
+    - PDGFRA
+    - PHOX2B
+    - PIK3CA
+    - PMS1
+    - PMS2
+    - POLD1
+    - POLE
+    - POLH
+    - POLR2A
+    - POT1
+    - PPM1D
+    - PRF1
+    - PRKAR1A
+    - PTCH1
+    - PTEN
+    - PTPN11
+    - PTPN12
+    - RAD1
+    - RAD17
+    - RAD50
+    - RAD51
+    - RAD51B
+    - RAD51C
+    - RAD51D
+    - RAD52
+    - RAD54L
+    - RAD9A
+    - RAF1
+    - RB1
+    - RBBP8
+    - RECQL4
+    - REST
+    - RET
+    - RHBDF2
+    - RINT1
+    - RMI1
+    - RMI2
+    - RMRP
+    - RPL11
+    - RPL15
+    - RPL26
+    - RPL35A
+    - RPL5
+    - RPS10
+    - RPS17
+    - RPS19
+    - RPS24
+    - RPS26
+    - RPS29
+    - RPS7
+    - RRAS2
+    - RTEL1
+    - RUNX1
+    - SBDS
+    - SDHA
+    - SDHAF2
+    - SDHB
+    - SDHC
+    - SDHD
+    - SH2D1A
+    - SLC26A3
+    - SLX4
+    - SMAD4
+    - SMARCA4
+    - SMARCAL1
+    - SMARCB1
+    - SMARCE1
+    - SOS1
+    - SPRED1
+    - SRC
+    - SRP72
+    - STK11
+    - SUFU
+    - TERC
+    - TERF2IP
+    - TERT
+    - TINF2
+    - TMEM127
+    - TOP3A
+    - TOPBP1
+    - TP53
+    - TP53BP1
+    - TRAF7
+    - TRIM37
+    - TSC1
+    - TSC2
+    - TYR
+    - UIMC1
+    - VHL
+    - VPS45
+    - WAS
+    - WRAP53
+    - WRN
+    - WT1
+    - XPA
+    - XPC
+    - XRCC2
+    - XRCC3
+    - XRCC4
+    - ZNF350
+  FREQUENCY_RATIOS:
+    - COLUMN: SWEGEN_AF
+      FREQUENCY: 0.1
+  HEADER_CORRECTIONS:
+    - NEW_HEADER: BRCS_WT
+      OLD_HEADER: OAF_BRCS_WT
+    - NEW_HEADER: BRCS_HET
+      OLD_HEADER: OAF_BRCS_HET
+    - NEW_HEADER: BRCS_HOM
+      OLD_HEADER: OAF_BRCS_HOM
+    - NEW_HEADER: BRCS_OTH
+      OLD_HEADER: OAF_BRCS_OTH
+    - NEW_HEADER: BRCS_NA
+      OLD_HEADER: OAF_BRCS_NA
+    - NEW_HEADER: BRCS_GT
+      OLD_HEADER: OAF_BRCS_GT
+    - NEW_HEADER: BRCS_PF
+      OLD_HEADER: OAF_BRCS_PF
+    - NEW_HEADER: BRCS_AF
+      OLD_HEADER: OAF_BRCS_AF
+    - NEW_HEADER: BRCS_GF
+      OLD_HEADER: OAF_BRCS_GF
+    - NEW_HEADER: CRCS_WT
+      OLD_HEADER: OAF_CRCS_WT
+    - NEW_HEADER: CRCS_HET
+      OLD_HEADER: OAF_CRCS_HET
+    - NEW_HEADER: CRCS_HOM
+      OLD_HEADER: OAF_CRCS_HOM
+    - NEW_HEADER: CRCS_OTH
+      OLD_HEADER: OAF_CRCS_OTH
+    - NEW_HEADER: CRCS_NA
+      OLD_HEADER: OAF_CRCS_NA
+    - NEW_HEADER: CRCS_GT
+      OLD_HEADER: OAF_CRCS_GT
+    - NEW_HEADER: CRCS_PF
+      OLD_HEADER: OAF_CRCS_PF
+    - NEW_HEADER: CRCS_AF
+      OLD_HEADER: OAF_CRCS_AF
+    - NEW_HEADER: CRCS_GF
+      OLD_HEADER: OAF_CRCS_GF
+    - NEW_HEADER: ALL_EXOME_WT
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_WT
+    - NEW_HEADER: ALL_EXOME_HET
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_HET
+    - NEW_HEADER: ALL_EXOME_HOM
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_HOM
+    - NEW_HEADER: ALL_EXOME_OTH
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_OTH
+    - NEW_HEADER: ALL_EXOME_NA
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_NA
+    - NEW_HEADER: ALL_EXOME_GT
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_GT
+    - NEW_HEADER: ALL_EXOME_PF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_PF
+    - NEW_HEADER: ALL_EXOME_AF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_AF
+    - NEW_HEADER: ALL_EXOME_GF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_GF
+    - NEW_HEADER: CHEK2_WT
+      OLD_HEADER: OAF_CHEK2_WT
+    - NEW_HEADER: CHEK2_HET
+      OLD_HEADER: OAF_CHEK2_HET
+    - NEW_HEADER: CHEK2_HOM
+      OLD_HEADER: OAF_CHEK2_HOM
+    - NEW_HEADER: CHEK2_OTH
+      OLD_HEADER: OAF_CHEK2_OTH
+    - NEW_HEADER: CHEK2_NA
+      OLD_HEADER: OAF_CHEK2_NA
+    - NEW_HEADER: CHEK2_GT
+      OLD_HEADER: OAF_CHEK2_GT
+    - NEW_HEADER: CHEK2_PF
+      OLD_HEADER: OAF_CHEK2_PF
+    - NEW_HEADER: CHEK2_AF
+      OLD_HEADER: OAF_CHEK2_AF
+    - NEW_HEADER: CHEK2_GF
+      OLD_HEADER: OAF_CHEK2_GF
+    - NEW_HEADER: EARLYONSET_WT
+      OLD_HEADER: OAF_EARLYONSET_WT
+    - NEW_HEADER: EARLYONSET_HET
+      OLD_HEADER: OAF_EARLYONSET_HET
+    - NEW_HEADER: EARLYONSET_HOM
+      OLD_HEADER: OAF_EARLYONSET_HOM
+    - NEW_HEADER: EARLYONSET_OTH
+      OLD_HEADER: OAF_EARLYONSET_OTH
+    - NEW_HEADER: EARLYONSET_NA
+      OLD_HEADER: OAF_EARLYONSET_NA
+    - NEW_HEADER: EARLYONSET_GT
+      OLD_HEADER: OAF_EARLYONSET_GT
+    - NEW_HEADER: EARLYONSET_PF
+      OLD_HEADER: OAF_EARLYONSET_PF
+    - NEW_HEADER: EARLYONSET_AF
+      OLD_HEADER: OAF_EARLYONSET_AF
+    - NEW_HEADER: EARLYONSET_GF
+      OLD_HEADER: OAF_EARLYONSET_GF
+    - NEW_HEADER: FAMILIAL_CRCS_WT
+      OLD_HEADER: OAF_FAMILIAL_CRCS_WT
+    - NEW_HEADER: FAMILIAL_CRCS_HET
+      OLD_HEADER: OAF_FAMILIAL_CRCS_HET
+    - NEW_HEADER: FAMILIAL_CRCS_HOM
+      OLD_HEADER: OAF_FAMILIAL_CRCS_HOM
+    - NEW_HEADER: FAMILIAL_CRCS_OTH
+      OLD_HEADER: OAF_FAMILIAL_CRCS_OTH
+    - NEW_HEADER: FAMILIAL_CRCS_NA
+      OLD_HEADER: OAF_FAMILIAL_CRCS_NA
+    - NEW_HEADER: FAMILIAL_CRCS_GT
+      OLD_HEADER: OAF_FAMILIAL_CRCS_GT
+    - NEW_HEADER: FAMILIAL_CRCS_PF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_PF
+    - NEW_HEADER: FAMILIAL_CRCS_AF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_AF
+    - NEW_HEADER: FAMILIAL_CRCS_GF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_GF
+    - NEW_HEADER: 'Exp Syn(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_SYN
+    - NEW_HEADER: 'Obs Syn(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_SYN
+    - NEW_HEADER: 'Syn z(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_SYN_Z
+    - NEW_HEADER: 'Exp Mis(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_MIS
+    - NEW_HEADER: 'Obs Mis(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_MIS
+    - NEW_HEADER: 'Mis Z(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_MIS_Z
+    - NEW_HEADER: 'Exp LoF(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_LOF
+    - NEW_HEADER: 'Obs LoF(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_LOF
+    - NEW_HEADER: PLI(ExAC)
+      OLD_HEADER: EXAC03_CONSTRAINT_PLI
+  ONLY_FAMILIES: false
+  ONLY_SUMMARY: true
+  REGIONS:
+    - 1:10270763-10441661
+    - 1:17345224-17380665
+    - 1:18957499-19075360
+    - 1:24018268-24022915
+    - 1:36931643-36948915
+    - 1:43803474-43820135
+    - 1:45794913-45806142
+    - 1:46713366-46744145
+    - 1:92940317-92952433
+    - 1:93297593-93307481
+    - 1:115247084-115259515
+    - 1:150039349-150117505
+    - 1:154245038-154248355
+    - 1:156785541-156851642
+    - 1:161284165-161334535
+    - 1:172628147-172636012
+    - 1:193091087-193223942
+    - 1:241660856-241683085
+    - 1:242011492-242053241
+    - 2:3622852-3628509
+    - 2:28113481-28561767
+    - 2:29415639-30144477
+    - 2:39208689-39347604
+    - 2:47596286-47614167
+    - 2:47630205-47710367
+    - 2:48010220-48034092
+    - 2:58386377-58468515
+    - 2:96915945-96931751
+    - 2:128014865-128051752
+    - 2:190648810-190742355
+    - 2:202047620-202094129
+    - 2:215590369-215674435
+    - 2:217277136-217347774
+    - 2:223064605-223163715
+    - 2:232826292-233208678
+    - 3:9932270-9936031
+    - 3:10068112-10143614
+    - 3:10183318-10195354
+    - 3:12625099-12705700
+    - 3:14186647-14220172
+    - 3:23958294-23965187
+    - 3:37034840-37092337
+    - 3:52435019-52444121
+    - 3:69788585-70017488
+    - 3:121902529-122005344
+    - 3:128198264-128212030
+    - 3:133319448-133380737
+    - 3:142168076-142297668
+    - 3:148847370-148891305
+    - 3:169482397-169482848
+    - 3:178866310-178952497
+    - 3:197677051-197682721
+    - 4:41746098-41750987
+    - 4:55095263-55164412
+    - 4:55524094-55606881
+    - 4:57333761-57369847
+    - 4:57774041-57802010
+    - 4:84382093-84406290
+    - 4:169418216-169849608
+    - 5:218337-257197
+    - 5:1253286-1295162
+    - 5:34905365-34915780
+    - 5:37812778-37839782
+    - 5:68665123-68710630
+    - 5:77298149-77590579
+    - 5:79950466-80172634
+    - 5:82373316-82649579
+    - 5:112043201-112181936
+    - 5:131892615-131980313
+    - 5:176332005-176433795
+    - 5:176560079-176727214
+    - 5:177576464-177580961
+    - 6:1960515-30685458
+    - 6:15523031-15663289
+    - 6:34385230-34393902
+    - 6:35420137-35434881
+    - 6:43543877-43588260
+    - 6:152011630-152424408
+    - 7:6012869-6048737
+    - 7:48002884-48019222
+    - 7:55086724-55275031
+    - 7:66452689-66460588
+    - 7:75677336-75696827
+    - 7:77166772-77269388
+    - 7:105172531-105208124
+    - 7:107405911-107443678
+    - 7:116312458-116438440
+    - 7:124462439-124570037
+    - 7:140433812-140624564
+    - 7:148504463-148581441
+    - 7:152343586-152373250
+    - 8:30890777-31031277
+    - 8:90945563-90996899
+    - 8:118811601-119124058
+    - 8:145736666-145743210
+    - 9:21967750-21994490
+    - 9:22002901-22009312
+    - 9:35073834-35080013
+    - 9:35657747-35658015
+    - 9:86595636-86618987
+    - 9:97861335-98079991
+    - 9:98205263-98279247
+    - 9:100437190-100459691
+    - 9:130577290-130617052
+    - 9:135766734-135820020
+    - 10:43572516-43625797
+    - 10:72357103-72362531
+    - 10:79793517-79816571
+    - 10:88516395-88684945
+    - 10:89618917-89623194
+    - 10:89623194-89731687
+    - 10:90750287-90775542
+    - 10:100175954-100206704
+    - 10:103825123-103827795
+    - 10:104263718-104393214
+    - 10:127512103-127542264
+    - 11:532241-535550
+    - 11:2904447-2906995
+    - 11:10326526-10328949
+    - 11:14299465-14386052
+    - 11:18300216-18343721
+    - 11:22644078-22647387
+    - 11:32409321-32457081
+    - 11:44117098-44266980
+    - 11:47236492-47260769
+    - 11:61197596-61214239
+    - 11:64570985-64578766
+    - 11:67159422-67165883
+    - 11:67250499-67258579
+    - 11:88911039-89028927
+    - 11:94150468-94227040
+    - 11:95523624-95565857
+    - 11:108093558-108239826
+    - 11:111957547-111966525
+    - 11:119076985-119178859
+    - 11:125495030-125546150
+    - 12:1020901-1099207
+    - 12:12870203-12875316
+    - 12:25357722-25403865
+    - 12:56435685-56438007
+    - 12:58141509-58146230
+    - 12:112079949-112123800
+    - 12:112856535-112947717
+    - 12:121416548-121440314
+    - 12:133200347-133264110
+    - 13:32889616-32973809
+    - 13:41129800-41240734
+    - 13:48877882-49056026
+    - 13:103498190-103528351
+    - 14:24708850-24711880
+    - 14:36985603-36989430
+    - 14:45605135-45670093
+    - 14:50043389-50053134
+    - 14:65472818-65569413
+    - 14:68286495-69062738
+    - 14:75480466-75518235
+    - 14:95552564-95624347
+    - 14:104163953-104181823
+    - 14:105235686-105262080
+    - 15:28000020-28344458
+    - 15:31196054-31235310
+    - 15:33010204-33026870
+    - 15:33010204-33026870
+    - 15:34633916-34635362
+    - 15:38545051-38649450
+    - 15:40453209-40513337
+    - 15:40987326-41024356
+    - 15:43699411-43802707
+    - 15:45879416-45901909
+    - 15:66679210-66783882
+    - 15:82821157-83209295
+    - 15:89787193-89860362
+    - 15:91260557-91358692
+    - 16:2089815-2097867
+    - 16:2097989-2138713
+    - 16:2205798-2228130
+    - 16:3631183-3661585
+    - 16:3775055-3930121
+    - 16:11439294-11445620
+    - 16:14014013-14046205
+    - 16:23614482-23652678
+    - 16:31469593-31478488
+    - 16:50775960-50835846
+    - 16:67691414-67694718
+    - 16:68771194-68869444
+    - 16:75681634-75691341
+    - 16:89803958-89883065
+    - 17:7387697-7417935
+    - 17:7571719-7590868
+    - 17:7589388-7606820
+    - 17:8128138-8151413
+    - 17:8280833-8286565
+    - 17:17115526-17140502
+    - 17:18177234-18218321
+    - 17:29421944-29704695
+    - 17:33426810-33446888
+    - 17:38783975-38804103
+    - 17:41196311-41277500
+    - 17:42148097-42153712
+    - 17:46802126-46806111
+    - 17:56769933-56811703
+    - 17:57059999-57184266
+    - 17:58677543-58743640
+    - 17:59756546-59940920
+    - 17:63524682-63557740
+    - 17:66409763-66547457
+    - 17:74466974-74497509
+    - 17:79506910-79519429
+    - 18:20513294-20606449
+    - 18:48556582-48611411
+    - 19:852290-856246
+    - 19:1205797-1228434
+    - 19:4090319-4124126
+    - 19:11071597-11172958
+    - 19:17378184-17390162
+    - 19:33463122-33468401
+    - 19:33790839-33793470
+    - 19:42363987-42375484
+    - 19:45682002-45685058
+    - 19:45854648-45873845
+    - 19:50887579-50921275
+    - 19:52467592-52490079
+    - 20:35973087-36033835
+    - 20:57414794-57486250
+    - 20:62289162-62327606
+    - 21:36160097-36421595
+    - 22:21336557-21353326
+    - 22:24129149-24176705
+    - 22:26846848-26879829
+    - 22:29083730-29137822
+    - 22:29999544-30094589
+    - 22:41488613-41576081
+    - X:14861528-14891184
+    - X:48542185-48549817
+    - X:48644981-48652717
+    - X:66763873-66950461
+    - X:123480131-123507010
+    - X:132435063-132549205
+    - X:132669775-133119673
+    - X:135730335-135742549
+    - X:136112306-136113833
+    - X:153991016-154005964
+    - X:154299694-154351349
+  ROWS_FILTER_ACTIONS_CRITERIA:
+    - Rare
+    - PASS-VQSR
+    - Non-Intergenic
+    - Non-Intronic
+    - Non-Upstream
+    - Non-Downstream
+    - Non-UTR
+  SPLIT_CHROM: false
+  SUMMARY_FAMILIES: false
+SAMPLES_INFOS:
+  - FAMILY_ID: "NO_FAMILY_1"
+    MEMBERS:
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "1003-06o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "1068-05o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "1094-08F"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "1199-05o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "1205-05o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "1307-09D"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "142-09F"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "153-09F"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "2014-04018"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "230-06o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "258-06o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "264-08F"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "2750-13D"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "294-07LF"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "295-08F"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "296-09F"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "323-09F"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "329-09F"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "344-07LF"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "376-05o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "386-04o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "4270-11D"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "4283-13D"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "4735-11D"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "4773-11D"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "48-07LF"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "49-06o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "5053-10D"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "566-04o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "569-04o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "59-04o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "61-09F"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "664-08F"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "679-05o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "711-14D"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "728-05o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "749-08F"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "760-04o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "771-08F"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "784-05o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "813-06o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "91-04o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "95-04o"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "Co-1161"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "Co-1190"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "Co-121"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "Co-1524"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "Co-245"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "Co-278"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "Co-286"
+      - GROUP: 1
+        PHENOTYPE: 2
+        SAMPLE_ID: "Co-489"
+  - FAMILY_ID: "8"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-35"
+      - GROUP: 2
+        SAMPLE_ID: "Co-36"
+      - GROUP: 2
+        SAMPLE_ID: "Co-37"
+  - FAMILY_ID: "12"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-90"
+      - GROUP: 2
+        SAMPLE_ID: "Co-89"
+  - FAMILY_ID: "13"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-95"
+      - GROUP: 2
+        SAMPLE_ID: "Co-94"
+  - FAMILY_ID: "24"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-166"
+      - GROUP: 2
+        SAMPLE_ID: "Co-213"
+  - FAMILY_ID: "26"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-135"
+      - GROUP: 2
+        SAMPLE_ID: "Co-131"
+  - FAMILY_ID: "31"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "1793-11D"
+      - GROUP: 2
+        SAMPLE_ID: "1322-11D"
+  - FAMILY_ID: "87"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-218"
+      - GROUP: 2
+        SAMPLE_ID: "Co-258"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1179"
+  - FAMILY_ID: "91"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-700"
+      - GROUP: 2
+        SAMPLE_ID: "Co-454"
+  - FAMILY_ID: "94"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-238"
+  - FAMILY_ID: "110"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "1526-02D"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1301"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1313"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1314"
+  - FAMILY_ID: "119"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1209"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1220"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1222"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1285"
+  - FAMILY_ID: "134"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-460"
+      - GROUP: 2
+        SAMPLE_ID: "Co-553"
+  - FAMILY_ID: "141"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-305"
+      - GROUP: 2
+        SAMPLE_ID: "Co-785"
+  - FAMILY_ID: "185"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-603"
+      - GROUP: 2
+        SAMPLE_ID: "Co-669"
+  - FAMILY_ID: "191"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-384"
+      - GROUP: 2
+        SAMPLE_ID: "Co-361"
+  - FAMILY_ID: "214"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-484"
+  - FAMILY_ID: "216"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-367"
+      - GROUP: 2
+        SAMPLE_ID: "Co-446"
+  - FAMILY_ID: "221"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-358"
+  - FAMILY_ID: "227"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-364"
+  - FAMILY_ID: "231"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-555"
+      - GROUP: 2
+        SAMPLE_ID: "Co-572"
+      - GROUP: 2
+        SAMPLE_ID: "Co-407"
+      - GROUP: 2
+        SAMPLE_ID: "Co-530"
+  - FAMILY_ID: "242"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-771"
+      - GROUP: 2
+        SAMPLE_ID: "Co-666"
+      - GROUP: 2
+        SAMPLE_ID: "Co-441"
+      - GROUP: 2
+        SAMPLE_ID: "Co-634"
+      - GROUP: 2
+        SAMPLE_ID: "Co-652"
+      - GROUP: 2
+        SAMPLE_ID: "Co-657"
+      - GROUP: 2
+        SAMPLE_ID: "Co-667"
+      - GROUP: 2
+        SAMPLE_ID: "Co-692"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1483"
+  - FAMILY_ID: "254"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-616"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1156"
+  - FAMILY_ID: "256"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-388"
+      - GROUP: 2
+        SAMPLE_ID: "Co-395"
+  - FAMILY_ID: "275"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1262"
+      - GROUP: 2
+        SAMPLE_ID: "Co-618"
+      - GROUP: 2
+        SAMPLE_ID: "Co-620"
+  - FAMILY_ID: "288"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1141"
+  - FAMILY_ID: "296"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-793"
+      - GROUP: 2
+        SAMPLE_ID: "Co-876"
+  - FAMILY_ID: "301"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-837"
+      - GROUP: 2
+        SAMPLE_ID: "Co-840"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1053"
+  - FAMILY_ID: "306"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-779"
+  - FAMILY_ID: "309"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-783"
+      - GROUP: 2
+        SAMPLE_ID: "Co-800"
+  - FAMILY_ID: "312"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1116"
+  - FAMILY_ID: "315"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "1462-01D"
+  - FAMILY_ID: "325"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-851"
+      - GROUP: 2
+        SAMPLE_ID: "Co-859"
+  - FAMILY_ID: "348"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-846"
+      - GROUP: 2
+        SAMPLE_ID: "Co-857"
+  - FAMILY_ID: "350"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "1104-03D"
+      - GROUP: 2
+        SAMPLE_ID: "Co-866"
+  - FAMILY_ID: "409"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1312"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1257"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1263"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1488"
+  - FAMILY_ID: "415"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1031"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1037"
+  - FAMILY_ID: "425"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1458"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1595"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1427"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1434"
+  - FAMILY_ID: "434"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1051"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1534"
+  - FAMILY_ID: "445"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1157"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1158"
+  - FAMILY_ID: "478"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1274"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1207"
+  - FAMILY_ID: "485"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1302"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1322"
+  - FAMILY_ID: "532"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1583"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1584"
+      - GROUP: 2
+        SAMPLE_ID: "251-04O"
+  - FAMILY_ID: "574"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "468-04"
+      - GROUP: 2
+        SAMPLE_ID: "474-05"
+  - FAMILY_ID: "578"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1349"
+      - GROUP: 2
+        SAMPLE_ID: "531-04o"
+  - FAMILY_ID: "650"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "398-05o"
+      - GROUP: 2
+        SAMPLE_ID: "729-05o"
+  - FAMILY_ID: "739"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1467"
+      - GROUP: 2
+        SAMPLE_ID: "529-05"
+  - FAMILY_ID: "740"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1373"
+      - GROUP: 2
+        SAMPLE_ID: "602-05o"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1383"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1375"
+  - FAMILY_ID: "849"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1765"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1764"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1766"
+  - FAMILY_ID: "869"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1685"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1681"
+  - FAMILY_ID: "871"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1661"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1618"
+  - FAMILY_ID: "918"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "134-06"
+      - GROUP: 2
+        SAMPLE_ID: "354-06"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1762"
+  - FAMILY_ID: "975"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1600"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1591"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1760"
+  - FAMILY_ID: "1025"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1529"
+  - FAMILY_ID: "1085"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1518"
+  - FAMILY_ID: "1113"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1538"
+      - GROUP: 2
+        SAMPLE_ID: "642-06"
+  - FAMILY_ID: "1206"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "1052-05"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1552"
+  - FAMILY_ID: "1207"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "2818-07D"
+  - FAMILY_ID: "1213"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1666"
+  - FAMILY_ID: "1244"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "2310-08D"
+      - GROUP: 2
+        SAMPLE_ID: "3015-11D"
+      - GROUP: 2
+        SAMPLE_ID: "627-04o"
+  - FAMILY_ID: "1252"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1719"
+  - FAMILY_ID: "1290"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1723"
+  - FAMILY_ID: "1330"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "861-10D"
+  - FAMILY_ID: "1410"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "930-06o"
+  - FAMILY_ID: "1680"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "301-08F"
+  - FAMILY_ID: "MUTYH"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "2014-06388-02"
+  - FAMILY_ID: "695"
+    MEMBERS:
+      - GROUP: 2
+        PHENOTYPE: 1
+        SAMPLE_ID: "Co-1354"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1359"
+      - GROUP: 2
+        SAMPLE_ID: "Co-1368"
+  - FAMILY_ID: "prostate"
+    MEMBERS:
+      - GROUP: 3
+        SAMPLE_ID: "P001"
+      - GROUP: 3
+        SAMPLE_ID: "P002"
+      - GROUP: 3
+        SAMPLE_ID: "P003"
+  - FAMILY_ID: "NO_FAMILY_2"
+    MEMBERS:
+      - GROUP: 4
+        SAMPLE_ID: "AB-1"
+      - GROUP: 4
+        SAMPLE_ID: "AB-2"
+      - GROUP: 4
+        SAMPLE_ID: "AB-3"
+      - GROUP: 4
+        SAMPLE_ID: "AB-4"
+      - GROUP: 4
+        SAMPLE_ID: "AB-5"
+      - GROUP: 4
+        SAMPLE_ID: "AB-6"
+      - GROUP: 4
+        SAMPLE_ID: "AB-7"
+      - GROUP: 4
+        SAMPLE_ID: "AB-8"
+      - GROUP: 4
+        SAMPLE_ID: "AB-9"
+      - GROUP: 4
+        SAMPLE_ID: "AB-10"
+      - GROUP: 4
+        SAMPLE_ID: "AB-11"
+      - GROUP: 4
+        SAMPLE_ID: "AB-12"
+      - GROUP: 4
+        SAMPLE_ID: "AB-13"
+      - GROUP: 4
+        SAMPLE_ID: "AB-14"
+      - GROUP: 4
+        SAMPLE_ID: "AB-15"
+      - GROUP: 4
+        SAMPLE_ID: "AB-16"
+      - GROUP: 4
+        SAMPLE_ID: "AB-17"
+      - GROUP: 4
+        SAMPLE_ID: "AB-18"
+      - GROUP: 4
+        SAMPLE_ID: "AB-19"
+      - GROUP: 4
+        SAMPLE_ID: "AB-20"
+      - GROUP: 4
+        SAMPLE_ID: "AB-21"
+      - GROUP: 4
+        SAMPLE_ID: "AB-22"
+      - GROUP: 4
+        SAMPLE_ID: "AB-23"
+      - GROUP: 4
+        SAMPLE_ID: "AB-24"
+      - GROUP: 4
+        SAMPLE_ID: "AB-25"
+      - GROUP: 4
+        SAMPLE_ID: "AB-26"
+      - GROUP: 4
+        SAMPLE_ID: "AB-27"
+      - GROUP: 4
+        SAMPLE_ID: "AB-28"
+  - FAMILY_ID: "179"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Co-323"
+      - GROUP: 5
+        SAMPLE_ID: "Al-19"
+  - FAMILY_ID: "1100"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "341-89D"
+      - GROUP: 5
+        SAMPLE_ID: "405-89D"
+      - GROUP: 5
+        SAMPLE_ID: "Al-23"
+      - GROUP: 5
+        SAMPLE_ID: "Al-54"
+  - FAMILY_ID: "1891"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Al-148"
+      - GROUP: 5
+        SAMPLE_ID: "Al-142"
+  - FAMILY_ID: "2060"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-690"
+      - GROUP: 5
+        SAMPLE_ID: "Br-693"
+      - GROUP: 5
+        SAMPLE_ID: "Br-686"
+  - FAMILY_ID: "2590"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Al-133"
+      - GROUP: 5
+        SAMPLE_ID: "Al-143"
+      - GROUP: 5
+        SAMPLE_ID: "Al-128"
+  - FAMILY_ID: "3028"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "AL-36"
+      - GROUP: 5
+        SAMPLE_ID: "AL-44"
+      - GROUP: 5
+        SAMPLE_ID: "Br-732"
+  - FAMILY_ID: "4040"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-55"
+      - GROUP: 5
+        SAMPLE_ID: "Br-325"
+  - FAMILY_ID: "4041"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-27"
+      - GROUP: 5
+        SAMPLE_ID: "Br-56"
+      - GROUP: 5
+        SAMPLE_ID: "Br-87"
+  - FAMILY_ID: "4046"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-100"
+      - GROUP: 5
+        SAMPLE_ID: "Br-227"
+  - FAMILY_ID: "4093"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-175"
+      - GROUP: 5
+        SAMPLE_ID: "Br-177"
+  - FAMILY_ID: "4127"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-246"
+      - GROUP: 5
+        SAMPLE_ID: "Br-322"
+  - FAMILY_ID: "5701"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-585"
+      - GROUP: 5
+        SAMPLE_ID: "Br-588"
+  - FAMILY_ID: "6005"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-271"
+      - GROUP: 5
+        SAMPLE_ID: "Co-324"
+  - FAMILY_ID: "6006"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-418"
+      - GROUP: 5
+        SAMPLE_ID: "Br-781"
+      - GROUP: 5
+        SAMPLE_ID: "Br-425"
+  - FAMILY_ID: "6037"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-310"
+      - GROUP: 5
+        SAMPLE_ID: "Br-308"
+  - FAMILY_ID: "6041"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-317"
+      - GROUP: 5
+        SAMPLE_ID: "Br-318"
+      - GROUP: 5
+        SAMPLE_ID: "Br-319"
+  - FAMILY_ID: "6067"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "884-99D"
+      - GROUP: 5
+        SAMPLE_ID: "Br-397"
+  - FAMILY_ID: "6072"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-682"
+      - GROUP: 5
+        SAMPLE_ID: "Br-727"
+  - FAMILY_ID: "6094"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-442"
+      - GROUP: 5
+        SAMPLE_ID: "Br-451"
+  - FAMILY_ID: "6100"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-465"
+      - GROUP: 5
+        SAMPLE_ID: "Br-466"
+      - GROUP: 5
+        SAMPLE_ID: "Br-464"
+      - GROUP: 5
+        SAMPLE_ID: "Br-459"
+  - FAMILY_ID: "6101"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-473"
+  - FAMILY_ID: "6104"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-475"
+      - GROUP: 5
+        SAMPLE_ID: "Br-477"
+  - FAMILY_ID: "6106"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-484"
+      - GROUP: 5
+        SAMPLE_ID: "Br-510"
+  - FAMILY_ID: "6123"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-526"
+      - GROUP: 5
+        SAMPLE_ID: "Br-528"
+      - GROUP: 5
+        SAMPLE_ID: "Br-527"
+  - FAMILY_ID: "6127"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-694"
+      - GROUP: 5
+        SAMPLE_ID: "Br-697"
+      - GROUP: 5
+        SAMPLE_ID: "Br-702"
+  - FAMILY_ID: "L1056"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-720"
+      - GROUP: 5
+        SAMPLE_ID: "Br-721"
+      - GROUP: 5
+        SAMPLE_ID: "Br-724"
+  - FAMILY_ID: "L1141"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-652"
+      - GROUP: 5
+        SAMPLE_ID: "Br-641"
+  - FAMILY_ID: "L862"
+    MEMBERS:
+      - GROUP: 5
+        SAMPLE_ID: "Br-706"
+      - GROUP: 5
+        SAMPLE_ID: "Br-710"
+      - GROUP: 5
+        SAMPLE_ID: "Br-716"
