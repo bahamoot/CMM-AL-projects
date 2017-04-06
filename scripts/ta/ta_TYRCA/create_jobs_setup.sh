@@ -1,11 +1,11 @@
 #!/bin/bash
 
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-dataset_name="WES294"
+dataset_name="TYRCA"
 project_out_dir="$TABLE_ANNOVAR_OUTPUT_DIR/ta_$dataset_name"
-vcf_tabix_file="$VCF_WES294"
+vcf_tabix_file="$VCF_TYRCA"
 #vcf_region=6
-project_code="b2016331"
+project_code="b2016200"
 jobs_setup_file="ta_$dataset_name"_jobs_setup.txt
 
 
