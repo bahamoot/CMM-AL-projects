@@ -1,0 +1,44 @@
+## [INFO] 
+## [INFO] executing: /proj/b2011117/nobackup/private/jessada//private/projects/pyCMM/bash/cmmdb_vcf2avdb_key.sh -k swegen -i /proj/b2011117/private/databases/third_party/swegen/swegen_20161223/SWEGEN_20161223.vcf.gz -o /proj/b2011117/nobackup/private/projects_output/cmmdb/vcf2avdb_key/vcf2avdb_key_swegen/data_out/swegen.vcf2avdb.key
+Annovar annotation databases are found in $ANNOVAR_HOME/humandb
+## [INFO] 
+## [INFO] ************************************************** S T A R T <cmmdb_vcf2avdb_key.sh> **************************************************
+## [INFO] 
+## [INFO] parameters
+## [INFO]   -k swegen -i /proj/b2011117/private/databases/third_party/swegen/swegen_20161223/SWEGEN_20161223.vcf.gz -o /proj/b2011117/nobackup/private/projects_output/cmmdb/vcf2avdb_key/vcf2avdb_key_swegen/data_out/swegen.vcf2avdb.key
+## [INFO] 
+## [INFO] description
+## [INFO]   A script to key table to bridge coordinates between vcf and avdb formats:
+## [INFO] 
+## [INFO] 
+## [INFO] overall configuration
+## [INFO]   dataset name (-k):                      swegen
+## [INFO]   tabix file (-i):                        /proj/b2011117/private/databases/third_party/swegen/swegen_20161223/SWEGEN_20161223.vcf.gz
+## [INFO]   output file (-o):                       /proj/b2011117/nobackup/private/projects_output/cmmdb/vcf2avdb_key/vcf2avdb_key_swegen/data_out/swegen.vcf2avdb.key
+## [INFO] 
+## [INFO] misc configuration
+## [INFO]   working direcotry:                      /scratch/10179701/tmp.zFURabtB13
+## [INFO] 
+## [INFO] executing: vcf-query  -f '%CHROM\t%POS\t%ID\t%REF\t%ALT\t%QUAL\t%FILTER\t%INFO\tGT\t1/2\t3/4\t5/6\n' /proj/b2011117/private/databases/third_party/swegen/swegen_20161223/SWEGEN_20161223.vcf.gz >> /scratch/10179701/tmp.zFURabtB13/swegen_tmp_vcf_query
+The version "4.2" not supported, assuming VCFv4.1
+rm: cannot remove `/scratch/10179701/tmp.zFURabtB13/swegen_avdb_individual*': No such file or directory
+## [INFO] 
+## [INFO] executing: convert2annovar.pl -format vcf4 /scratch/10179701/tmp.zFURabtB13/swegen_tmp_vcf_query -include --allsample --outfile /scratch/10179701/tmp.zFURabtB13/swegen_avdb_individual
+NOTICE: output files will be written to /scratch/10179701/tmp.zFURabtB13/swegen_avdb_individual.<samplename>.avinput
+NOTICE: Finished reading 40105360 lines from VCF file
+NOTICE: A total of 40105359 locus in VCF file passed QC threshold, representing 31090326 SNPs (20547666 transitions and 10542660 transversions) and 7624367 indels/substitutions
+NOTICE: Finished writing 31090326 SNP genotypes (20547666 transitions and 10542660 transversions) and 7624367 indels/substitutions for 3 samples
+WARNING: 1390666 invalid alternative alleles found in input file
+## [INFO] 
+## [INFO] executing: cut -f1-11 /scratch/10179701/tmp.zFURabtB13/swegen_avdb_individual.dummy1.avinput >> /scratch/10179701/tmp.zFURabtB13/swegen_tmp_uniq.avdb
+## [INFO] 
+## [INFO] executing: cut -f1-11 /scratch/10179701/tmp.zFURabtB13/swegen_avdb_individual.dummy2.avinput >> /scratch/10179701/tmp.zFURabtB13/swegen_tmp_uniq.avdb
+## [INFO] 
+## [INFO] executing: cut -f1-11 /scratch/10179701/tmp.zFURabtB13/swegen_avdb_individual.dummy3.avinput >> /scratch/10179701/tmp.zFURabtB13/swegen_tmp_uniq.avdb
+## [INFO] 
+## [INFO] executing: grep -P "^[0-9]" /scratch/10179701/tmp.zFURabtB13/swegen.uniq.avdb | awk -F'\t' '{ printf "%02d_%012d_%s_%s\t%s\t%s\t%s\t%s\t%s\n", $6, $7, $9, $10, $1, $2, $3, $4, $5 }' >> /proj/b2011117/nobackup/private/projects_output/cmmdb/vcf2avdb_key/vcf2avdb_key_swegen/data_out/swegen.vcf2avdb.key
+## [INFO] 
+## [INFO] executing: grep -vP "^[0-9]" /scratch/10179701/tmp.zFURabtB13/swegen.uniq.avdb | awk -F'\t' '{ printf "%s_%012d_%s_%s\t%s\t%s\t%s\t%s\t%s\n", $6, $7, $9, $10, $1, $2, $3, $4, $5 }' >> /proj/b2011117/nobackup/private/projects_output/cmmdb/vcf2avdb_key/vcf2avdb_key_swegen/data_out/swegen.vcf2avdb.key
+## [INFO] 
+## [INFO] ************************************************** F I N I S H <cmmdb_vcf2avdb_key.sh> **************************************************
+slurmstepd: error: Exceeded step memory limit at some point.
