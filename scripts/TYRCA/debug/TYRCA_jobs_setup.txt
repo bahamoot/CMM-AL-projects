@@ -1,8 +1,6 @@
 JOBS_REPORT_FILE:
-JOB_ALLOC_TIME: "4-00:00:00"
-PROJECT_CODE: b2016200
 PROJECT_NAME: TYRCA
-PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/TYRCA/families
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/TYRCA/debug
 REPORT_LAYOUT:
   ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/TYRCA/TYRCA_annotated.vcf.gz
   COLORING_SAMPLES:
@@ -746,8 +744,10 @@ REPORT_LAYOUT:
       OLD_HEADER: EXAC03_CONSTRAINT_PLI
   ONLY_FAMILIES: false
   ONLY_SUMMARY: false
+  REGIONS:
+    - 17:11778445-11778445
+    - 17:17009561-17069561
   ROWS_FILTER_ACTIONS_CRITERIA:
-    - Rare
     - PASS-VQSR
     - Non-Intergenic
     - Non-Intronic
