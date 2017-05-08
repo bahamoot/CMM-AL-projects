@@ -18,6 +18,7 @@ jobs_setup_file="$dataset_name"_jobs_setup.txt
 anno_excl_tags="Mutstat_details"
 anno_excl_tags+=",ExAC_Other"
 anno_excl_tags+=",Unknown"
+show_shared_mutations="True"
 
 
 cmd="pyCMM-mutrep-create-job-setup-file"
@@ -59,9 +60,9 @@ if [ "$split_chrom" == "True" ]
 then
     cmd+=" --split_chrom"
 fi
-if [ "$summary_families" == "True" ]
+if [ "$show_shared_mutations" == "True" ]
 then
-    cmd+=" --summary_families"
+    cmd+=" --show_shared_mutations"
 fi
 if [ ! -z $sample_infos ]
 then
