@@ -1,5 +1,7 @@
 SAMPLES_INFOS:
-  - FAMILY_ID: 24
-    MEMBERS:
-      - SAMPLE_ID: Co-166
-      - SAMPLE_ID: Co-213
+  - DATASET_ID: TEST_GEN_SUMMARY_REPORT
+    FAMILIES:
+      - FAMILY_ID: 24
+        MEMBERS:
+          - SAMPLE_ID: Co-166
+          - SAMPLE_ID: Co-213
