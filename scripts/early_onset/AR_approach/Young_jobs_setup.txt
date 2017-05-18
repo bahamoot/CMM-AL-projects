@@ -226,8 +226,6 @@ REPORT_LAYOUT:
       OLD_HEADER: EXAC03_CONSTRAINT_N_LOF
     - NEW_HEADER: PLI(ExAC)
       OLD_HEADER: EXAC03_CONSTRAINT_PLI
-  REGIONS:
-    - 20
   ROWS_FILTER_ACTIONS_CRITERIA:
     - Rare
     - PASS-VQSR
@@ -238,7 +236,7 @@ REPORT_LAYOUT:
     - Non-Synonymous
     - Non-UTR
     - Non-Recessive-Gene
-  SPLIT_CHROM: false
+  SPLIT_CHROM: true
   Show_shared_mutations: false
 SAMPLES_INFOS:
   - DATASET_ID: "Early_Onset"
