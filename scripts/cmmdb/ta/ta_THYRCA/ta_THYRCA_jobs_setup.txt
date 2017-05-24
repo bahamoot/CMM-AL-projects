@@ -6,7 +6,7 @@ ANNOVAR_PARAMS:
   input_file: /proj/b2011117/private/databases/vcf/THYRCA/THYRCA.vcf.gz
   nastring: .
 JOBS_REPORT_FILE:
-JOB_ALLOC_TIME: "4-00:00:00"
+JOB_ALLOC_TIME: "20:00:00"
 MUTSTAT_PARAMS:
   VCF_TABIX_FILE: /proj/b2011117/private/databases/vcf/THYRCA/THYRCA.vcf.gz
 PROJECT_CODE: b2016200

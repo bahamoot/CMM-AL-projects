@@ -6,6 +6,7 @@ project_out_dir="$TABLE_ANNOVAR_OUTPUT_DIR/ta_$dataset_name"
 vcf_tabix_file="$VCF_THYRCA"
 #vcf_region=6
 project_code="b2016200"
+job_alloc_time="20:00:00"
 jobs_setup_file="ta_$dataset_name"_jobs_setup.txt
 
 
@@ -20,6 +21,10 @@ fi
 if [ ! -z $project_code ]
 then
     cmd+=" -p $project_code"
+fi
+if [ ! -z $job_alloc_time ]
+then
+    cmd+=" --job_alloc_time $job_alloc_time"
 fi
 cmd+=" -o $jobs_setup_file"
 
