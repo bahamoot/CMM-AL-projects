@@ -1,0 +1,368 @@
+JOBS_REPORT_FILE:
+PROJECT_NAME: gen_report
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/DB/RnD/gen_report
+REPORT_LAYOUT:
+  COLUMNS:
+    - Func.refGene
+    - ExonicFunc.refGene
+    - snp138
+    - Gene.refGene
+    - GeneDetail.refGene
+    - AAChange.refGene
+    - cytoBand
+    - MAX_REF_MAF
+    - KVOT_EARLYONSET_VS_SWEGEN_ESTIMATED
+    - SWEGEN_AF
+    - SWEGEN_GF
+    - KVOT_EARLYONSET_VS_EXAC_NFE_ESTIMATED
+    - ExAC_NFE
+    - ExAC_ALL
+    - ExAC_nontcga_NFE
+    - ExAC_nontcga_ALL
+    - KVOT_EARLYONSET_VS_1000G_EUR_ESTIMATED
+    - 1000g2014oct_eur
+    - 1000g2014oct_all
+    - OAF_EARLYONSET_AF
+    - OAF_EARLYONSET_GF
+    - KVOT_EARLYONSET_VS_BRC_ESTIMATED
+    - gnomAD_genome_ALL
+    - gnomAD_genome_NFE
+    - OAF_BRCS_AF
+    - OAF_BRCS_GF
+    - OAF_CRCS_AF
+    - OAF_CRCS_GF
+    - OAF_FAMILIAL_CRCS_AF
+    - OAF_FAMILIAL_CRCS_GF
+    - OAF_BRC_CRC_PROSTATE_AF
+    - OAF_BRC_CRC_PROSTATE_GF
+    - OAF_CHEK2_AF
+    - OAF_CHEK2_GF
+    - AXEQ_CHR3_6_14_18_AF
+    - AXEQ_CHR3_6_14_18_GF
+    - AXEQ_CHR5_19_AF
+    - AXEQ_CHR5_19_GF
+    - AXEQ_CHR9_AF
+    - AXEQ_CHR9_GF
+    - 249_SWEDES
+    - 200_DANES
+    - SWEGEN_HET
+    - SWEGEN_HOM
+    - SWEGEN_HEMI
+    - SWEGEN_AC
+    - SWEGEN_GT
+    - SWEGEN_PF
+    - ExAC_AFR
+    - ExAC_AMR
+    - ExAC_EAS
+    - ExAC_FIN
+    - ExAC_OTH
+    - ExAC_SAS
+    - ExAC_nontcga_AFR
+    - ExAC_nontcga_AMR
+    - ExAC_nontcga_EAS
+    - ExAC_nontcga_FIN
+    - ExAC_nontcga_OTH
+    - ExAC_nontcga_SAS
+    - gnomAD_genome_AFR
+    - gnomAD_genome_AMR
+    - gnomAD_genome_ASJ
+    - gnomAD_genome_EAS
+    - gnomAD_genome_FIN
+    - gnomAD_genome_OTH
+    - EXAC03_CONSTRAINT_EXP_SYN
+    - EXAC03_CONSTRAINT_N_SYN
+    - EXAC03_CONSTRAINT_SYN_Z
+    - EXAC03_CONSTRAINT_EXP_MIS
+    - EXAC03_CONSTRAINT_N_MIS
+    - EXAC03_CONSTRAINT_MIS_Z
+    - EXAC03_CONSTRAINT_EXP_LOF
+    - EXAC03_CONSTRAINT_N_LOF
+    - EXAC03_CONSTRAINT_PLI
+    - cosmic70
+    - clinvar_20150330
+    - CLINSIG
+    - CLNDBN
+    - CLNACC
+    - CLNDSDB
+    - CLNDSDBID
+    - dpsi_max_tissue
+    - dpsi_zscore
+    - InterVar_class
+    - InterVar_evidence
+    - targetScanS
+    - wgRna
+    - tfbsConsSites
+    - AXEQ_CHR3_6_14_18_WT
+    - AXEQ_CHR3_6_14_18_HET
+    - AXEQ_CHR3_6_14_18_HOM
+    - AXEQ_CHR3_6_14_18_OTH
+    - AXEQ_CHR3_6_14_18_NA
+    - AXEQ_CHR3_6_14_18_GT
+    - AXEQ_CHR3_6_14_18_PF
+    - AXEQ_CHR5_19_WT
+    - AXEQ_CHR5_19_HET
+    - AXEQ_CHR5_19_HOM
+    - AXEQ_CHR5_19_OTH
+    - AXEQ_CHR5_19_NA
+    - AXEQ_CHR5_19_GT
+    - AXEQ_CHR5_19_PF
+    - AXEQ_CHR9_WT
+    - AXEQ_CHR9_HET
+    - AXEQ_CHR9_HOM
+    - AXEQ_CHR9_OTH
+    - AXEQ_CHR9_NA
+    - AXEQ_CHR9_GT
+    - AXEQ_CHR9_PF
+    - OAF_CRCS_HET
+    - OAF_CRCS_HOM
+    - OAF_CRCS_OTH
+    - OAF_CRCS_NA
+    - OAF_CRCS_GT
+    - OAF_CRCS_PF
+    - OAF_CRCS_WT
+    - OAF_BRCS_WT
+    - OAF_BRCS_HET
+    - OAF_BRCS_HOM
+    - OAF_BRCS_OTH
+    - OAF_BRCS_NA
+    - OAF_BRCS_GT
+    - OAF_BRCS_PF
+    - OAF_BRC_CRC_PROSTATE_WT
+    - OAF_BRC_CRC_PROSTATE_HET
+    - OAF_BRC_CRC_PROSTATE_HOM
+    - OAF_BRC_CRC_PROSTATE_OTH
+    - OAF_BRC_CRC_PROSTATE_NA
+    - OAF_BRC_CRC_PROSTATE_GT
+    - OAF_BRC_CRC_PROSTATE_PF
+    - OAF_CHEK2_WT
+    - OAF_CHEK2_HET
+    - OAF_CHEK2_HOM
+    - OAF_CHEK2_OTH
+    - OAF_CHEK2_NA
+    - OAF_CHEK2_GT
+    - OAF_CHEK2_PF
+    - OAF_EARLYONSET_WT
+    - OAF_EARLYONSET_HET
+    - OAF_EARLYONSET_HOM
+    - OAF_EARLYONSET_OTH
+    - OAF_EARLYONSET_NA
+    - OAF_EARLYONSET_GT
+    - OAF_EARLYONSET_PF
+    - OAF_FAMILIAL_CRCS_HET
+    - OAF_FAMILIAL_CRCS_HOM
+    - OAF_FAMILIAL_CRCS_OTH
+    - OAF_FAMILIAL_CRCS_NA
+    - OAF_FAMILIAL_CRCS_GT
+    - OAF_FAMILIAL_CRCS_PF
+    - OAF_FAMILIAL_CRCS_WT
+    - Pathogenic_count
+    - SIFT_score
+    - SIFT_pred
+    - Polyphen2_HDIV_score
+    - Polyphen2_HDIV_pred
+    - Polyphen2_HVAR_score
+    - Polyphen2_HVAR_pred
+    - LRT_score
+    - LRT_pred
+    - MutationTaster_score
+    - MutationTaster_pred
+    - MutationAssessor_score
+    - MutationAssessor_pred
+    - FATHMM_score
+    - FATHMM_pred
+    - RadialSVM_score
+    - RadialSVM_pred
+    - MetaSVM_pred
+    - LR_score
+    - LR_pred
+    - MetaLR_pred
+    - VEST3_score
+    - CADD_raw
+    - CADD_phred
+    - GERP++_RS
+    - phyloP46way_placental
+    - phyloP100way_vertebrate
+  DB_FILE: /proj/b2011117/private/databases/SQLiteDB/GRCh37.db
+  EXTRA_ANNOTATION_COLUMNS:
+    - Calling_detail
+  HEADER_CORRECTIONS:
+    - NEW_HEADER: BRCS_WT
+      OLD_HEADER: OAF_BRCS_WT
+    - NEW_HEADER: BRCS_HET
+      OLD_HEADER: OAF_BRCS_HET
+    - NEW_HEADER: BRCS_HOM
+      OLD_HEADER: OAF_BRCS_HOM
+    - NEW_HEADER: BRCS_OTH
+      OLD_HEADER: OAF_BRCS_OTH
+    - NEW_HEADER: BRCS_NA
+      OLD_HEADER: OAF_BRCS_NA
+    - NEW_HEADER: BRCS_GT
+      OLD_HEADER: OAF_BRCS_GT
+    - NEW_HEADER: BRCS_PF
+      OLD_HEADER: OAF_BRCS_PF
+    - NEW_HEADER: BRCS_AF
+      OLD_HEADER: OAF_BRCS_AF
+    - NEW_HEADER: BRCS_GF
+      OLD_HEADER: OAF_BRCS_GF
+    - NEW_HEADER: CRCS_WT
+      OLD_HEADER: OAF_CRCS_WT
+    - NEW_HEADER: CRCS_HET
+      OLD_HEADER: OAF_CRCS_HET
+    - NEW_HEADER: CRCS_HOM
+      OLD_HEADER: OAF_CRCS_HOM
+    - NEW_HEADER: CRCS_OTH
+      OLD_HEADER: OAF_CRCS_OTH
+    - NEW_HEADER: CRCS_NA
+      OLD_HEADER: OAF_CRCS_NA
+    - NEW_HEADER: CRCS_GT
+      OLD_HEADER: OAF_CRCS_GT
+    - NEW_HEADER: CRCS_PF
+      OLD_HEADER: OAF_CRCS_PF
+    - NEW_HEADER: CRCS_AF
+      OLD_HEADER: OAF_CRCS_AF
+    - NEW_HEADER: CRCS_GF
+      OLD_HEADER: OAF_CRCS_GF
+    - NEW_HEADER: ALL_EXOME_WT
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_WT
+    - NEW_HEADER: ALL_EXOME_HET
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_HET
+    - NEW_HEADER: ALL_EXOME_HOM
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_HOM
+    - NEW_HEADER: ALL_EXOME_OTH
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_OTH
+    - NEW_HEADER: ALL_EXOME_NA
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_NA
+    - NEW_HEADER: ALL_EXOME_GT
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_GT
+    - NEW_HEADER: ALL_EXOME_PF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_PF
+    - NEW_HEADER: ALL_EXOME_AF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_AF
+    - NEW_HEADER: ALL_EXOME_GF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_GF
+    - NEW_HEADER: CHEK2_WT
+      OLD_HEADER: OAF_CHEK2_WT
+    - NEW_HEADER: CHEK2_HET
+      OLD_HEADER: OAF_CHEK2_HET
+    - NEW_HEADER: CHEK2_HOM
+      OLD_HEADER: OAF_CHEK2_HOM
+    - NEW_HEADER: CHEK2_OTH
+      OLD_HEADER: OAF_CHEK2_OTH
+    - NEW_HEADER: CHEK2_NA
+      OLD_HEADER: OAF_CHEK2_NA
+    - NEW_HEADER: CHEK2_GT
+      OLD_HEADER: OAF_CHEK2_GT
+    - NEW_HEADER: CHEK2_PF
+      OLD_HEADER: OAF_CHEK2_PF
+    - NEW_HEADER: CHEK2_AF
+      OLD_HEADER: OAF_CHEK2_AF
+    - NEW_HEADER: CHEK2_GF
+      OLD_HEADER: OAF_CHEK2_GF
+    - NEW_HEADER: EARLYONSET_WT
+      OLD_HEADER: OAF_EARLYONSET_WT
+    - NEW_HEADER: EARLYONSET_HET
+      OLD_HEADER: OAF_EARLYONSET_HET
+    - NEW_HEADER: EARLYONSET_HOM
+      OLD_HEADER: OAF_EARLYONSET_HOM
+    - NEW_HEADER: EARLYONSET_OTH
+      OLD_HEADER: OAF_EARLYONSET_OTH
+    - NEW_HEADER: EARLYONSET_NA
+      OLD_HEADER: OAF_EARLYONSET_NA
+    - NEW_HEADER: EARLYONSET_GT
+      OLD_HEADER: OAF_EARLYONSET_GT
+    - NEW_HEADER: EARLYONSET_PF
+      OLD_HEADER: OAF_EARLYONSET_PF
+    - NEW_HEADER: EARLYONSET_AF
+      OLD_HEADER: OAF_EARLYONSET_AF
+    - NEW_HEADER: EARLYONSET_GF
+      OLD_HEADER: OAF_EARLYONSET_GF
+    - NEW_HEADER: FAMILIAL_CRCS_WT
+      OLD_HEADER: OAF_FAMILIAL_CRCS_WT
+    - NEW_HEADER: FAMILIAL_CRCS_HET
+      OLD_HEADER: OAF_FAMILIAL_CRCS_HET
+    - NEW_HEADER: FAMILIAL_CRCS_HOM
+      OLD_HEADER: OAF_FAMILIAL_CRCS_HOM
+    - NEW_HEADER: FAMILIAL_CRCS_OTH
+      OLD_HEADER: OAF_FAMILIAL_CRCS_OTH
+    - NEW_HEADER: FAMILIAL_CRCS_NA
+      OLD_HEADER: OAF_FAMILIAL_CRCS_NA
+    - NEW_HEADER: FAMILIAL_CRCS_GT
+      OLD_HEADER: OAF_FAMILIAL_CRCS_GT
+    - NEW_HEADER: FAMILIAL_CRCS_PF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_PF
+    - NEW_HEADER: FAMILIAL_CRCS_AF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_AF
+    - NEW_HEADER: FAMILIAL_CRCS_GF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_GF
+    - NEW_HEADER: 'Exp Syn(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_SYN
+    - NEW_HEADER: 'Obs Syn(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_SYN
+    - NEW_HEADER: 'Syn z(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_SYN_Z
+    - NEW_HEADER: 'Exp Mis(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_MIS
+    - NEW_HEADER: 'Obs Mis(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_MIS
+    - NEW_HEADER: 'Mis Z(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_MIS_Z
+    - NEW_HEADER: 'Exp LoF(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_LOF
+    - NEW_HEADER: 'Obs LoF(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_LOF
+    - NEW_HEADER: PLI(ExAC)
+      OLD_HEADER: EXAC03_CONSTRAINT_PLI
+    - NEW_HEADER: gnomAD_ALL
+      OLD_HEADER: gnomAD_genome_ALL
+    - NEW_HEADER: gnomAD_AFR
+      OLD_HEADER: gnomAD_genome_AFR
+    - NEW_HEADER: gnomAD_AMR
+      OLD_HEADER: gnomAD_genome_AMR
+    - NEW_HEADER: gnomAD_ASJ
+      OLD_HEADER: gnomAD_genome_ASJ
+    - NEW_HEADER: gnomAD_EAS
+      OLD_HEADER: gnomAD_genome_EAS
+    - NEW_HEADER: gnomAD_FIN
+      OLD_HEADER: gnomAD_genome_FIN
+    - NEW_HEADER: gnomAD_NFE
+      OLD_HEADER: gnomAD_genome_NFE
+    - NEW_HEADER: gnomAD_OTH
+      OLD_HEADER: gnomAD_genome_OTH
+  SPLIT_CHROM: false
+  Show_shared_mutations: true
+SAMPLES_INFOS:
+  - DATASET_ID: "ds1"
+    FAMILIES:
+      - FAMILY_ID: "F0007826"
+        MEMBERS:
+          - GROUP: 1
+            PHENOTYPE: 2
+            SAMPLE_ID: "1415-10D"
+          - GROUP: 1
+            PHENOTYPE: 2
+            SAMPLE_ID: "1416-10D"
+          - GROUP: 1
+            PHENOTYPE: 2
+            SAMPLE_ID: "1417-10D"
+      - FAMILY_ID: "F0002468"
+        MEMBERS:
+          - GROUP: 2
+            PHENOTYPE: 2
+            SAMPLE_ID: "2016-08616"
+          - GROUP: 2
+            PHENOTYPE: 2
+            SAMPLE_ID: "2015-12231"
+          - GROUP: 2
+            PHENOTYPE: 2
+            SAMPLE_ID: "2015-12232"
+      - FAMILY_ID: "F0002322"
+        MEMBERS:
+          - GROUP: 3
+            PHENOTYPE: 2
+            SAMPLE_ID: "2015-12460"
+          - GROUP: 3
+            PHENOTYPE: 2
+            SAMPLE_ID: "2016-00043"
+          - GROUP: 3
+            PHENOTYPE: 2
+            SAMPLE_ID: "2016-18116"
