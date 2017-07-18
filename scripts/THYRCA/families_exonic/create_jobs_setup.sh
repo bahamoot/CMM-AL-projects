@@ -1,10 +1,10 @@
 #!/bin/bash
 
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-dataset_name="TYRCA"
-project_out_dir="$MUTATIONS_REPORTS_OUTPUT_DIR/TYRCA/families"
+dataset_name="THYRCA"
+project_out_dir="$MUTATIONS_REPORTS_OUTPUT_DIR/THYRCA/families"
 project_code="b2016200"
-annotated_vcf_tabix="$ANNOTATED_TYRCA"
+annotated_vcf_tabix="$ANNOTATED_THYRCA"
 sample_infos="$script_dir/sample.info"
 coloring_zygosity="True"
 show_shared_variants="True"

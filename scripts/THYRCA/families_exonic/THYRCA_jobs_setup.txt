@@ -1,8 +1,8 @@
 JOBS_REPORT_FILE:
 JOB_ALLOC_TIME: "4-00:00:00"
 PROJECT_CODE: b2016200
-PROJECT_NAME: TYRCA
-PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/TYRCA/families
+PROJECT_NAME: THYRCA
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/THYRCA/families
 REPORT_LAYOUT:
   ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/THYRCA/THYRCA_annotated.vcf.gz
   COLORING_SAMPLES:

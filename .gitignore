@@ -38,6 +38,7 @@ slurm*
 # mine
 obsolete
 archive
+debug
 out
 log
 tmp

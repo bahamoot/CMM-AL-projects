@@ -1,85 +1,38 @@
 JOBS_REPORT_FILE:
-JOB_ALLOC_TIME: "4-00:00:00"
+JOB_ALLOC_TIME: "20:00:00"
 PROJECT_CODE: b2016200
-PROJECT_NAME: TYRCA
-PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/TYRCA/families
+PROJECT_NAME: THYRCA
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/THYRCA/families_gene_list
 REPORT_LAYOUT:
   ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/THYRCA/THYRCA_annotated.vcf.gz
   COLORING_SAMPLES:
     - Zygosity
   COLOR_GENES:
-    - ACD
-    - ADM
-    - AIP
-    - AKT1
-    - ALK
+    - ABCB11
+    - ALMS1
     - AP3B1
-    - APC
-    - AR
-    - ARMC5
     - ATM
-    - ATR
-    - AXIN2
-    - BABAM1
-    - BAP1
     - BARD1
-    - BCCIP
     - BLM
-    - BLOC1S3
     - BLOC1S6
-    - BMPR1A
-    - BRAF
-    - BRAP
-    - BRCA1
     - BRCA2
-    - BRCC3
-    - BRE
     - BRIP1
     - BUB1B
-    - C17orf70
-    - C19orf40
-    - CASP10
     - CASR
-    - CBL
-    - CD40LG
-    - CDC73
-    - CDH1
-    - CDK4
-    - CDKN1B
-    - CDKN1C
-    - CDKN2A
-    - CDKN2B
-    - CEBPA
     - CEP57
-    - CHEK1
-    - CHEK2
-    - CREBBP
-    - CSF3R
     - CTC1
-    - CYLD
     - DDB2
     - DICER1
     - DIS3L2
-    - DKC1
     - DTNBP1
     - EGFR
-    - ELANE
-    - ENG
-    - EP300
-    - EPCAM
     - ERCC2
     - ERCC3
     - ERCC4
     - ERCC5
-    - ESR1
     - EXO1
-    - EXT1
-    - EXT2
-    - EZH2
-    - FAM175A
     - FAN1
     - FANCA
-    - FANCB
     - FANCC
     - FANCD2
     - FANCE
@@ -88,48 +41,21 @@ REPORT_LAYOUT:
     - FANCI
     - FANCL
     - FANCM
-    - FAS
-    - FASLG
     - FH
-    - FLCN
     - FOXO1
     - G6PC3
-    - GATA1
-    - GATA2
-    - GDNF
-    - GFI1
-    - GNAS
-    - GPC3
-    - GPC4
-    - GPR101
-    - GREM1
-    - GREM1
+    - HACE1
     - HAX1
-    - HNF1A
     - HOXB13
     - HPS1
     - HPS3
     - HPS4
     - HPS5
     - HPS6
-    - HRAS
-    - HUS1
+    - ITK
     - JAGN1
-    - KIF1B
-    - KIT
-    - KLLN
-    - KRAS
-    - LZTR1
-    - MAP2K1
-    - MAP2K2
-    - MAX
-    - MDC1
-    - MDH2
-    - MEN1
     - MET
-    - MITF
     - MLH1
-    - MLH3
     - MPL
     - MRE11A
     - MSH2
@@ -137,120 +63,47 @@ REPORT_LAYOUT:
     - MSH6
     - MUTYH
     - NBN
-    - NF1
-    - NF2
     - NHP2
-    - NKX2-1
     - NOP10
-    - NRAS
-    - NSD1
     - NTHL1
-    - NTRK1
     - OCA2
     - PALB2
-    - PALLD
+    - PARK2
     - PAX3
     - PAX7
-    - PDGFRA
-    - PHOX2B
-    - PIK3CA
     - PMS1
     - PMS2
-    - POLD1
+    - PMS2P1
     - POLE
     - POLH
-    - POLR2A
-    - POT1
-    - PPM1D
     - PRF1
-    - PRKAR1A
-    - PTCH1
-    - PTEN
-    - PTPN11
-    - PTPN12
-    - RAD1
-    - RAD17
     - RAD50
-    - RAD51
-    - RAD51B
     - RAD51C
-    - RAD51D
-    - RAD52
-    - RAD54L
-    - RAD9A
-    - RAF1
-    - RB1
     - RBBP8
     - RECQL4
-    - REST
     - RET
-    - RHBDF2
-    - RINT1
-    - RMI1
-    - RMI2
     - RMRP
-    - RPL11
-    - RPL15
-    - RPL26
-    - RPL35A
-    - RPL5
-    - RPS10
-    - RPS17
-    - RPS19
-    - RPS24
-    - RPS26
-    - RPS29
-    - RPS7
-    - RRAS2
     - RTEL1
-    - RUNX1
+    - SASH1
     - SBDS
     - SDHA
-    - SDHAF2
-    - SDHB
-    - SDHC
-    - SDHD
-    - SH2D1A
-    - SLC26A3
+    - SLC26A4
     - SLX4
-    - SMAD4
-    - SMARCA4
     - SMARCAL1
-    - SMARCB1
-    - SMARCE1
-    - SOS1
-    - SPRED1
-    - SRC
-    - SRP72
-    - STK11
-    - SUFU
-    - TERC
-    - TERF2IP
     - TERT
-    - TINF2
-    - TMEM127
-    - TOP3A
-    - TOPBP1
-    - TP53
-    - TP53BP1
-    - TRAF7
+    - CD27
     - TRIM37
-    - TSC1
-    - TSC2
     - TYR
-    - UIMC1
+    - UBE2T
+    - USB1
     - VHL
     - VPS45
-    - WAS
     - WRAP53
     - WRN
-    - WT1
     - XPA
     - XPC
     - XRCC2
-    - XRCC3
     - XRCC4
-    - ZNF350
   COLUMNS:
     - Func.refGene
     - ExonicFunc.refGene
@@ -268,12 +121,29 @@ REPORT_LAYOUT:
     - ExAC_FIN
     - ExAC_SAS
     - ExAC_OTH
+    - gnomAD_genome_ALL
+    - gnomAD_genome_AFR
+    - gnomAD_genome_AMR
+    - gnomAD_genome_ASJ
+    - gnomAD_genome_EAS
+    - gnomAD_genome_FIN
+    - gnomAD_genome_NFE
+    - gnomAD_genome_OTH
     - 249_SWEDES
     - 200_DANES
     - 1000g2014oct_all
     - 1000g2014oct_eur
+    - 1000g2014oct_eur
     - InterVar_class
     - InterVar_evidence
+    - ExAC_nontcga_ALL
+    - ExAC_nontcga_NFE
+    - ExAC_nontcga_AFR
+    - ExAC_nontcga_AMR
+    - ExAC_nontcga_EAS
+    - ExAC_nontcga_FIN
+    - ExAC_nontcga_SAS
+    - ExAC_nontcga_OTH
     - OAF_EARLYONSET_AF
     - OAF_EARLYONSET_GF
     - OAF_BRCS_AF
@@ -301,6 +171,11 @@ REPORT_LAYOUT:
     - EXAC03_CONSTRAINT_N_LOF
     - EXAC03_CONSTRAINT_PLI
     - cosmic70
+    - CLINSIG
+    - CLNDBN
+    - CLNACC
+    - CLNDSDB
+    - CLNDSDBID
     - clinvar_20150330
     - dpsi_zscore
     - SIFT_pred
@@ -326,30 +201,10 @@ REPORT_LAYOUT:
       PATTERN: '("ExonicFunc.refGene"==''unknown'')'
       USAGES:
         - ACTION: DELETE_ROW
-    - NAME: SWEGEN_AF_COMMON
-      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")<=0.9)and(float("SWEGEN_AF")>=0.1)'
+    - NAME: MAX_REF_MAF_COMMON
+      PATTERN: '("MAX_REF_MAF"!='''')and(float("MAX_REF_MAF")<=0.99)and(float("MAX_REF_MAF")>=0.01)'
       USAGES:
         - ACTION: DELETE_ROW
-    - NAME: SWEGEN_AF_03
-      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")<0.03)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: SWEGEN_AF:XLS_YELLOW
-    - NAME: SWEGEN_AF_97
-      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")>0.97)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: SWEGEN_AF:XLS_YELLOW
-    - NAME: SWEGEN_AF_01
-      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")<0.01)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: SWEGEN_AF:XLS_ORANGE
-    - NAME: SWEGEN_AF_99
-      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")>0.99)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: SWEGEN_AF:XLS_ORANGE
     - NAME: SWEGEN_AF_001
       PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")<0.001)'
       USAGES:
@@ -365,30 +220,6 @@ REPORT_LAYOUT:
       USAGES:
         - ACTION: COLOR_COLUMN
           INFO: SWEGEN_AF:XLS_GREEN
-    - NAME: ExAC_ALL_COMMON
-      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")<=0.9)and(float("ExAC_ALL")>=0.1)'
-      USAGES:
-        - ACTION: DELETE_ROW
-    - NAME: ExAC_ALL_03
-      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")<0.03)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_ALL:XLS_YELLOW
-    - NAME: ExAC_ALL_97
-      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")>0.97)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_ALL:XLS_YELLOW
-    - NAME: ExAC_ALL_01
-      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")<0.01)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_ALL:XLS_ORANGE
-    - NAME: ExAC_ALL_99
-      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")>0.99)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_ALL:XLS_ORANGE
     - NAME: ExAC_ALL_001
       PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")<0.001)'
       USAGES:
@@ -404,30 +235,6 @@ REPORT_LAYOUT:
       USAGES:
         - ACTION: COLOR_COLUMN
           INFO: ExAC_ALL:XLS_GREEN
-    - NAME: ExAC_NFE_COMMON
-      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")<=0.9)and(float("ExAC_NFE")>=0.1)'
-      USAGES:
-        - ACTION: DELETE_ROW
-    - NAME: ExAC_NFE_03
-      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")<0.03)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_NFE:XLS_YELLOW
-    - NAME: ExAC_NFE_97
-      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")>0.97)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_NFE:XLS_YELLOW
-    - NAME: ExAC_NFE_01
-      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")<0.01)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_NFE:XLS_ORANGE
-    - NAME: ExAC_NFE_99
-      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")>0.99)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_NFE:XLS_ORANGE
     - NAME: ExAC_NFE_001
       PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")<0.001)'
       USAGES:
@@ -443,30 +250,6 @@ REPORT_LAYOUT:
       USAGES:
         - ACTION: COLOR_COLUMN
           INFO: ExAC_NFE:XLS_GREEN
-    - NAME: ExAC_AFR_COMMON
-      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")<=0.9)and(float("ExAC_AFR")>=0.1)'
-      USAGES:
-        - ACTION: DELETE_ROW
-    - NAME: ExAC_AFR_03
-      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")<0.03)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_AFR:XLS_YELLOW
-    - NAME: ExAC_AFR_97
-      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")>0.97)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_AFR:XLS_YELLOW
-    - NAME: ExAC_AFR_01
-      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")<0.01)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_AFR:XLS_ORANGE
-    - NAME: ExAC_AFR_99
-      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")>0.99)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_AFR:XLS_ORANGE
     - NAME: ExAC_AFR_001
       PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")<0.001)'
       USAGES:
@@ -482,30 +265,6 @@ REPORT_LAYOUT:
       USAGES:
         - ACTION: COLOR_COLUMN
           INFO: ExAC_AFR:XLS_GREEN
-    - NAME: ExAC_AMR_COMMON
-      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")<=0.9)and(float("ExAC_AMR")>=0.1)'
-      USAGES:
-        - ACTION: DELETE_ROW
-    - NAME: ExAC_AMR_03
-      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")<0.03)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_AMR:XLS_YELLOW
-    - NAME: ExAC_AMR_97
-      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")>0.97)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_AMR:XLS_YELLOW
-    - NAME: ExAC_AMR_01
-      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")<0.01)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_AMR:XLS_ORANGE
-    - NAME: ExAC_AMR_99
-      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")>0.99)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_AMR:XLS_ORANGE
     - NAME: ExAC_AMR_001
       PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")<0.001)'
       USAGES:
@@ -521,30 +280,6 @@ REPORT_LAYOUT:
       USAGES:
         - ACTION: COLOR_COLUMN
           INFO: ExAC_AMR:XLS_GREEN
-    - NAME: ExAC_EAS_COMMON
-      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")<=0.9)and(float("ExAC_EAS")>=0.1)'
-      USAGES:
-        - ACTION: DELETE_ROW
-    - NAME: ExAC_EAS_03
-      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")<0.03)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_EAS:XLS_YELLOW
-    - NAME: ExAC_EAS_97
-      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")>0.97)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_EAS:XLS_YELLOW
-    - NAME: ExAC_EAS_01
-      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")<0.01)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_EAS:XLS_ORANGE
-    - NAME: ExAC_EAS_99
-      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")>0.99)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_EAS:XLS_ORANGE
     - NAME: ExAC_EAS_001
       PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")<0.001)'
       USAGES:
@@ -560,30 +295,6 @@ REPORT_LAYOUT:
       USAGES:
         - ACTION: COLOR_COLUMN
           INFO: ExAC_EAS:XLS_GREEN
-    - NAME: ExAC_FIN_COMMON
-      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")<=0.9)and(float("ExAC_FIN")>=0.1)'
-      USAGES:
-        - ACTION: DELETE_ROW
-    - NAME: ExAC_FIN_03
-      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")<0.03)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_FIN:XLS_YELLOW
-    - NAME: ExAC_FIN_97
-      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")>0.97)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_FIN:XLS_YELLOW
-    - NAME: ExAC_FIN_01
-      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")<0.01)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_FIN:XLS_ORANGE
-    - NAME: ExAC_FIN_99
-      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")>0.99)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_FIN:XLS_ORANGE
     - NAME: ExAC_FIN_001
       PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")<0.001)'
       USAGES:
@@ -599,30 +310,6 @@ REPORT_LAYOUT:
       USAGES:
         - ACTION: COLOR_COLUMN
           INFO: ExAC_FIN:XLS_GREEN
-    - NAME: ExAC_SAS_COMMON
-      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")<=0.9)and(float("ExAC_SAS")>=0.1)'
-      USAGES:
-        - ACTION: DELETE_ROW
-    - NAME: ExAC_SAS_03
-      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")<0.03)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_SAS:XLS_YELLOW
-    - NAME: ExAC_SAS_97
-      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")>0.97)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_SAS:XLS_YELLOW
-    - NAME: ExAC_SAS_01
-      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")<0.01)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_SAS:XLS_ORANGE
-    - NAME: ExAC_SAS_99
-      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")>0.99)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_SAS:XLS_ORANGE
     - NAME: ExAC_SAS_001
       PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")<0.001)'
       USAGES:
@@ -638,30 +325,6 @@ REPORT_LAYOUT:
       USAGES:
         - ACTION: COLOR_COLUMN
           INFO: ExAC_SAS:XLS_GREEN
-    - NAME: ExAC_OTH_COMMON
-      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")<=0.9)and(float("ExAC_OTH")>=0.1)'
-      USAGES:
-        - ACTION: DELETE_ROW
-    - NAME: ExAC_OTH_03
-      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")<0.03)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_OTH:XLS_YELLOW
-    - NAME: ExAC_OTH_97
-      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")>0.97)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_OTH:XLS_YELLOW
-    - NAME: ExAC_OTH_01
-      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")<0.01)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_OTH:XLS_ORANGE
-    - NAME: ExAC_OTH_99
-      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")>0.99)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: ExAC_OTH:XLS_ORANGE
     - NAME: ExAC_OTH_001
       PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")<0.001)'
       USAGES:
@@ -677,30 +340,126 @@ REPORT_LAYOUT:
       USAGES:
         - ACTION: COLOR_COLUMN
           INFO: ExAC_OTH:XLS_GREEN
-    - NAME: 249_SWEDES_COMMON
-      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")<=0.9)and(float("249_SWEDES")>=0.1)'
-      USAGES:
-        - ACTION: DELETE_ROW
-    - NAME: 249_SWEDES_03
-      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")<0.03)'
+    - NAME: gnomAD_genome_ALL_001
+      PATTERN: '("gnomAD_genome_ALL"!='''')and(float("gnomAD_genome_ALL")<0.001)'
       USAGES:
         - ACTION: COLOR_COLUMN
-          INFO: 249_SWEDES:XLS_YELLOW
-    - NAME: 249_SWEDES_97
-      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")>0.97)'
+          INFO: gnomAD_genome_ALL:XLS_GREEN
+    - NAME: gnomAD_genome_ALL_999
+      PATTERN: '("gnomAD_genome_ALL"!='''')and(float("gnomAD_genome_ALL")>0.999)'
       USAGES:
         - ACTION: COLOR_COLUMN
-          INFO: 249_SWEDES:XLS_YELLOW
-    - NAME: 249_SWEDES_01
-      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")<0.01)'
+          INFO: gnomAD_genome_ALL:XLS_GREEN
+    - NAME: gnomAD_genome_ALL_empty
+      PATTERN: '("gnomAD_genome_ALL"=='''')'
       USAGES:
         - ACTION: COLOR_COLUMN
-          INFO: 249_SWEDES:XLS_ORANGE
-    - NAME: 249_SWEDES_99
-      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")>0.99)'
+          INFO: gnomAD_genome_ALL:XLS_GREEN
+    - NAME: gnomAD_genome_AFR_001
+      PATTERN: '("gnomAD_genome_AFR"!='''')and(float("gnomAD_genome_AFR")<0.001)'
       USAGES:
         - ACTION: COLOR_COLUMN
-          INFO: 249_SWEDES:XLS_ORANGE
+          INFO: gnomAD_genome_AFR:XLS_GREEN
+    - NAME: gnomAD_genome_AFR_999
+      PATTERN: '("gnomAD_genome_AFR"!='''')and(float("gnomAD_genome_AFR")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_AFR:XLS_GREEN
+    - NAME: gnomAD_genome_AFR_empty
+      PATTERN: '("gnomAD_genome_AFR"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_AFR:XLS_GREEN
+    - NAME: gnomAD_genome_AMR_001
+      PATTERN: '("gnomAD_genome_AMR"!='''')and(float("gnomAD_genome_AMR")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_AMR:XLS_GREEN
+    - NAME: gnomAD_genome_AMR_999
+      PATTERN: '("gnomAD_genome_AMR"!='''')and(float("gnomAD_genome_AMR")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_AMR:XLS_GREEN
+    - NAME: gnomAD_genome_AMR_empty
+      PATTERN: '("gnomAD_genome_AMR"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_AMR:XLS_GREEN
+    - NAME: gnomAD_genome_ASJ_001
+      PATTERN: '("gnomAD_genome_ASJ"!='''')and(float("gnomAD_genome_ASJ")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_ASJ:XLS_GREEN
+    - NAME: gnomAD_genome_ASJ_999
+      PATTERN: '("gnomAD_genome_ASJ"!='''')and(float("gnomAD_genome_ASJ")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_ASJ:XLS_GREEN
+    - NAME: gnomAD_genome_ASJ_empty
+      PATTERN: '("gnomAD_genome_ASJ"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_ASJ:XLS_GREEN
+    - NAME: gnomAD_genome_EAS_001
+      PATTERN: '("gnomAD_genome_EAS"!='''')and(float("gnomAD_genome_EAS")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_EAS:XLS_GREEN
+    - NAME: gnomAD_genome_EAS_999
+      PATTERN: '("gnomAD_genome_EAS"!='''')and(float("gnomAD_genome_EAS")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_EAS:XLS_GREEN
+    - NAME: gnomAD_genome_EAS_empty
+      PATTERN: '("gnomAD_genome_EAS"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_EAS:XLS_GREEN
+    - NAME: gnomAD_genome_FIN_001
+      PATTERN: '("gnomAD_genome_FIN"!='''')and(float("gnomAD_genome_FIN")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_FIN:XLS_GREEN
+    - NAME: gnomAD_genome_FIN_999
+      PATTERN: '("gnomAD_genome_FIN"!='''')and(float("gnomAD_genome_FIN")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_FIN:XLS_GREEN
+    - NAME: gnomAD_genome_FIN_empty
+      PATTERN: '("gnomAD_genome_FIN"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_FIN:XLS_GREEN
+    - NAME: gnomAD_genome_NFE_001
+      PATTERN: '("gnomAD_genome_NFE"!='''')and(float("gnomAD_genome_NFE")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_NFE:XLS_GREEN
+    - NAME: gnomAD_genome_NFE_999
+      PATTERN: '("gnomAD_genome_NFE"!='''')and(float("gnomAD_genome_NFE")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_NFE:XLS_GREEN
+    - NAME: gnomAD_genome_NFE_empty
+      PATTERN: '("gnomAD_genome_NFE"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_NFE:XLS_GREEN
+    - NAME: gnomAD_genome_OTH_001
+      PATTERN: '("gnomAD_genome_OTH"!='''')and(float("gnomAD_genome_OTH")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_OTH:XLS_GREEN
+    - NAME: gnomAD_genome_OTH_999
+      PATTERN: '("gnomAD_genome_OTH"!='''')and(float("gnomAD_genome_OTH")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_OTH:XLS_GREEN
+    - NAME: gnomAD_genome_OTH_empty
+      PATTERN: '("gnomAD_genome_OTH"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_OTH:XLS_GREEN
     - NAME: 249_SWEDES_001
       PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")<0.001)'
       USAGES:
@@ -716,30 +475,6 @@ REPORT_LAYOUT:
       USAGES:
         - ACTION: COLOR_COLUMN
           INFO: 249_SWEDES:XLS_GREEN
-    - NAME: 200_DANES_COMMON
-      PATTERN: '("200_DANES"!='''')and(float("200_DANES")<=0.9)and(float("200_DANES")>=0.1)'
-      USAGES:
-        - ACTION: DELETE_ROW
-    - NAME: 200_DANES_03
-      PATTERN: '("200_DANES"!='''')and(float("200_DANES")<0.03)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: 200_DANES:XLS_YELLOW
-    - NAME: 200_DANES_97
-      PATTERN: '("200_DANES"!='''')and(float("200_DANES")>0.97)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: 200_DANES:XLS_YELLOW
-    - NAME: 200_DANES_01
-      PATTERN: '("200_DANES"!='''')and(float("200_DANES")<0.01)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: 200_DANES:XLS_ORANGE
-    - NAME: 200_DANES_99
-      PATTERN: '("200_DANES"!='''')and(float("200_DANES")>0.99)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: 200_DANES:XLS_ORANGE
     - NAME: 200_DANES_001
       PATTERN: '("200_DANES"!='''')and(float("200_DANES")<0.001)'
       USAGES:
@@ -755,30 +490,6 @@ REPORT_LAYOUT:
       USAGES:
         - ACTION: COLOR_COLUMN
           INFO: 200_DANES:XLS_GREEN
-    - NAME: 1000g2014oct_all_COMMON
-      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")<=0.9)and(float("1000g2014oct_all")>=0.1)'
-      USAGES:
-        - ACTION: DELETE_ROW
-    - NAME: 1000g2014oct_all_03
-      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")<0.03)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: 1000g2014oct_all:XLS_YELLOW
-    - NAME: 1000g2014oct_all_97
-      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")>0.97)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: 1000g2014oct_all:XLS_YELLOW
-    - NAME: 1000g2014oct_all_01
-      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")<0.01)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: 1000g2014oct_all:XLS_ORANGE
-    - NAME: 1000g2014oct_all_99
-      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")>0.99)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: 1000g2014oct_all:XLS_ORANGE
     - NAME: 1000g2014oct_all_001
       PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")<0.001)'
       USAGES:
@@ -794,30 +505,6 @@ REPORT_LAYOUT:
       USAGES:
         - ACTION: COLOR_COLUMN
           INFO: 1000g2014oct_all:XLS_GREEN
-    - NAME: 1000g2014oct_eur_COMMON
-      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")<=0.9)and(float("1000g2014oct_eur")>=0.1)'
-      USAGES:
-        - ACTION: DELETE_ROW
-    - NAME: 1000g2014oct_eur_03
-      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")<0.03)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: 1000g2014oct_eur:XLS_YELLOW
-    - NAME: 1000g2014oct_eur_97
-      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")>0.97)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: 1000g2014oct_eur:XLS_YELLOW
-    - NAME: 1000g2014oct_eur_01
-      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")<0.01)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: 1000g2014oct_eur:XLS_ORANGE
-    - NAME: 1000g2014oct_eur_99
-      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")>0.99)'
-      USAGES:
-        - ACTION: COLOR_COLUMN
-          INFO: 1000g2014oct_eur:XLS_ORANGE
     - NAME: 1000g2014oct_eur_001
       PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")<0.001)'
       USAGES:
@@ -862,6 +549,8 @@ REPORT_LAYOUT:
       PATTERN: '("dpsi_zscore"!='''')and("ExonicFunc.refGene"==''synonymous_SNV'')and(float("dpsi_zscore")>-2)and(float("dpsi_zscore")<2)'
       USAGES:
         - ACTION: DELETE_ROW
+  EXTRA_ANNOTATION_COLUMNS:
+    - Calling_detail
   FREQUENCY_RATIOS:
     - COLUMN: SWEGEN_AF
       FREQUENCY: 0.1
@@ -1012,10 +701,9 @@ REPORT_LAYOUT:
     - Rare
     - PASS-VQSR
     - Non-Intergenic
-    - Non-Intronic
     - Non-Upstream
     - Non-Downstream
-    - Non-UTR
+    - Has-Shared
     - Has-Mutation
   SPLIT_CHROM: false
   Show_shared_mutations: true

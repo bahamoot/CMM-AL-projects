@@ -1,6 +1,6 @@
 #!/bin/bash
  
-dataset_name="TYRCA"
+dataset_name="THYRCA"
 
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cmd="pyCMM-mutrep-pipeline"
