@@ -1,0 +1,6 @@
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cmd="pydummy "
+cmd+=" pyCMM-dbms-controller "
+cmd+=" -j $script_dir/dbms_production_jobs_setup.txt"
+#cmd+=" -l /proj/b2011117/private/projects/out/db/cal_stat_101CRC_all/101CRC_all"
+eval "$cmd"
