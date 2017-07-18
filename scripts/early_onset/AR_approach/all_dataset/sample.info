@@ -419,3 +419,130 @@ SAMPLES_INFOS:
             PHENOTYPE: 1
           - SAMPLE_ID: "Co-1359"
           - SAMPLE_ID: "Co-1368"
+  - DATASET_ID: "Familial BrC"
+    FAMILIES:
+      - FAMILY_ID: "179"
+        MEMBERS:
+          - SAMPLE_ID: "Co-323"
+          - SAMPLE_ID: "Al-19"
+      - FAMILY_ID: "1100"
+        MEMBERS:
+          - SAMPLE_ID: "341-89D"
+          - SAMPLE_ID: "405-89D"
+          - SAMPLE_ID: "Al-23"
+          - SAMPLE_ID: "Al-54"
+      - FAMILY_ID: "1891"
+        MEMBERS:
+          - SAMPLE_ID: "Al-148"
+          - SAMPLE_ID: "Al-142"
+      - FAMILY_ID: "2060"
+        MEMBERS:
+          - SAMPLE_ID: "Br-690"
+          - SAMPLE_ID: "Br-693"
+          - SAMPLE_ID: "Br-686"
+      - FAMILY_ID: "2590"
+        MEMBERS:
+          - SAMPLE_ID: "Al-133"
+          - SAMPLE_ID: "Al-143"
+          - SAMPLE_ID: "Al-128"
+      - FAMILY_ID: "3028"
+        MEMBERS:
+          - SAMPLE_ID: "AL-36"
+          - SAMPLE_ID: "AL-44"
+          - SAMPLE_ID: "Br-732"
+      - FAMILY_ID: "4040"
+        MEMBERS:
+          - SAMPLE_ID: "Br-55"
+          - SAMPLE_ID: "Br-325"
+      - FAMILY_ID: "4041"
+        MEMBERS:
+          - SAMPLE_ID: "Br-27"
+          - SAMPLE_ID: "Br-56"
+          - SAMPLE_ID: "Br-87"
+      - FAMILY_ID: "4046"
+        MEMBERS:
+          - SAMPLE_ID: "Br-100"
+          - SAMPLE_ID: "Br-227"
+      - FAMILY_ID: "4093"
+        MEMBERS:
+          - SAMPLE_ID: "Br-175"
+          - SAMPLE_ID: "Br-177"
+      - FAMILY_ID: "4127"
+        MEMBERS:
+          - SAMPLE_ID: "Br-246"
+          - SAMPLE_ID: "Br-322"
+      - FAMILY_ID: "5701"
+        MEMBERS:
+          - SAMPLE_ID: "Br-585"
+          - SAMPLE_ID: "Br-588"
+      - FAMILY_ID: "6005"
+        MEMBERS:
+          - SAMPLE_ID: "Br-271"
+          - SAMPLE_ID: "Co-324"
+      - FAMILY_ID: "6006"
+        MEMBERS:
+          - SAMPLE_ID: "Br-418"
+          - SAMPLE_ID: "Br-781"
+          - SAMPLE_ID: "Br-425"
+      - FAMILY_ID: "6037"
+        MEMBERS:
+          - SAMPLE_ID: "Br-310"
+          - SAMPLE_ID: "Br-308"
+      - FAMILY_ID: "6041"
+        MEMBERS:
+          - SAMPLE_ID: "Br-317"
+          - SAMPLE_ID: "Br-318"
+          - SAMPLE_ID: "Br-319"
+      - FAMILY_ID: "6067"
+        MEMBERS:
+          - SAMPLE_ID: "884-99D"
+          - SAMPLE_ID: "Br-397"
+      - FAMILY_ID: "6072"
+        MEMBERS:
+          - SAMPLE_ID: "Br-682"
+          - SAMPLE_ID: "Br-727"
+      - FAMILY_ID: "6094"
+        MEMBERS:
+          - SAMPLE_ID: "Br-442"
+          - SAMPLE_ID: "Br-451"
+      - FAMILY_ID: "6100"
+        MEMBERS:
+          - SAMPLE_ID: "Br-465"
+          - SAMPLE_ID: "Br-466"
+          - SAMPLE_ID: "Br-464"
+          - SAMPLE_ID: "Br-459"
+      - FAMILY_ID: "6101"
+        MEMBERS:
+          - SAMPLE_ID: "Br-473"
+      - FAMILY_ID: "6104"
+        MEMBERS:
+          - SAMPLE_ID: "Br-475"
+          - SAMPLE_ID: "Br-477"
+      - FAMILY_ID: "6106"
+        MEMBERS:
+          - SAMPLE_ID: "Br-484"
+          - SAMPLE_ID: "Br-510"
+      - FAMILY_ID: "6123"
+        MEMBERS:
+          - SAMPLE_ID: "Br-526"
+          - SAMPLE_ID: "Br-528"
+          - SAMPLE_ID: "Br-527"
+      - FAMILY_ID: "6127"
+        MEMBERS:
+          - SAMPLE_ID: "Br-694"
+          - SAMPLE_ID: "Br-697"
+          - SAMPLE_ID: "Br-702"
+      - FAMILY_ID: "L1056"
+        MEMBERS:
+          - SAMPLE_ID: "Br-720"
+          - SAMPLE_ID: "Br-721"
+          - SAMPLE_ID: "Br-724"
+      - FAMILY_ID: "L1141"
+        MEMBERS:
+          - SAMPLE_ID: "Br-652"
+          - SAMPLE_ID: "Br-641"
+      - FAMILY_ID: "L862"
+        MEMBERS:
+          - SAMPLE_ID: "Br-706"
+          - SAMPLE_ID: "Br-710"
+          - SAMPLE_ID: "Br-716"
