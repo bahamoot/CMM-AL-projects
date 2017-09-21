@@ -1,60 +1,83 @@
 JOBS_REPORT_FILE:
-JOB_ALLOC_TIME: "4-00:00:00"
+JOB_ALLOC_TIME: "20:00:00"
 PROJECT_CODE: b2012247
-PROJECT_NAME: Young
+PROJECT_NAME: Young_vs_FamCRCs
 PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/early_onset/AR/
 REPORT_LAYOUT:
-  ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/WES294/WES294_annotated.vcf.gz
-  COLORING_SAMPLES:
-    - Zygosity
   COLUMNS:
     - Func.refGene
     - ExonicFunc.refGene
+    - snp138
     - Gene.refGene
     - GeneDetail.refGene
-    - snp138
+    - AAChange.refGene
+    - cytoBand
     - MAX_REF_MAF
-    - OAF_EARLYONSET_AF
-    - OAF_EARLYONSET_GF
-    - KVOT_EARLYONSET_VS_SWEGEN_ESTIMATED
     - SWEGEN_AF
-    - SWEGEN_GF
-    - KVOT_EARLYONSET_VS_EXAC_NFE_ESTIMATED
-    - ExAC_NFE
     - ExAC_ALL
-    - KVOT_EARLYONSET_VS_BRC_ESTIMATED
-    - OAF_BRCS_AF
-    - OAF_BRCS_GF
-    - OAF_CRCS_AF
-    - OAF_CRCS_GF
-    - 1000g2014oct_eur
-    - 1000g2014oct_all
-    - OAF_BRC_CRC_PROSTATE_AF
-    - OAF_BRC_CRC_PROSTATE_GF
-    - 249_SWEDES
-    - 200_DANES
-    - gnomAD_genome_ALL
-    - gnomAD_genome_NFE
+    - ExAC_NFE
     - ExAC_AFR
     - ExAC_AMR
     - ExAC_EAS
     - ExAC_FIN
-    - ExAC_OTH
     - ExAC_SAS
-    - ExAC_nontcga_AFR
-    - ExAC_nontcga_AMR
-    - ExAC_nontcga_EAS
-    - ExAC_nontcga_FIN
-    - ExAC_nontcga_OTH
-    - ExAC_nontcga_SAS
+    - ExAC_OTH
+    - gnomAD_genome_ALL
     - gnomAD_genome_AFR
     - gnomAD_genome_AMR
     - gnomAD_genome_ASJ
     - gnomAD_genome_EAS
     - gnomAD_genome_FIN
+    - gnomAD_genome_NFE
     - gnomAD_genome_OTH
-    - AAChange.refGene
-    - cytoBand
+    - 249_SWEDES
+    - 200_DANES
+    - 1000g2014oct_all
+    - 1000g2014oct_eur
+    - InterVar_class
+    - InterVar_evidence
+    - ExAC_nontcga_ALL
+    - ExAC_nontcga_NFE
+    - ExAC_nontcga_AFR
+    - ExAC_nontcga_AMR
+    - ExAC_nontcga_EAS
+    - ExAC_nontcga_FIN
+    - ExAC_nontcga_SAS
+    - ExAC_nontcga_OTH
+    - OAF_EARLYONSET_AF
+    - OAF_EARLYONSET_GF
+    - OAF_BRCS_AF
+    - OAF_BRCS_GF
+    - OAF_FAMILIAL_CRCS_AF
+    - OAF_FAMILIAL_CRCS_GF
+    - OAF_BRC_CRC_PROSTATE_AF
+    - OAF_BRC_CRC_PROSTATE_GF
+    - OAF_CHEK2_AF
+    - OAF_CHEK2_GF
+    - SWEGEN_HET
+    - SWEGEN_HOM
+    - SWEGEN_HEMI
+    - SWEGEN_AC
+    - SWEGEN_GT
+    - SWEGEN_GF
+    - SWEGEN_PF
+    - EXAC03_CONSTRAINT_EXP_SYN
+    - EXAC03_CONSTRAINT_N_SYN
+    - EXAC03_CONSTRAINT_SYN_Z
+    - EXAC03_CONSTRAINT_EXP_MIS
+    - EXAC03_CONSTRAINT_N_MIS
+    - EXAC03_CONSTRAINT_MIS_Z
+    - EXAC03_CONSTRAINT_EXP_LOF
+    - EXAC03_CONSTRAINT_N_LOF
+    - EXAC03_CONSTRAINT_PLI
+    - cosmic70
+    - CLINSIG
+    - CLNDBN
+    - CLNACC
+    - CLNDSDB
+    - CLNDSDBID
+    - clinvar_20150330
+    - dpsi_zscore
     - Pathogenic_count
     - SIFT_pred
     - Polyphen2_HDIV_pred
@@ -63,26 +86,17 @@ REPORT_LAYOUT:
     - MutationTaster_pred
     - MutationAssessor_pred
     - FATHMM_pred
-    - RadialSVM_pred
-    - LR_pred
+    - MetaSVM_pred
+    - MetaLR_pred
     - CADD_phred
-    - OAF_BRCS_WT
-    - OAF_BRCS_HET
-    - OAF_BRCS_HOM
-    - OAF_FAMILIAL_CRCS_AF
-    - OAF_FAMILIAL_CRCS_GF
-    - OAF_BRC_CRC_PROSTATE_WT
-    - OAF_BRC_CRC_PROSTATE_HET
-    - OAF_BRC_CRC_PROSTATE_HOM
-    - OAF_EARLYONSET_WT
-    - OAF_EARLYONSET_HET
-    - OAF_EARLYONSET_HOM
-    - OAF_FAMILIAL_CRCS_HET
-    - OAF_FAMILIAL_CRCS_HOM
-    - OAF_FAMILIAL_CRCS_WT
+  DB_FILE: /proj/b2011117/private/databases/SQLiteDB/GRCh37.db
   EXPRESSIONS:
     - NAME: Func_ncRNA_exonic
       PATTERN: '("Func.refGene"==''ncRNA_exonic'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: Func_ncRNA_intronic
+      PATTERN: '("Func.refGene"==''ncRNA_intronic'')'
       USAGES:
         - ACTION: DELETE_ROW
     - NAME: Func_ncRNA_splicing
@@ -93,6 +107,18 @@ REPORT_LAYOUT:
       PATTERN: '("ExonicFunc.refGene"==''unknown'')'
       USAGES:
         - ACTION: DELETE_ROW
+    - NAME: true_synonymous
+      PATTERN: '("dpsi_zscore"!='''')and("ExonicFunc.refGene"==''synonymous_SNV'')and(float("dpsi_zscore")<2)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: likely_synonymous
+      PATTERN: '("dpsi_zscore"=='''')and("ExonicFunc.refGene"==''synonymous_SNV'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: MAX_REF_MAF_COMMON
+      PATTERN: '("MAX_REF_MAF"!='''')and(float("MAX_REF_MAF")<=0.80)and(float("MAX_REF_MAF")>=0.20)'
+      USAGES:
+        - ACTION: DELETE_ROW
     - NAME: Pathogenic5
       PATTERN: 'int("Pathogenic_count")<5'
       USAGES:
@@ -101,27 +127,12 @@ REPORT_LAYOUT:
       PATTERN: '(float("OAF_EARLYONSET_GF")<0.5)'
       USAGES:
         - ACTION: DELETE_ROW
-  FILTER_GENES:
-    - MEGF6
-    - INADL
-    - DUSP23
-    - GNLY
-    - VWA3B
-    - TTN
-    - PKHD1
-    - CD109
-    - PLEC
-    - OR1Q1
-    - PITRM1
-    - MRGPRX3
-    - UGGT2
-    - CPAMD8
-    - TFF3
-    - FANCB
-    - CHDC2
-  FREQUENCY_RATIOS:
-    - COLUMN: SWEGEN_AF
-      FREQUENCY: 0.1
+    - NAME: MUTATED_REF
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")>=0.50)'
+      USAGES:
+        - ACTION: DELETE_ROW
+  EXTRA_ANNOTATION_COLUMNS:
+    - Calling_detail
   HEADER_CORRECTIONS:
     - NEW_HEADER: BRCS_WT
       OLD_HEADER: OAF_BRCS_WT
@@ -265,32 +276,13 @@ REPORT_LAYOUT:
       OLD_HEADER: gnomAD_genome_NFE
     - NEW_HEADER: gnomAD_OTH
       OLD_HEADER: gnomAD_genome_OTH
-  REGIONS:
-    - 1:3404505-3528059
-    - 1:62208148-62629591
-    - 1:159750758-159752333
-    - 2:85921413-85925974
-    - 2:98703594-98929410
-    - 2:179390716-179672150
-    - 6:51480144-51952423
-    - 6:74405807-74538041
-    - 8:144989314-145050913
-    - 9:125377016-125377961
-    - 10:3179918-3215033
-    - 11:18142501-18160027
-    - 13:96453835-96705736
-    - 19:17003761-17137625
-    - 21:43731776-43735706
-    - X:14861528-14891184
-    - X:36065052-36163187
   ROWS_FILTER_ACTIONS_CRITERIA:
-    - PASS-VQSR
     - Non-Intergenic
     - Non-Intronic
     - Non-Upstream
     - Non-Downstream
-    - Non-Synonymous
     - Non-UTR
+    - Non-Recessive-Gene
   SPLIT_CHROM: false
   Show_shared_mutations: false
 SAMPLES_INFOS:
@@ -714,6 +706,31 @@ SAMPLES_INFOS:
             SAMPLE_ID: "Co-1354"
           - SAMPLE_ID: "Co-1359"
           - SAMPLE_ID: "Co-1368"
+      - FAMILY_ID: "119"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1209"
+          - SAMPLE_ID: "Co-1220"
+          - SAMPLE_ID: "Co-1222"
+          - SAMPLE_ID: "Co-1285"
+      - FAMILY_ID: "1244"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "2310-08D"
+          - SAMPLE_ID: "3015-11D"
+          - SAMPLE_ID: "627-04o"
+      - FAMILY_ID: "1330"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "861-10D"
+      - FAMILY_ID: "1410"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "930-06o"
+      - FAMILY_ID: "1680"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "301-08F"
   - DATASET_ID: '"Familial BrC"'
     FAMILIES:
       - FAMILY_ID: "179"
