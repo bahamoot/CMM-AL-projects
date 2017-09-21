@@ -18,7 +18,7 @@ function gtz_vcf {
     tabix -h $input_vcf 1:1-1 | sed 's/LEI1904A1/Co-309/' | sed 's/Number=R/Number=./' > $output_vcf
     for chrom in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 X Y
     do
-        cmd="tabix $input_vcf $chrom | cut -f1-5,9-10 | awk -F'\t' '{ printf \"%s\t%s\t%s\t%s\t%s\t.\t.\t.\t%s\t%s\n\", \$1, \$2, \$3, \$4, \$5, \$6, \$7 }' >> $output_vcf"
+        cmd="tabix $input_vcf $chrom | cut -f1-7,9-10 | awk -F'\t' '{ printf \"%s\t%s\t%s\t%s\t%s\t%s\t%s\t.\t%s\t%s\n\", \$1, \$2, \$3, \$4, \$5, \$6, \$7, \$8, \$9 }' >> $output_vcf"
         eval_cmd "$cmd"
     done
 #    tabix $input_vcf 10:89600000-89690000 | cut -f1-5,9-10 | awk -F'\t' '{ printf "%s\t%s\t%s\t%s\t%s\t.\t.\t.\t%s\t%s\n", $1, $2, $3, $4, $5, $6, $7 }'>> $output_vcf

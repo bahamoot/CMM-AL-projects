@@ -128,14 +128,14 @@ DB_JOBS:
 #    Drop_table: yes
 #    Operation: LOAD_GTZ_VCF
 #    Table_name: fam119_new_sample
-  - Data_file: $VCF_WES294
-    Drop_table: yes
-    Operation: LOAD_GTZ_VCF
-    Table_name: gtz_WES294
-  - Data_file: $VCF_THYRCA
-    Drop_table: yes
-    Operation: LOAD_GTZ_VCF
-    Table_name: gtz_THYRCA
+#  - Data_file: $VCF_WES294
+#    Drop_table: yes
+#    Operation: LOAD_GTZ_VCF
+#    Table_name: gtz_WES294
+#  - Data_file: $VCF_THYRCA
+#    Drop_table: yes
+#    Operation: LOAD_GTZ_VCF
+#    Table_name: gtz_THYRCA
 #  - Data_file: $TABLE_ANNOVAR_ROOT_DIR/all_coors/all_coors_annotated.vcf.gz
 #    Drop_table: Yes
 #    Operation: LOAD_ANNOVAR_VCF
@@ -176,3 +176,4 @@ DB_JOBS:
 #    Drop_table: No
   - Operation: SET_REF_MUTATED
     Drop_table: false
+  - Operation: VACUUM
