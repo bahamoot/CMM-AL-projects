@@ -1,0 +1,843 @@
+JOBS_REPORT_FILE:
+JOB_ALLOC_TIME: "4-00:00:00"
+PROJECT_CODE: b2012247
+PROJECT_NAME: Young
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/early_onset/AR/
+REPORT_LAYOUT:
+  ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/WES294/WES294_annotated.vcf.gz
+  COLORING_SAMPLES:
+    - Zygosity
+  COLUMNS:
+    - Func.refGene
+    - ExonicFunc.refGene
+    - Gene.refGene
+    - GeneDetail.refGene
+    - snp138
+    - MAX_REF_MAF
+    - OAF_EARLYONSET_AF
+    - OAF_EARLYONSET_GF
+    - KVOT_EARLYONSET_VS_SWEGEN_ESTIMATED
+    - SWEGEN_AF
+    - SWEGEN_GF
+    - KVOT_EARLYONSET_VS_EXAC_NFE_ESTIMATED
+    - ExAC_NFE
+    - ExAC_ALL
+    - KVOT_EARLYONSET_VS_BRC_ESTIMATED
+    - OAF_BRCS_AF
+    - OAF_BRCS_GF
+    - OAF_CRCS_AF
+    - OAF_CRCS_GF
+    - 1000g2014oct_eur
+    - 1000g2014oct_all
+    - OAF_BRC_CRC_PROSTATE_AF
+    - OAF_BRC_CRC_PROSTATE_GF
+    - 249_SWEDES
+    - 200_DANES
+    - gnomAD_genome_ALL
+    - gnomAD_genome_NFE
+    - ExAC_AFR
+    - ExAC_AMR
+    - ExAC_EAS
+    - ExAC_FIN
+    - ExAC_OTH
+    - ExAC_SAS
+    - ExAC_nontcga_AFR
+    - ExAC_nontcga_AMR
+    - ExAC_nontcga_EAS
+    - ExAC_nontcga_FIN
+    - ExAC_nontcga_OTH
+    - ExAC_nontcga_SAS
+    - gnomAD_genome_AFR
+    - gnomAD_genome_AMR
+    - gnomAD_genome_ASJ
+    - gnomAD_genome_EAS
+    - gnomAD_genome_FIN
+    - gnomAD_genome_OTH
+    - AAChange.refGene
+    - cytoBand
+    - Pathogenic_count
+    - SIFT_pred
+    - Polyphen2_HDIV_pred
+    - Polyphen2_HVAR_pred
+    - LRT_pred
+    - MutationTaster_pred
+    - MutationAssessor_pred
+    - FATHMM_pred
+    - RadialSVM_pred
+    - LR_pred
+    - CADD_phred
+    - OAF_BRCS_WT
+    - OAF_BRCS_HET
+    - OAF_BRCS_HOM
+    - OAF_FAMILIAL_CRCS_AF
+    - OAF_FAMILIAL_CRCS_GF
+    - OAF_BRC_CRC_PROSTATE_WT
+    - OAF_BRC_CRC_PROSTATE_HET
+    - OAF_BRC_CRC_PROSTATE_HOM
+    - OAF_EARLYONSET_WT
+    - OAF_EARLYONSET_HET
+    - OAF_EARLYONSET_HOM
+    - OAF_FAMILIAL_CRCS_HET
+    - OAF_FAMILIAL_CRCS_HOM
+    - OAF_FAMILIAL_CRCS_WT
+  EXPRESSIONS:
+    - NAME: Func_ncRNA_exonic
+      PATTERN: '("Func.refGene"==''ncRNA_exonic'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: Func_ncRNA_splicing
+      PATTERN: '("Func.refGene"==''ncRNA_splicing'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: ExonicFunc_unknown
+      PATTERN: '("ExonicFunc.refGene"==''unknown'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: Pathogenic5
+      PATTERN: 'int("Pathogenic_count")<5'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: EARLYONSET_lowQC
+      PATTERN: '(float("OAF_EARLYONSET_GF")<0.5)'
+      USAGES:
+        - ACTION: DELETE_ROW
+  FILTER_GENES:
+    - MEGF6
+    - INADL
+    - DUSP23
+    - GNLY
+    - VWA3B
+    - TTN
+    - PKHD1
+    - CD109
+    - PLEC
+    - OR1Q1
+    - PITRM1
+    - MRGPRX3
+    - UGGT2
+    - CPAMD8
+    - TFF3
+    - FANCB
+    - CHDC2
+  FREQUENCY_RATIOS:
+    - COLUMN: SWEGEN_AF
+      FREQUENCY: 0.1
+  HEADER_CORRECTIONS:
+    - NEW_HEADER: BRCS_WT
+      OLD_HEADER: OAF_BRCS_WT
+    - NEW_HEADER: BRCS_HET
+      OLD_HEADER: OAF_BRCS_HET
+    - NEW_HEADER: BRCS_HOM
+      OLD_HEADER: OAF_BRCS_HOM
+    - NEW_HEADER: BRCS_OTH
+      OLD_HEADER: OAF_BRCS_OTH
+    - NEW_HEADER: BRCS_NA
+      OLD_HEADER: OAF_BRCS_NA
+    - NEW_HEADER: BRCS_GT
+      OLD_HEADER: OAF_BRCS_GT
+    - NEW_HEADER: BRCS_PF
+      OLD_HEADER: OAF_BRCS_PF
+    - NEW_HEADER: BRCS_AF
+      OLD_HEADER: OAF_BRCS_AF
+    - NEW_HEADER: BRCS_GF
+      OLD_HEADER: OAF_BRCS_GF
+    - NEW_HEADER: CRCS_WT
+      OLD_HEADER: OAF_CRCS_WT
+    - NEW_HEADER: CRCS_HET
+      OLD_HEADER: OAF_CRCS_HET
+    - NEW_HEADER: CRCS_HOM
+      OLD_HEADER: OAF_CRCS_HOM
+    - NEW_HEADER: CRCS_OTH
+      OLD_HEADER: OAF_CRCS_OTH
+    - NEW_HEADER: CRCS_NA
+      OLD_HEADER: OAF_CRCS_NA
+    - NEW_HEADER: CRCS_GT
+      OLD_HEADER: OAF_CRCS_GT
+    - NEW_HEADER: CRCS_PF
+      OLD_HEADER: OAF_CRCS_PF
+    - NEW_HEADER: CRCS_AF
+      OLD_HEADER: OAF_CRCS_AF
+    - NEW_HEADER: CRCS_GF
+      OLD_HEADER: OAF_CRCS_GF
+    - NEW_HEADER: ALL_EXOME_WT
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_WT
+    - NEW_HEADER: ALL_EXOME_HET
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_HET
+    - NEW_HEADER: ALL_EXOME_HOM
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_HOM
+    - NEW_HEADER: ALL_EXOME_OTH
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_OTH
+    - NEW_HEADER: ALL_EXOME_NA
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_NA
+    - NEW_HEADER: ALL_EXOME_GT
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_GT
+    - NEW_HEADER: ALL_EXOME_PF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_PF
+    - NEW_HEADER: ALL_EXOME_AF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_AF
+    - NEW_HEADER: ALL_EXOME_GF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_GF
+    - NEW_HEADER: CHEK2_WT
+      OLD_HEADER: OAF_CHEK2_WT
+    - NEW_HEADER: CHEK2_HET
+      OLD_HEADER: OAF_CHEK2_HET
+    - NEW_HEADER: CHEK2_HOM
+      OLD_HEADER: OAF_CHEK2_HOM
+    - NEW_HEADER: CHEK2_OTH
+      OLD_HEADER: OAF_CHEK2_OTH
+    - NEW_HEADER: CHEK2_NA
+      OLD_HEADER: OAF_CHEK2_NA
+    - NEW_HEADER: CHEK2_GT
+      OLD_HEADER: OAF_CHEK2_GT
+    - NEW_HEADER: CHEK2_PF
+      OLD_HEADER: OAF_CHEK2_PF
+    - NEW_HEADER: CHEK2_AF
+      OLD_HEADER: OAF_CHEK2_AF
+    - NEW_HEADER: CHEK2_GF
+      OLD_HEADER: OAF_CHEK2_GF
+    - NEW_HEADER: EARLYONSET_WT
+      OLD_HEADER: OAF_EARLYONSET_WT
+    - NEW_HEADER: EARLYONSET_HET
+      OLD_HEADER: OAF_EARLYONSET_HET
+    - NEW_HEADER: EARLYONSET_HOM
+      OLD_HEADER: OAF_EARLYONSET_HOM
+    - NEW_HEADER: EARLYONSET_OTH
+      OLD_HEADER: OAF_EARLYONSET_OTH
+    - NEW_HEADER: EARLYONSET_NA
+      OLD_HEADER: OAF_EARLYONSET_NA
+    - NEW_HEADER: EARLYONSET_GT
+      OLD_HEADER: OAF_EARLYONSET_GT
+    - NEW_HEADER: EARLYONSET_PF
+      OLD_HEADER: OAF_EARLYONSET_PF
+    - NEW_HEADER: EARLYONSET_AF
+      OLD_HEADER: OAF_EARLYONSET_AF
+    - NEW_HEADER: EARLYONSET_GF
+      OLD_HEADER: OAF_EARLYONSET_GF
+    - NEW_HEADER: FAMILIAL_CRCS_WT
+      OLD_HEADER: OAF_FAMILIAL_CRCS_WT
+    - NEW_HEADER: FAMILIAL_CRCS_HET
+      OLD_HEADER: OAF_FAMILIAL_CRCS_HET
+    - NEW_HEADER: FAMILIAL_CRCS_HOM
+      OLD_HEADER: OAF_FAMILIAL_CRCS_HOM
+    - NEW_HEADER: FAMILIAL_CRCS_OTH
+      OLD_HEADER: OAF_FAMILIAL_CRCS_OTH
+    - NEW_HEADER: FAMILIAL_CRCS_NA
+      OLD_HEADER: OAF_FAMILIAL_CRCS_NA
+    - NEW_HEADER: FAMILIAL_CRCS_GT
+      OLD_HEADER: OAF_FAMILIAL_CRCS_GT
+    - NEW_HEADER: FAMILIAL_CRCS_PF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_PF
+    - NEW_HEADER: FAMILIAL_CRCS_AF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_AF
+    - NEW_HEADER: FAMILIAL_CRCS_GF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_GF
+    - NEW_HEADER: 'Exp Syn(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_SYN
+    - NEW_HEADER: 'Obs Syn(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_SYN
+    - NEW_HEADER: 'Syn z(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_SYN_Z
+    - NEW_HEADER: 'Exp Mis(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_MIS
+    - NEW_HEADER: 'Obs Mis(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_MIS
+    - NEW_HEADER: 'Mis Z(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_MIS_Z
+    - NEW_HEADER: 'Exp LoF(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_LOF
+    - NEW_HEADER: 'Obs LoF(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_LOF
+    - NEW_HEADER: PLI(ExAC)
+      OLD_HEADER: EXAC03_CONSTRAINT_PLI
+    - NEW_HEADER: gnomAD_ALL
+      OLD_HEADER: gnomAD_genome_ALL
+    - NEW_HEADER: gnomAD_AFR
+      OLD_HEADER: gnomAD_genome_AFR
+    - NEW_HEADER: gnomAD_AMR
+      OLD_HEADER: gnomAD_genome_AMR
+    - NEW_HEADER: gnomAD_ASJ
+      OLD_HEADER: gnomAD_genome_ASJ
+    - NEW_HEADER: gnomAD_EAS
+      OLD_HEADER: gnomAD_genome_EAS
+    - NEW_HEADER: gnomAD_FIN
+      OLD_HEADER: gnomAD_genome_FIN
+    - NEW_HEADER: gnomAD_NFE
+      OLD_HEADER: gnomAD_genome_NFE
+    - NEW_HEADER: gnomAD_OTH
+      OLD_HEADER: gnomAD_genome_OTH
+  REGIONS:
+    - 1:3404505-3528059
+    - 1:62208148-62629591
+    - 1:159750758-159752333
+    - 2:85921413-85925974
+    - 2:98703594-98929410
+    - 2:179390716-179672150
+    - 6:51480144-51952423
+    - 6:74405807-74538041
+    - 8:144989314-145050913
+    - 9:125377016-125377961
+    - 10:3179918-3215033
+    - 11:18142501-18160027
+    - 13:96453835-96705736
+    - 19:17003761-17137625
+    - 21:43731776-43735706
+    - X:14861528-14891184
+    - X:36065052-36163187
+  ROWS_FILTER_ACTIONS_CRITERIA:
+    - PASS-VQSR
+    - Non-Intergenic
+    - Non-Intronic
+    - Non-Upstream
+    - Non-Downstream
+    - Non-Synonymous
+    - Non-UTR
+  SPLIT_CHROM: false
+  Show_shared_mutations: false
+SAMPLES_INFOS:
+  - DATASET_ID: "Early_Onset"
+    FAMILIES:
+      - FAMILY_ID: "NO_FAMILY"
+        MEMBERS:
+          - PHENOTYPE: 2
+            SAMPLE_ID: "1003-06o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "1068-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "1094-08F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "1199-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "1205-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "1307-09D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "142-09F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "153-09F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "2014-04018"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "230-06o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "258-06o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "264-08F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "2750-13D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "294-07LF"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "295-08F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "296-09F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "323-09F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "329-09F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "344-07LF"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "376-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "386-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "4270-11D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "4283-13D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "4735-11D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "4773-11D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "48-07LF"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "49-06o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "5053-10D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "566-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "569-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "59-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "61-09F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "664-08F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "679-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "711-14D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "728-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "749-08F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "760-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "771-08F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "784-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "813-06o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "91-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "95-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-1161"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-1190"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-121"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-1524"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-245"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-278"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-286"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-489"
+  - DATASET_ID: "Familial_CRC"
+    FAMILIES:
+      - FAMILY_ID: "8"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-35"
+          - SAMPLE_ID: "Co-36"
+          - SAMPLE_ID: "Co-37"
+      - FAMILY_ID: "12"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-90"
+          - SAMPLE_ID: "Co-89"
+      - FAMILY_ID: "13"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-95"
+          - SAMPLE_ID: "Co-94"
+      - FAMILY_ID: "24"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-166"
+          - SAMPLE_ID: "Co-213"
+      - FAMILY_ID: "26"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-135"
+          - SAMPLE_ID: "Co-131"
+      - FAMILY_ID: "31"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "1793-11D"
+          - SAMPLE_ID: "1322-11D"
+      - FAMILY_ID: "87"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-218"
+          - SAMPLE_ID: "Co-258"
+          - SAMPLE_ID: "Co-1179"
+      - FAMILY_ID: "91"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-700"
+          - SAMPLE_ID: "Co-454"
+      - FAMILY_ID: "94"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-238"
+      - FAMILY_ID: "110"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "1526-02D"
+          - SAMPLE_ID: "Co-1301"
+          - SAMPLE_ID: "Co-1313"
+          - SAMPLE_ID: "Co-1314"
+      - FAMILY_ID: "134"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-460"
+          - SAMPLE_ID: "Co-553"
+      - FAMILY_ID: "141"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-305"
+          - SAMPLE_ID: "Co-785"
+      - FAMILY_ID: "185"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-603"
+          - SAMPLE_ID: "Co-669"
+      - FAMILY_ID: "191"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-384"
+          - SAMPLE_ID: "Co-361"
+      - FAMILY_ID: "214"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-484"
+      - FAMILY_ID: "216"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-367"
+          - SAMPLE_ID: "Co-446"
+      - FAMILY_ID: "221"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-358"
+      - FAMILY_ID: "227"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-364"
+      - FAMILY_ID: "231"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-555"
+          - SAMPLE_ID: "Co-572"
+          - SAMPLE_ID: "Co-407"
+          - SAMPLE_ID: "Co-530"
+      - FAMILY_ID: "242"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-771"
+          - SAMPLE_ID: "Co-666"
+          - SAMPLE_ID: "Co-441"
+          - SAMPLE_ID: "Co-634"
+          - SAMPLE_ID: "Co-652"
+          - SAMPLE_ID: "Co-657"
+          - SAMPLE_ID: "Co-667"
+          - SAMPLE_ID: "Co-692"
+          - SAMPLE_ID: "Co-1483"
+      - FAMILY_ID: "254"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-616"
+          - SAMPLE_ID: "Co-1156"
+      - FAMILY_ID: "256"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-388"
+          - SAMPLE_ID: "Co-395"
+      - FAMILY_ID: "275"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1262"
+          - SAMPLE_ID: "Co-618"
+          - SAMPLE_ID: "Co-620"
+      - FAMILY_ID: "288"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1141"
+      - FAMILY_ID: "296"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-793"
+          - SAMPLE_ID: "Co-876"
+      - FAMILY_ID: "301"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-837"
+          - SAMPLE_ID: "Co-840"
+          - SAMPLE_ID: "Co-1053"
+      - FAMILY_ID: "306"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-779"
+      - FAMILY_ID: "309"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-783"
+          - SAMPLE_ID: "Co-800"
+      - FAMILY_ID: "312"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1116"
+      - FAMILY_ID: "315"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "1462-01D"
+      - FAMILY_ID: "325"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-851"
+          - SAMPLE_ID: "Co-859"
+      - FAMILY_ID: "348"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-846"
+          - SAMPLE_ID: "Co-857"
+      - FAMILY_ID: "350"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "1104-03D"
+          - SAMPLE_ID: "Co-866"
+      - FAMILY_ID: "409"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1312"
+          - SAMPLE_ID: "Co-1257"
+          - SAMPLE_ID: "Co-1263"
+          - SAMPLE_ID: "Co-1488"
+      - FAMILY_ID: "415"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1031"
+          - SAMPLE_ID: "Co-1037"
+      - FAMILY_ID: "425"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1458"
+          - SAMPLE_ID: "Co-1595"
+          - SAMPLE_ID: "Co-1427"
+          - SAMPLE_ID: "Co-1434"
+      - FAMILY_ID: "434"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1051"
+          - SAMPLE_ID: "Co-1534"
+      - FAMILY_ID: "445"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1157"
+          - SAMPLE_ID: "Co-1158"
+      - FAMILY_ID: "478"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1274"
+          - SAMPLE_ID: "Co-1207"
+      - FAMILY_ID: "485"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1302"
+          - SAMPLE_ID: "Co-1322"
+      - FAMILY_ID: "532"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1583"
+          - SAMPLE_ID: "Co-1584"
+          - SAMPLE_ID: "251-04O"
+      - FAMILY_ID: "574"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "468-04"
+          - SAMPLE_ID: "474-05"
+      - FAMILY_ID: "578"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1349"
+          - SAMPLE_ID: "531-04o"
+      - FAMILY_ID: "650"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "398-05o"
+          - SAMPLE_ID: "729-05o"
+      - FAMILY_ID: "739"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1467"
+          - SAMPLE_ID: "529-05"
+      - FAMILY_ID: "740"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1373"
+          - SAMPLE_ID: "602-05o"
+          - SAMPLE_ID: "Co-1383"
+          - SAMPLE_ID: "Co-1375"
+      - FAMILY_ID: "849"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1765"
+          - SAMPLE_ID: "Co-1764"
+          - SAMPLE_ID: "Co-1766"
+      - FAMILY_ID: "869"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1685"
+          - SAMPLE_ID: "Co-1681"
+      - FAMILY_ID: "871"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1661"
+          - SAMPLE_ID: "Co-1618"
+      - FAMILY_ID: "918"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "134-06"
+          - SAMPLE_ID: "354-06"
+          - SAMPLE_ID: "Co-1762"
+      - FAMILY_ID: "975"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1600"
+          - SAMPLE_ID: "Co-1591"
+          - SAMPLE_ID: "Co-1760"
+      - FAMILY_ID: "1025"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1529"
+      - FAMILY_ID: "1085"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1518"
+      - FAMILY_ID: "1113"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1538"
+          - SAMPLE_ID: "642-06"
+      - FAMILY_ID: "1206"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "1052-05"
+          - SAMPLE_ID: "Co-1552"
+      - FAMILY_ID: "1207"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "2818-07D"
+      - FAMILY_ID: "1213"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1666"
+      - FAMILY_ID: "1252"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1719"
+      - FAMILY_ID: "1290"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1723"
+      - FAMILY_ID: "695"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1354"
+          - SAMPLE_ID: "Co-1359"
+          - SAMPLE_ID: "Co-1368"
+  - DATASET_ID: '"Familial BrC"'
+    FAMILIES:
+      - FAMILY_ID: "179"
+        MEMBERS:
+          - SAMPLE_ID: "Co-323"
+          - SAMPLE_ID: "Al-19"
+      - FAMILY_ID: "1100"
+        MEMBERS:
+          - SAMPLE_ID: "341-89D"
+          - SAMPLE_ID: "405-89D"
+          - SAMPLE_ID: "Al-23"
+          - SAMPLE_ID: "Al-54"
+      - FAMILY_ID: "1891"
+        MEMBERS:
+          - SAMPLE_ID: "Al-148"
+          - SAMPLE_ID: "Al-142"
+      - FAMILY_ID: "2060"
+        MEMBERS:
+          - SAMPLE_ID: "Br-690"
+          - SAMPLE_ID: "Br-693"
+          - SAMPLE_ID: "Br-686"
+      - FAMILY_ID: "2590"
+        MEMBERS:
+          - SAMPLE_ID: "Al-133"
+          - SAMPLE_ID: "Al-143"
+          - SAMPLE_ID: "Al-128"
+      - FAMILY_ID: "3028"
+        MEMBERS:
+          - SAMPLE_ID: "AL-36"
+          - SAMPLE_ID: "AL-44"
+          - SAMPLE_ID: "Br-732"
+      - FAMILY_ID: "4040"
+        MEMBERS:
+          - SAMPLE_ID: "Br-55"
+          - SAMPLE_ID: "Br-325"
+      - FAMILY_ID: "4041"
+        MEMBERS:
+          - SAMPLE_ID: "Br-27"
+          - SAMPLE_ID: "Br-56"
+          - SAMPLE_ID: "Br-87"
+      - FAMILY_ID: "4046"
+        MEMBERS:
+          - SAMPLE_ID: "Br-100"
+          - SAMPLE_ID: "Br-227"
+      - FAMILY_ID: "4093"
+        MEMBERS:
+          - SAMPLE_ID: "Br-175"
+          - SAMPLE_ID: "Br-177"
+      - FAMILY_ID: "4127"
+        MEMBERS:
+          - SAMPLE_ID: "Br-246"
+          - SAMPLE_ID: "Br-322"
+      - FAMILY_ID: "5701"
+        MEMBERS:
+          - SAMPLE_ID: "Br-585"
+          - SAMPLE_ID: "Br-588"
+      - FAMILY_ID: "6005"
+        MEMBERS:
+          - SAMPLE_ID: "Br-271"
+          - SAMPLE_ID: "Co-324"
+      - FAMILY_ID: "6006"
+        MEMBERS:
+          - SAMPLE_ID: "Br-418"
+          - SAMPLE_ID: "Br-781"
+          - SAMPLE_ID: "Br-425"
+      - FAMILY_ID: "6037"
+        MEMBERS:
+          - SAMPLE_ID: "Br-310"
+          - SAMPLE_ID: "Br-308"
+      - FAMILY_ID: "6041"
+        MEMBERS:
+          - SAMPLE_ID: "Br-317"
+          - SAMPLE_ID: "Br-318"
+          - SAMPLE_ID: "Br-319"
+      - FAMILY_ID: "6067"
+        MEMBERS:
+          - SAMPLE_ID: "884-99D"
+          - SAMPLE_ID: "Br-397"
+      - FAMILY_ID: "6072"
+        MEMBERS:
+          - SAMPLE_ID: "Br-682"
+          - SAMPLE_ID: "Br-727"
+      - FAMILY_ID: "6094"
+        MEMBERS:
+          - SAMPLE_ID: "Br-442"
+          - SAMPLE_ID: "Br-451"
+      - FAMILY_ID: "6100"
+        MEMBERS:
+          - SAMPLE_ID: "Br-465"
+          - SAMPLE_ID: "Br-466"
+          - SAMPLE_ID: "Br-464"
+          - SAMPLE_ID: "Br-459"
+      - FAMILY_ID: "6101"
+        MEMBERS:
+          - SAMPLE_ID: "Br-473"
+      - FAMILY_ID: "6104"
+        MEMBERS:
+          - SAMPLE_ID: "Br-475"
+          - SAMPLE_ID: "Br-477"
+      - FAMILY_ID: "6106"
+        MEMBERS:
+          - SAMPLE_ID: "Br-484"
+          - SAMPLE_ID: "Br-510"
+      - FAMILY_ID: "6123"
+        MEMBERS:
+          - SAMPLE_ID: "Br-526"
+          - SAMPLE_ID: "Br-528"
+          - SAMPLE_ID: "Br-527"
+      - FAMILY_ID: "6127"
+        MEMBERS:
+          - SAMPLE_ID: "Br-694"
+          - SAMPLE_ID: "Br-697"
+          - SAMPLE_ID: "Br-702"
+      - FAMILY_ID: "L1056"
+        MEMBERS:
+          - SAMPLE_ID: "Br-720"
+          - SAMPLE_ID: "Br-721"
+          - SAMPLE_ID: "Br-724"
+      - FAMILY_ID: "L1141"
+        MEMBERS:
+          - SAMPLE_ID: "Br-652"
+          - SAMPLE_ID: "Br-641"
+      - FAMILY_ID: "L862"
+        MEMBERS:
+          - SAMPLE_ID: "Br-706"
+          - SAMPLE_ID: "Br-710"
+          - SAMPLE_ID: "Br-716"

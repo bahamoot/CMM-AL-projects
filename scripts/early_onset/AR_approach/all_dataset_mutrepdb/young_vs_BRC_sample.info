@@ -1,0 +1,320 @@
+SAMPLES_INFOS:
+  - DATASET_ID: Early_Onset
+    FAMILIES:
+      - FAMILY_ID: "NO_FAMILY"
+        MEMBERS:
+          - SAMPLE_ID: "1003-06o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "1068-05o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "1094-08F"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "1199-05o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "1205-05o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "1307-09D"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "142-09F"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "153-09F"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "2014-04018"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "230-06o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "258-06o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "264-08F"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "2750-13D"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "294-07LF"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "295-08F"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "296-09F"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "323-09F"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "329-09F"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "344-07LF"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "376-05o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "386-04o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "4270-11D"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "4283-13D"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "4735-11D"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "4773-11D"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "48-07LF"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "49-06o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "5053-10D"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "566-04o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "569-04o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "59-04o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "61-09F"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "664-08F"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "679-05o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "711-14D"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "728-05o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "749-08F"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "760-04o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "771-08F"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "784-05o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "813-06o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "91-04o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "95-04o"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "Co-1161"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "Co-1190"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "Co-121"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "Co-1524"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "Co-245"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "Co-278"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "Co-286"
+            PHENOTYPE: 2
+          - SAMPLE_ID: "Co-489"
+            PHENOTYPE: 2
+  - DATASET_ID: "Familial BrC"
+    FAMILIES:
+      - FAMILY_ID: "179"
+        MEMBERS:
+          - SAMPLE_ID: "Co-323"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Al-19"
+      - FAMILY_ID: "1100"
+        MEMBERS:
+          - SAMPLE_ID: "341-89D"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "405-89D"
+          - SAMPLE_ID: "Al-23"
+          - SAMPLE_ID: "Al-54"
+      - FAMILY_ID: "1891"
+        MEMBERS:
+          - SAMPLE_ID: "Al-148"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Al-142"
+      - FAMILY_ID: "2060"
+        MEMBERS:
+          - SAMPLE_ID: "Br-690"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-693"
+          - SAMPLE_ID: "Br-686"
+      - FAMILY_ID: "2590"
+        MEMBERS:
+          - SAMPLE_ID: "Al-133"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Al-143"
+          - SAMPLE_ID: "Al-128"
+      - FAMILY_ID: "3028"
+        MEMBERS:
+          - SAMPLE_ID: "AL-36"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AL-44"
+          - SAMPLE_ID: "Br-732"
+      - FAMILY_ID: "4040"
+        MEMBERS:
+          - SAMPLE_ID: "Br-55"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-325"
+      - FAMILY_ID: "4041"
+        MEMBERS:
+          - SAMPLE_ID: "Br-27"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-56"
+          - SAMPLE_ID: "Br-87"
+      - FAMILY_ID: "4046"
+        MEMBERS:
+          - SAMPLE_ID: "Br-100"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-227"
+      - FAMILY_ID: "4093"
+        MEMBERS:
+          - SAMPLE_ID: "Br-175"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-177"
+      - FAMILY_ID: "4127"
+        MEMBERS:
+          - SAMPLE_ID: "Br-246"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-322"
+      - FAMILY_ID: "5701"
+        MEMBERS:
+          - SAMPLE_ID: "Br-585"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-588"
+      - FAMILY_ID: "6005"
+        MEMBERS:
+          - SAMPLE_ID: "Br-271"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Co-324"
+      - FAMILY_ID: "6006"
+        MEMBERS:
+          - SAMPLE_ID: "Br-418"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-781"
+          - SAMPLE_ID: "Br-425"
+      - FAMILY_ID: "6037"
+        MEMBERS:
+          - SAMPLE_ID: "Br-310"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-308"
+      - FAMILY_ID: "6041"
+        MEMBERS:
+          - SAMPLE_ID: "Br-317"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-318"
+          - SAMPLE_ID: "Br-319"
+      - FAMILY_ID: "6067"
+        MEMBERS:
+          - SAMPLE_ID: "884-99D"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-397"
+      - FAMILY_ID: "6072"
+        MEMBERS:
+          - SAMPLE_ID: "Br-682"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-727"
+      - FAMILY_ID: "6094"
+        MEMBERS:
+          - SAMPLE_ID: "Br-442"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-451"
+      - FAMILY_ID: "6100"
+        MEMBERS:
+          - SAMPLE_ID: "Br-465"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-466"
+          - SAMPLE_ID: "Br-464"
+          - SAMPLE_ID: "Br-459"
+      - FAMILY_ID: "6101"
+        MEMBERS:
+          - SAMPLE_ID: "Br-473"
+            PHENOTYPE: 1
+      - FAMILY_ID: "6104"
+        MEMBERS:
+          - SAMPLE_ID: "Br-475"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-477"
+      - FAMILY_ID: "6106"
+        MEMBERS:
+          - SAMPLE_ID: "Br-484"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-510"
+      - FAMILY_ID: "6123"
+        MEMBERS:
+          - SAMPLE_ID: "Br-526"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-528"
+          - SAMPLE_ID: "Br-527"
+      - FAMILY_ID: "6127"
+        MEMBERS:
+          - SAMPLE_ID: "Br-694"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-697"
+          - SAMPLE_ID: "Br-702"
+      - FAMILY_ID: "L1056"
+        MEMBERS:
+          - SAMPLE_ID: "Br-720"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-721"
+          - SAMPLE_ID: "Br-724"
+      - FAMILY_ID: "L1141"
+        MEMBERS:
+          - SAMPLE_ID: "Br-652"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-641"
+      - FAMILY_ID: "L862"
+        MEMBERS:
+          - SAMPLE_ID: "Br-706"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "Br-710"
+          - SAMPLE_ID: "Br-716"
+      - FAMILY_ID: "NO_FAMILY_2"
+        MEMBERS:
+          - SAMPLE_ID: "AB-1"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-2"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-3"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-4"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-5"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-6"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-7"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-8"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-9"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-10"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-11"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-12"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-13"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-14"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-15"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-16"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-17"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-18"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-19"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-20"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-21"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-22"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-23"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-24"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-25"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-26"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-27"
+            PHENOTYPE: 1
+          - SAMPLE_ID: "AB-28"
+            PHENOTYPE: 1

@@ -1,0 +1,6031 @@
+JOBS_REPORT_FILE:
+JOB_ALLOC_TIME: "20:00:00"
+PROJECT_CODE: b2016200
+PROJECT_NAME: THYRCA
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/THYRCA/families_gene_list_HPO
+REPORT_LAYOUT:
+  COLORING_SAMPLES:
+    - Zygosity
+  COLOR_GENES:
+    - A1CF
+    - A2M
+    - A2ML1
+    - AACS
+    - AADACL2
+    - AASDH
+    - AASDHPPT
+    - ABAT
+    - ABCA1
+    - ABCA12
+    - ABCA2
+    - ABCA3
+    - ABCA4
+    - ABCA5
+    - ABCA6
+    - ABCA9
+    - ABCB11
+    - ABCB4
+    - ABCB5
+    - ABCB7
+    - ABCC10
+    - ABCC12
+    - ABCC2
+    - ABCC5
+    - ABCC6
+    - ABCC8
+    - ABCC9
+    - ABCD1
+    - ABCF1
+    - ABCG5
+    - ABCG8
+    - ABHD2
+    - ABHD4
+    - ABHD6
+    - ABI2
+    - ABI3BP
+    - ABL1
+    - ABL2
+    - ABLIM3
+    - ABR
+    - ACACA
+    - ACACB
+    - ACAD10
+    - ACAN
+    - ACAP1
+    - ACBD5
+    - ACD
+    - ACE
+    - ACKR2
+    - ACKR4
+    - ACLY
+    - ACOT12
+    - ACOT7
+    - ACOXL
+    - ACSL3
+    - ACSM2A
+    - ACSM5
+    - ACSS1
+    - ACSS3
+    - ACTA1
+    - ACTB
+    - ACVR2A
+    - ACVR2B
+    - ACY1
+    - ADAM12
+    - ADAM15
+    - ADAM21
+    - ADAM29
+    - ADAM30
+    - ADAM33
+    - ADAM8
+    - ADAMDEC1
+    - ADAMTS15
+    - ADAMTS16
+    - ADAMTS18
+    - ADAMTS19
+    - ADAMTS2
+    - ADAMTS20
+    - ADAMTS3
+    - ADAMTS6
+    - ADAMTS7
+    - ADAMTS8
+    - ADAMTS9
+    - ADAMTSL3
+    - ADAMTSL4
+    - ADAR
+    - ADARB1
+    - ADARB2
+    - ADAT1
+    - ADCK1
+    - ADCK2
+    - ADCY1
+    - ADCY10
+    - ADCY2
+    - ADCY3
+    - ADCY4
+    - ADCY7
+    - ADCY8
+    - ADCY9
+    - ADCYAP1R1
+    - ADD2
+    - ADH1B
+    - ADH4
+    - ADH7
+    - ADM
+    - ADNP
+    - ADO
+    - ADPRH
+    - ADRA1A
+    - ADRA2B
+    - ADSS
+    - ADSSL1
+    - AFAP1L2
+    - AFF2
+    - AFF3
+    - AFM
+    - AFTPH
+    - AGA
+    - AGAP1
+    - AGAP2
+    - AGBL1
+    - AGGF1
+    - AGL
+    - AGO1
+    - AGO2
+    - AGPAT2
+    - AGPAT6
+    - AGPAT9
+    - AGPS
+    - AGR2
+    - AHDC1
+    - AHNAK
+    - AHNAK2
+    - AHR
+    - AIM1
+    - AJAP1
+    - AK7
+    - AKAP10
+    - AKAP11
+    - AKAP12
+    - AKAP13
+    - AKAP2
+    - AKAP6
+    - AKAP8L
+    - AKAP9
+    - AKIRIN2
+    - AKNA
+    - AKNAD1
+    - AKR1A1
+    - AKR1D1
+    - AKR7L
+    - AKT1
+    - AKT2
+    - ALAD
+    - ALAS1
+    - ALB
+    - ALCAM
+    - ALDH1B1
+    - ALDH1L1
+    - ALDH5A1
+    - ALDOB
+    - ALG10
+    - ALG10B
+    - ALG12
+    - ALG13
+    - ALG3
+    - ALK
+    - ALKBH1
+    - ALKBH8
+    - ALMS1
+    - ALOX12
+    - ALOX12B
+    - ALOX15
+    - ALOXE3
+    - ALPI
+    - ALPK1
+    - ALPK2
+    - ALPK3
+    - ALS2CL
+    - ALS2CR12
+    - AMBN
+    - AMBP
+    - AMBRA1
+    - AMD1
+    - AMDHD1
+    - AMER3
+    - AMHR2
+    - AMICA1
+    - AMIGO1
+    - AMIGO2
+    - AMOTL1
+    - AMOTL2
+    - AMPD1
+    - AMPD2
+    - AMPD3
+    - AMZ1
+    - ANAPC11
+    - ANAPC15
+    - ANAPC2
+    - ANAPC5
+    - ANAPC7
+    - ANGPT4
+    - ANGPTL1
+    - ANGPTL2
+    - ANGPTL4
+    - ANK1
+    - ANK2
+    - ANK3
+    - ANKAR
+    - ANKEF1
+    - ANKLE1
+    - ANKMY1
+    - ANKMY2
+    - ANKRD11
+    - ANKRD13D
+    - ANKRD17
+    - ANKRD24
+    - ANKRD26
+    - ANKRD27
+    - ANKRD30A
+    - ANKRD30B
+    - ANKRD35
+    - ANKRD36
+    - ANKRD42
+    - ANKRD44
+    - ANKRD53
+    - ANKRD54
+    - ANKS1A
+    - ANKS4B
+    - ANO1
+    - ANO2
+    - ANO4
+    - ANO9
+    - ANP32A
+    - ANTXR2
+    - ANXA1
+    - ANXA3
+    - ANXA7
+    - AOC1
+    - AOX1
+    - AP1G1
+    - AP2A2
+    - AP2B1
+    - AP3B1
+    - AP3D1
+    - AP3M1
+    - AP4E1
+    - AP4M1
+    - AP4S1
+    - APAF1
+    - APBA1
+    - APBB1
+    - APC
+    - APCDD1
+    - APEH
+    - APOA4
+    - APOB
+    - APOBEC2
+    - APOBEC3G
+    - APOH
+    - APOL2
+    - APOL6
+    - APOOL
+    - APPL1
+    - APPL2
+    - AQP4
+    - AQP5
+    - AQP6
+    - ARAP1
+    - ARAP2
+    - ARAP3
+    - ARC
+    - ARCN1
+    - ARFGAP2
+    - ARFGEF2
+    - ARFIP2
+    - ARHGAP17
+    - ARHGAP18
+    - ARHGAP26
+    - ARHGAP29
+    - ARHGAP30
+    - ARHGAP32
+    - ARHGAP36
+    - ARHGAP4
+    - ARHGAP6
+    - ARHGAP8
+    - ARHGDIG
+    - ARHGEF10L
+    - ARHGEF15
+    - ARHGEF18
+    - ARHGEF2
+    - ARHGEF4
+    - ARHGEF6
+    - ARHGEF7
+    - ARID1B
+    - ARID2
+    - ARID3A
+    - ARID3B
+    - ARID5B
+    - ARIH2OS
+    - ARL3
+    - ARMC1
+    - ARMC3
+    - ARMC8
+    - ARMCX1
+    - ARMCX2
+    - ARMCX3
+    - ARNT
+    - ARRB1
+    - ARRDC2
+    - ARRDC5
+    - ARSA
+    - ARSE
+    - ARSF
+    - ARSH
+    - ARSI
+    - ARSK
+    - ARVCF
+    - ASAP1
+    - ASAP2
+    - ASB10
+    - ASB12
+    - ASCC3
+    - ASCL1
+    - ASH1L
+    - ASMT
+    - ASMTL
+    - ASPDH
+    - ASPM
+    - ASPRV1
+    - ASPSCR1
+    - ASRGL1
+    - ASTN1
+    - ASTN2
+    - ASXL1
+    - ATAD2
+    - ATAD5
+    - ATF6
+    - ATF6B
+    - ATF7IP2
+    - ATG12
+    - ATG16L2
+    - ATG2A
+    - ATG2B
+    - ATG9A
+    - ATG9B
+    - ATL1
+    - ATM
+    - ATMIN
+    - ATN1
+    - ATP10A
+    - ATP10B
+    - ATP11A
+    - ATP11C
+    - ATP12A
+    - ATP13A4
+    - ATP1A1
+    - ATP1A2
+    - ATP1A3
+    - ATP1A4
+    - ATP1B4
+    - ATP2A2
+    - ATP2B2
+    - ATP2B4
+    - ATP2C2
+    - ATP4A
+    - ATP6V0B
+    - ATP6V0D1
+    - ATP6V0E1
+    - ATP6V1A
+    - ATP6V1B1
+    - ATP6V1C1
+    - ATP6V1C2
+    - ATP6V1G2
+    - ATP7A
+    - ATP7B
+    - ATP8B2
+    - ATP9B
+    - ATPAF1
+    - ATR
+    - ATRX
+    - ATXN2
+    - ATXN2L
+    - ATXN7L2
+    - AVP
+    - AVPR2
+    - AXIN1
+    - AXIN2
+    - AZGP1
+    - B3GALTL
+    - B3GAT1
+    - B3GNT3
+    - B3GNT5
+    - B3GNT6
+    - B3GNTL1
+    - B4GALNT2
+    - B4GALNT3
+    - BAG2
+    - BAGE2
+    - BAMBI
+    - BAP1
+    - BARHL2
+    - BATF
+    - BATF3
+    - BAZ1B
+    - BAZ2B
+    - BBS12
+    - BBS2
+    - BBX
+    - BCAM
+    - BCAP31
+    - BCAR3
+    - BCAS3
+    - BCAT1
+    - BCKDK
+    - BCL11A
+    - BCL2L12
+    - BCL2L14
+    - BCL6
+    - BCL9
+    - BCL9L
+    - BCLAF1
+    - BCOR
+    - BCORL1
+    - BDH1
+    - BDKRB2
+    - BDP1
+    - BECN1
+    - BEND2
+    - BEND6
+    - BEND7
+    - BEST4
+    - BEX1
+    - BFSP2
+    - BGN
+    - BHLHE22
+    - BICC1
+    - BICD1
+    - BIN2
+    - BIRC6
+    - BMP1
+    - BMP3
+    - BMP5
+    - BMP6
+    - BMPER
+    - BNC1
+    - BNC2
+    - BNIP1
+    - BOC
+    - BOLL
+    - BPTF
+    - BRAF
+    - BRCA1
+    - BRCA2
+    - BRCC3
+    - BRD3
+    - BRD8
+    - BRDT
+    - BRE
+    - BRF2
+    - BRICD5
+    - BRINP3
+    - BRIP1
+    - BRIX1
+    - BRSK1
+    - BRWD1
+    - BSG
+    - BSN
+    - BSPRY
+    - BTAF1
+    - BTBD10
+    - BTBD17
+    - BTBD2
+    - BTBD3
+    - BTBD7
+    - BTK
+    - BTN2A1
+    - BTNL8
+    - BTRC
+    - C10orf12
+    - C10orf120
+    - C10orf53
+    - C10orf54
+    - C10orf62
+    - C10orf71
+    - C10orf76
+    - C10orf90
+    - C10orf99
+    - C11orf53
+    - C11orf58
+    - C11orf63
+    - C11orf65
+    - C11orf70
+    - C11orf74
+    - C11orf87
+    - C12orf10
+    - C12orf40
+    - C12orf50
+    - C12orf66
+    - C12orf71
+    - C14orf183
+    - C14orf79
+    - C15orf27
+    - C15orf39
+    - C15orf43
+    - C16orf46
+    - C16orf62
+    - C16orf70
+    - C16orf72
+    - C16orf86
+    - C16orf87
+    - C16orf91
+    - C17orf59
+    - C17orf74
+    - C19orf35
+    - C19orf44
+    - C19orf57
+    - C1GALT1
+    - C1orf101
+    - C1orf110
+    - C1orf112
+    - C1orf141
+    - C1orf146
+    - C1orf210
+    - C1orf216
+    - C1orf27
+    - C1orf56
+    - C1QA
+    - C1QL2
+    - C1R
+    - C20orf144
+    - C20orf197
+    - C21orf2
+    - C22orf31
+    - C2CD3
+    - C2orf16
+    - C2orf42
+    - C2orf73
+    - C2orf78
+    - C2orf83
+    - C3
+    - C3orf58
+    - C3orf67
+    - C4BPA
+    - C5
+    - C5orf42
+    - C6
+    - C6orf47
+    - C7
+    - C7orf33
+    - C7orf57
+    - C8orf34
+    - C9orf106
+    - C9orf116
+    - C9orf152
+    - C9orf172
+    - C9orf47
+    - C9orf50
+    - C9orf69
+    - C9orf72
+    - C9orf9
+    - CA13
+    - CAB39L
+    - CABIN1
+    - CABP5
+    - CACHD1
+    - CACNA1A
+    - CACNA1B
+    - CACNA1C
+    - CACNA1D
+    - CACNA1E
+    - CACNA1G
+    - CACNA1S
+    - CACNA2D1
+    - CACNA2D3
+    - CACNA2D4
+    - CACNB1
+    - CACNB3
+    - CACNG4
+    - CACNG7
+    - CACTIN
+    - CADM1
+    - CALCB
+    - CALCR
+    - CALD1
+    - CALHM2
+    - CAMK2A
+    - CAMK2B
+    - CAMKK2
+    - CAMKV
+    - CAMSAP1
+    - CAND1
+    - CANX
+    - CAPN13
+    - CAPN15
+    - CAPN9
+    - CAPNS1
+    - CAPS
+    - CAPZA3
+    - CARD10
+    - CARD6
+    - CARHSP1
+    - CARS
+    - CASC3
+    - CASC4
+    - CASC5
+    - CASD1
+    - CASKIN2
+    - CASP14
+    - CASP3
+    - CASP4
+    - CASP5
+    - CASP6
+    - CASP7
+    - CASZ1
+    - CATSPER4
+    - CATSPERB
+    - CBFA2T2
+    - CBFA2T3
+    - CBLB
+    - CBLN3
+    - CBR3
+    - CBX1
+    - CBX2
+    - CBX5
+    - CBX6
+    - CCAR2
+    - CCDC105
+    - CCDC106
+    - CCDC108
+    - CCDC129
+    - CCDC132
+    - CCDC136
+    - CCDC142
+    - CCDC150
+    - CCDC155
+    - CCDC174
+    - CCDC178
+    - CCDC24
+    - CCDC27
+    - CCDC30
+    - CCDC38
+    - CCDC39
+    - CCDC40
+    - CCDC42
+    - CCDC54
+    - CCDC6
+    - CCDC60
+    - CCDC62
+    - CCDC66
+    - CCDC67
+    - CCDC80
+    - CCDC88A
+    - CCDC88C
+    - CCDC89
+    - CCDC96
+    - CCKBR
+    - CCL13
+    - CCL23
+    - CCL24
+    - CCM2
+    - CCM2L
+    - CCNJ
+    - CCNT1
+    - CCPG1
+    - CCRN4L
+    - CCT2
+    - CD109
+    - CD163
+    - CD163L1
+    - CD180
+    - CD1A
+    - CD200R1
+    - CD207
+    - CD209
+    - CD248
+    - CD28
+    - CD300LF
+    - CD38
+    - CD3D
+    - CD3E
+    - CD4
+    - CD40LG
+    - CD44
+    - CD48
+    - CD5
+    - CD5L
+    - CD6
+    - CD74
+    - CD84
+    - CD93
+    - CDC23
+    - CDC42
+    - CDC42EP4
+    - CDC5L
+    - CDCA2
+    - CDCA3
+    - CDCP1
+    - CDH10
+    - CDH11
+    - CDH12
+    - CDH13
+    - CDH19
+    - CDH22
+    - CDH23
+    - CDH24
+    - CDH26
+    - CDH4
+    - CDH6
+    - CDH7
+    - CDH8
+    - CDH9
+    - CDHR1
+    - CDIP1
+    - CDK11A
+    - CDK12
+    - CDK13
+    - CDK15
+    - CDK5
+    - CDK5RAP1
+    - CDKL1
+    - CDKL5
+    - CDKN1A
+    - CDKN2C
+    - CDNF
+    - CDPF1
+    - CDR2
+    - CDS2
+    - CDYL2
+    - CEACAM20
+    - CEACAM5
+    - CEACAM8
+    - CELA1
+    - CELF2
+    - CELF5
+    - CELSR1
+    - CENPF
+    - CENPI
+    - CENPT
+    - CENPW
+    - CEP135
+    - CEP152
+    - CEP164
+    - CEP192
+    - CEP250
+    - CEP290
+    - CEP350
+    - CEPT1
+    - CETP
+    - CFB
+    - CFD
+    - CFH
+    - CFHR4
+    - CFHR5
+    - CFTR
+    - CGB2
+    - CGN
+    - CGNL1
+    - CHAF1A
+    - CHAT
+    - CHCHD10
+    - CHCHD2
+    - CHD2
+    - CHD3
+    - CHD4
+    - CHD5
+    - CHD6
+    - CHD7
+    - CHD9
+    - CHEK1
+    - CHEK2
+    - CHGB
+    - CHI3L1
+    - CHID1
+    - CHMP4B
+    - CHMP7
+    - CHN1
+    - CHRM3
+    - CHRM4
+    - CHRM5
+    - CHRNA10
+    - CHRNA2
+    - CHRNA9
+    - CHRND
+    - CHRNE
+    - CHST10
+    - CHST11
+    - CHST2
+    - CHST5
+    - CHST6
+    - CHST8
+    - CHSY3
+    - CHTF18
+    - CHUK
+    - CIAO1
+    - CIAPIN1
+    - CIDEA
+    - CIRH1A
+    - CIT
+    - CITED2
+    - CKAP2L
+    - CKAP4
+    - CLASP1
+    - CLCA1
+    - CLCC1
+    - CLCN2
+    - CLCN3
+    - CLCN5
+    - CLCN6
+    - CLDN15
+    - CLDN6
+    - CLEC14A
+    - CLEC16A
+    - CLEC3A
+    - CLIC2
+    - CLIC5
+    - CLIC6
+    - CLIP2
+    - CLIP3
+    - CLK1
+    - CLPX
+    - CLRN3
+    - CLSTN1
+    - CLSTN2
+    - CLTC
+    - CLTCL1
+    - CMA1
+    - CNBD2
+    - CNGA1
+    - CNGA2
+    - CNGA3
+    - CNGA4
+    - CNGB1
+    - CNGB3
+    - CNIH2
+    - CNIH4
+    - CNKSR1
+    - CNN2
+    - CNNM1
+    - CNOT1
+    - CNOT10
+    - CNOT2
+    - CNOT6
+    - CNOT7
+    - CNPY4
+    - CNR1
+    - CNR2
+    - CNRIP1
+    - CNTF
+    - CNTLN
+    - CNTN3
+    - CNTNAP1
+    - CNTNAP3
+    - CNTNAP4
+    - CNTNAP5
+    - COBL
+    - COG5
+    - COG7
+    - COG8
+    - COIL
+    - COL11A1
+    - COL11A2
+    - COL12A1
+    - COL14A1
+    - COL15A1
+    - COL19A1
+    - COL1A1
+    - COL1A2
+    - COL20A1
+    - COL22A1
+    - COL24A1
+    - COL25A1
+    - COL27A1
+    - COL2A1
+    - COL3A1
+    - COL4A1
+    - COL4A2
+    - COL4A3
+    - COL4A4
+    - COL4A5
+    - COL4A6
+    - COL5A1
+    - COL5A3
+    - COL6A2
+    - COL6A3
+    - COL6A6
+    - COL8A2
+    - COL9A1
+    - COL9A2
+    - COLEC10
+    - COLEC11
+    - COMMD1
+    - COMTD1
+    - COPB1
+    - COPZ1
+    - COQ10A
+    - CORIN
+    - CORO2A
+    - COX7B
+    - CPA1
+    - CPA2
+    - CPD
+    - CPE
+    - CPEB3
+    - CPEB4
+    - CPNE1
+    - CPOX
+    - CPS1
+    - CPSF3
+    - CPSF6
+    - CPT1A
+    - CPT1C
+    - CPXM1
+    - CPZ
+    - CR2
+    - CRAT
+    - CRB1
+    - CREB3L3
+    - CREBBP
+    - CREBZF
+    - CRELD1
+    - CRELD2
+    - CRH
+    - CRIPAK
+    - CRISP2
+    - CRP
+    - CRTC1
+    - CRTC2
+    - CRY1
+    - CRYM
+    - CSDE1
+    - CSF2RA
+    - CSF2RB
+    - CSF3R
+    - CSGALNACT2
+    - CSK
+    - CSMD1
+    - CSMD2
+    - CSMD3
+    - CSNK1G3
+    - CSPG4
+    - CSRNP2
+    - CSRNP3
+    - CST6
+    - CT45A5
+    - CT47B1
+    - CT62
+    - CT83
+    - CTBP1
+    - CTBS
+    - CTCF
+    - CTDP1
+    - CTNNAL1
+    - CTNNB1
+    - CTNND1
+    - CTNND2
+    - CTPS2
+    - CTR9
+    - CTSA
+    - CTSH
+    - CTSK
+    - CTSS
+    - CTSW
+    - CTTN
+    - CTTNBP2
+    - CUBN
+    - CUEDC1
+    - CUL3
+    - CUL9
+    - CUX1
+    - CWC25
+    - CXCL13
+    - CXCR1
+    - CXorf56
+    - CXorf65
+    - CXXC4
+    - CYB5A
+    - CYB5D1
+    - CYB5R2
+    - CYB5R4
+    - CYFIP1
+    - CYLC2
+    - CYP11A1
+    - CYP11B1
+    - CYP17A1
+    - CYP19A1
+    - CYP1A2
+    - CYP24A1
+    - CYP2A13
+    - CYP2A6
+    - CYP2C19
+    - CYP2C8
+    - CYP2C9
+    - CYP2E1
+    - CYP2U1
+    - CYP3A43
+    - CYP4F11
+    - CYP4F22
+    - CYSLTR2
+    - CYTH1
+    - CYTH4
+    - D2HGDH
+    - DAAM1
+    - DACH1
+    - DAGLA
+    - DAP3
+    - DAPK1
+    - DBN1
+    - DBNL
+    - DBP
+    - DBR1
+    - DBT
+    - DCAF12
+    - DCAF12L2
+    - DCAF13
+    - DCAF5
+    - DCAF8L1
+    - DCAKD
+    - DCC
+    - DCDC2
+    - DCHS1
+    - DCLRE1A
+    - DCLRE1B
+    - DCLRE1C
+    - DCPS
+    - DCST2
+    - DCT
+    - DCUN1D4
+    - DCX
+    - DDN
+    - DDX18
+    - DDX23
+    - DDX25
+    - DDX27
+    - DDX4
+    - DDX42
+    - DDX43
+    - DDX5
+    - DDX51
+    - DDX58
+    - DDX60L
+    - DEAF1
+    - DECR2
+    - DEF8
+    - DEFB118
+    - DEFB119
+    - DEGS2
+    - DENND2D
+    - DENND4B
+    - DENND4C
+    - DENND5A
+    - DENND5B
+    - DENND6B
+    - DEPDC5
+    - DERL1
+    - DFNB31
+    - DGAT2L6
+    - DGCR2
+    - DGCR8
+    - DGKB
+    - DGKE
+    - DGKG
+    - DGKQ
+    - DHCR24
+    - DHRS4L2
+    - DHTKD1
+    - DHX16
+    - DHX30
+    - DHX32
+    - DHX36
+    - DHX37
+    - DHX38
+    - DHX40
+    - DHX8
+    - DIAPH1
+    - DICER1
+    - DIDO1
+    - DIP2C
+    - DIRAS2
+    - DIS3
+    - DISC1
+    - DISP1
+    - DISP2
+    - DKC1
+    - DKK4
+    - DLAT
+    - DLC1
+    - DLEC1
+    - DLG1
+    - DLG2
+    - DLG5
+    - DLGAP2
+    - DLGAP4
+    - DLGAP5
+    - DLL1
+    - DMBT1
+    - DMC1
+    - DMD
+    - DMGDH
+    - DMP1
+    - DMPK
+    - DMRT3
+    - DMRTA1
+    - DMRTB1
+    - DMRTC2
+    - DMTN
+    - DMXL1
+    - DMXL2
+    - DNAH1
+    - DNAH10
+    - DNAH17
+    - DNAH2
+    - DNAH3
+    - DNAH5
+    - DNAH7
+    - DNAH8
+    - DNAH9
+    - DNAI2
+    - DNAJA2
+    - DNAJB11
+    - DNAJB9
+    - DNAJC1
+    - DNAJC11
+    - DNAJC13
+    - DNAJC16
+    - DNAJC17
+    - DNAJC21
+    - DNAJC22
+    - DNAJC25
+    - DNAJC7
+    - DNALI1
+    - DNASE1L3
+    - DNASE2
+    - DNHD1
+    - DNM1
+    - DNM2
+    - DNMT1
+    - DNMT3A
+    - DNTT
+    - DNTTIP1
+    - DOCK10
+    - DOCK11
+    - DOCK2
+    - DOCK3
+    - DOCK4
+    - DOCK5
+    - DOCK6
+    - DOCK7
+    - DOCK9
+    - DOK1
+    - DOK2
+    - DOK5
+    - DOK6
+    - DOLK
+    - DOPEY2
+    - DOT1L
+    - DPF3
+    - DPH1
+    - DPP3
+    - DPP7
+    - DPP8
+    - DPYD
+    - DPYSL5
+    - DRAM1
+    - DRD4
+    - DRP2
+    - DSC2
+    - DSC3
+    - DSCAM
+    - DSCAML1
+    - DSE
+    - DSG4
+    - DSP
+    - DST
+    - DSTYK
+    - DTL
+    - DTNA
+    - DTNB
+    - DTNBP1
+    - DTX1
+    - DTYMK
+    - DUOX1
+    - DUOX2
+    - DUS2
+    - DUSP13
+    - DUSP27
+    - DUSP5
+    - DUSP6
+    - DUSP7
+    - DVL3
+    - DYNC1H1
+    - DYNC1I1
+    - DYNC2H1
+    - DYNLL1
+    - DYNLT1
+    - DYRK1B
+    - DYRK4
+    - DYSF
+    - DYX1C1
+    - DZIP3
+    - E2F3
+    - E2F8
+    - EARS2
+    - EBF1
+    - EBF2
+    - EBI3
+    - EBPL
+    - ECD
+    - ECE1
+    - ECEL1
+    - ECSIT
+    - EDA
+    - EDDM3B
+    - EDEM1
+    - EDEM3
+    - EDRF1
+    - EED
+    - EEF1A1
+    - EEF1A2
+    - EEF1D
+    - EEF2K
+    - EFCAB1
+    - EFCAB5
+    - EFCAB7
+    - EFEMP2
+    - EFNB1
+    - EFNB3
+    - EFR3A
+    - EFS
+    - EFTUD2
+    - EGFL6
+    - EGFL8
+    - EGFLAM
+    - EHBP1
+    - EHBP1L1
+    - EHD1
+    - EHD2
+    - EHMT2
+    - EID3
+    - EIF1AX
+    - EIF2AK2
+    - EIF2AK4
+    - EIF2B5
+    - EIF2S2
+    - EIF3A
+    - EIF3D
+    - EIF3E
+    - EIF3F
+    - EIF3G
+    - EIF3L
+    - EIF4A1
+    - EIF4ENIF1
+    - EIF4G1
+    - EIF4G2
+    - EIF4H
+    - ELAVL1
+    - ELF3
+    - ELF4
+    - ELFN2
+    - ELL
+    - ELMO1
+    - ELMO3
+    - ELOVL1
+    - ELOVL5
+    - EMC1
+    - EMC4
+    - EME2
+    - EMILIN3
+    - EML2
+    - ENC1
+    - ENGASE
+    - ENKD1
+    - ENOX2
+    - ENPEP
+    - ENPP1
+    - ENPP2
+    - ENPP6
+    - ENTPD6
+    - ENTPD8
+    - EPB41L1
+    - EPB41L3
+    - EPB42
+    - EPC2
+    - EPCAM
+    - EPHA4
+    - EPHA6
+    - EPHB1
+    - EPHB6
+    - EPPK1
+    - EPRS
+    - EPS15L1
+    - EPS8L1
+    - EPSTI1
+    - EPX
+    - ERAL1
+    - ERAP2
+    - ERBB2
+    - ERBB3
+    - ERBB4
+    - ERC1
+    - ERC2
+    - ERCC3
+    - ERCC4
+    - ERCC6
+    - ERCC6-PGBD3
+    - ERF
+    - ERG
+    - ERGIC2
+    - ERLEC1
+    - ERMP1
+    - ERO1L
+    - ERRFI1
+    - ESCO2
+    - ESPL1
+    - ESPN
+    - ESR1
+    - ESRP1
+    - ESX1
+    - ETAA1
+    - ETF1
+    - ETNK2
+    - ETS1
+    - ETV1
+    - ETV5
+    - EVC
+    - EVI5L
+    - EVPL
+    - EVX2
+    - EXD2
+    - EXOC2
+    - EXOC3L2
+    - EXOC7
+    - EXOSC10
+    - EXOSC3
+    - EXPH5
+    - EXT1
+    - EXT2
+    - EYA4
+    - EZH1
+    - EZR
+    - F10
+    - F11
+    - F2RL1
+    - F2RL2
+    - F7
+    - F8
+    - F9
+    - FA2H
+    - FAAH
+    - FABP3
+    - FADS1
+    - FADS6
+    - FAIM2
+    - FAM101B
+    - FAM110B
+    - FAM110C
+    - FAM111A
+    - FAM111B
+    - FAM117B
+    - FAM120B
+    - FAM120C
+    - FAM122A
+    - FAM124B
+    - FAM129A
+    - FAM129B
+    - FAM131C
+    - FAM133A
+    - FAM135B
+    - FAM13A
+    - FAM153B
+    - FAM155A
+    - FAM161A
+    - FAM162B
+    - FAM169B
+    - FAM179A
+    - FAM179B
+    - FAM181A
+    - FAM187B
+    - FAM196A
+    - FAM35A
+    - FAM47A
+    - FAM47C
+    - FAM50B
+    - FAM53B
+    - FAM60A
+    - FAM63B
+    - FAM64A
+    - FAM71F1
+    - FAM76A
+    - FAM76B
+    - FAM78A
+    - FAM81B
+    - FAM83A
+    - FAM83B
+    - FAM83D
+    - FAM83E
+    - FAM83F
+    - FAM83H
+    - FAM84A
+    - FANCD2
+    - FANCF
+    - FANCG
+    - FANCM
+    - FAP
+    - FARP1
+    - FARSA
+    - FASN
+    - FASTK
+    - FASTKD3
+    - FAT1
+    - FAT2
+    - FAT3
+    - FBF1
+    - FBLN1
+    - FBN1
+    - FBN2
+    - FBN3
+    - FBXL2
+    - FBXL20
+    - FBXL5
+    - FBXO10
+    - FBXO11
+    - FBXO18
+    - FBXO3
+    - FBXO31
+    - FBXO33
+    - FBXO41
+    - FBXO42
+    - FBXO44
+    - FBXO47
+    - FBXW8
+    - FCAMR
+    - FCER2
+    - FCF1
+    - FCGBP
+    - FCGR2B
+    - FCGRT
+    - FCN2
+    - FCRL2
+    - FCRL5
+    - FECH
+    - FER1L6
+    - FERMT1
+    - FETUB
+    - FEZ1
+    - FGA
+    - FGD1
+    - FGD2
+    - FGD3
+    - FGD4
+    - FGD5
+    - FGF20
+    - FGF3
+    - FGF5
+    - FGF7
+    - FGFR1
+    - FGFR2
+    - FGFR3
+    - FGR
+    - FH
+    - FHL1
+    - FHL3
+    - FHL5
+    - FHOD1
+    - FHOD3
+    - FIGF
+    - FIGNL1
+    - FILIP1
+    - FILIP1L
+    - FIP1L1
+    - FITM2
+    - FKBP7
+    - FKBP8
+    - FKBPL
+    - FKRP
+    - FLG
+    - FLG2
+    - FLI1
+    - FLII
+    - FLNA
+    - FLNC
+    - FLOT1
+    - FLOT2
+    - FLRT2
+    - FLT3LG
+    - FLT4
+    - FLVCR2
+    - FMNL1
+    - FMNL3
+    - FMO1
+    - FMO3
+    - FMR1
+    - FN1
+    - FNBP1L
+    - FNBP4
+    - FNDC3A
+    - FNDC7
+    - FNIP1
+    - FNIP2
+    - FOLH1
+    - FOXC2
+    - FOXJ2
+    - FOXK2
+    - FOXM1
+    - FOXP3
+    - FOXP4
+    - FOXQ1
+    - FOXR2
+    - FPR2
+    - FRAS1
+    - FREM1
+    - FRMD4A
+    - FRMD5
+    - FRMPD1
+    - FRMPD2
+    - FRMPD3
+    - FRMPD4
+    - FRRS1
+    - FRS3
+    - FRY
+    - FRYL
+    - FSCB
+    - FSTL4
+    - FTHL17
+    - FTO
+    - FUK
+    - FUNDC1
+    - FUNDC2
+    - FUT10
+    - FUT3
+    - FUT9
+    - FUZ
+    - FXYD4
+    - FZD1
+    - FZD10
+    - FZD3
+    - FZD8
+    - FZR1
+    - G2E3
+    - G6PD
+    - GAA
+    - GAB4
+    - GABBR1
+    - GABRA2
+    - GABRA3
+    - GABRA6
+    - GABRB3
+    - GABRQ
+    - GABRR2
+    - GAD2
+    - GAK
+    - GALNT1
+    - GALNT10
+    - GALNT12
+    - GALNT14
+    - GALNT15
+    - GALNT16
+    - GALNT18
+    - GALNT2
+    - GALNT7
+    - GALNT8
+    - GALT
+    - GANAB
+    - GAPVD1
+    - GARNL3
+    - GAS1
+    - GAS2L2
+    - GAS2L3
+    - GAS8
+    - GATA5
+    - GATA6
+    - GATAD2B
+    - GATC
+    - GBF1
+    - GBP1
+    - GBP2
+    - GBP5
+    - GCC2
+    - GCKR
+    - GCN1L1
+    - GCSH
+    - GDF6
+    - GDI1
+    - GDPD1
+    - GEMIN5
+    - GFAP
+    - GFI1
+    - GFI1B
+    - GFOD1
+    - GFPT1
+    - GFRA3
+    - GGA1
+    - GGA2
+    - GHR
+    - GIGYF1
+    - GIGYF2
+    - GIMAP2
+    - GIMAP4
+    - GIMAP6
+    - GIMAP8
+    - GIN1
+    - GIP
+    - GIPC3
+    - GIT1
+    - GIT2
+    - GJA3
+    - GJA4
+    - GJA5
+    - GJA8
+    - GJD2
+    - GLA
+    - GLB1
+    - GLB1L
+    - GLCE
+    - GLE1
+    - GLG1
+    - GLI2
+    - GLIS3
+    - GLOD4
+    - GLOD5
+    - GLP2R
+    - GLRA4
+    - GLRB
+    - GLRX3
+    - GLT6D1
+    - GLTSCR1L
+    - GLTSCR2
+    - GLYATL2
+    - GLYCTK
+    - GMDS
+    - GMIP
+    - GMPS
+    - GNAL
+    - GNAO1
+    - GNAS
+    - GNAT1
+    - GNG5
+    - GNGT1
+    - GNL1
+    - GNL3L
+    - GNPAT
+    - GOLGA1
+    - GOLGA2
+    - GOLGA3
+    - GOLGA4
+    - GOLGA5
+    - GOLGB1
+    - GOLPH3
+    - GON4L
+    - GOPC
+    - GOSR2
+    - GOT1L1
+    - GOT2
+    - GP6
+    - GPAM
+    - GPATCH1
+    - GPATCH8
+    - GPC1
+    - GPC5
+    - GPC6
+    - GPKOW
+    - GPLD1
+    - GPM6B
+    - GPN1
+    - GPNMB
+    - GPR101
+    - GPR119
+    - GPR135
+    - GPR139
+    - GPR141
+    - GPR142
+    - GPR149
+    - GPR151
+    - GPR152
+    - GPR155
+    - GPR156
+    - GPR158
+    - GPR173
+    - GPR174
+    - GPR179
+    - GPR35
+    - GPR39
+    - GPR4
+    - GPR45
+    - GPR75
+    - GPR78
+    - GPR83
+    - GPR87
+    - GPRASP1
+    - GPRC5B
+    - GPRIN2
+    - GPRIN3
+    - GPT
+    - GPX2
+    - GPX8
+    - GRAMD1A
+    - GRAMD2
+    - GRAMD4
+    - GRASP
+    - GRB10
+    - GRB7
+    - GRIA1
+    - GRIA2
+    - GRIA3
+    - GRIA4
+    - GRID1
+    - GRID2
+    - GRIK1
+    - GRIK2
+    - GRIK3
+    - GRIN2A
+    - GRIN2B
+    - GRIN2D
+    - GRIN3A
+    - GRINA
+    - GRIP2
+    - GRK1
+    - GRM1
+    - GRM2
+    - GRM4
+    - GRM6
+    - GRXCR1
+    - GSTA2
+    - GSTM3
+    - GSTM5
+    - GSTT1
+    - GTDC1
+    - GTF2F2
+    - GTF2IRD1
+    - GTF2IRD2
+    - GTF3C1
+    - GTPBP1
+    - GTPBP4
+    - GTSF1
+    - GUCA2B
+    - GUCY1A3
+    - GUCY2C
+    - GUCY2F
+    - GUK1
+    - GULP1
+    - GYS1
+    - GYS2
+    - GZF1
+    - GZMM
+    - H2AFX
+    - HAAO
+    - HACE1
+    - HACL1
+    - HADHA
+    - HAP1
+    - HAPLN1
+    - HAPLN3
+    - HAS1
+    - HAUS3
+    - HAUS6
+    - HAUS7
+    - HAVCR2
+    - HBS1L
+    - HCCS
+    - HCFC1
+    - HCLS1
+    - HCN1
+    - HCRTR1
+    - HDAC10
+    - HDAC5
+    - HDAC8
+    - HDAC9
+    - HDGFRP2
+    - HDLBP
+    - HEATR1
+    - HEATR5B
+    - HEATR6
+    - HECTD1
+    - HECTD4
+    - HEG1
+    - HELB
+    - HELLS
+    - HELZ
+    - HELZ2
+    - HEPACAM2
+    - HERC1
+    - HEXA
+    - HEY2
+    - HEYL
+    - HFM1
+    - HGD
+    - HGFAC
+    - HHAT
+    - HHIP
+    - HHIPL2
+    - HHLA2
+    - HIBADH
+    - HID1
+    - HIF1A
+    - HIF3A
+    - HIGD1A
+    - HIPK1
+    - HIST1H1C
+    - HIST1H1E
+    - HIST1H2AH
+    - HIST1H2BC
+    - HIST1H2BD
+    - HIST1H2BF
+    - HIST1H3E
+    - HIST1H4B
+    - HIST1H4J
+    - HIST1H4L
+    - HIST2H2AC
+    - HIST2H3D
+    - HIST3H2A
+    - HIVEP1
+    - HIVEP3
+    - HK2
+    - HK3
+    - HKDC1
+    - HLA-B
+    - HLA-DMA
+    - HLA-DMB
+    - HLA-DOA
+    - HLA-DRA
+    - HLA-E
+    - HLCS
+    - HMCN1
+    - HMGB1
+    - HMGB3
+    - HMOX2
+    - HNF4A
+    - HNRNPDL
+    - HNRNPH2
+    - HNRNPR
+    - HNRNPUL2
+    - HOMER1
+    - HOOK3
+    - HOXA1
+    - HOXA13
+    - HOXC11
+    - HOXC12
+    - HOXD12
+    - HP
+    - HPCAL1
+    - HPD
+    - HPS1
+    - HPS3
+    - HPX
+    - HRAS
+    - HRCT1
+    - HRH1
+    - HRH2
+    - HRNR
+    - HS3ST2
+    - HS3ST4
+    - HS3ST5
+    - HSD17B3
+    - HSD3B7
+    - HSF1
+    - HSF4
+    - HSF5
+    - HSH2D
+    - HSP90AA1
+    - HSP90B1
+    - HSPA1L
+    - HSPA2
+    - HSPA4
+    - HSPA5
+    - HSPA8
+    - HSPH1
+    - HTATIP2
+    - HTR2B
+    - HTR3A
+    - HTR3B
+    - HTR3C
+    - HTR4
+    - HTRA4
+    - HUS1
+    - HUWE1
+    - HYAL2
+    - HYDIN
+    - HYI
+    - HYPK
+    - IARS
+    - ICAM1
+    - ICAM3
+    - ICMT
+    - ID2
+    - IDE
+    - IDI2
+    - IDO1
+    - IFFO1
+    - IFI16
+    - IFI44
+    - IFI44L
+    - IFIT1B
+    - IFNAR2
+    - IFNE
+    - IFNGR1
+    - IFNL1
+    - IFNL3
+    - IFRD1
+    - IFT122
+    - IFT140
+    - IFT46
+    - IGDCC4
+    - IGF1R
+    - IGF2R
+    - IGFBP7
+    - IGFL4
+    - IGLON5
+    - IGSF1
+    - IGSF10
+    - IGSF22
+    - IGSF9B
+    - IK
+    - IL11
+    - IL11RA
+    - IL12A
+    - IL12RB2
+    - IL13
+    - IL16
+    - IL17D
+    - IL17RA
+    - IL17RC
+    - IL17REL
+    - IL18RAP
+    - IL1R1
+    - IL22
+    - IL23R
+    - IL2RA
+    - IL2RG
+    - IL33
+    - IL7R
+    - ILDR2
+    - ILF3
+    - IMPACT
+    - IMPDH2
+    - IMPG1
+    - INADL
+    - INF2
+    - INHBA
+    - INHBC
+    - INHBE
+    - INO80
+    - INO80D
+    - INO80E
+    - INPP4B
+    - INPP5B
+    - INPP5D
+    - INPP5F
+    - INPP5K
+    - INPPL1
+    - INSRR
+    - INTS1
+    - INTS10
+    - INTS2
+    - INTS3
+    - INTS5
+    - INTS9
+    - INTU
+    - INVS
+    - IP6K2
+    - IPMK
+    - IPO11
+    - IQCE
+    - IQSEC2
+    - IRAK2
+    - IRAK4
+    - IRF1
+    - IRF3
+    - IRF4
+    - IRF5
+    - IRG1
+    - IRS1
+    - IRS2
+    - IRX2
+    - IRX3
+    - IRX6
+    - ISOC2
+    - ISYNA1
+    - ITCH
+    - ITGA10
+    - ITGA11
+    - ITGA2
+    - ITGA2B
+    - ITGA3
+    - ITGA6
+    - ITGA7
+    - ITGA8
+    - ITGAD
+    - ITGAL
+    - ITGAM
+    - ITGAV
+    - ITGAX
+    - ITGB1
+    - ITGB3
+    - ITGB7
+    - ITGB8
+    - ITGBL1
+    - ITIH1
+    - ITM2C
+    - ITPA
+    - ITPR1
+    - ITPR2
+    - JADE3
+    - JAK1
+    - JAK2
+    - JAKMIP2
+    - JAKMIP3
+    - JARID2
+    - JMJD1C
+    - JMJD4
+    - JRK
+    - JUN
+    - JUNB
+    - KAAG1
+    - KALRN
+    - KANK2
+    - KANK3
+    - KARS
+    - KAT2A
+    - KBTBD3
+    - KBTBD7
+    - KBTBD8
+    - KCMF1
+    - KCNA4
+    - KCNA5
+    - KCNA7
+    - KCNAB1
+    - KCNAB3
+    - KCNC3
+    - KCNC4
+    - KCND2
+    - KCND3
+    - KCNG2
+    - KCNH1
+    - KCNH2
+    - KCNH7
+    - KCNIP1
+    - KCNIP2
+    - KCNIP3
+    - KCNIP4
+    - KCNK1
+    - KCNK12
+    - KCNK18
+    - KCNK6
+    - KCNMA1
+    - KCNN3
+    - KCNQ5
+    - KCNS2
+    - KCNT2
+    - KCNU1
+    - KCNV2
+    - KCP
+    - KCTD18
+    - KCTD2
+    - KCTD3
+    - KCTD7
+    - KDM2A
+    - KDM2B
+    - KDM3A
+    - KDM3B
+    - KDM4B
+    - KDM4C
+    - KDM5A
+    - KDM6A
+    - KDM6B
+    - KDR
+    - KDSR
+    - KEAP1
+    - KEL
+    - KHDC3L
+    - KHDRBS1
+    - KHDRBS2
+    - KHNYN
+    - KIAA0141
+    - KIAA0195
+    - KIAA0232
+    - KIAA0319L
+    - KIAA0391
+    - KIAA0513
+    - KIAA0556
+    - KIAA0754
+    - KIAA0895L
+    - KIAA0922
+    - KIAA1109
+    - KIAA1211
+    - KIAA1217
+    - KIAA1257
+    - KIAA1429
+    - KIAA1467
+    - KIAA1468
+    - KIAA1522
+    - KIAA1549
+    - KIAA1683
+    - KIAA1755
+    - KIAA1958
+    - KIAA2018
+    - KIAA2022
+    - KIF13A
+    - KIF14
+    - KIF15
+    - KIF1A
+    - KIF1B
+    - KIF1C
+    - KIF21A
+    - KIF23
+    - KIF25
+    - KIF27
+    - KIF2A
+    - KIF2C
+    - KIF4B
+    - KIF6
+    - KIF9
+    - KIR2DL1
+    - KIR3DL1
+    - KIR3DL2
+    - KLC2
+    - KLF6
+    - KLHDC2
+    - KLHDC7A
+    - KLHDC8B
+    - KLHL10
+    - KLHL13
+    - KLHL14
+    - KLHL24
+    - KLHL26
+    - KLHL32
+    - KLHL35
+    - KLHL4
+    - KLHL40
+    - KLHL41
+    - KMT2A
+    - KMT2B
+    - KMT2C
+    - KMT2E
+    - KPNA1
+    - KRAS
+    - KRBA2
+    - KREMEN2
+    - KRIT1
+    - KRR1
+    - KRT18
+    - KRT33A
+    - KRT35
+    - KRT36
+    - KRT5
+    - KRT79
+    - KRT85
+    - KRT9
+    - KRTAP10-1
+    - KRTAP10-11
+    - KRTAP10-4
+    - KRTAP10-5
+    - KRTAP10-7
+    - KRTAP12-3
+    - KRTAP13-4
+    - KRTAP20-2
+    - KRTAP24-1
+    - KRTAP27-1
+    - KRTAP3-3
+    - KRTAP4-12
+    - KRTAP4-2
+    - KRTAP5-11
+    - KRTAP5-5
+    - KRTAP5-6
+    - KRTAP5-7
+    - KRTAP6-2
+    - KRTAP8-1
+    - KRTAP9-3
+    - KRTCAP3
+    - KSR1
+    - KSR2
+    - KTI12
+    - KTN1
+    - KYNU
+    - L1CAM
+    - LACTB
+    - LAMA2
+    - LAMA3
+    - LAMA4
+    - LAMA5
+    - LAMB1
+    - LAMB2
+    - LAMB4
+    - LAMC1
+    - LAMC2
+    - LAMC3
+    - LAMP2
+    - LAMP3
+    - LAMTOR5
+    - LANCL2
+    - LARGE
+    - LARP1
+    - LARS
+    - LARS2
+    - LATS2
+    - LBH
+    - LBP
+    - LCA5
+    - LCE1C
+    - LCK
+    - LCMT1
+    - LCT
+    - LCTL
+    - LDB2
+    - LDB3
+    - LDHA
+    - LDLRAD3
+    - LECT2
+    - LEFTY1
+    - LEMD1
+    - LEMD2
+    - LEMD3
+    - LENG8
+    - LETM1
+    - LETM2
+    - LETMD1
+    - LGALS13
+    - LGI1
+    - LGI3
+    - LGMN
+    - LGR4
+    - LGR5
+    - LIFR
+    - LIG4
+    - LILRA2
+    - LILRB1
+    - LILRB3
+    - LIMD1
+    - LIN37
+    - LIN54
+    - LINGO2
+    - LIPE
+    - LIPT1
+    - LMAN2L
+    - LMBRD2
+    - LMF1
+    - LMLN
+    - LMOD3
+    - LMTK3
+    - LMX1A
+    - LMX1B
+    - LNPEP
+    - LNX1
+    - LOH12CR1
+    - LONP1
+    - LONP2
+    - LONRF1
+    - LONRF2
+    - LOX
+    - LOXL2
+    - LPAR4
+    - LPAR6
+    - LPIN3
+    - LPL
+    - LPP
+    - LPPR1
+    - LPPR3
+    - LPPR4
+    - LRCH2
+    - LRFN3
+    - LRFN4
+    - LRGUK
+    - LRIG1
+    - LRIT1
+    - LRP1
+    - LRP10
+    - LRP1B
+    - LRP2
+    - LRP2BP
+    - LRP4
+    - LRP5
+    - LRPAP1
+    - LRPPRC
+    - LRRC1
+    - LRRC16B
+    - LRRC17
+    - LRRC19
+    - LRRC3
+    - LRRC30
+    - LRRC32
+    - LRRC36
+    - LRRC37A2
+    - LRRC42
+    - LRRC43
+    - LRRC49
+    - LRRC4B
+    - LRRC4C
+    - LRRC55
+    - LRRC56
+    - LRRC7
+    - LRRC8A
+    - LRRC8B
+    - LRRCC1
+    - LRRFIP1
+    - LRRIQ3
+    - LRRK2
+    - LRRN1
+    - LRRN4
+    - LRRTM2
+    - LRRTM3
+    - LRRTM4
+    - LRSAM1
+    - LRTM2
+    - LRWD1
+    - LSAMP
+    - LSP1
+    - LSR
+    - LTB4R
+    - LTBP1
+    - LTBP2
+    - LTBP3
+    - LTF
+    - LUC7L3
+    - LUZP1
+    - LXN
+    - LY9
+    - LYAR
+    - LYN
+    - LYPD6B
+    - LYPLAL1
+    - LYST
+    - LYZ
+    - LYZL2
+    - LYZL6
+    - LZTR1
+    - MAATS1
+    - MAB21L1
+    - MACF1
+    - MAGEA1
+    - MAGEA11
+    - MAGEA3
+    - MAGEA6
+    - MAGEB10
+    - MAGEB18
+    - MAGEB3
+    - MAGEB4
+    - MAGEB6
+    - MAGEC1
+    - MAGEC2
+    - MAGEC3
+    - MAGED1
+    - MAGED2
+    - MAGEE1
+    - MAGEE2
+    - MAGI1
+    - MAGI2
+    - MAGI3
+    - MAMDC4
+    - MAML1
+    - MAMLD1
+    - MAN1A1
+    - MAN2B1
+    - MAN2C1
+    - MANBA
+    - MANEA
+    - MAP1A
+    - MAP1B
+    - MAP2
+    - MAP2K6
+    - MAP3K1
+    - MAP3K13
+    - MAP3K15
+    - MAP3K19
+    - MAP3K3
+    - MAP3K6
+    - MAP4K4
+    - MAP7D2
+    - MAPK10
+    - MAPK3
+    - MAPK4
+    - MAPK8IP2
+    - MAPKAPK3
+    - MAPKBP1
+    - MAPRE1
+    - MAPRE2
+    - MARCH1
+    - MARCH10
+    - MARCH6
+    - MARCH7
+    - MARCH8
+    - MARK2
+    - MARS
+    - MARS2
+    - MAS1L
+    - MAST1
+    - MAST2
+    - MAT1A
+    - MATN3
+    - MATR3
+    - MBD1
+    - MBD5
+    - MBD6
+    - MBIP
+    - MBLAC1
+    - MBNL3
+    - MBOAT2
+    - MBTPS1
+    - MCC
+    - MCCD1
+    - MCF2
+    - MCF2L
+    - MCF2L2
+    - MCHR1
+    - MCM10
+    - MCM2
+    - MCM3
+    - MCM4
+    - MCM8
+    - MCM9
+    - MCOLN1
+    - MCOLN2
+    - MCTP2
+    - MDC1
+    - MDGA2
+    - MDN1
+    - MECP2
+    - MED1
+    - MED11
+    - MED12L
+    - MED13
+    - MED13L
+    - MED15
+    - MED16
+    - MED23
+    - MED31
+    - MED6
+    - MED9
+    - MEF2B
+    - MEF2C
+    - MEFV
+    - MEGF11
+    - MEGF6
+    - MEGF8
+    - MEN1
+    - MEOX1
+    - MEP1A
+    - MEPCE
+    - MESDC2
+    - MET
+    - METRNL
+    - METTL2B
+    - MFAP3L
+    - MFSD2B
+    - MFSD6L
+    - MFSD7
+    - MGAM
+    - MGAT3
+    - MGAT5B
+    - MGLL
+    - MGMT
+    - MIA2
+    - MIA3
+    - MIB1
+    - MICAL1
+    - MICAL3
+    - MICALL1
+    - MICALL2
+    - MID2
+    - MIEF2
+    - MIER2
+    - MIPOL1
+    - MITF
+    - MKI67
+    - MKL1
+    - MKL2
+    - MKLN1
+    - MKRN1
+    - MKS1
+    - MLH3
+    - MLLT1
+    - MLLT10
+    - MLLT4
+    - MLST8
+    - MLYCD
+    - MMAA
+    - MMADHC
+    - MMD2
+    - MMGT1
+    - MMP11
+    - MMP13
+    - MMP16
+    - MMP17
+    - MMP2
+    - MMP24
+    - MMP3
+    - MMP8
+    - MMRN1
+    - MMRN2
+    - MMS19
+    - MN1
+    - MOAP1
+    - MOCS3
+    - MOG
+    - MOGAT2
+    - MOGAT3
+    - MON2
+    - MORF4L2
+    - MORN1
+    - MOS
+    - MOV10
+    - MOV10L1
+    - MPDU1
+    - MPDZ
+    - MPHOSPH8
+    - MPI
+    - MPO
+    - MPPED1
+    - MPV17
+    - MPV17L
+    - MPZ
+    - MRAP2
+    - MRFAP1L1
+    - MRGPRX1
+    - MRGPRX4
+    - MROH2B
+    - MRPL10
+    - MRPL16
+    - MRPL23
+    - MRPL4
+    - MRPL41
+    - MRPL46
+    - MRPS18C
+    - MRPS23
+    - MRPS30
+    - MRPS31
+    - MRPS5
+    - MRS2
+    - MS4A12
+    - MSH2
+    - MSI1
+    - MSI2
+    - MSLN
+    - MST1
+    - MST1R
+    - MT1E
+    - MTBP
+    - MTHFD1
+    - MTHFD1L
+    - MTHFD2L
+    - MTIF2
+    - MTM1
+    - MTMR1
+    - MTMR11
+    - MTMR12
+    - MTMR4
+    - MTO1
+    - MTTP
+    - MUC13
+    - MUC16
+    - MUC17
+    - MUC2
+    - MUC21
+    - MUC5B
+    - MUC6
+    - MUC7
+    - MUSK
+    - MVP
+    - MX1
+    - MX2
+    - MXI1
+    - MXRA5
+    - MYBBP1A
+    - MYBL1
+    - MYBL2
+    - MYBPC2
+    - MYBPC3
+    - MYBPHL
+    - MYC
+    - MYCBP2
+    - MYCBPAP
+    - MYF5
+    - MYH1
+    - MYH10
+    - MYH13
+    - MYH14
+    - MYH15
+    - MYH2
+    - MYH3
+    - MYH6
+    - MYH7
+    - MYH7B
+    - MYH8
+    - MYLK
+    - MYLK3
+    - MYLPF
+    - MYO10
+    - MYO15A
+    - MYO18A
+    - MYO18B
+    - MYO19
+    - MYO1B
+    - MYO1C
+    - MYO1D
+    - MYO1E
+    - MYO5A
+    - MYO5C
+    - MYO6
+    - MYO7A
+    - MYO9A
+    - MYO9B
+    - MYOCD
+    - MYOF
+    - MYOM1
+    - MYOM2
+    - MYOM3
+    - MYRF
+    - MYRIP
+    - MYT1L
+    - N4BP2
+    - N6AMT2
+    - NAA11
+    - NAA16
+    - NAA40
+    - NAAA
+    - NAALADL2
+    - NAB2
+    - NADK
+    - NADSYN1
+    - NALCN
+    - NANOS2
+    - NANOS3
+    - NANS
+    - NAP1L1
+    - NAP1L3
+    - NAP1L4
+    - NAPG
+    - NASP
+    - NAT10
+    - NAV1
+    - NAV2
+    - NAV3
+    - NBEAL2
+    - NBN
+    - NBPF10
+    - NBPF14
+    - NBPF3
+    - NBR1
+    - NCAM2
+    - NCAN
+    - NCAPD3
+    - NCAPG2
+    - NCAPH2
+    - NCBP1
+    - NCK1
+    - NCKAP1L
+    - NCKIPSD
+    - NCL
+    - NCOA1
+    - NCOA3
+    - NCOA4
+    - NCOA6
+    - NCOR1
+    - NCOR2
+    - NCR1
+    - NDFIP2
+    - NDST2
+    - NDST3
+    - NDST4
+    - NDUFA6
+    - NDUFA9
+    - NDUFB10
+    - NDUFS1
+    - NDUFS5
+    - NDUFV2
+    - NDUFV3
+    - NEB
+    - NECAB1
+    - NEDD4
+    - NEDD4L
+    - NEFM
+    - NEIL3
+    - NEK10
+    - NEK8
+    - NELFA
+    - NELL2
+    - NEO1
+    - NES
+    - NETO1
+    - NETO2
+    - NEUROD6
+    - NEXN
+    - NF1
+    - NF2
+    - NFAT5
+    - NFATC1
+    - NFATC2
+    - NFATC4
+    - NFE2L2
+    - NFE2L3
+    - NFIA
+    - NFIC
+    - NFKBID
+    - NFX1
+    - NFXL1
+    - NGEF
+    - NGF
+    - NGFR
+    - NGFRAP1
+    - NHLRC2
+    - NHS
+    - NHSL2
+    - NIN
+    - NINL
+    - NIPA1
+    - NIPAL3
+    - NIPBL
+    - NIPSNAP3A
+    - NISCH
+    - NKD1
+    - NKIRAS1
+    - NKRF
+    - NKX2-1
+    - NLRC3
+    - NLRC4
+    - NLRP1
+    - NLRP11
+    - NLRP14
+    - NLRP3
+    - NLRP4
+    - NLRP5
+    - NLRP6
+    - NLRP8
+    - NLRP9
+    - NMBR
+    - NNT
+    - NOD1
+    - NOD2
+    - NOL4
+    - NOL6
+    - NOLC1
+    - NOMO1
+    - NOP16
+    - NOP9
+    - NOS1
+    - NOTCH2
+    - NOTCH3
+    - NOTO
+    - NOX5
+    - NPAP1
+    - NPAS2
+    - NPAS4
+    - NPAT
+    - NPBWR2
+    - NPC1L1
+    - NPEPPS
+    - NPFFR2
+    - NPHS1
+    - NPM3
+    - NPPA
+    - NPR1
+    - NPR3
+    - NPRL2
+    - NPSR1
+    - NPTX2
+    - NPY1R
+    - NR2C1
+    - NR3C2
+    - NR4A2
+    - NRAP
+    - NRAS
+    - NRD1
+    - NRG1
+    - NRG2
+    - NRG3
+    - NRIP1
+    - NRP1
+    - NRP2
+    - NRROS
+    - NRSN2
+    - NRXN1
+    - NRXN2
+    - NRXN3
+    - NSD1
+    - NSL1
+    - NSMAF
+    - NSMCE1
+    - NSUN5
+    - NSUN6
+    - NSUN7
+    - NT5E
+    - NTMT1
+    - NTN4
+    - NTNG1
+    - NTNG2
+    - NTRK1
+    - NTRK3
+    - NTSR2
+    - NUAK1
+    - NUBP1
+    - NUCB2
+    - NUDT1
+    - NUDT12
+    - NUDT15
+    - NUDT17
+    - NUDT5
+    - NUDT8
+    - NUFIP1
+    - NUMA1
+    - NUMBL
+    - NUP133
+    - NUP210
+    - NUP210L
+    - NUP214
+    - NUP93
+    - NUTM1
+    - NUTM2F
+    - NWD1
+    - NXF3
+    - NXN
+    - NXPE2
+    - NYNRIN
+    - OAS2
+    - OAS3
+    - OAZ1
+    - OBSCN
+    - OC90
+    - OCLN
+    - OCRL
+    - OFD1
+    - OGDHL
+    - OGFOD2
+    - OGFR
+    - OPA1
+    - OPCML
+    - OPLAH
+    - OPN4
+    - OPRL1
+    - OR10A7
+    - OR10AG1
+    - OR10G2
+    - OR10G4
+    - OR10H2
+    - OR10K1
+    - OR10Q1
+    - OR10X1
+    - OR10Z1
+    - OR11G2
+    - OR11H12
+    - OR13C3
+    - OR13C8
+    - OR13D1
+    - OR13F1
+    - OR14C36
+    - OR14I1
+    - OR1J2
+    - OR1K1
+    - OR1N1
+    - OR1N2
+    - OR2AT4
+    - OR2B2
+    - OR2C1
+    - OR2D3
+    - OR2G2
+    - OR2G3
+    - OR2G6
+    - OR2H2
+    - OR2J2
+    - OR2L13
+    - OR2L3
+    - OR2M2
+    - OR2M3
+    - OR2M5
+    - OR2T27
+    - OR2T33
+    - OR2T4
+    - OR2Z1
+    - OR3A3
+    - OR4A15
+    - OR4A47
+    - OR4A5
+    - OR4C11
+    - OR4C3
+    - OR4C46
+    - OR4C6
+    - OR4D5
+    - OR4D9
+    - OR4K17
+    - OR4K2
+    - OR4K5
+    - OR4L1
+    - OR4M1
+    - OR4N4
+    - OR4N5
+    - OR4S1
+    - OR4X1
+    - OR51E2
+    - OR51F1
+    - OR51G1
+    - OR51I1
+    - OR51M1
+    - OR51V1
+    - OR52A1
+    - OR52N2
+    - OR52N4
+    - OR52R1
+    - OR56A1
+    - OR56B4
+    - OR5AK2
+    - OR5AR1
+    - OR5AS1
+    - OR5AU1
+    - OR5B17
+    - OR5B2
+    - OR5B3
+    - OR5D13
+    - OR5D18
+    - OR5F1
+    - OR5H14
+    - OR5J2
+    - OR5K1
+    - OR5K4
+    - OR5L1
+    - OR5M10
+    - OR5M3
+    - OR5T2
+    - OR5V1
+    - OR6C3
+    - OR6C75
+    - OR6F1
+    - OR6K2
+    - OR6K6
+    - OR6Q1
+    - OR6S1
+    - OR6V1
+    - OR7A17
+    - OR7A5
+    - OR7C2
+    - OR7G3
+    - OR8D1
+    - OR8G1
+    - OR8H2
+    - OR8I2
+    - OR8K5
+    - OR9I1
+    - ORAI2
+    - ORM1
+    - OSBP
+    - OSBPL9
+    - OSGIN1
+    - OSMR
+    - OSTC
+    - OTOA
+    - OTOP2
+    - OTOP3
+    - OTUB1
+    - OTUD4
+    - OTUD5
+    - OTUD6A
+    - OTUD7A
+    - OTUD7B
+    - OTX1
+    - OVCH1
+    - OVGP1
+    - OXER1
+    - OXR1
+    - P2RY1
+    - P2RY10
+    - P2RY2
+    - P4HB
+    - P4HTM
+    - PA2G4
+    - PABPC1
+    - PABPC3
+    - PACS1
+    - PACSIN3
+    - PADI1
+    - PADI2
+    - PADI6
+    - PAK3
+    - PAK7
+    - PALB2
+    - PALM2
+    - PALMD
+    - PAN3
+    - PANX1
+    - PANX2
+    - PAOX
+    - PAPOLG
+    - PAPSS1
+    - PAQR4
+    - PAQR6
+    - PARD3
+    - PARD3B
+    - PARD6B
+    - PARP12
+    - PARP14
+    - PARP8
+    - PARP9
+    - PATL1
+    - PAWR
+    - PAXBP1
+    - PC
+    - PCCA
+    - PCDH11X
+    - PCDH12
+    - PCDH15
+    - PCDH8
+    - PCDH9
+    - PCDHA1
+    - PCDHA10
+    - PCDHA11
+    - PCDHA3
+    - PCDHA4
+    - PCDHA6
+    - PCDHA8
+    - PCDHB1
+    - PCDHB10
+    - PCDHB14
+    - PCDHB16
+    - PCDHB5
+    - PCDHB6
+    - PCDHB7
+    - PCDHB8
+    - PCDHGA12
+    - PCDHGA3
+    - PCDHGA4
+    - PCDHGA5
+    - PCDHGB3
+    - PCDHGB4
+    - PCDHGC3
+    - PCDHGC4
+    - PCGF2
+    - PCID2
+    - PCK2
+    - PCLO
+    - PCM1
+    - PCNT
+    - PCNXL2
+    - PCNXL3
+    - PCNXL4
+    - PCSK1
+    - PCSK2
+    - PCSK4
+    - PCSK6
+    - PCSK7
+    - PCYOX1L
+    - PDCD1
+    - PDCD11
+    - PDCD1LG2
+    - PDCD4
+    - PDCD6
+    - PDCL2
+    - PDE12
+    - PDE1A
+    - PDE3A
+    - PDE4B
+    - PDE4D
+    - PDE4DIP
+    - PDE5A
+    - PDF
+    - PDGFRB
+    - PDHA1
+    - PDHA2
+    - PDHX
+    - PDIA5
+    - PDK3
+    - PDLIM3
+    - PDLIM7
+    - PDP1
+    - PDPN
+    - PDPR
+    - PDS5A
+    - PDS5B
+    - PDSS1
+    - PDZD11
+    - PDZD2
+    - PDZD7
+    - PDZRN3
+    - PDZRN4
+    - PEG3
+    - PELI1
+    - PELO
+    - PENK
+    - PEX1
+    - PEX10
+    - PEX5
+    - PEX7
+    - PFAS
+    - PFKFB3
+    - PFKFB4
+    - PFKP
+    - PGAP2
+    - PGAP3
+    - PGBD1
+    - PGBD2
+    - PGK2
+    - PGLYRP4
+    - PGM2
+    - PGM5
+    - PGPEP1L
+    - PGR
+    - PHACTR2
+    - PHEX
+    - PHF21A
+    - PHF23
+    - PHF3
+    - PHF6
+    - PHF7
+    - PHF8
+    - PHGDH
+    - PHIP
+    - PHKA1
+    - PHKA2
+    - PHLDB1
+    - PHLDB2
+    - PHLPP2
+    - PHOX2A
+    - PHRF1
+    - PI4K2B
+    - PI4KB
+    - PIAS2
+    - PIAS3
+    - PIBF1
+    - PIGO
+    - PIGS
+    - PIGT
+    - PIGZ
+    - PIH1D2
+    - PIK3AP1
+    - PIK3C2A
+    - PIK3C2G
+    - PIK3CA
+    - PIK3CB
+    - PIK3CD
+    - PIK3CG
+    - PIK3R1
+    - PIK3R5
+    - PIM2
+    - PINK1
+    - PIP4K2C
+    - PIP5K1A
+    - PIR
+    - PITPNA
+    - PITPNM1
+    - PITPNM2
+    - PITPNM3
+    - PITX2
+    - PIWIL2
+    - PIWIL4
+    - PKD1
+    - PKD1L1
+    - PKD1L2
+    - PKDREJ
+    - PKHD1
+    - PKHD1L1
+    - PKLR
+    - PKM
+    - PKN2
+    - PKNOX1
+    - PKP2
+    - PKP4
+    - PLA1A
+    - PLA2G2A
+    - PLA2G4F
+    - PLA2G5
+    - PLA2R1
+    - PLAC1
+    - PLAG1
+    - PLB1
+    - PLCB1
+    - PLCB2
+    - PLCB3
+    - PLCB4
+    - PLCD3
+    - PLCD4
+    - PLCE1
+    - PLCH1
+    - PLCL1
+    - PLCXD1
+    - PLD2
+    - PLD5
+    - PLEC
+    - PLEK
+    - PLEKHA5
+    - PLEKHA6
+    - PLEKHA8
+    - PLEKHG1
+    - PLEKHG2
+    - PLEKHG4
+    - PLEKHG4B
+    - PLEKHH2
+    - PLEKHM2
+    - PLEKHN1
+    - PLEKHS1
+    - PLG
+    - PLIN5
+    - PLK2
+    - PLP1
+    - PLTP
+    - PLXDC2
+    - PLXNA2
+    - PLXNA4
+    - PLXNB1
+    - PLXNB2
+    - PLXNB3
+    - PLXNC1
+    - PLXND1
+    - PM20D1
+    - PMS1
+    - PNCK
+    - PNLDC1
+    - PNMA3
+    - PNMA5
+    - PNN
+    - PNOC
+    - PNPLA7
+    - POC1B
+    - PODXL
+    - PODXL2
+    - POFUT1
+    - POFUT2
+    - POGZ
+    - POLB
+    - POLD4
+    - POLE
+    - POLQ
+    - POLR1A
+    - POLR1B
+    - POLR2B
+    - POLR3B
+    - POLR3C
+    - POLR3D
+    - POM121
+    - POM121L12
+    - POMGNT1
+    - POMK
+    - POMT2
+    - POSTN
+    - POTEC
+    - POTEE
+    - POU2AF1
+    - POU2F1
+    - POU2F2
+    - POU2F3
+    - POU4F3
+    - POU5F1
+    - PPAN-P2RY11
+    - PPAPDC1A
+    - PPAPDC2
+    - PPARGC1A
+    - PPAT
+    - PPCS
+    - PPEF1
+    - PPFIA3
+    - PPFIA4
+    - PPHLN1
+    - PPID
+    - PPIG
+    - PPIL6
+    - PPL
+    - PPM1D
+    - PPM1J
+    - PPOX
+    - PPP1R13B
+    - PPP1R13L
+    - PPP1R14C
+    - PPP1R15A
+    - PPP1R15B
+    - PPP1R1C
+    - PPP1R3B
+    - PPP1R7
+    - PPP1R8
+    - PPP2R1A
+    - PPP2R1B
+    - PPP2R5C
+    - PPP2R5D
+    - PPP3R2
+    - PPP4C
+    - PPP4R1
+    - PPP6C
+    - PPRC1
+    - PPWD1
+    - PRAMEF12
+    - PRB2
+    - PRC1
+    - PRDM10
+    - PRDM13
+    - PRDM15
+    - PRDM16
+    - PRDM2
+    - PRDM4
+    - PRDM8
+    - PRDM9
+    - PRDX1
+    - PRDX5
+    - PREB
+    - PREX1
+    - PRICKLE1
+    - PRICKLE2
+    - PRICKLE4
+    - PRKAG2
+    - PRKAR2A
+    - PRKCSH
+    - PRKD1
+    - PRKD2
+    - PRKD3
+    - PRKDC
+    - PRKG1
+    - PRKY
+    - PRMT1
+    - PRMT2
+    - PRMT3
+    - PRND
+    - PROC
+    - PRODH2
+    - PROKR2
+    - PROM2
+    - PROS1
+    - PROSER2
+    - PRPF3
+    - PRPF38B
+    - PRPF39
+    - PRPF6
+    - PRPF8
+    - PRPS1
+    - PRPS2
+    - PRR12
+    - PRR21
+    - PRR22
+    - PRR5-ARHGAP8
+    - PRRC1
+    - PRRG1
+    - PRRG3
+    - PRSS12
+    - PRSS38
+    - PRSS48
+    - PRSS53
+    - PRSS55
+    - PRUNE2
+    - PSAP
+    - PSAT1
+    - PSD2
+    - PSD3
+    - PSG1
+    - PSG2
+    - PSG5
+    - PSG8
+    - PSG9
+    - PSKH2
+    - PSMA2
+    - PSMA4
+    - PSMA6
+    - PSMB7
+    - PSMC3
+    - PSMC3IP
+    - PSPH
+    - PTBP1
+    - PTCD2
+    - PTCH1
+    - PTCHD1
+    - PTCHD2
+    - PTCHD3
+    - PTDSS2
+    - PTEN
+    - PTGER4
+    - PTGES
+    - PTGES2
+    - PTGR1
+    - PTGR2
+    - PTH2R
+    - PTK2B
+    - PTK6
+    - PTN
+    - PTPN13
+    - PTPN2
+    - PTPN21
+    - PTPN22
+    - PTPN4
+    - PTPRB
+    - PTPRD
+    - PTPRJ
+    - PTPRK
+    - PTPRN
+    - PTPRN2
+    - PTPRO
+    - PTPRR
+    - PTPRS
+    - PTPRT
+    - PTPRU
+    - PTPRZ1
+    - PUM1
+    - PUM2
+    - PVRL1
+    - PWP2
+    - PWWP2A
+    - PXDNL
+    - PXK
+    - PXMP2
+    - PYGB
+    - PYGO1
+    - PZP
+    - QPRT
+    - QRICH2
+    - QSER1
+    - R3HCC1L
+    - RAB11FIP1
+    - RAB11FIP2
+    - RAB25
+    - RAB27A
+    - RAB32
+    - RAB33A
+    - RAB37
+    - RAB39B
+    - RAB3C
+    - RAB3IP
+    - RAB41
+    - RAB5C
+    - RABEP1
+    - RABEP2
+    - RABGAP1
+    - RABL6
+    - RAD18
+    - RAD23B
+    - RAD51AP1
+    - RAD51AP2
+    - RAD54L2
+    - RAF1
+    - RAG1
+    - RAI1
+    - RAI14
+    - RALB
+    - RALGAPA2
+    - RALGAPB
+    - RALGPS2
+    - RALYL
+    - RANBP10
+    - RANBP2
+    - RAP1A
+    - RAP1GAP
+    - RAPGEF1
+    - RAPGEF6
+    - RAPGEFL1
+    - RAPH1
+    - RARA
+    - RASA1
+    - RASAL1
+    - RASAL2
+    - RASD2
+    - RASGEF1B
+    - RASGRF2
+    - RASGRP1
+    - RASSF1
+    - RASSF2
+    - RAVER1
+    - RB1
+    - RB1CC1
+    - RBBP4
+    - RBBP6
+    - RBL2
+    - RBM11
+    - RBM12
+    - RBM12B
+    - RBM15
+    - RBM15B
+    - RBM17
+    - RBM27
+    - RBM28
+    - RBM4
+    - RBM46
+    - RBM47
+    - RBM4B
+    - RBM6
+    - RBM7
+    - RBMX2
+    - RBP3
+    - RBP7
+    - RBPJ
+    - RBPMS
+    - RC3H1
+    - RC3H2
+    - RCC1
+    - RCOR1
+    - RCSD1
+    - RCVRN
+    - RDH10
+    - RECK
+    - REEP3
+    - RELN
+    - RELT
+    - RENBP
+    - REPS1
+    - RER1
+    - RERE
+    - RERGL
+    - RET
+    - RETN
+    - REV3L
+    - REXO1
+    - RFPL1
+    - RFWD2
+    - RFX5
+    - RFXAP
+    - RGL1
+    - RGL2
+    - RGMB
+    - RGPD4
+    - RGR
+    - RGS12
+    - RGS18
+    - RGS21
+    - RGS6
+    - RHBDD3
+    - RHBDL3
+    - RHOQ
+    - RHOT2
+    - RHPN2
+    - RIC3
+    - RIF1
+    - RIMS1
+    - RIMS2
+    - RIMS3
+    - RING1
+    - RINT1
+    - RIOK1
+    - RIOK2
+    - RIT2
+    - RLIM
+    - RMDN3
+    - RMND1
+    - RNASE1
+    - RNF10
+    - RNF128
+    - RNF13
+    - RNF139
+    - RNF14
+    - RNF146
+    - RNF148
+    - RNF170
+    - RNF186
+    - RNF2
+    - RNF213
+    - RNF214
+    - RNF215
+    - RNF216
+    - RNF34
+    - RNF39
+    - RNF7
+    - RNFT1
+    - RNPEPL1
+    - ROBO2
+    - ROM1
+    - ROPN1B
+    - ROS1
+    - RP1
+    - RPAP1
+    - RPAP3
+    - RPL10A
+    - RPL12
+    - RPL18A
+    - RPL22L1
+    - RPL23
+    - RPL36AL
+    - RPL4
+    - RPL9
+    - RPRD1A
+    - RPS29
+    - RPS6KB2
+    - RPTN
+    - RPUSD1
+    - RRAGD
+    - RRBP1
+    - RREB1
+    - RRP8
+    - RRP9
+    - RSBN1L
+    - RSF1
+    - RSPH10B
+    - RSPH6A
+    - RSPRY1
+    - RSRC2
+    - RTEL1
+    - RTKN
+    - RTN2
+    - RTN3
+    - RTP1
+    - RTTN
+    - RUFY2
+    - RUFY3
+    - RUNDC1
+    - RUNX1T1
+    - RXFP1
+    - RXFP2
+    - RXRA
+    - RYK
+    - RYR1
+    - RYR2
+    - RYR3
+    - S100A6
+    - S100A7
+    - S100A8
+    - S1PR1
+    - SAAL1
+    - SACS
+    - SAGE1
+    - SALL1
+    - SALL3
+    - SAMD1
+    - SAMD5
+    - SAMD7
+    - SAMD9L
+    - SAMSN1
+    - SAP130
+    - SARDH
+    - SART1
+    - SASH1
+    - SATL1
+    - SBF1
+    - SBF2
+    - SBNO1
+    - SCAF1
+    - SCAMP2
+    - SCAP
+    - SCEL
+    - SCFD2
+    - SCG3
+    - SCMH1
+    - SCN10A
+    - SCN11A
+    - SCN1A
+    - SCN1B
+    - SCN2A
+    - SCN3A
+    - SCN3B
+    - SCN5A
+    - SCN9A
+    - SCPEP1
+    - SCUBE1
+    - SCYL2
+    - SCYL3
+    - SDAD1
+    - SDC3
+    - SDC4
+    - SDF4
+    - SDK1
+    - SDK2
+    - SEC14L2
+    - SEC14L4
+    - SEC16A
+    - SEC22C
+    - SEC23A
+    - SEC23IP
+    - SEC24B
+    - SEC24D
+    - SEC31B
+    - SEC61A1
+    - SEC62
+    - SEC63
+    - SECISBP2L
+    - SEL1L2
+    - SEL1L3
+    - SEMA3A
+    - SEMA3B
+    - SEMA6A
+    - SEMA6B
+    - SEMA6C
+    - SEMA7A
+    - SEMG1
+    - SENP2
+    - SENP5
+    - SENP6
+    - SENP7
+    - SEPSECS
+    - SEPT6
+    - SERF2
+    - SERPINA1
+    - SERPINA12
+    - SERPINA5
+    - SERPINA9
+    - SERPINB2
+    - SERPINB4
+    - SERPINB8
+    - SERPINE3
+    - SERPINH1
+    - SERTAD3
+    - SESN1
+    - SESN3
+    - SESTD1
+    - SETBP1
+    - SETD1A
+    - SETD2
+    - SETD5
+    - SETD6
+    - SETDB1
+    - SETX
+    - SEZ6
+    - SEZ6L
+    - SF3A1
+    - SF3A3
+    - SF3B1
+    - SF3B3
+    - SFI1
+    - SFMBT2
+    - SGK1
+    - SGK223
+    - SGPL1
+    - SGSM2
+    - SGSM3
+    - SH2B3
+    - SH2D2A
+    - SH2D3C
+    - SH2D4A
+    - SH2D6
+    - SH3BGR
+    - SH3GLB2
+    - SH3KBP1
+    - SH3PXD2A
+    - SH3RF3
+    - SHANK1
+    - SHANK2
+    - SHB
+    - SHC1
+    - SHC3
+    - SHMT1
+    - SHPK
+    - SHQ1
+    - SHROOM1
+    - SHROOM2
+    - SHROOM3
+    - SI
+    - SIAE
+    - SIDT1
+    - SIDT2
+    - SIGLEC1
+    - SIGLEC10
+    - SIGLEC11
+    - SIGLEC6
+    - SIGMAR1
+    - SIK1
+    - SIKE1
+    - SIM1
+    - SIN3B
+    - SIPA1L1
+    - SIPA1L2
+    - SIRPB1
+    - SIRPD
+    - SIRT2
+    - SIRT4
+    - SIX5
+    - SKAP2
+    - SKIDA1
+    - SKIL
+    - SLA
+    - SLAMF1
+    - SLAMF8
+    - SLC10A3
+    - SLC10A5
+    - SLC12A3
+    - SLC12A4
+    - SLC12A5
+    - SLC12A6
+    - SLC12A9
+    - SLC13A1
+    - SLC15A1
+    - SLC15A2
+    - SLC16A13
+    - SLC1A2
+    - SLC1A5
+    - SLC1A6
+    - SLC22A11
+    - SLC22A14
+    - SLC22A16
+    - SLC22A2
+    - SLC22A6
+    - SLC22A8
+    - SLC23A2
+    - SLC24A3
+    - SLC25A10
+    - SLC25A12
+    - SLC25A13
+    - SLC25A24
+    - SLC25A3
+    - SLC25A33
+    - SLC25A43
+    - SLC25A45
+    - SLC26A10
+    - SLC26A6
+    - SLC26A8
+    - SLC26A9
+    - SLC27A4
+    - SLC28A1
+    - SLC28A2
+    - SLC29A1
+    - SLC2A14
+    - SLC2A5
+    - SLC2A9
+    - SLC33A1
+    - SLC34A2
+    - SLC35B1
+    - SLC35D2
+    - SLC35E3
+    - SLC35F1
+    - SLC38A4
+    - SLC38A7
+    - SLC39A14
+    - SLC39A2
+    - SLC39A4
+    - SLC39A7
+    - SLC3A1
+    - SLC40A1
+    - SLC41A3
+    - SLC44A3
+    - SLC45A4
+    - SLC46A1
+    - SLC47A1
+    - SLC4A2
+    - SLC4A7
+    - SLC4A8
+    - SLC5A2
+    - SLC5A5
+    - SLC5A6
+    - SLC6A16
+    - SLC6A18
+    - SLC6A19
+    - SLC6A2
+    - SLC6A20
+    - SLC6A3
+    - SLC6A8
+    - SLC6A9
+    - SLC7A11
+    - SLC7A14
+    - SLC8A1
+    - SLC8A2
+    - SLC8A3
+    - SLC8B1
+    - SLC9A2
+    - SLC9A3R1
+    - SLC9A4
+    - SLC9A6
+    - SLC9A9
+    - SLCO1A2
+    - SLCO2A1
+    - SLCO2B1
+    - SLCO3A1
+    - SLCO4C1
+    - SLCO6A1
+    - SLFN13
+    - SLFNL1
+    - SLIT1
+    - SLIT2
+    - SLITRK1
+    - SLITRK3
+    - SLITRK6
+    - SMAD9
+    - SMARCA1
+    - SMARCA4
+    - SMARCA5
+    - SMARCAL1
+    - SMARCC2
+    - SMARCD3
+    - SMC3
+    - SMCHD1
+    - SMCO1
+    - SMCR8
+    - SMG1
+    - SMG6
+    - SMG7
+    - SMIM21
+    - SMOC1
+    - SMPD2
+    - SMTNL1
+    - SMUG1
+    - SMURF2
+    - SNAI2
+    - SNAP47
+    - SNAPC4
+    - SNAPC5
+    - SNRK
+    - SNRNP27
+    - SNRNP35
+    - SNRNP48
+    - SNRNP70
+    - SNTA1
+    - SNTB2
+    - SNX13
+    - SNX17
+    - SNX18
+    - SNX2
+    - SNX20
+    - SNX21
+    - SNX22
+    - SNX27
+    - SNX29
+    - SNX3
+    - SNX31
+    - SNX7
+    - SNX9
+    - SOAT1
+    - SORBS2
+    - SORBS3
+    - SORCS3
+    - SORL1
+    - SOS1
+    - SOX12
+    - SOX14
+    - SOX2
+    - SOX30
+    - SOX4
+    - SOX5
+    - SP1
+    - SP140
+    - SP140L
+    - SP4
+    - SPAG17
+    - SPAG6
+    - SPAG9
+    - SPAM1
+    - SPANXN1
+    - SPANXN5
+    - SPARCL1
+    - SPAST
+    - SPATA16
+    - SPATA18
+    - SPATA2
+    - SPATA5L1
+    - SPATA8
+    - SPATS1
+    - SPATS2
+    - SPC25
+    - SPDYA
+    - SPEF2
+    - SPG20
+    - SPHK1
+    - SPHK2
+    - SPI1
+    - SPIB
+    - SPIDR
+    - SPIN4
+    - SPINK5
+    - SPINK9
+    - SPNS1
+    - SPOCK3
+    - SPON2
+    - SPOP
+    - SPR
+    - SPRED2
+    - SPRYD4
+    - SPSB3
+    - SPTA1
+    - SPTAN1
+    - SPTB
+    - SPTBN1
+    - SPTBN2
+    - SPTBN4
+    - SPTBN5
+    - SPTY2D1
+    - SQLE
+    - SRBD1
+    - SRC
+    - SRCAP
+    - SREBF1
+    - SREBF2
+    - SRGAP3
+    - SRL
+    - SRP68
+    - SRP72
+    - SRPK2
+    - SRPR
+    - SRPX
+    - SRPX2
+    - SRR
+    - SRRM2
+    - SRRT
+    - SSFA2
+    - SSH3
+    - SSPO
+    - SSTR2
+    - SSX1
+    - ST18
+    - ST6GALNAC4
+    - ST6GALNAC6
+    - ST8SIA1
+    - ST8SIA2
+    - STAB1
+    - STAB2
+    - STAC2
+    - STAC3
+    - STAG1
+    - STAG2
+    - STAG3
+    - STAG3L4
+    - STAM2
+    - STAR
+    - STARD3
+    - STAT1
+    - STAT2
+    - STAT4
+    - STAT5B
+    - STAT6
+    - STC2
+    - STEAP2
+    - STIL
+    - STK25
+    - STK31
+    - STK32B
+    - STK36
+    - STK38
+    - STOML1
+    - STOML2
+    - STOML3
+    - STON2
+    - STOX2
+    - STRA6
+    - STRIP2
+    - STRN
+    - STS
+    - STT3A
+    - STT3B
+    - STUB1
+    - STX17
+    - STX1B
+    - STX4
+    - STXBP1
+    - STXBP4
+    - STXBP5L
+    - SUFU
+    - SUGCT
+    - SULF2
+    - SULT1A1
+    - SUOX
+    - SUPT20H
+    - SUPT6H
+    - SUPV3L1
+    - SUSD1
+    - SUSD4
+    - SUV420H1
+    - SVEP1
+    - SVIL
+    - SVOPL
+    - SYCP2L
+    - SYDE1
+    - SYK
+    - SYN2
+    - SYNCRIP
+    - SYNE1
+    - SYNE2
+    - SYNE3
+    - SYNGR4
+    - SYNJ2
+    - SYNPO
+    - SYNPO2
+    - SYT1
+    - SYT11
+    - SYT12
+    - SYT13
+    - SYT17
+    - SYT5
+    - SYTL2
+    - SYTL3
+    - SYTL4
+    - SYTL5
+    - TAAR5
+    - TAB3
+    - TACC2
+    - TACR3
+    - TAF1
+    - TAF1L
+    - TAF2
+    - TAF6L
+    - TAF7L
+    - TAGAP
+    - TANC1
+    - TAPBP
+    - TARBP1
+    - TAS1R1
+    - TAS1R2
+    - TAS1R3
+    - TAS2R20
+    - TAS2R46
+    - TAS2R7
+    - TAT
+    - TAX1BP1
+    - TBC1D1
+    - TBC1D12
+    - TBC1D14
+    - TBC1D16
+    - TBC1D2
+    - TBC1D22B
+    - TBC1D25
+    - TBC1D2B
+    - TBC1D4
+    - TBC1D5
+    - TBC1D7
+    - TBC1D8B
+    - TBC1D9
+    - TBC1D9B
+    - TBCC
+    - TBCCD1
+    - TBCK
+    - TBK1
+    - TBL2
+    - TBX18
+    - TBX20
+    - TBX3
+    - TBX5
+    - TBXA2R
+    - TCAP
+    - TCEA3
+    - TCEAL3
+    - TCEAL6
+    - TCEB3
+    - TCEB3B
+    - TCERG1L
+    - TCF20
+    - TCF3
+    - TCF7L1
+    - TCF7L2
+    - TCHH
+    - TCHP
+    - TCL1B
+    - TCN2
+    - TCP1
+    - TCP11L1
+    - TCP11L2
+    - TCTE1
+    - TDG
+    - TDO2
+    - TDP1
+    - TDRD1
+    - TDRD5
+    - TDRD6
+    - TDRD7
+    - TEAD4
+    - TECPR1
+    - TECPR2
+    - TECTA
+    - TEK
+    - TENM1
+    - TENM2
+    - TENM4
+    - TEP1
+    - TERT
+    - TET1
+    - TET3
+    - TEX101
+    - TEX11
+    - TEX12
+    - TEX14
+    - TEX15
+    - TEX2
+    - TFAP2B
+    - TFAP2D
+    - TFE3
+    - TFPI
+    - TFPI2
+    - TFR2
+    - TG
+    - TGDS
+    - TGFB2
+    - TGFBI
+    - TGFBR2
+    - TGFBR3
+    - TGFBRAP1
+    - TGM5
+    - TGM6
+    - TGOLN2
+    - THAP5
+    - THAP7
+    - THBS1
+    - THBS2
+    - THBS3
+    - THBS4
+    - THEG
+    - THEMIS
+    - THOC1
+    - THOC2
+    - THPO
+    - THSD1
+    - THSD7B
+    - THYN1
+    - TIA1
+    - TIAM2
+    - TICRR
+    - TIE1
+    - TIFAB
+    - TIGD4
+    - TIPARP
+    - TIPIN
+    - TJP1
+    - TK1
+    - TKTL2
+    - TLDC1
+    - TLL2
+    - TLN2
+    - TLR3
+    - TLR4
+    - TLR7
+    - TM2D3
+    - TM7SF2
+    - TM9SF4
+    - TMC1
+    - TMC2
+    - TMC5
+    - TMC7
+    - TMCC1
+    - TMCO4
+    - TMED8
+    - TMEM100
+    - TMEM101
+    - TMEM109
+    - TMEM132A
+    - TMEM132B
+    - TMEM132D
+    - TMEM143
+    - TMEM145
+    - TMEM161B
+    - TMEM176B
+    - TMEM178A
+    - TMEM181
+    - TMEM2
+    - TMEM203
+    - TMEM204
+    - TMEM225
+    - TMEM248
+    - TMEM251
+    - TMEM255B
+    - TMEM26
+    - TMEM35
+    - TMEM37
+    - TMEM38A
+    - TMEM38B
+    - TMEM47
+    - TMEM5
+    - TMEM53
+    - TMEM54
+    - TMEM55B
+    - TMEM62
+    - TMEM63A
+    - TMEM63B
+    - TMEM67
+    - TMEM71
+    - TMEM89
+    - TMF1
+    - TMPO
+    - TMPRSS11B
+    - TMPRSS11F
+    - TMPRSS15
+    - TMPRSS4
+    - TMSB15A
+    - TMTC2
+    - TMTC4
+    - TMX3
+    - TNF
+    - TNFSF4
+    - TNIK
+    - TNIP1
+    - TNIP2
+    - TNKS
+    - TNKS1BP1
+    - TNN
+    - TNNC1
+    - TNNT2
+    - TNNT3
+    - TNPO3
+    - TNR
+    - TNRC18
+    - TNRC6B
+    - TNS1
+    - TNXB
+    - TOB1
+    - TOMM20L
+    - TOMM40
+    - TOP2A
+    - TOP3B
+    - TOPBP1
+    - TOPORS
+    - TOR1AIP1
+    - TOR1AIP2
+    - TP53
+    - TP53BP1
+    - TP53INP1
+    - TP73
+    - TPH2
+    - TPM3
+    - TPM4
+    - TPPP2
+    - TPPP3
+    - TPR
+    - TPRG1
+    - TPRX1
+    - TPT1
+    - TPTE2
+    - TRAF1
+    - TRAF3IP3
+    - TRAF4
+    - TRAFD1
+    - TRAIP
+    - TRAK1
+    - TRANK1
+    - TRAPPC10
+    - TRAPPC5
+    - TRAPPC6A
+    - TREM1
+    - TREML2
+    - TRERF1
+    - TREX1
+    - TRHDE
+    - TRIB3
+    - TRIM10
+    - TRIM13
+    - TRIM24
+    - TRIM28
+    - TRIM32
+    - TRIM36
+    - TRIM46
+    - TRIM47
+    - TRIM5
+    - TRIM52
+    - TRIM56
+    - TRIM6
+    - TRIM67
+    - TRIM6-TRIM34
+    - TRIM7
+    - TRIM8
+    - TRIML1
+    - TRIO
+    - TRIOBP
+    - TRIP10
+    - TRIP11
+    - TRIP12
+    - TRMT1
+    - TRMT5
+    - TRMT6
+    - TRNT1
+    - TRO
+    - TROVE2
+    - TRPA1
+    - TRPC3
+    - TRPC4
+    - TRPC7
+    - TRPM1
+    - TRPM2
+    - TRPM3
+    - TRPM4
+    - TRPM5
+    - TRPS1
+    - TRPV2
+    - TRPV3
+    - TRPV5
+    - TRRAP
+    - TSC22D1
+    - TSC22D2
+    - TSC22D3
+    - TSFM
+    - TSG101
+    - TSHR
+    - TSHZ2
+    - TSNAX
+    - TSPAN14
+    - TSPAN15
+    - TSPAN32
+    - TSPAN33
+    - TSPAN4
+    - TSPAN8
+    - TSPYL1
+    - TSPYL2
+    - TSR1
+    - TSSK2
+    - TSSK4
+    - TSTD2
+    - TTBK2
+    - TTC14
+    - TTC16
+    - TTC21B
+    - TTC27
+    - TTC3
+    - TTC30B
+    - TTC36
+    - TTC37
+    - TTC38
+    - TTC39A
+    - TTC39C
+    - TTC7A
+    - TTC8
+    - TTC9B
+    - TTF1
+    - TTK
+    - TTL
+    - TTLL3
+    - TTLL4
+    - TTLL5
+    - TTLL7
+    - TTN
+    - TTPA
+    - TUBA3C
+    - TUBA3D
+    - TUBA8
+    - TUBB2B
+    - TUBG1
+    - TUBGCP2
+    - TUBGCP4
+    - TULP1
+    - TULP2
+    - TULP4
+    - TUSC1
+    - TUSC5
+    - TWF2
+    - TWIST1
+    - TWISTNB
+    - TXNRD1
+    - TYMP
+    - TYR
+    - TYRP1
+    - TYW1B
+    - U2AF2
+    - UBA6
+    - UBAC1
+    - UBAP1
+    - UBASH3A
+    - UBASH3B
+    - UBC
+    - UBE2A
+    - UBE2F
+    - UBE2O
+    - UBE2W
+    - UBE3A
+    - UBE4A
+    - UBE4B
+    - UBN1
+    - UBN2
+    - UBOX5
+    - UBP1
+    - UBQLN2
+    - UBQLN3
+    - UBR1
+    - UBR3
+    - UBR4
+    - UBR5
+    - UBTFL1
+    - UBXN2B
+    - UBXN6
+    - UGGT2
+    - UGT1A8
+    - UGT2A1
+    - UGT2A2
+    - UGT2B7
+    - UHRF1BP1
+    - ULBP1
+    - ULK3
+    - ULK4
+    - UMOD
+    - UMODL1
+    - UNC13A
+    - UNC13B
+    - UNC13D
+    - UNC45B
+    - UNC50
+    - UNC5A
+    - UNC5B
+    - UNC93A
+    - UNG
+    - UPF1
+    - UPK3A
+    - UQCRB
+    - UQCRC1
+    - UQCRC2
+    - UROC1
+    - USH1G
+    - USH2A
+    - USP10
+    - USP13
+    - USP15
+    - USP2
+    - USP20
+    - USP28
+    - USP30
+    - USP34
+    - USP36
+    - USP37
+    - USP38
+    - USP40
+    - USP45
+    - USP46
+    - USP48
+    - USP49
+    - USP5
+    - USP51
+    - USP6
+    - USP9X
+    - UTP14C
+    - UTP20
+    - UTP3
+    - UTRN
+    - VAC14
+    - VAMP3
+    - VAPA
+    - VARS
+    - VAV3
+    - VBP1
+    - VCAM1
+    - VCAN
+    - VCL
+    - VCP
+    - VCPIP1
+    - VDAC1
+    - VDAC3
+    - VDR
+    - VEGFA
+    - VEZT
+    - VGLL3
+    - VGLL4
+    - VIL1
+    - VIPR2
+    - VLDLR
+    - VMO1
+    - VN1R1
+    - VN1R2
+    - VN1R5
+    - VNN2
+    - VPS11
+    - VPS13A
+    - VPS13B
+    - VPS13C
+    - VPS13D
+    - VPS33B
+    - VPS4B
+    - VPS51
+    - VPS52
+    - VPS53
+    - VSIG2
+    - VSTM1
+    - VTA1
+    - VTI1A
+    - VTN
+    - VWA2
+    - VWA3B
+    - VWA9
+    - VWF
+    - WARS
+    - WBP1
+    - WDFY3
+    - WDR11
+    - WDR17
+    - WDR3
+    - WDR33
+    - WDR34
+    - WDR35
+    - WDR45
+    - WDR45B
+    - WDR47
+    - WDR49
+    - WDR59
+    - WDR5B
+    - WDR62
+    - WDR66
+    - WDR7
+    - WDR73
+    - WDR76
+    - WDR83
+    - WDR88
+    - WDTC1
+    - WEE2
+    - WFDC3
+    - WFS1
+    - WHAMM
+    - WHSC1L1
+    - WIPF1
+    - WISP1
+    - WLS
+    - WNK1
+    - WNK2
+    - WNK4
+    - WNT11
+    - WNT3A
+    - WNT4
+    - WNT5B
+    - WRAP53
+    - WRN
+    - WSCD1
+    - WT1
+    - WWC1
+    - WWOX
+    - XAGE3
+    - XIRP2
+    - XPNPEP1
+    - XPO4
+    - XPOT
+    - XPR1
+    - XRCC5
+    - XRCC6
+    - XRN1
+    - XRN2
+    - XYLB
+    - XYLT2
+    - YBX2
+    - YBX3
+    - YEATS2
+    - YEATS4
+    - YES1
+    - YLPM1
+    - YME1L1
+    - YPEL1
+    - YTHDC1
+    - YWHAE
+    - YWHAG
+    - YY2
+    - ZAN
+    - ZBBX
+    - ZBED1
+    - ZBTB22
+    - ZBTB24
+    - ZBTB26
+    - ZBTB3
+    - ZBTB32
+    - ZBTB39
+    - ZBTB40
+    - ZBTB46
+    - ZBTB49
+    - ZBTB9
+    - ZC3H11A
+    - ZC3H12C
+    - ZC3H13
+    - ZC3H14
+    - ZC3H15
+    - ZC3H18
+    - ZC3H3
+    - ZC3H4
+    - ZC3HC1
+    - ZCCHC10
+    - ZCCHC16
+    - ZCCHC5
+    - ZCWPW1
+    - ZDBF2
+    - ZDHHC14
+    - ZDHHC16
+    - ZFAND1
+    - ZFAND3
+    - ZFAND5
+    - ZFAT
+    - ZFC3H1
+    - ZFHX2
+    - ZFHX3
+    - ZFHX4
+    - ZFP36
+    - ZFP36L2
+    - ZFP41
+    - ZFP42
+    - ZFP64
+    - ZFP90
+    - ZFPM1
+    - ZFPM2
+    - ZFR2
+    - ZFX
+    - ZFYVE1
+    - ZFYVE26
+    - ZFYVE27
+    - ZFYVE28
+    - ZFYVE9
+    - ZG16B
+    - ZGPAT
+    - ZHX3
+    - ZIC1
+    - ZIC2
+    - ZIC3
+    - ZKSCAN3
+    - ZMAT1
+    - ZMIZ1
+    - ZMIZ2
+    - ZMYM1
+    - ZMYM4
+    - ZMYND15
+    - ZMYND8
+    - ZNF101
+    - ZNF117
+    - ZNF136
+    - ZNF141
+    - ZNF142
+    - ZNF146
+    - ZNF148
+    - ZNF155
+    - ZNF16
+    - ZNF160
+    - ZNF165
+    - ZNF169
+    - ZNF185
+    - ZNF197
+    - ZNF2
+    - ZNF207
+    - ZNF211
+    - ZNF212
+    - ZNF223
+    - ZNF225
+    - ZNF230
+    - ZNF234
+    - ZNF236
+    - ZNF250
+    - ZNF251
+    - ZNF254
+    - ZNF260
+    - ZNF263
+    - ZNF267
+    - ZNF268
+    - ZNF275
+    - ZNF28
+    - ZNF280B
+    - ZNF280C
+    - ZNF292
+    - ZNF300
+    - ZNF311
+    - ZNF318
+    - ZNF319
+    - ZNF324B
+    - ZNF335
+    - ZNF337
+    - ZNF33B
+    - ZNF341
+    - ZNF345
+    - ZNF346
+    - ZNF362
+    - ZNF384
+    - ZNF385D
+    - ZNF404
+    - ZNF407
+    - ZNF408
+    - ZNF41
+    - ZNF410
+    - ZNF414
+    - ZNF426
+    - ZNF432
+    - ZNF436
+    - ZNF438
+    - ZNF446
+    - ZNF451
+    - ZNF454
+    - ZNF461
+    - ZNF462
+    - ZNF467
+    - ZNF468
+    - ZNF48
+    - ZNF480
+    - ZNF488
+    - ZNF491
+    - ZNF493
+    - ZNF497
+    - ZNF500
+    - ZNF502
+    - ZNF503
+    - ZNF507
+    - ZNF510
+    - ZNF512
+    - ZNF512B
+    - ZNF521
+    - ZNF528
+    - ZNF532
+    - ZNF543
+    - ZNF549
+    - ZNF554
+    - ZNF555
+    - ZNF556
+    - ZNF559-ZNF177
+    - ZNF560
+    - ZNF563
+    - ZNF564
+    - ZNF565
+    - ZNF573
+    - ZNF577
+    - ZNF578
+    - ZNF580
+    - ZNF585B
+    - ZNF607
+    - ZNF608
+    - ZNF609
+    - ZNF610
+    - ZNF611
+    - ZNF613
+    - ZNF616
+    - ZNF618
+    - ZNF621
+    - ZNF623
+    - ZNF624
+    - ZNF629
+    - ZNF630
+    - ZNF644
+    - ZNF646
+    - ZNF652
+    - ZNF665
+    - ZNF668
+    - ZNF669
+    - ZNF677
+    - ZNF678
+    - ZNF679
+    - ZNF692
+    - ZNF700
+    - ZNF709
+    - ZNF710
+    - ZNF713
+    - ZNF74
+    - ZNF746
+    - ZNF75D
+    - ZNF770
+    - ZNF777
+    - ZNF785
+    - ZNF786
+    - ZNF790
+    - ZNF791
+    - ZNF799
+    - ZNF80
+    - ZNF804A
+    - ZNF804B
+    - ZNF83
+    - ZNF835
+    - ZNF839
+    - ZNF91
+    - ZNF92
+    - ZNF99
+    - ZNFX1
+    - ZNHIT1
+    - ZNHIT3
+    - ZNHIT6
+    - ZNRF3
+    - ZNRF4
+    - ZP1
+    - ZP4
+    - ZPBP
+    - ZRANB3
+    - ZSCAN18
+    - ZSCAN20
+    - ZSCAN5A
+    - ZSCAN5B
+    - ZSWIM8
+    - ZW10
+    - ZXDA
+    - ZXDC
+    - ZZEF1
+    - ZZZ3
+  COLUMNS:
+    - Func.refGene
+    - ExonicFunc.refGene
+    - snp138
+    - Gene.refGene
+    - GeneDetail.refGene
+    - AAChange.refGene
+    - cytoBand
+    - MAX_REF_MAF
+    - SWEGEN_AF
+    - ExAC_ALL
+    - ExAC_NFE
+    - ExAC_AFR
+    - ExAC_AMR
+    - ExAC_EAS
+    - ExAC_FIN
+    - ExAC_SAS
+    - ExAC_OTH
+    - gnomAD_genome_ALL
+    - gnomAD_genome_AFR
+    - gnomAD_genome_AMR
+    - gnomAD_genome_ASJ
+    - gnomAD_genome_EAS
+    - gnomAD_genome_FIN
+    - gnomAD_genome_NFE
+    - gnomAD_genome_OTH
+    - 249_SWEDES
+    - 200_DANES
+    - 1000g2014oct_all
+    - 1000g2014oct_eur
+    - InterVar_class
+    - InterVar_evidence
+    - ExAC_nontcga_ALL
+    - ExAC_nontcga_NFE
+    - ExAC_nontcga_AFR
+    - ExAC_nontcga_AMR
+    - ExAC_nontcga_EAS
+    - ExAC_nontcga_FIN
+    - ExAC_nontcga_SAS
+    - ExAC_nontcga_OTH
+    - OAF_EARLYONSET_AF
+    - OAF_EARLYONSET_GF
+    - OAF_BRCS_AF
+    - OAF_BRCS_GF
+    - OAF_FAMILIAL_CRCS_AF
+    - OAF_FAMILIAL_CRCS_GF
+    - OAF_BRC_CRC_PROSTATE_AF
+    - OAF_BRC_CRC_PROSTATE_GF
+    - OAF_CHEK2_AF
+    - OAF_CHEK2_GF
+    - SWEGEN_HET
+    - SWEGEN_HOM
+    - SWEGEN_HEMI
+    - SWEGEN_AC
+    - SWEGEN_GT
+    - SWEGEN_GF
+    - SWEGEN_PF
+    - EXAC03_CONSTRAINT_EXP_SYN
+    - EXAC03_CONSTRAINT_N_SYN
+    - EXAC03_CONSTRAINT_SYN_Z
+    - EXAC03_CONSTRAINT_EXP_MIS
+    - EXAC03_CONSTRAINT_N_MIS
+    - EXAC03_CONSTRAINT_MIS_Z
+    - EXAC03_CONSTRAINT_EXP_LOF
+    - EXAC03_CONSTRAINT_N_LOF
+    - EXAC03_CONSTRAINT_PLI
+    - cosmic70
+    - CLINSIG
+    - CLNDBN
+    - CLNACC
+    - CLNDSDB
+    - CLNDSDBID
+    - clinvar_20150330
+    - dpsi_zscore
+    - SIFT_pred
+    - Polyphen2_HDIV_pred
+    - Polyphen2_HVAR_pred
+    - LRT_pred
+    - MutationTaster_pred
+    - MutationAssessor_pred
+    - FATHMM_pred
+    - RadialSVM_pred
+    - LR_pred
+    - CADD_phred
+  DB_FILE: /proj/b2011117/private/databases/SQLiteDB/GRCh37.db
+  EXPRESSIONS:
+    - NAME: Func_ncRNA_exonic
+      PATTERN: '("Func.refGene"==''ncRNA_exonic'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: Func_ncRNA_splicing
+      PATTERN: '("Func.refGene"==''ncRNA_splicing'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: ExonicFunc_unknown
+      PATTERN: '("ExonicFunc.refGene"==''unknown'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: MAX_REF_MAF_COMMON
+      PATTERN: '("MAX_REF_MAF"!='''')and(float("MAX_REF_MAF")<=0.99)and(float("MAX_REF_MAF")>=0.01)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: SWEGEN_AF_001
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_GREEN
+    - NAME: SWEGEN_AF_999
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_GREEN
+    - NAME: SWEGEN_AF_empty
+      PATTERN: '("SWEGEN_AF"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_GREEN
+    - NAME: ExAC_ALL_001
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_GREEN
+    - NAME: ExAC_ALL_999
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_GREEN
+    - NAME: ExAC_ALL_empty
+      PATTERN: '("ExAC_ALL"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_GREEN
+    - NAME: ExAC_NFE_001
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_GREEN
+    - NAME: ExAC_NFE_999
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_GREEN
+    - NAME: ExAC_NFE_empty
+      PATTERN: '("ExAC_NFE"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_GREEN
+    - NAME: ExAC_AFR_001
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_GREEN
+    - NAME: ExAC_AFR_999
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_GREEN
+    - NAME: ExAC_AFR_empty
+      PATTERN: '("ExAC_AFR"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_GREEN
+    - NAME: ExAC_AMR_001
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_GREEN
+    - NAME: ExAC_AMR_999
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_GREEN
+    - NAME: ExAC_AMR_empty
+      PATTERN: '("ExAC_AMR"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_GREEN
+    - NAME: ExAC_EAS_001
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_GREEN
+    - NAME: ExAC_EAS_999
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_GREEN
+    - NAME: ExAC_EAS_empty
+      PATTERN: '("ExAC_EAS"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_GREEN
+    - NAME: ExAC_FIN_001
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_GREEN
+    - NAME: ExAC_FIN_999
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_GREEN
+    - NAME: ExAC_FIN_empty
+      PATTERN: '("ExAC_FIN"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_GREEN
+    - NAME: ExAC_SAS_001
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_GREEN
+    - NAME: ExAC_SAS_999
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_GREEN
+    - NAME: ExAC_SAS_empty
+      PATTERN: '("ExAC_SAS"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_GREEN
+    - NAME: ExAC_OTH_001
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_GREEN
+    - NAME: ExAC_OTH_999
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_GREEN
+    - NAME: ExAC_OTH_empty
+      PATTERN: '("ExAC_OTH"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_GREEN
+    - NAME: gnomAD_genome_ALL_001
+      PATTERN: '("gnomAD_genome_ALL"!='''')and(float("gnomAD_genome_ALL")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_ALL:XLS_GREEN
+    - NAME: gnomAD_genome_ALL_999
+      PATTERN: '("gnomAD_genome_ALL"!='''')and(float("gnomAD_genome_ALL")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_ALL:XLS_GREEN
+    - NAME: gnomAD_genome_ALL_empty
+      PATTERN: '("gnomAD_genome_ALL"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_ALL:XLS_GREEN
+    - NAME: gnomAD_genome_AFR_001
+      PATTERN: '("gnomAD_genome_AFR"!='''')and(float("gnomAD_genome_AFR")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_AFR:XLS_GREEN
+    - NAME: gnomAD_genome_AFR_999
+      PATTERN: '("gnomAD_genome_AFR"!='''')and(float("gnomAD_genome_AFR")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_AFR:XLS_GREEN
+    - NAME: gnomAD_genome_AFR_empty
+      PATTERN: '("gnomAD_genome_AFR"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_AFR:XLS_GREEN
+    - NAME: gnomAD_genome_AMR_001
+      PATTERN: '("gnomAD_genome_AMR"!='''')and(float("gnomAD_genome_AMR")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_AMR:XLS_GREEN
+    - NAME: gnomAD_genome_AMR_999
+      PATTERN: '("gnomAD_genome_AMR"!='''')and(float("gnomAD_genome_AMR")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_AMR:XLS_GREEN
+    - NAME: gnomAD_genome_AMR_empty
+      PATTERN: '("gnomAD_genome_AMR"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_AMR:XLS_GREEN
+    - NAME: gnomAD_genome_ASJ_001
+      PATTERN: '("gnomAD_genome_ASJ"!='''')and(float("gnomAD_genome_ASJ")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_ASJ:XLS_GREEN
+    - NAME: gnomAD_genome_ASJ_999
+      PATTERN: '("gnomAD_genome_ASJ"!='''')and(float("gnomAD_genome_ASJ")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_ASJ:XLS_GREEN
+    - NAME: gnomAD_genome_ASJ_empty
+      PATTERN: '("gnomAD_genome_ASJ"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_ASJ:XLS_GREEN
+    - NAME: gnomAD_genome_EAS_001
+      PATTERN: '("gnomAD_genome_EAS"!='''')and(float("gnomAD_genome_EAS")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_EAS:XLS_GREEN
+    - NAME: gnomAD_genome_EAS_999
+      PATTERN: '("gnomAD_genome_EAS"!='''')and(float("gnomAD_genome_EAS")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_EAS:XLS_GREEN
+    - NAME: gnomAD_genome_EAS_empty
+      PATTERN: '("gnomAD_genome_EAS"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_EAS:XLS_GREEN
+    - NAME: gnomAD_genome_FIN_001
+      PATTERN: '("gnomAD_genome_FIN"!='''')and(float("gnomAD_genome_FIN")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_FIN:XLS_GREEN
+    - NAME: gnomAD_genome_FIN_999
+      PATTERN: '("gnomAD_genome_FIN"!='''')and(float("gnomAD_genome_FIN")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_FIN:XLS_GREEN
+    - NAME: gnomAD_genome_FIN_empty
+      PATTERN: '("gnomAD_genome_FIN"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_FIN:XLS_GREEN
+    - NAME: gnomAD_genome_NFE_001
+      PATTERN: '("gnomAD_genome_NFE"!='''')and(float("gnomAD_genome_NFE")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_NFE:XLS_GREEN
+    - NAME: gnomAD_genome_NFE_999
+      PATTERN: '("gnomAD_genome_NFE"!='''')and(float("gnomAD_genome_NFE")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_NFE:XLS_GREEN
+    - NAME: gnomAD_genome_NFE_empty
+      PATTERN: '("gnomAD_genome_NFE"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_NFE:XLS_GREEN
+    - NAME: gnomAD_genome_OTH_001
+      PATTERN: '("gnomAD_genome_OTH"!='''')and(float("gnomAD_genome_OTH")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_OTH:XLS_GREEN
+    - NAME: gnomAD_genome_OTH_999
+      PATTERN: '("gnomAD_genome_OTH"!='''')and(float("gnomAD_genome_OTH")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_OTH:XLS_GREEN
+    - NAME: gnomAD_genome_OTH_empty
+      PATTERN: '("gnomAD_genome_OTH"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: gnomAD_genome_OTH:XLS_GREEN
+    - NAME: 249_SWEDES_001
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_GREEN
+    - NAME: 249_SWEDES_999
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_GREEN
+    - NAME: 249_SWEDES_empty
+      PATTERN: '("249_SWEDES"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_GREEN
+    - NAME: 200_DANES_001
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_GREEN
+    - NAME: 200_DANES_999
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_GREEN
+    - NAME: 200_DANES_empty
+      PATTERN: '("200_DANES"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_GREEN
+    - NAME: 1000g2014oct_all_001
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_GREEN
+    - NAME: 1000g2014oct_all_999
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_GREEN
+    - NAME: 1000g2014oct_all_empty
+      PATTERN: '("1000g2014oct_all"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_GREEN
+    - NAME: 1000g2014oct_eur_001
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_GREEN
+    - NAME: 1000g2014oct_eur_999
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_GREEN
+    - NAME: 1000g2014oct_eur_empty
+      PATTERN: '("1000g2014oct_eur"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_GREEN
+    - NAME: EXAC03_CONSTRAINT_MIS_Z_significance
+      PATTERN: '("EXAC03_CONSTRAINT_MIS_Z"!='''')and(float("EXAC03_CONSTRAINT_MIS_Z")>3)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: EXAC03_CONSTRAINT_MIS_Z:XLS_YELLOW
+    - NAME: EXAC03_CONSTRAINT_PLI_significance
+      PATTERN: '("EXAC03_CONSTRAINT_PLI"!='''')and(float("EXAC03_CONSTRAINT_PLI")>0.9)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: EXAC03_CONSTRAINT_PLI:XLS_YELLOW
+    - NAME: CADD_phred_significance
+      PATTERN: '("CADD_phred"!='''')and(float("CADD_phred")>20)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: CADD_phred:XLS_YELLOW
+    - NAME: dpsi_zscore_significance1
+      PATTERN: '("dpsi_zscore"!='''')and(float("dpsi_zscore")<-2)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: dpsi_zscore:XLS_YELLOW
+    - NAME: dpsi_zscore_significance2
+      PATTERN: '("dpsi_zscore"!='''')and(float("dpsi_zscore")>2)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: dpsi_zscore:XLS_YELLOW
+    - NAME: true_synonymous
+      PATTERN: '("dpsi_zscore"!='''')and("ExonicFunc.refGene"==''synonymous_SNV'')and(float("dpsi_zscore")>-2)and(float("dpsi_zscore")<2)'
+      USAGES:
+        - ACTION: DELETE_ROW
+  EXTRA_ANNOTATION_COLUMNS:
+    - Calling_detail
+  HEADER_CORRECTIONS:
+    - NEW_HEADER: BRCS_WT
+      OLD_HEADER: OAF_BRCS_WT
+    - NEW_HEADER: BRCS_HET
+      OLD_HEADER: OAF_BRCS_HET
+    - NEW_HEADER: BRCS_HOM
+      OLD_HEADER: OAF_BRCS_HOM
+    - NEW_HEADER: BRCS_OTH
+      OLD_HEADER: OAF_BRCS_OTH
+    - NEW_HEADER: BRCS_NA
+      OLD_HEADER: OAF_BRCS_NA
+    - NEW_HEADER: BRCS_GT
+      OLD_HEADER: OAF_BRCS_GT
+    - NEW_HEADER: BRCS_PF
+      OLD_HEADER: OAF_BRCS_PF
+    - NEW_HEADER: BRCS_AF
+      OLD_HEADER: OAF_BRCS_AF
+    - NEW_HEADER: BRCS_GF
+      OLD_HEADER: OAF_BRCS_GF
+    - NEW_HEADER: CRCS_WT
+      OLD_HEADER: OAF_CRCS_WT
+    - NEW_HEADER: CRCS_HET
+      OLD_HEADER: OAF_CRCS_HET
+    - NEW_HEADER: CRCS_HOM
+      OLD_HEADER: OAF_CRCS_HOM
+    - NEW_HEADER: CRCS_OTH
+      OLD_HEADER: OAF_CRCS_OTH
+    - NEW_HEADER: CRCS_NA
+      OLD_HEADER: OAF_CRCS_NA
+    - NEW_HEADER: CRCS_GT
+      OLD_HEADER: OAF_CRCS_GT
+    - NEW_HEADER: CRCS_PF
+      OLD_HEADER: OAF_CRCS_PF
+    - NEW_HEADER: CRCS_AF
+      OLD_HEADER: OAF_CRCS_AF
+    - NEW_HEADER: CRCS_GF
+      OLD_HEADER: OAF_CRCS_GF
+    - NEW_HEADER: ALL_EXOME_WT
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_WT
+    - NEW_HEADER: ALL_EXOME_HET
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_HET
+    - NEW_HEADER: ALL_EXOME_HOM
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_HOM
+    - NEW_HEADER: ALL_EXOME_OTH
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_OTH
+    - NEW_HEADER: ALL_EXOME_NA
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_NA
+    - NEW_HEADER: ALL_EXOME_GT
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_GT
+    - NEW_HEADER: ALL_EXOME_PF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_PF
+    - NEW_HEADER: ALL_EXOME_AF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_AF
+    - NEW_HEADER: ALL_EXOME_GF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_GF
+    - NEW_HEADER: CHEK2_WT
+      OLD_HEADER: OAF_CHEK2_WT
+    - NEW_HEADER: CHEK2_HET
+      OLD_HEADER: OAF_CHEK2_HET
+    - NEW_HEADER: CHEK2_HOM
+      OLD_HEADER: OAF_CHEK2_HOM
+    - NEW_HEADER: CHEK2_OTH
+      OLD_HEADER: OAF_CHEK2_OTH
+    - NEW_HEADER: CHEK2_NA
+      OLD_HEADER: OAF_CHEK2_NA
+    - NEW_HEADER: CHEK2_GT
+      OLD_HEADER: OAF_CHEK2_GT
+    - NEW_HEADER: CHEK2_PF
+      OLD_HEADER: OAF_CHEK2_PF
+    - NEW_HEADER: CHEK2_AF
+      OLD_HEADER: OAF_CHEK2_AF
+    - NEW_HEADER: CHEK2_GF
+      OLD_HEADER: OAF_CHEK2_GF
+    - NEW_HEADER: EARLYONSET_WT
+      OLD_HEADER: OAF_EARLYONSET_WT
+    - NEW_HEADER: EARLYONSET_HET
+      OLD_HEADER: OAF_EARLYONSET_HET
+    - NEW_HEADER: EARLYONSET_HOM
+      OLD_HEADER: OAF_EARLYONSET_HOM
+    - NEW_HEADER: EARLYONSET_OTH
+      OLD_HEADER: OAF_EARLYONSET_OTH
+    - NEW_HEADER: EARLYONSET_NA
+      OLD_HEADER: OAF_EARLYONSET_NA
+    - NEW_HEADER: EARLYONSET_GT
+      OLD_HEADER: OAF_EARLYONSET_GT
+    - NEW_HEADER: EARLYONSET_PF
+      OLD_HEADER: OAF_EARLYONSET_PF
+    - NEW_HEADER: EARLYONSET_AF
+      OLD_HEADER: OAF_EARLYONSET_AF
+    - NEW_HEADER: EARLYONSET_GF
+      OLD_HEADER: OAF_EARLYONSET_GF
+    - NEW_HEADER: FAMILIAL_CRCS_WT
+      OLD_HEADER: OAF_FAMILIAL_CRCS_WT
+    - NEW_HEADER: FAMILIAL_CRCS_HET
+      OLD_HEADER: OAF_FAMILIAL_CRCS_HET
+    - NEW_HEADER: FAMILIAL_CRCS_HOM
+      OLD_HEADER: OAF_FAMILIAL_CRCS_HOM
+    - NEW_HEADER: FAMILIAL_CRCS_OTH
+      OLD_HEADER: OAF_FAMILIAL_CRCS_OTH
+    - NEW_HEADER: FAMILIAL_CRCS_NA
+      OLD_HEADER: OAF_FAMILIAL_CRCS_NA
+    - NEW_HEADER: FAMILIAL_CRCS_GT
+      OLD_HEADER: OAF_FAMILIAL_CRCS_GT
+    - NEW_HEADER: FAMILIAL_CRCS_PF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_PF
+    - NEW_HEADER: FAMILIAL_CRCS_AF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_AF
+    - NEW_HEADER: FAMILIAL_CRCS_GF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_GF
+    - NEW_HEADER: 'Exp Syn(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_SYN
+    - NEW_HEADER: 'Obs Syn(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_SYN
+    - NEW_HEADER: 'Syn z(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_SYN_Z
+    - NEW_HEADER: 'Exp Mis(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_MIS
+    - NEW_HEADER: 'Obs Mis(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_MIS
+    - NEW_HEADER: 'Mis Z(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_MIS_Z
+    - NEW_HEADER: 'Exp LoF(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_LOF
+    - NEW_HEADER: 'Obs LoF(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_LOF
+    - NEW_HEADER: PLI(ExAC)
+      OLD_HEADER: EXAC03_CONSTRAINT_PLI
+    - NEW_HEADER: gnomAD_ALL
+      OLD_HEADER: gnomAD_genome_ALL
+    - NEW_HEADER: gnomAD_AFR
+      OLD_HEADER: gnomAD_genome_AFR
+    - NEW_HEADER: gnomAD_AMR
+      OLD_HEADER: gnomAD_genome_AMR
+    - NEW_HEADER: gnomAD_ASJ
+      OLD_HEADER: gnomAD_genome_ASJ
+    - NEW_HEADER: gnomAD_EAS
+      OLD_HEADER: gnomAD_genome_EAS
+    - NEW_HEADER: gnomAD_FIN
+      OLD_HEADER: gnomAD_genome_FIN
+    - NEW_HEADER: gnomAD_NFE
+      OLD_HEADER: gnomAD_genome_NFE
+    - NEW_HEADER: gnomAD_OTH
+      OLD_HEADER: gnomAD_genome_OTH
+  REGIONS:
+    - 1:901876-910484
+    - 1:1152287-1167447
+    - 1:1266725-1269844
+    - 1:1634169-1655791
+    - 1:1682670-1711508
+    - 1:2252691-2323190
+    - 1:2323213-2336885
+    - 1:2336240-2344010
+    - 1:2985741-3355185
+    - 1:3404505-3528059
+    - 1:3569128-3652765
+    - 1:3668964-3688209
+    - 1:4715104-4843851
+    - 1:6161846-6240194
+    - 1:6281252-6296044
+    - 1:6324331-6453826
+    - 1:6484847-6521004
+    - 1:6615337-6639817
+    - 1:6694227-6761966
+    - 1:7831328-7841492
+    - 1:8071778-8086393
+    - 1:8412463-8877699
+    - 1:9097004-9129887
+    - 1:9599527-9642831
+    - 1:9711789-9789172
+    - 1:9789078-9884584
+  ROWS_FILTER_ACTIONS_CRITERIA:
+    - Non-Intergenic
+    - Non-Intronic
+    - Non-Upstream
+    - Non-Downstream
+    - Non-UTR
+  SPLIT_CHROM: false
+  Show_shared_mutations: true
+SAMPLES_INFOS:
+  - DATASET_ID: "Early_Onset"
+    FAMILIES:
+      - FAMILY_ID: "NO_FAMILY"
+        MEMBERS:
+          - PHENOTYPE: 2
+            SAMPLE_ID: "1003-06o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "1068-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "1094-08F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "1199-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "1205-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "1307-09D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "142-09F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "153-09F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "2014-04018"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "230-06o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "258-06o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "264-08F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "2750-13D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "294-07LF"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "295-08F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "296-09F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "323-09F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "329-09F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "344-07LF"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "376-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "386-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "4270-11D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "4283-13D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "4735-11D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "4773-11D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "48-07LF"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "49-06o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "5053-10D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "566-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "569-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "59-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "61-09F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "664-08F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "679-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "711-14D"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "728-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "749-08F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "760-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "771-08F"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "784-05o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "813-06o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "91-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "95-04o"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-1161"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-1190"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-121"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-1524"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-245"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-278"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-286"
+          - PHENOTYPE: 2
+            SAMPLE_ID: "Co-489"
+  - DATASET_ID: "Familial_CRC"
+    FAMILIES:
+      - FAMILY_ID: "8"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-35"
+          - SAMPLE_ID: "Co-36"
+          - SAMPLE_ID: "Co-37"
+      - FAMILY_ID: "12"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-90"
+          - SAMPLE_ID: "Co-89"
+      - FAMILY_ID: "13"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-95"
+          - SAMPLE_ID: "Co-94"
+      - FAMILY_ID: "24"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-166"
+          - SAMPLE_ID: "Co-213"
+      - FAMILY_ID: "26"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-135"
+          - SAMPLE_ID: "Co-131"
+      - FAMILY_ID: "31"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "1793-11D"
+          - SAMPLE_ID: "1322-11D"
+      - FAMILY_ID: "87"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-218"
+          - SAMPLE_ID: "Co-258"
+          - SAMPLE_ID: "Co-1179"
+      - FAMILY_ID: "91"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-700"
+          - SAMPLE_ID: "Co-454"
+      - FAMILY_ID: "94"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-238"
+      - FAMILY_ID: "110"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "1526-02D"
+          - SAMPLE_ID: "Co-1301"
+          - SAMPLE_ID: "Co-1313"
+          - SAMPLE_ID: "Co-1314"
+      - FAMILY_ID: "134"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-460"
+          - SAMPLE_ID: "Co-553"
+      - FAMILY_ID: "141"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-305"
+          - SAMPLE_ID: "Co-785"
+      - FAMILY_ID: "185"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-603"
+          - SAMPLE_ID: "Co-669"
+      - FAMILY_ID: "191"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-384"
+          - SAMPLE_ID: "Co-361"
+      - FAMILY_ID: "214"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-484"
+      - FAMILY_ID: "216"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-367"
+          - SAMPLE_ID: "Co-446"
+      - FAMILY_ID: "221"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-358"
+      - FAMILY_ID: "227"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-364"
+      - FAMILY_ID: "231"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-555"
+          - SAMPLE_ID: "Co-572"
+          - SAMPLE_ID: "Co-407"
+          - SAMPLE_ID: "Co-530"
+      - FAMILY_ID: "242"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-771"
+          - SAMPLE_ID: "Co-666"
+          - SAMPLE_ID: "Co-441"
+          - SAMPLE_ID: "Co-634"
+          - SAMPLE_ID: "Co-652"
+          - SAMPLE_ID: "Co-657"
+          - SAMPLE_ID: "Co-667"
+          - SAMPLE_ID: "Co-692"
+          - SAMPLE_ID: "Co-1483"
+      - FAMILY_ID: "254"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-616"
+          - SAMPLE_ID: "Co-1156"
+      - FAMILY_ID: "256"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-388"
+          - SAMPLE_ID: "Co-395"
+      - FAMILY_ID: "275"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1262"
+          - SAMPLE_ID: "Co-618"
+          - SAMPLE_ID: "Co-620"
+      - FAMILY_ID: "288"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1141"
+      - FAMILY_ID: "296"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-793"
+          - SAMPLE_ID: "Co-876"
+      - FAMILY_ID: "301"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-837"
+          - SAMPLE_ID: "Co-840"
+          - SAMPLE_ID: "Co-1053"
+      - FAMILY_ID: "306"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-779"
+      - FAMILY_ID: "309"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-783"
+          - SAMPLE_ID: "Co-800"
+      - FAMILY_ID: "312"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1116"
+      - FAMILY_ID: "315"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "1462-01D"
+      - FAMILY_ID: "325"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-851"
+          - SAMPLE_ID: "Co-859"
+      - FAMILY_ID: "348"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-846"
+          - SAMPLE_ID: "Co-857"
+      - FAMILY_ID: "350"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "1104-03D"
+          - SAMPLE_ID: "Co-866"
+      - FAMILY_ID: "409"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1312"
+          - SAMPLE_ID: "Co-1257"
+          - SAMPLE_ID: "Co-1263"
+          - SAMPLE_ID: "Co-1488"
+      - FAMILY_ID: "415"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1031"
+          - SAMPLE_ID: "Co-1037"
+      - FAMILY_ID: "425"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1458"
+          - SAMPLE_ID: "Co-1595"
+          - SAMPLE_ID: "Co-1427"
+          - SAMPLE_ID: "Co-1434"
+      - FAMILY_ID: "434"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1051"
+          - SAMPLE_ID: "Co-1534"
+      - FAMILY_ID: "445"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1157"
+          - SAMPLE_ID: "Co-1158"
+      - FAMILY_ID: "478"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1274"
+          - SAMPLE_ID: "Co-1207"
+      - FAMILY_ID: "485"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1302"
+          - SAMPLE_ID: "Co-1322"
+      - FAMILY_ID: "532"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1583"
+          - SAMPLE_ID: "Co-1584"
+          - SAMPLE_ID: "251-04O"
+      - FAMILY_ID: "574"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "468-04"
+          - SAMPLE_ID: "474-05"
+      - FAMILY_ID: "578"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1349"
+          - SAMPLE_ID: "531-04o"
+      - FAMILY_ID: "650"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "398-05o"
+          - SAMPLE_ID: "729-05o"
+      - FAMILY_ID: "739"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1467"
+          - SAMPLE_ID: "529-05"
+      - FAMILY_ID: "740"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1373"
+          - SAMPLE_ID: "602-05o"
+          - SAMPLE_ID: "Co-1383"
+          - SAMPLE_ID: "Co-1375"
+      - FAMILY_ID: "849"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1765"
+          - SAMPLE_ID: "Co-1764"
+          - SAMPLE_ID: "Co-1766"
+      - FAMILY_ID: "869"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1685"
+          - SAMPLE_ID: "Co-1681"
+      - FAMILY_ID: "871"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1661"
+          - SAMPLE_ID: "Co-1618"
+      - FAMILY_ID: "918"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "134-06"
+          - SAMPLE_ID: "354-06"
+          - SAMPLE_ID: "Co-1762"
+      - FAMILY_ID: "975"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1600"
+          - SAMPLE_ID: "Co-1591"
+          - SAMPLE_ID: "Co-1760"
+      - FAMILY_ID: "1025"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1529"
+      - FAMILY_ID: "1085"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1518"
+      - FAMILY_ID: "1113"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1538"
+          - SAMPLE_ID: "642-06"
+      - FAMILY_ID: "1206"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "1052-05"
+          - SAMPLE_ID: "Co-1552"
+      - FAMILY_ID: "1207"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "2818-07D"
+      - FAMILY_ID: "1213"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1666"
+      - FAMILY_ID: "1252"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1719"
+      - FAMILY_ID: "1290"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1723"
+      - FAMILY_ID: "695"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1354"
+          - SAMPLE_ID: "Co-1359"
+          - SAMPLE_ID: "Co-1368"
+      - FAMILY_ID: "119"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "Co-1209"
+          - SAMPLE_ID: "Co-1220"
+          - SAMPLE_ID: "Co-1222"
+          - SAMPLE_ID: "Co-1285"
+      - FAMILY_ID: "1244"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "2310-08D"
+          - SAMPLE_ID: "3015-11D"
+          - SAMPLE_ID: "627-04o"
+      - FAMILY_ID: "1330"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "861-10D"
+      - FAMILY_ID: "1410"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "930-06o"
+      - FAMILY_ID: "1680"
+        MEMBERS:
+          - PHENOTYPE: 1
+            SAMPLE_ID: "301-08F"
+  - DATASET_ID: '"Familial BrC"'
+    FAMILIES:
+      - FAMILY_ID: "179"
+        MEMBERS:
+          - SAMPLE_ID: "Co-323"
+          - SAMPLE_ID: "Al-19"
+      - FAMILY_ID: "1100"
+        MEMBERS:
+          - SAMPLE_ID: "341-89D"
+          - SAMPLE_ID: "405-89D"
+          - SAMPLE_ID: "Al-23"
+          - SAMPLE_ID: "Al-54"
+      - FAMILY_ID: "1891"
+        MEMBERS:
+          - SAMPLE_ID: "Al-148"
+          - SAMPLE_ID: "Al-142"
+      - FAMILY_ID: "2060"
+        MEMBERS:
+          - SAMPLE_ID: "Br-690"
+          - SAMPLE_ID: "Br-693"
+          - SAMPLE_ID: "Br-686"
+      - FAMILY_ID: "2590"
+        MEMBERS:
+          - SAMPLE_ID: "Al-133"
+          - SAMPLE_ID: "Al-143"
+          - SAMPLE_ID: "Al-128"
+      - FAMILY_ID: "3028"
+        MEMBERS:
+          - SAMPLE_ID: "AL-36"
+          - SAMPLE_ID: "AL-44"
+          - SAMPLE_ID: "Br-732"
+      - FAMILY_ID: "4040"
+        MEMBERS:
+          - SAMPLE_ID: "Br-55"
+          - SAMPLE_ID: "Br-325"
+      - FAMILY_ID: "4041"
+        MEMBERS:
+          - SAMPLE_ID: "Br-27"
+          - SAMPLE_ID: "Br-56"
+          - SAMPLE_ID: "Br-87"
+      - FAMILY_ID: "4046"
+        MEMBERS:
+          - SAMPLE_ID: "Br-100"
+          - SAMPLE_ID: "Br-227"
+      - FAMILY_ID: "4093"
+        MEMBERS:
+          - SAMPLE_ID: "Br-175"
+          - SAMPLE_ID: "Br-177"
+      - FAMILY_ID: "4127"
+        MEMBERS:
+          - SAMPLE_ID: "Br-246"
+          - SAMPLE_ID: "Br-322"
+      - FAMILY_ID: "5701"
+        MEMBERS:
+          - SAMPLE_ID: "Br-585"
+          - SAMPLE_ID: "Br-588"
+      - FAMILY_ID: "6005"
+        MEMBERS:
+          - SAMPLE_ID: "Br-271"
+          - SAMPLE_ID: "Co-324"
+      - FAMILY_ID: "6006"
+        MEMBERS:
+          - SAMPLE_ID: "Br-418"
+          - SAMPLE_ID: "Br-781"
+          - SAMPLE_ID: "Br-425"
+      - FAMILY_ID: "6037"
+        MEMBERS:
+          - SAMPLE_ID: "Br-310"
+          - SAMPLE_ID: "Br-308"
+      - FAMILY_ID: "6041"
+        MEMBERS:
+          - SAMPLE_ID: "Br-317"
+          - SAMPLE_ID: "Br-318"
+          - SAMPLE_ID: "Br-319"
+      - FAMILY_ID: "6067"
+        MEMBERS:
+          - SAMPLE_ID: "884-99D"
+          - SAMPLE_ID: "Br-397"
+      - FAMILY_ID: "6072"
+        MEMBERS:
+          - SAMPLE_ID: "Br-682"
+          - SAMPLE_ID: "Br-727"
+      - FAMILY_ID: "6094"
+        MEMBERS:
+          - SAMPLE_ID: "Br-442"
+          - SAMPLE_ID: "Br-451"
+      - FAMILY_ID: "6100"
+        MEMBERS:
+          - SAMPLE_ID: "Br-465"
+          - SAMPLE_ID: "Br-466"
+          - SAMPLE_ID: "Br-464"
+          - SAMPLE_ID: "Br-459"
+      - FAMILY_ID: "6101"
+        MEMBERS:
+          - SAMPLE_ID: "Br-473"
+      - FAMILY_ID: "6104"
+        MEMBERS:
+          - SAMPLE_ID: "Br-475"
+          - SAMPLE_ID: "Br-477"
+      - FAMILY_ID: "6106"
+        MEMBERS:
+          - SAMPLE_ID: "Br-484"
+          - SAMPLE_ID: "Br-510"
+      - FAMILY_ID: "6123"
+        MEMBERS:
+          - SAMPLE_ID: "Br-526"
+          - SAMPLE_ID: "Br-528"
+          - SAMPLE_ID: "Br-527"
+      - FAMILY_ID: "6127"
+        MEMBERS:
+          - SAMPLE_ID: "Br-694"
+          - SAMPLE_ID: "Br-697"
+          - SAMPLE_ID: "Br-702"
+      - FAMILY_ID: "L1056"
+        MEMBERS:
+          - SAMPLE_ID: "Br-720"
+          - SAMPLE_ID: "Br-721"
+          - SAMPLE_ID: "Br-724"
+      - FAMILY_ID: "L1141"
+        MEMBERS:
+          - SAMPLE_ID: "Br-652"
+          - SAMPLE_ID: "Br-641"
+      - FAMILY_ID: "L862"
+        MEMBERS:
+          - SAMPLE_ID: "Br-706"
+          - SAMPLE_ID: "Br-710"
+          - SAMPLE_ID: "Br-716"

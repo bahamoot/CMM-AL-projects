@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# exit on error
+set -e
+set -o pipefail
+
+source $PYCMM/bash/cmm_functions.sh
+
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+dataset_name="annovar_annotations"
+vcf_tabix_file="/proj/b2011117/private/databases/table_annovar/all_coors/all_coors_annotated.vcf.gz"
+project_out_dir="$VCF2AVDB_COOR_OUTPUT_DIR/vcf2avdb_coor_$dataset_name"
+data_out_dir="$project_out_dir/data_out"
+out_file="$data_out_dir/$dataset_name.vcf"
+
+mkdir -p "$data_out_dir"
+
+cmd="$PYCMM/bash/cmmdb_vcf2avdb_coor.sh"
+cmd+=" -i $vcf_tabix_file"
+cmd+=" -o $out_file"
+
+#info_msg "$cmd"
+
+eval_cmd "$cmd"

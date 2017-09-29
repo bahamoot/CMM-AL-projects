@@ -1,0 +1,1057 @@
+JOBS_REPORT_FILE:
+JOB_ALLOC_TIME: "4-00:00:00"
+PROJECT_CODE: b2016200
+PROJECT_NAME: THYRCA
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/mutations_reports/THYRCA/families
+REPORT_LAYOUT:
+  ANNOTATED_VCF_TABIX: /proj/b2011117/private/databases/table_annovar/THYRCA/THYRCA_annotated.vcf.gz
+  COLORING_SAMPLES:
+    - Zygosity
+  COLOR_GENES:
+    - ACD
+    - ADM
+    - AIP
+    - AKT1
+    - ALK
+    - AP3B1
+    - APC
+    - AR
+    - ARMC5
+    - ATM
+    - ATR
+    - AXIN2
+    - BABAM1
+    - BAP1
+    - BARD1
+    - BCCIP
+    - BLM
+    - BLOC1S3
+    - BLOC1S6
+    - BMPR1A
+    - BRAF
+    - BRAP
+    - BRCA1
+    - BRCA2
+    - BRCC3
+    - BRE
+    - BRIP1
+    - BUB1B
+    - C17orf70
+    - C19orf40
+    - CASP10
+    - CASR
+    - CBL
+    - CD40LG
+    - CDC73
+    - CDH1
+    - CDK4
+    - CDKN1B
+    - CDKN1C
+    - CDKN2A
+    - CDKN2B
+    - CEBPA
+    - CEP57
+    - CHEK1
+    - CHEK2
+    - CREBBP
+    - CSF3R
+    - CTC1
+    - CYLD
+    - DDB2
+    - DICER1
+    - DIS3L2
+    - DKC1
+    - DTNBP1
+    - EGFR
+    - ELANE
+    - ENG
+    - EP300
+    - EPCAM
+    - ERCC2
+    - ERCC3
+    - ERCC4
+    - ERCC5
+    - ESR1
+    - EXO1
+    - EXT1
+    - EXT2
+    - EZH2
+    - FAM175A
+    - FAN1
+    - FANCA
+    - FANCB
+    - FANCC
+    - FANCD2
+    - FANCE
+    - FANCF
+    - FANCG
+    - FANCI
+    - FANCL
+    - FANCM
+    - FAS
+    - FASLG
+    - FH
+    - FLCN
+    - FOXO1
+    - G6PC3
+    - GATA1
+    - GATA2
+    - GDNF
+    - GFI1
+    - GNAS
+    - GPC3
+    - GPC4
+    - GPR101
+    - GREM1
+    - GREM1
+    - HAX1
+    - HNF1A
+    - HOXB13
+    - HPS1
+    - HPS3
+    - HPS4
+    - HPS5
+    - HPS6
+    - HRAS
+    - HUS1
+    - JAGN1
+    - KIF1B
+    - KIT
+    - KLLN
+    - KRAS
+    - LZTR1
+    - MAP2K1
+    - MAP2K2
+    - MAX
+    - MDC1
+    - MDH2
+    - MEN1
+    - MET
+    - MITF
+    - MLH1
+    - MLH3
+    - MPL
+    - MRE11A
+    - MSH2
+    - MSH3
+    - MSH6
+    - MUTYH
+    - NBN
+    - NF1
+    - NF2
+    - NHP2
+    - NKX2-1
+    - NOP10
+    - NRAS
+    - NSD1
+    - NTHL1
+    - NTRK1
+    - OCA2
+    - PALB2
+    - PALLD
+    - PAX3
+    - PAX7
+    - PDGFRA
+    - PHOX2B
+    - PIK3CA
+    - PMS1
+    - PMS2
+    - POLD1
+    - POLE
+    - POLH
+    - POLR2A
+    - POT1
+    - PPM1D
+    - PRF1
+    - PRKAR1A
+    - PTCH1
+    - PTEN
+    - PTPN11
+    - PTPN12
+    - RAD1
+    - RAD17
+    - RAD50
+    - RAD51
+    - RAD51B
+    - RAD51C
+    - RAD51D
+    - RAD52
+    - RAD54L
+    - RAD9A
+    - RAF1
+    - RB1
+    - RBBP8
+    - RECQL4
+    - REST
+    - RET
+    - RHBDF2
+    - RINT1
+    - RMI1
+    - RMI2
+    - RMRP
+    - RPL11
+    - RPL15
+    - RPL26
+    - RPL35A
+    - RPL5
+    - RPS10
+    - RPS17
+    - RPS19
+    - RPS24
+    - RPS26
+    - RPS29
+    - RPS7
+    - RRAS2
+    - RTEL1
+    - RUNX1
+    - SBDS
+    - SDHA
+    - SDHAF2
+    - SDHB
+    - SDHC
+    - SDHD
+    - SH2D1A
+    - SLC26A3
+    - SLX4
+    - SMAD4
+    - SMARCA4
+    - SMARCAL1
+    - SMARCB1
+    - SMARCE1
+    - SOS1
+    - SPRED1
+    - SRC
+    - SRP72
+    - STK11
+    - SUFU
+    - TERC
+    - TERF2IP
+    - TERT
+    - TINF2
+    - TMEM127
+    - TOP3A
+    - TOPBP1
+    - TP53
+    - TP53BP1
+    - TRAF7
+    - TRIM37
+    - TSC1
+    - TSC2
+    - TYR
+    - UIMC1
+    - VHL
+    - VPS45
+    - WAS
+    - WRAP53
+    - WRN
+    - WT1
+    - XPA
+    - XPC
+    - XRCC2
+    - XRCC3
+    - XRCC4
+    - ZNF350
+  COLUMNS:
+    - Func.refGene
+    - ExonicFunc.refGene
+    - snp138
+    - Gene.refGene
+    - GeneDetail.refGene
+    - AAChange.refGene
+    - cytoBand
+    - SWEGEN_AF
+    - ExAC_ALL
+    - ExAC_NFE
+    - ExAC_AFR
+    - ExAC_AMR
+    - ExAC_EAS
+    - ExAC_FIN
+    - ExAC_SAS
+    - ExAC_OTH
+    - 249_SWEDES
+    - 200_DANES
+    - 1000g2014oct_all
+    - 1000g2014oct_eur
+    - InterVar_class
+    - InterVar_evidence
+    - OAF_EARLYONSET_AF
+    - OAF_EARLYONSET_GF
+    - OAF_BRCS_AF
+    - OAF_BRCS_GF
+    - OAF_FAMILIAL_CRCS_AF
+    - OAF_FAMILIAL_CRCS_GF
+    - OAF_BRC_CRC_PROSTATE_AF
+    - OAF_BRC_CRC_PROSTATE_GF
+    - OAF_CHEK2_AF
+    - OAF_CHEK2_GF
+    - SWEGEN_HET
+    - SWEGEN_HOM
+    - SWEGEN_HEMI
+    - SWEGEN_AC
+    - SWEGEN_GT
+    - SWEGEN_GF
+    - SWEGEN_PF
+    - EXAC03_CONSTRAINT_EXP_SYN
+    - EXAC03_CONSTRAINT_N_SYN
+    - EXAC03_CONSTRAINT_SYN_Z
+    - EXAC03_CONSTRAINT_EXP_MIS
+    - EXAC03_CONSTRAINT_N_MIS
+    - EXAC03_CONSTRAINT_MIS_Z
+    - EXAC03_CONSTRAINT_EXP_LOF
+    - EXAC03_CONSTRAINT_N_LOF
+    - EXAC03_CONSTRAINT_PLI
+    - cosmic70
+    - clinvar_20150330
+    - dpsi_zscore
+    - SIFT_pred
+    - Polyphen2_HDIV_pred
+    - Polyphen2_HVAR_pred
+    - LRT_pred
+    - MutationTaster_pred
+    - MutationAssessor_pred
+    - FATHMM_pred
+    - RadialSVM_pred
+    - LR_pred
+    - CADD_phred
+  EXPRESSIONS:
+    - NAME: Func_ncRNA_exonic
+      PATTERN: '("Func.refGene"==''ncRNA_exonic'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: Func_ncRNA_splicing
+      PATTERN: '("Func.refGene"==''ncRNA_splicing'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: ExonicFunc_unknown
+      PATTERN: '("ExonicFunc.refGene"==''unknown'')'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: SWEGEN_AF_COMMON
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")<=0.9)and(float("SWEGEN_AF")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: SWEGEN_AF_03
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_YELLOW
+    - NAME: SWEGEN_AF_97
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_YELLOW
+    - NAME: SWEGEN_AF_01
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_ORANGE
+    - NAME: SWEGEN_AF_99
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_ORANGE
+    - NAME: SWEGEN_AF_001
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_GREEN
+    - NAME: SWEGEN_AF_999
+      PATTERN: '("SWEGEN_AF"!='''')and(float("SWEGEN_AF")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_GREEN
+    - NAME: SWEGEN_AF_empty
+      PATTERN: '("SWEGEN_AF"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: SWEGEN_AF:XLS_GREEN
+    - NAME: ExAC_ALL_COMMON
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")<=0.9)and(float("ExAC_ALL")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: ExAC_ALL_03
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_YELLOW
+    - NAME: ExAC_ALL_97
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_YELLOW
+    - NAME: ExAC_ALL_01
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_ORANGE
+    - NAME: ExAC_ALL_99
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_ORANGE
+    - NAME: ExAC_ALL_001
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_GREEN
+    - NAME: ExAC_ALL_999
+      PATTERN: '("ExAC_ALL"!='''')and(float("ExAC_ALL")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_GREEN
+    - NAME: ExAC_ALL_empty
+      PATTERN: '("ExAC_ALL"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_ALL:XLS_GREEN
+    - NAME: ExAC_NFE_COMMON
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")<=0.9)and(float("ExAC_NFE")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: ExAC_NFE_03
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_YELLOW
+    - NAME: ExAC_NFE_97
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_YELLOW
+    - NAME: ExAC_NFE_01
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_ORANGE
+    - NAME: ExAC_NFE_99
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_ORANGE
+    - NAME: ExAC_NFE_001
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_GREEN
+    - NAME: ExAC_NFE_999
+      PATTERN: '("ExAC_NFE"!='''')and(float("ExAC_NFE")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_GREEN
+    - NAME: ExAC_NFE_empty
+      PATTERN: '("ExAC_NFE"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_NFE:XLS_GREEN
+    - NAME: ExAC_AFR_COMMON
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")<=0.9)and(float("ExAC_AFR")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: ExAC_AFR_03
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_YELLOW
+    - NAME: ExAC_AFR_97
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_YELLOW
+    - NAME: ExAC_AFR_01
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_ORANGE
+    - NAME: ExAC_AFR_99
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_ORANGE
+    - NAME: ExAC_AFR_001
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_GREEN
+    - NAME: ExAC_AFR_999
+      PATTERN: '("ExAC_AFR"!='''')and(float("ExAC_AFR")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_GREEN
+    - NAME: ExAC_AFR_empty
+      PATTERN: '("ExAC_AFR"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AFR:XLS_GREEN
+    - NAME: ExAC_AMR_COMMON
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")<=0.9)and(float("ExAC_AMR")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: ExAC_AMR_03
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_YELLOW
+    - NAME: ExAC_AMR_97
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_YELLOW
+    - NAME: ExAC_AMR_01
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_ORANGE
+    - NAME: ExAC_AMR_99
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_ORANGE
+    - NAME: ExAC_AMR_001
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_GREEN
+    - NAME: ExAC_AMR_999
+      PATTERN: '("ExAC_AMR"!='''')and(float("ExAC_AMR")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_GREEN
+    - NAME: ExAC_AMR_empty
+      PATTERN: '("ExAC_AMR"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_AMR:XLS_GREEN
+    - NAME: ExAC_EAS_COMMON
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")<=0.9)and(float("ExAC_EAS")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: ExAC_EAS_03
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_YELLOW
+    - NAME: ExAC_EAS_97
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_YELLOW
+    - NAME: ExAC_EAS_01
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_ORANGE
+    - NAME: ExAC_EAS_99
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_ORANGE
+    - NAME: ExAC_EAS_001
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_GREEN
+    - NAME: ExAC_EAS_999
+      PATTERN: '("ExAC_EAS"!='''')and(float("ExAC_EAS")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_GREEN
+    - NAME: ExAC_EAS_empty
+      PATTERN: '("ExAC_EAS"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_EAS:XLS_GREEN
+    - NAME: ExAC_FIN_COMMON
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")<=0.9)and(float("ExAC_FIN")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: ExAC_FIN_03
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_YELLOW
+    - NAME: ExAC_FIN_97
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_YELLOW
+    - NAME: ExAC_FIN_01
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_ORANGE
+    - NAME: ExAC_FIN_99
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_ORANGE
+    - NAME: ExAC_FIN_001
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_GREEN
+    - NAME: ExAC_FIN_999
+      PATTERN: '("ExAC_FIN"!='''')and(float("ExAC_FIN")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_GREEN
+    - NAME: ExAC_FIN_empty
+      PATTERN: '("ExAC_FIN"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_FIN:XLS_GREEN
+    - NAME: ExAC_SAS_COMMON
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")<=0.9)and(float("ExAC_SAS")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: ExAC_SAS_03
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_YELLOW
+    - NAME: ExAC_SAS_97
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_YELLOW
+    - NAME: ExAC_SAS_01
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_ORANGE
+    - NAME: ExAC_SAS_99
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_ORANGE
+    - NAME: ExAC_SAS_001
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_GREEN
+    - NAME: ExAC_SAS_999
+      PATTERN: '("ExAC_SAS"!='''')and(float("ExAC_SAS")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_GREEN
+    - NAME: ExAC_SAS_empty
+      PATTERN: '("ExAC_SAS"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_SAS:XLS_GREEN
+    - NAME: ExAC_OTH_COMMON
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")<=0.9)and(float("ExAC_OTH")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: ExAC_OTH_03
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_YELLOW
+    - NAME: ExAC_OTH_97
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_YELLOW
+    - NAME: ExAC_OTH_01
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_ORANGE
+    - NAME: ExAC_OTH_99
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_ORANGE
+    - NAME: ExAC_OTH_001
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_GREEN
+    - NAME: ExAC_OTH_999
+      PATTERN: '("ExAC_OTH"!='''')and(float("ExAC_OTH")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_GREEN
+    - NAME: ExAC_OTH_empty
+      PATTERN: '("ExAC_OTH"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: ExAC_OTH:XLS_GREEN
+    - NAME: 249_SWEDES_COMMON
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")<=0.9)and(float("249_SWEDES")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: 249_SWEDES_03
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_YELLOW
+    - NAME: 249_SWEDES_97
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_YELLOW
+    - NAME: 249_SWEDES_01
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_ORANGE
+    - NAME: 249_SWEDES_99
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_ORANGE
+    - NAME: 249_SWEDES_001
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_GREEN
+    - NAME: 249_SWEDES_999
+      PATTERN: '("249_SWEDES"!='''')and(float("249_SWEDES")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_GREEN
+    - NAME: 249_SWEDES_empty
+      PATTERN: '("249_SWEDES"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 249_SWEDES:XLS_GREEN
+    - NAME: 200_DANES_COMMON
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")<=0.9)and(float("200_DANES")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: 200_DANES_03
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_YELLOW
+    - NAME: 200_DANES_97
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_YELLOW
+    - NAME: 200_DANES_01
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_ORANGE
+    - NAME: 200_DANES_99
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_ORANGE
+    - NAME: 200_DANES_001
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_GREEN
+    - NAME: 200_DANES_999
+      PATTERN: '("200_DANES"!='''')and(float("200_DANES")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_GREEN
+    - NAME: 200_DANES_empty
+      PATTERN: '("200_DANES"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 200_DANES:XLS_GREEN
+    - NAME: 1000g2014oct_all_COMMON
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")<=0.9)and(float("1000g2014oct_all")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: 1000g2014oct_all_03
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_YELLOW
+    - NAME: 1000g2014oct_all_97
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_YELLOW
+    - NAME: 1000g2014oct_all_01
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_ORANGE
+    - NAME: 1000g2014oct_all_99
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_ORANGE
+    - NAME: 1000g2014oct_all_001
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_GREEN
+    - NAME: 1000g2014oct_all_999
+      PATTERN: '("1000g2014oct_all"!='''')and(float("1000g2014oct_all")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_GREEN
+    - NAME: 1000g2014oct_all_empty
+      PATTERN: '("1000g2014oct_all"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_all:XLS_GREEN
+    - NAME: 1000g2014oct_eur_COMMON
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")<=0.9)and(float("1000g2014oct_eur")>=0.1)'
+      USAGES:
+        - ACTION: DELETE_ROW
+    - NAME: 1000g2014oct_eur_03
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")<0.03)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_YELLOW
+    - NAME: 1000g2014oct_eur_97
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")>0.97)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_YELLOW
+    - NAME: 1000g2014oct_eur_01
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")<0.01)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_ORANGE
+    - NAME: 1000g2014oct_eur_99
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")>0.99)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_ORANGE
+    - NAME: 1000g2014oct_eur_001
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")<0.001)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_GREEN
+    - NAME: 1000g2014oct_eur_999
+      PATTERN: '("1000g2014oct_eur"!='''')and(float("1000g2014oct_eur")>0.999)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_GREEN
+    - NAME: 1000g2014oct_eur_empty
+      PATTERN: '("1000g2014oct_eur"=='''')'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: 1000g2014oct_eur:XLS_GREEN
+    - NAME: EXAC03_CONSTRAINT_MIS_Z_significance
+      PATTERN: '("EXAC03_CONSTRAINT_MIS_Z"!='''')and(float("EXAC03_CONSTRAINT_MIS_Z")>3)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: EXAC03_CONSTRAINT_MIS_Z:XLS_YELLOW
+    - NAME: EXAC03_CONSTRAINT_PLI_significance
+      PATTERN: '("EXAC03_CONSTRAINT_PLI"!='''')and(float("EXAC03_CONSTRAINT_PLI")>0.9)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: EXAC03_CONSTRAINT_PLI:XLS_YELLOW
+    - NAME: CADD_phred_significance
+      PATTERN: '("CADD_phred"!='''')and(float("CADD_phred")>20)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: CADD_phred:XLS_YELLOW
+    - NAME: dpsi_zscore_significance1
+      PATTERN: '("dpsi_zscore"!='''')and(float("dpsi_zscore")<-2)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: dpsi_zscore:XLS_YELLOW
+    - NAME: dpsi_zscore_significance2
+      PATTERN: '("dpsi_zscore"!='''')and(float("dpsi_zscore")>2)'
+      USAGES:
+        - ACTION: COLOR_COLUMN
+          INFO: dpsi_zscore:XLS_YELLOW
+    - NAME: true_synonymous
+      PATTERN: '("dpsi_zscore"!='''')and("ExonicFunc.refGene"==''synonymous_SNV'')and(float("dpsi_zscore")>-2)and(float("dpsi_zscore")<2)'
+      USAGES:
+        - ACTION: DELETE_ROW
+  FREQUENCY_RATIOS:
+    - COLUMN: SWEGEN_AF
+      FREQUENCY: 0.1
+  HEADER_CORRECTIONS:
+    - NEW_HEADER: BRCS_WT
+      OLD_HEADER: OAF_BRCS_WT
+    - NEW_HEADER: BRCS_HET
+      OLD_HEADER: OAF_BRCS_HET
+    - NEW_HEADER: BRCS_HOM
+      OLD_HEADER: OAF_BRCS_HOM
+    - NEW_HEADER: BRCS_OTH
+      OLD_HEADER: OAF_BRCS_OTH
+    - NEW_HEADER: BRCS_NA
+      OLD_HEADER: OAF_BRCS_NA
+    - NEW_HEADER: BRCS_GT
+      OLD_HEADER: OAF_BRCS_GT
+    - NEW_HEADER: BRCS_PF
+      OLD_HEADER: OAF_BRCS_PF
+    - NEW_HEADER: BRCS_AF
+      OLD_HEADER: OAF_BRCS_AF
+    - NEW_HEADER: BRCS_GF
+      OLD_HEADER: OAF_BRCS_GF
+    - NEW_HEADER: CRCS_WT
+      OLD_HEADER: OAF_CRCS_WT
+    - NEW_HEADER: CRCS_HET
+      OLD_HEADER: OAF_CRCS_HET
+    - NEW_HEADER: CRCS_HOM
+      OLD_HEADER: OAF_CRCS_HOM
+    - NEW_HEADER: CRCS_OTH
+      OLD_HEADER: OAF_CRCS_OTH
+    - NEW_HEADER: CRCS_NA
+      OLD_HEADER: OAF_CRCS_NA
+    - NEW_HEADER: CRCS_GT
+      OLD_HEADER: OAF_CRCS_GT
+    - NEW_HEADER: CRCS_PF
+      OLD_HEADER: OAF_CRCS_PF
+    - NEW_HEADER: CRCS_AF
+      OLD_HEADER: OAF_CRCS_AF
+    - NEW_HEADER: CRCS_GF
+      OLD_HEADER: OAF_CRCS_GF
+    - NEW_HEADER: ALL_EXOME_WT
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_WT
+    - NEW_HEADER: ALL_EXOME_HET
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_HET
+    - NEW_HEADER: ALL_EXOME_HOM
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_HOM
+    - NEW_HEADER: ALL_EXOME_OTH
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_OTH
+    - NEW_HEADER: ALL_EXOME_NA
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_NA
+    - NEW_HEADER: ALL_EXOME_GT
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_GT
+    - NEW_HEADER: ALL_EXOME_PF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_PF
+    - NEW_HEADER: ALL_EXOME_AF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_AF
+    - NEW_HEADER: ALL_EXOME_GF
+      OLD_HEADER: OAF_BRC_CRC_PROSTATE_GF
+    - NEW_HEADER: CHEK2_WT
+      OLD_HEADER: OAF_CHEK2_WT
+    - NEW_HEADER: CHEK2_HET
+      OLD_HEADER: OAF_CHEK2_HET
+    - NEW_HEADER: CHEK2_HOM
+      OLD_HEADER: OAF_CHEK2_HOM
+    - NEW_HEADER: CHEK2_OTH
+      OLD_HEADER: OAF_CHEK2_OTH
+    - NEW_HEADER: CHEK2_NA
+      OLD_HEADER: OAF_CHEK2_NA
+    - NEW_HEADER: CHEK2_GT
+      OLD_HEADER: OAF_CHEK2_GT
+    - NEW_HEADER: CHEK2_PF
+      OLD_HEADER: OAF_CHEK2_PF
+    - NEW_HEADER: CHEK2_AF
+      OLD_HEADER: OAF_CHEK2_AF
+    - NEW_HEADER: CHEK2_GF
+      OLD_HEADER: OAF_CHEK2_GF
+    - NEW_HEADER: EARLYONSET_WT
+      OLD_HEADER: OAF_EARLYONSET_WT
+    - NEW_HEADER: EARLYONSET_HET
+      OLD_HEADER: OAF_EARLYONSET_HET
+    - NEW_HEADER: EARLYONSET_HOM
+      OLD_HEADER: OAF_EARLYONSET_HOM
+    - NEW_HEADER: EARLYONSET_OTH
+      OLD_HEADER: OAF_EARLYONSET_OTH
+    - NEW_HEADER: EARLYONSET_NA
+      OLD_HEADER: OAF_EARLYONSET_NA
+    - NEW_HEADER: EARLYONSET_GT
+      OLD_HEADER: OAF_EARLYONSET_GT
+    - NEW_HEADER: EARLYONSET_PF
+      OLD_HEADER: OAF_EARLYONSET_PF
+    - NEW_HEADER: EARLYONSET_AF
+      OLD_HEADER: OAF_EARLYONSET_AF
+    - NEW_HEADER: EARLYONSET_GF
+      OLD_HEADER: OAF_EARLYONSET_GF
+    - NEW_HEADER: FAMILIAL_CRCS_WT
+      OLD_HEADER: OAF_FAMILIAL_CRCS_WT
+    - NEW_HEADER: FAMILIAL_CRCS_HET
+      OLD_HEADER: OAF_FAMILIAL_CRCS_HET
+    - NEW_HEADER: FAMILIAL_CRCS_HOM
+      OLD_HEADER: OAF_FAMILIAL_CRCS_HOM
+    - NEW_HEADER: FAMILIAL_CRCS_OTH
+      OLD_HEADER: OAF_FAMILIAL_CRCS_OTH
+    - NEW_HEADER: FAMILIAL_CRCS_NA
+      OLD_HEADER: OAF_FAMILIAL_CRCS_NA
+    - NEW_HEADER: FAMILIAL_CRCS_GT
+      OLD_HEADER: OAF_FAMILIAL_CRCS_GT
+    - NEW_HEADER: FAMILIAL_CRCS_PF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_PF
+    - NEW_HEADER: FAMILIAL_CRCS_AF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_AF
+    - NEW_HEADER: FAMILIAL_CRCS_GF
+      OLD_HEADER: OAF_FAMILIAL_CRCS_GF
+    - NEW_HEADER: 'Exp Syn(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_SYN
+    - NEW_HEADER: 'Obs Syn(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_SYN
+    - NEW_HEADER: 'Syn z(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_SYN_Z
+    - NEW_HEADER: 'Exp Mis(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_MIS
+    - NEW_HEADER: 'Obs Mis(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_MIS
+    - NEW_HEADER: 'Mis Z(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_MIS_Z
+    - NEW_HEADER: 'Exp LoF(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_EXP_LOF
+    - NEW_HEADER: 'Obs LoF(ExAC)'
+      OLD_HEADER: EXAC03_CONSTRAINT_N_LOF
+    - NEW_HEADER: PLI(ExAC)
+      OLD_HEADER: EXAC03_CONSTRAINT_PLI
+    - NEW_HEADER: gnomAD_ALL
+      OLD_HEADER: gnomAD_genome_ALL
+    - NEW_HEADER: gnomAD_AFR
+      OLD_HEADER: gnomAD_genome_AFR
+    - NEW_HEADER: gnomAD_AMR
+      OLD_HEADER: gnomAD_genome_AMR
+    - NEW_HEADER: gnomAD_ASJ
+      OLD_HEADER: gnomAD_genome_ASJ
+    - NEW_HEADER: gnomAD_EAS
+      OLD_HEADER: gnomAD_genome_EAS
+    - NEW_HEADER: gnomAD_FIN
+      OLD_HEADER: gnomAD_genome_FIN
+    - NEW_HEADER: gnomAD_NFE
+      OLD_HEADER: gnomAD_genome_NFE
+    - NEW_HEADER: gnomAD_OTH
+      OLD_HEADER: gnomAD_genome_OTH
+  ROWS_FILTER_ACTIONS_CRITERIA:
+    - Rare
+    - PASS-VQSR
+    - Non-Intergenic
+    - Non-Intronic
+    - Non-Upstream
+    - Non-Downstream
+    - Non-UTR
+    - Has-Mutation
+  SPLIT_CHROM: false
+  Show_shared_mutations: true
+SAMPLES_INFOS:
+  - DATASET_ID: "ds1"
+    FAMILIES:
+      - FAMILY_ID: "F0007826"
+        MEMBERS:
+          - GROUP: 1
+            PHENOTYPE: 2
+            SAMPLE_ID: "1415-10D"
+          - GROUP: 1
+            PHENOTYPE: 2
+            SAMPLE_ID: "1416-10D"
+          - GROUP: 1
+            PHENOTYPE: 2
+            SAMPLE_ID: "1417-10D"
+      - FAMILY_ID: "F0002468"
+        MEMBERS:
+          - GROUP: 2
+            PHENOTYPE: 2
+            SAMPLE_ID: "2016-08616"
+          - GROUP: 2
+            PHENOTYPE: 2
+            SAMPLE_ID: "2015-12231"
+          - GROUP: 2
+            PHENOTYPE: 2
+            SAMPLE_ID: "2015-12232"
+      - FAMILY_ID: "F0002322"
+        MEMBERS:
+          - GROUP: 3
+            PHENOTYPE: 2
+            SAMPLE_ID: "2015-12460"
+          - GROUP: 3
+            PHENOTYPE: 2
+            SAMPLE_ID: "2016-00043"
+          - GROUP: 3
+            PHENOTYPE: 2
+            SAMPLE_ID: "2016-18116"

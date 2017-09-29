@@ -1,0 +1,32 @@
+SAMPLES_INFOS:
+  - DATASET_ID: Familial_CRCs
+    FAMILIES:
+    - FAMILY_ID: "91"
+      MEMBERS:
+        - SAMPLE_ID: "Co-700"
+        - SAMPLE_ID: "Co-454"
+    - FAMILY_ID: "350"
+      MEMBERS:
+        - SAMPLE_ID: "1104-03D"
+        - SAMPLE_ID: "Co-866"
+    - FAMILY_ID: "578"
+      MEMBERS:
+        - SAMPLE_ID: "Co-1349"
+        - SAMPLE_ID: "531-04o"
+    - FAMILY_ID: "650"
+      MEMBERS:
+        - SAMPLE_ID: "398-05o"
+        - SAMPLE_ID: "729-05o"
+    - FAMILY_ID: "740"
+      MEMBERS:
+        - SAMPLE_ID: "Co-1373"
+        - SAMPLE_ID: "602-05o"
+        - SAMPLE_ID: "Co-1383"
+        - SAMPLE_ID: "Co-1375"
+    - FAMILY_ID: "869"
+      MEMBERS:
+        - SAMPLE_ID: "Co-1685"
+        - SAMPLE_ID: "Co-1681"
+    - FAMILY_ID: "1252"
+      MEMBERS:
+        - SAMPLE_ID: "Co-1719"

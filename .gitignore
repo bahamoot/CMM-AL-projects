@@ -37,12 +37,19 @@ slurm*
 
 # mine
 obsolete
+archive
+debug
 out
 log
 tmp
 cache
 *.log
 *.bed
+*.gz
+*.vcf
+*.tbi
+*.err
+*.out
 *.bim
 *.nof
 *.fam
