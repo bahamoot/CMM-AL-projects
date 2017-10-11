@@ -1,0 +1,2662 @@
+GATK_PARAMS:
+  DBSNP: /proj/b2011117/private/databases/reference/dbsnp_138.b37.vcf
+  KNOWN_INDELS:
+    - /proj/b2011117/private/databases/reference/1000G_phase1.indels.b37.vcf
+    - /proj/b2011117/private/databases/reference/Mills_and_1000G_gold_standard.indels.b37.vcf
+  REFERENCE: /proj/b2011117/private/databases/reference/hs37d5_plus_ss.fa
+  SPLIT_REGIONS_FILE: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/split.regions_file
+  VARIANTS_CALLING: true
+JOBS_REPORT_FILE:
+JOB_ALLOC_TIME: "4-00:00:00"
+PROJECT_CODE: b2012247
+PROJECT_NAME: call294d
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/gatkbp/WES/call294d
+SAMPLES_INFOS:
+  - FAMILY_ID: "NO_FAMILY"
+    MEMBERS:
+      - SAMPLE_ID: "Co-361"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-361/Co-361_S7_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-361/Co-361_S7_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1190"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1190/Co-1190_AGTACAAG_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1190/Co-1190_AGTACAAG_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-364"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-364/P652_110_haloht22_ACGTATCA_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-364/P652_110_haloht22_ACGTATCA_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1263"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1263/Co-1263_S8_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1263/Co-1263_S8_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "813-06o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/813-06o/813-06o_AAGACGGA_L006_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/813-06o/813-06o_AAGACGGA_L006_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1618"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1618/Co1618_ATGTCA_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1618/Co1618_ATGTCA_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-781"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-781/Br-781_S4_L001_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-781/Br-781_S4_L001_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "602-05o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/602-05o/602-05o_concated_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/602-05o/602-05o_concated_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "1094-08F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/1094-08F/1094-08F_AACAACCA_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/1094-08F/1094-08F_AACAACCA_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Br-308"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-308/Br-308_S75_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-308/Br-308_S75_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "2014-04018"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/2014-04018/2014-04018_AGTGGTCA_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/2014-04018/2014-04018_AGTGGTCA_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1458"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1458/Co1458_ATCACG_L006_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1458/Co1458_ATCACG_L006_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1274"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1274/Co1274_TAGCTT_L007_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1274/Co1274_TAGCTT_L007_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "91-04o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/91-04o/91-04o_AACAACCA_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/91-04o/91-04o_AACAACCA_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "AB-28"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-28/AB-28_S11_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-28/AB-28_S11_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-530"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-530/Co-530_S7_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-530/Co-530_S7_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-245"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-245/Co-245_AACCGAGA_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-245/Co-245_AACCGAGA_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "AB-24"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-24/AB-24_S94_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-24/AB-24_S94_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-27"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-27/AB-27_S3_L001_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-27/AB-27_S3_L001_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-26"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-26/AB-26_S11_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-26/AB-26_S11_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-21"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-21/AB-21_S64_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-21/AB-21_S64_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "569-04o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/569-04o/569-04o_CAGATCTG_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/569-04o/569-04o_CAGATCTG_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "664-08F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/664-08F/664-08F_ATGCCTAA_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/664-08F/664-08F_ATGCCTAA_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "AB-22"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-22/AB-22_S72_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-22/AB-22_S72_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-846"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-846/Co846_TGACCA_L006_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-846/Co846_TGACCA_L006_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "1526-02D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/1526-02D/1526-02D_ACAGTG_L007_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/1526-02D/1526-02D_ACAGTG_L007_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-135"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-135/Co135_ATGTCA_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-135/Co135_ATGTCA_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1719"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1719/P652_120_halohht32_CAATGGAA_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1719/P652_120_halohht32_CAATGGAA_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-166"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-166/Co-166_AACGTGAT_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-166/Co-166_AACGTGAT_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-840"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-840/Co840_concated_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-840/Co840_concated_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-700"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-700/Co700_TTAGGC_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-700/Co700_TTAGGC_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1552"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1552/Co1552_GGCTAC_L006_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1552/Co1552_GGCTAC_L006_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1591"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1591/Co1591_GATCAG_L006_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1591/Co1591_GATCAG_L006_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-697"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-697/Br-697_CGATGT_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-697/Br-697_CGATGT_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Br-690"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-690/Br-690_TTAGGC_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-690/Br-690_TTAGGC_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "1052-05"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/1052-05/1052-05_CGATGT_L004_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/1052-05/1052-05_CGATGT_L004_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "930-06o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/930-06o/930-06o_ACCACTGT_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/930-06o/930-06o_ACCACTGT_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1685"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1685/P652_115_halohht27_AGTCACTA_L001_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1685/P652_115_halohht27_AGTCACTA_L001_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-466"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-466/Br-466_TTAGGC_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-466/Br-466_TTAGGC_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Br-465"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-465/Br-465_CGATGT_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-465/Br-465_CGATGT_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Br-464"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-464/Br-464_S27_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-464/Br-464_S27_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1681"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1681/Co-1681_S78_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1681/Co-1681_S78_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "296-09F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/296-09F/296-09F_AAGACGGA_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/296-09F/296-09F_AAGACGGA_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1583"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1583/Co1583_ATCACG_L008_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1583/Co1583_ATCACG_L008_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-317"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-317/Br-317_S4_L001_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-317/Br-317_S4_L001_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-694"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-694/Br-694_ATCACG_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-694/Br-694_ATCACG_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1375"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1375/Co-1375_S32_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1375/Co-1375_S32_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-310"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-310/Br-310_S67_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-310/Br-310_S67_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1595"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1595/Co1595_TAGCTT_L008_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1595/Co1595_TAGCTT_L008_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-442"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-442/Br-442_ACTTGA_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-442/Br-442_ACTTGA_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "AB-20"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-20/AB-20_S26_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-20/AB-20_S26_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "329-09F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/329-09F/329-09F_ACCACTGT_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/329-09F/329-09F_ACCACTGT_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "861-10D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/861-10D/861-10D_AACAACCA_L006_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/861-10D/861-10D_AACAACCA_L006_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1051"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1051/Co1051_ATCACG_L007_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1051/Co1051_ATCACG_L007_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-278"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-278/Co-278_ACATTGGC_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-278/Co-278_ACATTGGC_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Br-27"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-27/Br-27_S22_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-27/Br-27_S22_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1661"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1661/Co1661_CCGTCC_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1661/Co1661_CCGTCC_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "134-06"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/134-06/134-06_CGATGT_L007_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/134-06/134-06_CGATGT_L007_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "729-05o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/729-05o/729-05o_concated_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/729-05o/729-05o_concated_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1053"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1053/Co-1053_concated_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1053/Co-1053_concated_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "4773-11D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/4773-11D/4773-11D_CGCTGATC_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/4773-11D/4773-11D_CGCTGATC_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Br-397"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-397/Br-397_GCCAAT_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-397/Br-397_GCCAAT_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "P001"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/P001/P652_122_halohht34_CAGCGTTA_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/P001/P652_122_halohht34_CAGCGTTA_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-702"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-702/Br-702_TTAGGC_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-702/Br-702_TTAGGC_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-785"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-785/Co785_TAGCTT_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-785/Co785_TAGCTT_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-652"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-652/5_110901_BD036TACXX_Br-652_ind_8_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-652/5_110901_BD036TACXX_Br-652_ind_8_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "376-05o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/376-05o/376-05o_CAGATCTG_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/376-05o/376-05o_CAGATCTG_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-837"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-837/Co837_CAGATC_L005_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-837/Co837_CAGATC_L005_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-783"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-783/P652_113_halohht25_AGATCGCA_L001_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-783/P652_113_halohht25_AGATCGCA_L001_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "711-14D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/711-14D/711-14D_AACCGAGA_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/711-14D/711-14D_AACCGAGA_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "AL-36"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/AL-36/AL-36_GCCAAT_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/AL-36/AL-36_GCCAAT_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-367"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-367/Co367_GGCTAC_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-367/Co367_GGCTAC_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-526"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-526/Br-526_TGACCA_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-526/Br-526_TGACCA_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "59-04o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/59-04o/59-04o_AACGTGAT_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/59-04o/59-04o_AACGTGAT_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "5053-10D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/5053-10D/5053-10D_CATCAAGT_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/5053-10D/5053-10D_CATCAAGT_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Br-418"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-418/Br-418_S95_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-418/Br-418_S95_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-446"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-446/Co446_CTTGTA_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-446/Co446_CTTGTA_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "1205-05o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/1205-05o/1205-05o_CGCTGATC_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/1205-05o/1205-05o_CGCTGATC_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "405-89D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/405-89D/405-89D_S14_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/405-89D/405-89D_S14_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1467"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1467/Co1467_ACTTGA_L006_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1467/Co1467_ACTTGA_L006_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Al-23"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-23/Al-23_S6_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-23/Al-23_S6_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-322"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-322/Br-322_S66_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-322/Br-322_S66_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-325"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-325/Br-325_S45_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-325/Br-325_S45_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1179"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1179/Co-1179_S76_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1179/Co-1179_S76_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-213"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-213/Co-213_AAACATCG_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-213/Co-213_AAACATCG_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Al-19"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-19/Al-19_S5_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-19/Al-19_S5_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "771-08F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/771-08F/771-08F_ACCACTGT_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/771-08F/771-08F_ACCACTGT_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-553"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-553/P652_106_haloht18_ACACAGAA_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-553/P652_106_haloht18_ACACAGAA_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-358"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-358/P652_109_haloht21_ACGCTAGA_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-358/P652_109_haloht21_ACGCTAGA_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-667"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-667/Co-667_S23_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-667/Co-667_S23_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "2750-13D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/2750-13D/2750-13D_ACATTGGC_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/2750-13D/2750-13D_ACATTGGC_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "61-09F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/61-09F/61-09F_ATGCCTAA_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/61-09F/61-09F_ATGCCTAA_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-669"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-669/Co669_CGATGT_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-669/Co669_CGATGT_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-324"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-324/Co-324_S82_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-324/Co-324_S82_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "1104-03D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/1104-03D/1104-03D_TGACCA_L004_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/1104-03D/1104-03D_TGACCA_L004_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-710"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-710/Br-710_TGACCA_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-710/Br-710_TGACCA_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "1199-05o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/1199-05o/1199-05o_AGTGGTCA_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/1199-05o/1199-05o_AGTGGTCA_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Br-716"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-716/Br-716_ACTTGA_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-716/Br-716_ACTTGA_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-666"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Co-666/Co-666_GATCAG_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Co-666/Co-666_GATCAG_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1488"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1488/Co-1488_S16_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1488/Co-1488_S16_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AL-44"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/AL-44/AL-44_CTTGTA_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/AL-44/AL-44_CTTGTA_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "760-04o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/760-04o/760-04o_AAACATCG_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/760-04o/760-04o_AAACATCG_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "2014-06388-02"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/2014-06388-02/2014-06388-02_AACGCTTA_L006_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/2014-06388-02/2014-06388-02_AACGCTTA_L006_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "1462-01D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/1462-01D/P652_114_halohht26_AGCAGGAA_L001_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/1462-01D/P652_114_halohht26_AGCAGGAA_L001_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-527"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-527/Br-527_S27_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-527/Br-527_S27_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1584"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1584/Co1584_ACTTGA_L008_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1584/Co1584_ACTTGA_L008_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "AB-23"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-23/AB-23_S80_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-23/AB-23_S80_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-8"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-8/AB-8_S25_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-8/AB-8_S25_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-9"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-9/AB-9_S63_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-9/AB-9_S63_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-6"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-6/AB-6_S25_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-6/AB-6_S25_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-7"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-7/AB-7_S17_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-7/AB-7_S17_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-4"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-4/AB-4_S9_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-4/AB-4_S9_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-5"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-5/AB-5_S17_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-5/AB-5_S17_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-2"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-2/AB-2_S9_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-2/AB-2_S9_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-3"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-3/AB-3_S1_L001_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-3/AB-3_S1_L001_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-528"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-528/Br-528_GCCAAT_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-528/Br-528_GCCAAT_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "AB-1"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-1/AB-1_S1_L001_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-1/AB-1_S1_L001_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-14"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-14/AB-14_S10_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-14/AB-14_S10_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-15"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-15/AB-15_S2_L001_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-15/AB-15_S2_L001_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-16"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-16/AB-16_S10_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-16/AB-16_S10_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-17"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-17/AB-17_S18_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-17/AB-17_S18_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-10"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-10/AB-10_S71_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-10/AB-10_S71_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-11"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-11/AB-11_S79_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-11/AB-11_S79_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-12"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-12/AB-12_S93_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-12/AB-12_S93_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-13"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-13/AB-13_S2_L001_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-13/AB-13_S2_L001_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "749-08F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/749-08F/749-08F_AACAACCA_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/749-08F/749-08F_AACAACCA_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1483"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1483/Co-1483_S85_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1483/Co-1483_S85_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-218"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-218/P652_103_haloht15_AACGCTTA_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-218/P652_103_haloht15_AACGCTTA_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-572"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-572/Co572_ACAGTG_L005_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-572/Co572_ACAGTG_L005_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "AB-18"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-18/AB-18_S26_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-18/AB-18_S26_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1161"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1161/Co-1161_AAGACGGA_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1161/Co-1161_AAGACGGA_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1765"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1765/Co1765_GAGTGG_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1765/Co1765_GAGTGG_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "AB-19"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-19/AB-19_S18_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-19/AB-19_S18_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-407"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-407/Co-407_S15_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-407/Co-407_S15_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "264-08F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/264-08F/264-08F_CAGATCTG_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/264-08F/264-08F_CAGATCTG_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "48-07LF"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/48-07LF/48-07LF_AAACATCG_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/48-07LF/48-07LF_AAACATCG_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1312"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1312/Co1312_CTTGTA_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1312/Co1312_CTTGTA_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-90"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-90/Co90_GTCCGC_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-90/Co90_GTCCGC_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1314"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1314/Co-1314_S46_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1314/Co-1314_S46_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-692"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-692/Co-692_S31_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-692/Co-692_S31_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-94"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-94/Co-94_S68_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-94/Co-94_S68_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-616"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-616/Co616_ATCACG_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-616/Co616_ATCACG_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-603"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-603/Co603_ATTCCT_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-603/Co603_ATTCCT_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1116"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1116/Co-1116_concated_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1116/Co-1116_concated_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "354-06"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/354-06/354-06_TGACCA_L005_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/354-06/354-06_TGACCA_L005_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-641"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-641/Br-641_S81_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-641/Br-641_S81_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-724"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-724/5_110901_BD036TACXX_Br-724_ind_5_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-724/5_110901_BD036TACXX_Br-724_ind_5_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "230-06o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/230-06o/230-06o_AACGCTTA_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/230-06o/230-06o_AACGCTTA_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Br-727"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-727/Br-727_S73_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-727/Br-727_S73_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-720"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-720/Br-720_CGATGT_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-720/Br-720_CGATGT_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Br-721"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-721/Br-721_ACTTGA_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-721/Br-721_ACTTGA_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-618"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-618/Co618_GCCAAT_L005_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-618/Co618_GCCAAT_L005_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "294-07LF"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/294-07LF/294-07LF_AAGACGGA_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/294-07LF/294-07LF_AAGACGGA_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Br-246"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-246/Br-246_S28_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-246/Br-246_S28_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-489"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-489/Co-489_AACGCTTA_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-489/Co-489_AACGCTTA_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Br-732"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-732/5_110901_BD036TACXX_Br-732_ind_7_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-732/5_110901_BD036TACXX_Br-732_ind_7_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-484"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-484/P652_108_haloht20_ACCTCCAA_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-484/P652_108_haloht20_ACCTCCAA_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "4283-13D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/4283-13D/4283-13D_AGTACAAG_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/4283-13D/4283-13D_AGTACAAG_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1158"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1158/Co1158_GATCAG_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1158/Co1158_GATCAG_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-227"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-227/Br-227_S29_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-227/Br-227_S29_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "153-09F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/153-09F/153-09F_AACGCTTA_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/153-09F/153-09F_AACGCTTA_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1222"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1222/Co-1222_ACAAGCTA_L006_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1222/Co-1222_ACAAGCTA_L006_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "3015-11D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/3015-11D/3015-11D_AACCGAGA_L006_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/3015-11D/3015-11D_AACCGAGA_L006_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1220"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1220/Co-1220_CATCAAGT_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1220/Co-1220_CATCAAGT_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "95-04o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/95-04o/95-04o_CTGTAGCC_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/95-04o/95-04o_CTGTAGCC_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1301"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1301/Co1301_GGCTAC_L005_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1301/Co1301_GGCTAC_L005_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1302"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1302/co1302_TAGCTT_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1302/co1302_TAGCTT_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1157"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1157/Co1157_ACTTGA_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1157/Co1157_ACTTGA_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1156"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1156/Co1156_CAGATC_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1156/Co1156_CAGATC_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-706"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-706/Br-706_ATCACG_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-706/Br-706_ATCACG_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-89"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-89/Co89_GCCAAT_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-89/Co89_GCCAAT_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-121"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-121/Co-121_AACGTGAT_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-121/Co-121_AACGTGAT_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "1322-11D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/1322-11D/P652_102_haloht14_AACCGAGA_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/1322-11D/P652_102_haloht14_AACCGAGA_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "386-04o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/386-04o/386-04o_AGTGGTCA_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/386-04o/386-04o_AGTGGTCA_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-323"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-323/Co-323_S96_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-323/Co-323_S96_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "679-05o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/679-05o/679-05o_ATGCCTAA_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/679-05o/679-05o_ATGCCTAA_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "1307-09D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/1307-09D/1307-09D_ACCACTGT_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/1307-09D/1307-09D_ACCACTGT_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Br-588"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-588/Br-588_CGATGT_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-588/Br-588_CGATGT_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "1068-05o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/1068-05o/1068-05o_ACAAGCTA_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/1068-05o/1068-05o_ACAAGCTA_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-779"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-779/P652_112_haloht24_AGAGTCAA_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-779/P652_112_haloht24_AGAGTCAA_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1368"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1368/Co1368_GTGAAA_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1368/Co1368_GTGAAA_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-425"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-425/Br-425_S12_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-425/Br-425_S12_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-793"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-793/Co793_AGTTCC_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-793/Co793_AGTTCC_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-95"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-95/Co95_CAGATC_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-95/Co95_CAGATC_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-800"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-800/Co-800_S8_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-800/Co-800_S8_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-771"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Co-771/Co-771_GATCAG_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Co-771/Co-771_GATCAG_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Br-585"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-585/Br-585_TGACCA_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-585/Br-585_TGACCA_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-286"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-286/Co-286_AGTACAAG_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-286/Co-286_AGTACAAG_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1209"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1209/Co-1209_CGCTGATC_L006_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1209/Co-1209_CGCTGATC_L006_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Br-87"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-87/Br-87_S22_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-87/Br-87_S22_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1257"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1257/Co-1257_S16_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1257/Co-1257_S16_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1762"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1762/Co-1762_S86_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1762/Co-1762_S86_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1760"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1760/Co-1760_S48_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1760/Co-1760_S48_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1766"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1766/Co-1766_S70_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1766/Co-1766_S70_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1764"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1764/Co1764_CGTACG_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1764/Co1764_CGTACG_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1723"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1723/P652_121_halohht33_CACTTCGA_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1723/P652_121_halohht33_CACTTCGA_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-238"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-238/Co238_CTTGTA_L004_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-238/Co238_CTTGTA_L004_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "728-05o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/728-05o/728-05o_AGTGGTCA_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/728-05o/728-05o_AGTGGTCA_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "1003-06o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/1003-06o/1003-06o_AACCGAGA_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/1003-06o/1003-06o_AACCGAGA_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "295-08F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/295-08F/295-08F_ACATTGGC_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/295-08F/295-08F_ACATTGGC_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "398-05o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/398-05o/398-05o_concated_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/398-05o/398-05o_concated_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "341-89D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/341-89D/341-89D_S6_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/341-89D/341-89D_S6_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "142-09F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/142-09F/142-09F_CGCTGATC_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/142-09F/142-09F_CGCTGATC_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "468-04"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/468-04/468-04_ACAGTG_L005_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/468-04/468-04_ACAGTG_L005_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1427"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1427/Co-1427_S24_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1427/Co-1427_S24_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "627-04o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/627-04o/627-04o_CAGATCTG_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/627-04o/627-04o_CAGATCTG_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "531-04o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/531-04o/531-04o_concated_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/531-04o/531-04o_concated_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "4735-11D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/4735-11D/4735-11D_CTGTAGCC_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/4735-11D/4735-11D_CTGTAGCC_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1262"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1262/Co1262_GATCAG_L006_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1262/Co1262_GATCAG_L006_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Al-143"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-143/Al-143_S21_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-143/Al-143_S21_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Al-142"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-142/Al-142_S5_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-142/Al-142_S5_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1383"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1383/Co1383_GTTTCG_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1383/Co1383_GTTTCG_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-634"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-634/Co-634_S15_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-634/Co-634_S15_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "2310-08D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/2310-08D/2310-08D_CTGTAGCC_L006_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/2310-08D/2310-08D_CTGTAGCC_L006_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "P002"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/P002/P652_123_halohht35_CATACCAA_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/P002/P652_123_halohht35_CATACCAA_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "P003"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/P003/P652_124_halohht36_CCAGTTCA_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/P003/P652_124_halohht36_CCAGTTCA_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Al-148"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-148/Al-148_S13_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-148/Al-148_S13_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "529-05"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/529-05/529-05_CAGATC_L007_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/529-05/529-05_CAGATC_L007_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "344-07LF"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/344-07LF/344-07LF_ACAAGCTA_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/344-07LF/344-07LF_ACAAGCTA_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Br-100"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-100/Br-100_S21_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-100/Br-100_S21_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-451"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-451/Br-451_TTAGGC_L004_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-451/Br-451_TTAGGC_L004_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-876"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-876/Co876_AGTCAA_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-876/Co876_AGTCAA_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-555"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-555/Co555_TGACCA_L005_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-555/Co555_TGACCA_L005_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1037"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1037/Co1037_CTTGTA_L006_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1037/Co1037_CTTGTA_L006_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1313"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1313/Co-1313_S84_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1313/Co-1313_S84_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1349"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1349/Co1349_AGTTCC_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1349/Co1349_AGTTCC_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-459"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-459/Br-459_S19_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-459/Br-459_S19_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-56"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-56/Br-56_S30_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-56/Br-56_S30_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-55"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-55/Br-55_S83_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-55/Br-55_S83_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1207"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1207/Co1207_ACTTGA_L005_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1207/Co1207_ACTTGA_L005_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "301-08F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/301-08F/301-08F_ACATTGGC_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/301-08F/301-08F_ACATTGGC_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1373"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1373/Co1373_GTGGCC_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1373/Co1373_GTGGCC_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Al-54"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-54/Al-54_S14_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-54/Al-54_S14_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "2818-07D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/2818-07D/P652_118_halohht30_CAACCACA_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/2818-07D/P652_118_halohht30_CAACCACA_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1534"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1534/Co1534_GATCAG_L007_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1534/Co1534_GATCAG_L007_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-454"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-454/Co454_ACTGAT_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-454/Co454_ACTGAT_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1434"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1434/Co-1434_S32_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-1434/Co-1434_S32_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-305"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-305/Co305_GATCAG_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-305/Co305_GATCAG_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1538"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1538/Co1538_TAGCTT_L006_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1538/Co1538_TAGCTT_L006_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-384"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-384/P652_203_haloht19_ACAGCAGA_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-384/P652_203_haloht19_ACAGCAGA_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-859"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-859/Co859_ACAGTG_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-859/Co859_ACAGTG_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-388"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-388/Co-388_S69_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-388/Co-388_S69_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-131"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-131/co131_GGCTAC_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-131/co131_GGCTAC_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-620"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-620/Co-620_S47_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-620/Co-620_S47_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "258-06o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/258-06o/258-06o_ATGCCTAA_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/258-06o/258-06o_ATGCCTAA_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "251-04O"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/251-04O/251-04O_S24_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/251-04O/251-04O_S24_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1518"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1518/P652_117_halohht29_ATTGAGGA_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1518/P652_117_halohht29_ATTGAGGA_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Al-133"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-133/Al-133_S13_L004_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-133/Al-133_S13_L004_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "AB-25"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-25/AB-25_S3_L001_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/AB-25/AB-25_S3_L001_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1141"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1141/P652_111_haloht23_ACTATGCA_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1141/P652_111_haloht23_ACTATGCA_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-37"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-37/Co37_CAGATC_L004_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-37/Co37_CAGATC_L004_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-36"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-36/Co-36_S30_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-36/Co-36_S30_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-35"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-35/Co35_GCCAAT_L004_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-35/Co35_GCCAAT_L004_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-866"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-866/Co866_GCCAAT_L008_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-866/Co866_GCCAAT_L008_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-475"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-475/Br-475_ATCACG_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-475/Br-475_ATCACG_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Br-175"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-175/Br-175_S28_L007_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-175/Br-175_S28_L007_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "474-05"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/474-05/474-05_GCCAAT_L005_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/474-05/474-05_GCCAAT_L005_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-177"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-177/Br-177_S20_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-177/Br-177_S20_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1354"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1354/Co1354_CCGTCC_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1354/Co1354_CCGTCC_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1600"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1600/Co1600_GGCTAC_L008_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1600/Co1600_GGCTAC_L008_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-319"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-319/Br-319_S20_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-319/Br-319_S20_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-271"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-271/Br-271_S74_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-271/Br-271_S74_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1359"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1359/Co1359_GTCCGC_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1359/Co1359_GTCCGC_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-318"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-318/Br-318_S12_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-318/Br-318_S12_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1524"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1524/Co-1524_AAACATCG_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1524/Co-1524_AAACATCG_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "566-04o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/566-04o/566-04o_CATCAAGT_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/566-04o/566-04o_CATCAAGT_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "49-06o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/49-06o/49-06o_ACAAGCTA_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/49-06o/49-06o_ACAAGCTA_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-258"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-258/P652_104_haloht16_AAGACGGA_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-258/P652_104_haloht16_AAGACGGA_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-441"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Co-441/Co-441_ACAGTG_L001_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Co-441/Co-441_ACAGTG_L001_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1529"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1529/P652_116_halohht28_ATCCTGTA_L002_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1529/P652_116_halohht28_ATCCTGTA_L002_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-484"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-484/Br-484_TGACCA_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-484/Br-484_TGACCA_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "1793-11D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/1793-11D/P652_201_haloht13_AACAACCA_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/1793-11D/P652_201_haloht13_AACAACCA_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "4270-11D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/4270-11D/4270-11D_CATCAAGT_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/4270-11D/4270-11D_CATCAAGT_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Br-510"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-510/Br-510_GGCTAC_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-510/Br-510_GGCTAC_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "642-06"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/642-06/642-06_CTTGTA_L005_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/642-06/642-06_CTTGTA_L005_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "884-99D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/884-99D/884-99D_TAGCTT_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/884-99D/884-99D_TAGCTT_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1666"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1666/P652_119_halohht31_CAAGACTA_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1666/P652_119_halohht31_CAAGACTA_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-652"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-652/Co-652_S23_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-652/Co-652_S23_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-395"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-395/Co-395_S77_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-395/Co-395_S77_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "784-05o"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/784-05o/784-05o_CTGTAGCC_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/784-05o/784-05o_CTGTAGCC_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-657"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-657/Co-657_S31_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Co-657/Co-657_S31_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-460"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-460/P652_105_haloht17_AAGGTACA_L006_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-460/P652_105_haloht17_AAGGTACA_L006_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "323-09F"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/323-09F/323-09F_AACGTGAT_L005_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/323-09F/323-09F_AACGTGAT_L005_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1322"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1322/Co1322_AGTCAA_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1322/Co1322_AGTCAA_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Br-682"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-682/Br-682_S65_L003_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-682/Br-682_S65_L003_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-473"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-473/Br-473_CAGATC_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-473/Br-473_CAGATC_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Br-686"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-686/Br-686_S19_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Br-686/Br-686_S19_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Br-693"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-693/Br-693_ATCACG_L002_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-693/Br-693_ATCACG_L002_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Br-477"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-477/Br-477_ACAGTG_L003_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/Ill_Br/Br-477/Br-477_ACAGTG_L003_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: Ill_Br
+        usage_mail: NO
+      - SAMPLE_ID: "Co-851"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-851/Co851_TGACCA_L005_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-851/Co851_TGACCA_L005_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1031"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1031/Co1031_CAGATC_L006_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-1031/Co1031_CAGATC_L006_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
+      - SAMPLE_ID: "Co-1285"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1285/Co-1285_AGTACAAG_L006_R1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/PMS2_Sporadic_Fam24/Co-1285/Co-1285_AGTACAAG_L006_R2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: PMS2_Sporadic_Fam24
+        usage_mail: NO
+      - SAMPLE_ID: "Al-128"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-128/Al-128_S29_L008_R1_001.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CHEK2_BRCA_CRC/Al-128/Al-128_S29_L008_R2_001.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CHEK2_BRCA_CRC
+        usage_mail: NO
+      - SAMPLE_ID: "Co-857"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-857/Co857_ACAGTG_L006_R1_001.fix.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WES/WES294/call294d/resources/CRC_Prostrate/Co-857/Co857_ACAGTG_L006_R2_001.fix.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: CRC_Prostrate
+        usage_mail: NO
