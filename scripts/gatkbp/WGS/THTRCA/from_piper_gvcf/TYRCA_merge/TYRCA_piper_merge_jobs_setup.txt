@@ -1,0 +1,97 @@
+GATK_PARAMS:
+  DBSNP: /proj/b2011117/private/databases/reference/dbsnp_138.b37.vcf
+  KNOWN_INDELS:
+    - /proj/b2011117/private/databases/reference/1000G_phase1.indels.b37.vcf
+    - /proj/b2011117/private/databases/reference/Mills_and_1000G_gold_standard.indels.b37.vcf
+  REFERENCE: /proj/b2011117/private/databases/reference/Homo_sapiens.GRCh37.57.dna.concat.fa
+  SPLIT_REGIONS_FILE: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/split.regions_file
+  VARIANTS_CALLING: true
+JOBS_REPORT_FILE:
+JOB_ALLOC_TIME: "4-00:00:00"
+PROJECT_CODE: b2016200
+PROJECT_NAME: TYRCA_piper_merge
+PROJECT_OUT_DIR: /proj/b2011117/nobackup/private/projects_output/gatkbp/WGS/TYRCA/piper/TYRCA_piper_merge
+SAMPLES_INFOS:
+  - FAMILY_ID: "NO_FAMILY"
+    MEMBERS:
+      - SAMPLE_ID: "1416-10D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0007826/1416-10D/1416-10D_1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0007826/1416-10D/1416-10D_2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: F0007826
+        usage_mail: NO
+      - SAMPLE_ID: "2016-00043"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0002322/2016-00043/2016-00043_1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0002322/2016-00043/2016-00043_2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: F0002322
+        usage_mail: NO
+      - SAMPLE_ID: "1415-10D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0007826/1415-10D/1415-10D_1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0007826/1415-10D/1415-10D_2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: F0007826
+        usage_mail: NO
+      - SAMPLE_ID: "2015-12231"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0002468/2015-12231/2015-12231_1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0002468/2015-12231/2015-12231_2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: F0002468
+        usage_mail: NO
+      - SAMPLE_ID: "2016-18116"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0002322/2016-18116/2016-18116_1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0002322/2016-18116/2016-18116_2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: F0002322
+        usage_mail: NO
+      - SAMPLE_ID: "1417-10D"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0007826/1417-10D/1417-10D_1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0007826/1417-10D/1417-10D_2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: F0007826
+        usage_mail: NO
+      - SAMPLE_ID: "2015-12460"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0002322/2015-12460/2015-12460_1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0002322/2015-12460/2015-12460_2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: F0002322
+        usage_mail: NO
+      - SAMPLE_ID: "2015-12232"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0002468/2015-12232/2015-12232_1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0002468/2015-12232/2015-12232_2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: F0002468
+        usage_mail: NO
+      - SAMPLE_ID: "2016-08616"
+        encoding: Illumina-1.8
+        fastq_files:
+          - R1: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0002468/2016-08616/2016-08616_1.fastq.gz
+            R2: /home/jessada/private/projects/CMM/scripts/gatkbp/WGS/TYRCA/from_piper_gvcf/TYRCA_merge/resources/F0002468/2016-08616/2016-08616_2.fastq.gz
+        platform: Illumina
+        preprocess_sample: false
+        sample_group: F0002468
+        usage_mail: NO
