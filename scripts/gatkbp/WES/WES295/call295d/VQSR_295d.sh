@@ -2,9 +2,9 @@
 
 source $PYCMM/bash/cmm_functions.sh
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-job_name="VQSR_294d"
+job_name="VQSR_295d"
 project_code="b2012247"
-project_out_dir="$GATK_BESTPRACTICE_OUTPUT_DIR/WES/call294d"
+project_out_dir="$GATK_BESTPRACTICE_OUTPUT_DIR/WES/call295d"
 slurm_log_dir="$project_out_dir/slurm_log"
 std_out_slurm="$slurm_log_dir/$job_name.%j.out.log"
 std_err_slurm="$slurm_log_dir/$job_name.%j.err.log"
@@ -12,8 +12,8 @@ tmp_dir="$project_out_dir/tmp"
 vcf_dir="$project_out_dir/vcf"
 
 VQSR_script="$PYCMM/bash/GATKBP_VQSR.sh"
-input_vcf_gz="$tmp_dir/call294d_genotyped.vcf.gz"
-output_vcf_gz="$vcf_dir/WES294d.VQSR.vcf.gz"
+input_vcf_gz="$tmp_dir/call295d_genotyped.vcf.gz"
+output_vcf_gz="$vcf_dir/WES295d.VQSR.vcf.gz"
 
 submit_job_cmd="sbatch"
 submit_job_cmd+=" -A $project_code"

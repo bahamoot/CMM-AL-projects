@@ -4,7 +4,7 @@ script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 project_code="b2012247"
 total_run_time="12:00:00"
 output_dir="/proj/b2011117/private/raw_exome_sequencing_data/CRC_Prostrate/reencode"
-slurm_log_dir="/proj/b2011117/nobackup/private/projects_output/gatkbp/WES/WES294/CRC_Prostrate/slurm_log/"
+slurm_log_dir="/proj/b2011117/nobackup/private/projects_output/gatkbp/WES/WES295/CRC_Prostrate/slurm_log/"
 script_file="$PYCMM/bash/change_encoding.sh"
 
 running_time=$(date +"%Y%m%d%H%M%S")
